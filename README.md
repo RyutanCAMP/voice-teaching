@@ -49,10 +49,13 @@ git checkout feat/mvp
 python --version                      # 3.11 以上か確かめる
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1          # 実行できないときは: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+$env:PYTHONUTF8="1"                 # 日本語の Windows（cp932）で requirements.txt を読めるようにする
 python -m pip install -r requirements.txt
 python -m pytest -q                   # すべて通ることを確かめる
 python -m voice_teaching.web          # 表示された http://127.0.0.1:8765/ を Chrome で開く
 ```
+`$env:PYTHONUTF8="1"` を付けないと、日本語の Windows では `pip install -r requirements.txt` が `UnicodeDecodeError: 'cp932' codec can't decode ...` で止まります（requirements.txt の日本語のコメントのため。会社の PC で確認、2026-11-03）。PowerShell を開き直したら、もう一度付けてください。
+
 画面で `samples/dummy/DEMO_PLACE.JBI` を選び、位置 C00004 を選んで「この位置を上に10mm」と入力すると、確認表示 → 承認 → シミュレーション用の出力（`output/sim/` に `.JBI.txt` で書きます。実機には入れません）まで進みます。止めるときは Ctrl+C。
 
 ### Claude API の設定（秘密の情報はリポジトリに入れない）
