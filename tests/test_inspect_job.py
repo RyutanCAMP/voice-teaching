@@ -121,3 +121,12 @@ def test_unreadable_pl_or_cr_is_not_shown_as_absent(suffix):
     report = inspect_job.report(jbi.parse(text))
     line = [l for l in report.splitlines() if "速度:" in l][4]  # C00004 の行（5番目の移動命令）
     assert "読み取れない書き方" in line
+
+
+def test_html_position_table_shows_raw_format_and_shared():
+    """手順書のチェック表 #1・#3・#10 が見る HTML の表に、POSTYPE・RECTAN・TOOL・USER・RCONF と「共用」を出す（QA 3回目 P2-1）"""
+    text = DUMMY.read_text(encoding="ascii").replace("C00005=", "///POSTYPE PULSE\n///PULSE\nC00005=")
+    html = inspect_job.html(jbi.parse(text), source_name="x.JBI").split("<h2>文字での一覧")[0]  # 表の部分だけを見る
+    assert "POSTYPE=ROBOT" in html and "POSTYPE=PULSE" in html
+    assert "RECTAN=あり" in html and "RCONF=" in html and "USER=" in html
+    assert "（共用）" in html  # C00000 は2つの命令が使う

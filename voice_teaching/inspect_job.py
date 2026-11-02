@@ -162,7 +162,9 @@ def html(job: jbi.Job, source_name: str) -> str:
         fmt = "ロボット座標" if pos.is_robot_coordinates() else "ロボット座標でない"
         rows.append(
             f"<tr><td>{e(name)}</td><td><code>{e(_line(job, pos.line_index))}</code></td><td>{fmt}"
-            f"（TOOL {e(str(pos.tool))}）</td><td>{'<br>'.join(f'{u.index + 1}行目 {e(u.text)}' for u in users) or 'なし'}"
+            f"<br><small>POSTYPE={e(str(pos.postype))} RECTAN={'あり' if pos.rectan else 'なし'} TOOL={e(str(pos.tool))} "
+            f"USER={e(str(pos.user))} RCONF={e(str(pos.rconf))}</small></td>"
+            f"<td>{'（共用）<br>' if len(users) > 1 else ''}{'<br>'.join(f'{u.index + 1}行目 {e(u.text)}' for u in users) or 'なし'}"
             f"</td></tr>")
     problems = "".join(f"<li>{e(p)}</li>" for p in job.problems) or "<li>なし</li>"
     skipped = _undrawable_moves(job)
@@ -203,7 +205,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.print:
         print(report(job))
     else:
-        print(f"ジョブ名: {job.name}　位置: {len(job.positions)}　確認できない点: {len(job.problems)}件"
+        print(f"ジョブ名: {job.name}　位置: {len(job.positions)}　このアプリが読めなかった行・書き方: {len(job.problems)}件"
               f"　すべての位置がロボット座標: {'はい' if job.is_robot_coordinates() else 'いいえ'}")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
