@@ -119,5 +119,5 @@ def test_unreadable_pl_or_cr_is_not_shown_as_absent(suffix):
     """読み取れない書き方の PL・CR を「なし」と出さない（QA 2回目 P2-2。チェック表の誤記録を防ぐ）"""
     text = DUMMY.read_text(encoding="ascii").replace("MOVL C00004 V=80.0", f"MOVL C00004 V=80.0 {suffix}")
     report = inspect_job.report(jbi.parse(text))
-    line = [l for l in report.splitlines() if "速度:" in l][5]  # C00004 の行（6番目の移動命令）
+    line = [l for l in report.splitlines() if "速度:" in l][4]  # C00004 の行（5番目の移動命令）
     assert "読み取れない書き方" in line

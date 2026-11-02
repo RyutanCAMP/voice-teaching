@@ -59,8 +59,8 @@ def _is_plain_movl(ins: jbi.Instruction) -> bool:
     return True
 
 
-_LOOSE_PL = re.compile(r"PL", re.IGNORECASE)
-_LOOSE_CR = re.compile(r"CR", re.IGNORECASE)
+_LOOSE_PL = re.compile(r"\bPL\b", re.IGNORECASE)
+_LOOSE_CR = re.compile(r"\bCR\b", re.IGNORECASE)
 _UNREADABLE = "読み取れない書き方（行の文字を見てください）"
 
 
