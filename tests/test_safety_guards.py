@@ -269,11 +269,14 @@ def test_shift_rejected_when_outgoing_move_is_not_plain_movl(out_line):
     assert job.render() == text
 
 
-def test_shift_allowed_when_no_outgoing_move():
-    """変える位置の後に移動命令が無い（ジョブの最後）なら、出る命令では止めない"""
+def test_shift_rejected_when_no_outgoing_move():
+    """修正ラウンド2：もとは test_shift_allowed_when_no_outgoing_move（止めない）。
+    次の移動命令が無い（ジョブの最後）位置は、出る区間がジョブの中で決まらないので止める"""
     text = base().replace("MOVL C00005 V=80.0\nMOVL C00000 V=200.0\n", "MOVL C00005 V=80.0\n")
-    p = jbi.parse(text).plan_shift("C00005", "Y", 1.0)
-    assert p.after_value == 191.0
+    job = jbi.parse(text)
+    with pytest.raises(jbi.JbiError, match="出る"):
+        job.plan_shift("C00005", "Y", 1.0)
+    assert job.render() == text
 
 
 @pytest.mark.parametrize("old,new", [
@@ -554,8 +557,10 @@ def test_reparsed_job_has_new_baseline():
 
 
 def test_larger_max_argument_does_not_bypass_cumulative_limit():
+    # 修正ラウンド2：1回の上限は引数で上げられなくなったので、2回に分けて累積を確かめる
+    job = jbi.parse(base()).plan_shift("C00004", "Y", 30.0, max_abs_delta_mm=100.0).new_job
     with pytest.raises(jbi.JbiError, match="累積"):
-        jbi.parse(base()).plan_shift("C00004", "Y", 60.0, max_abs_delta_mm=100.0)
+        job.plan_shift("C00004", "Y", 30.0, max_abs_delta_mm=100.0)
 
 
 # D-3. 極端な値は例外で落とさず JbiError で断る（上限の引数も含む）
@@ -589,3 +594,89 @@ def test_unknown_command_is_read_but_blocks_edits():
     assert any(i.text == "WAIT IN#(1)=ON" for i in job.instructions)
     with pytest.raises(jbi.JbiError, match="読めない"):
         job.plan_shift("C00004", "Y", 1.0)
+
+
+# ---- 修正ラウンド2 ----
+# 1. 入る区間の始まり（直前の移動命令）も、出る側と同じ許可リストで判定する
+@pytest.mark.parametrize("prev_line", [
+    "MOVL C00003 V=250.0 UNTIL IN#(1)=ON",
+    "MOVJ C00003 VJ=50.00",
+    "MOVC C00003 V=250.0",
+    "MOVS C00003 V=250.0",
+    "MOVL P000 V=250.0",
+    "MOVL LP000 V=250.0",
+    "MOVL BP000 V=250.0",
+    "MOVL C00003 V=250.0 NWAIT",
+    "MOVL C00003 V=250.0 ENWAIT",
+    "MOVL C00003 V=250.0 SPDL=10",
+    "MOVL C00003 V=250.0 ACC=50",
+    "MOVL C00003 V=250.0 +MOVJ C00001 VJ=10.00",
+    "MOVL C00003 V=250.0 TOOL#(1)",
+    "MOVL C00003 V=250.0 XYZ",
+])
+def test_shift_rejected_when_entry_move_is_not_plain_movl(prev_line):
+    text = base().replace("MOVL C00003 V=250.0", prev_line)
+    job = jbi.parse(text)
+    with pytest.raises(jbi.JbiError, match=r"入る.*行目「"):
+        job.plan_shift("C00004", "Y", 1.0)
+    assert job.render() == text
+
+
+# 2. 直前・次の移動命令が無い位置は、入る／出る区間が決まらないので止める
+def test_shift_rejected_when_no_entry_move():
+    job = jbi.parse(base().replace("NOP\nMOVL C00000 V=200.0\n", "NOP\n"))
+    with pytest.raises(jbi.JbiError, match="入る"):
+        job.plan_shift("C00001", "Y", 1.0)
+
+
+# 3. END より後ろの命令は problems（実行されない命令だけが使う位置も、これで止まる）
+@pytest.mark.parametrize("after", ["NOP", "MOVL C00005 V=80.0"])
+def test_instruction_after_end_is_problem(after):
+    text = base().replace("MOVL C00005 V=80.0\n", "") if after.startswith("MOVL") else base()
+    job = jbi.parse(text + after + "\n")
+    assert any("END" in p for p in job.problems)
+    with pytest.raises(jbi.JbiError, match="読めない"):
+        job.plan_shift("C00004", "Y", 1.0)
+
+
+def test_comment_after_end_is_not_problem():
+    job = jbi.parse(base() + "'memo\n")
+    assert job.problems == []
+
+
+# 4. Unicode の空白（全角空白・NBSP）を含む命令行は problems。読むのは最後まで続ける
+@pytest.mark.parametrize("line", ["　", "\xa0", "　MOVL C00001 V=80.0", "NOP　", "DOUT\xa0OT#(1) ON"])
+def test_unicode_space_in_instruction_line_is_problem(line):
+    job = jbi.parse(base().replace("NOP\n", f"NOP\n{line}\n"))
+    assert job.problems
+    assert job.instructions[-1].text == "END"
+    with pytest.raises(jbi.JbiError, match="読めない"):
+        job.plan_shift("C00004", "Y", 1.0)
+
+
+# 5. max_abs_delta_mm は下げる方向だけ効く
+def test_max_argument_cannot_raise_single_limit():
+    with pytest.raises(jbi.JbiError, match="上限") as e:
+        jbi.parse(base()).plan_shift("C00004", "Y", jbi.DEFAULT_MAX_SHIFT_MM + 1.0, max_abs_delta_mm=100.0)
+    assert "累積" not in str(e.value)  # 累積の検査ではなく、1回の上限で断られること
+
+
+def test_max_argument_can_lower_limit():
+    job = jbi.parse(base())
+    with pytest.raises(jbi.JbiError, match="上限"):
+        job.plan_shift("C00004", "Y", 6.0, max_abs_delta_mm=5.0)
+    assert job.plan_shift("C00004", "Y", 5.0, max_abs_delta_mm=5.0).after_value == 195.0
+
+
+# 6. 位置の値の整数部が7桁以上なら problems（扱える桁の問題。ロボットの範囲を決めるものではない）
+@pytest.mark.parametrize("value", ["1234567.000", "-1234567.000", "1" * 400 + ".000"])
+def test_position_value_with_too_many_digits_is_problem(value):
+    job = jbi.parse(base().replace("C00005=450.000", f"C00005={value}"))
+    assert any("桁" in p for p in job.problems)
+    with pytest.raises(jbi.JbiError, match="読めない"):
+        job.plan_shift("C00004", "Y", 1.0)
+
+
+def test_position_value_with_six_digits_is_read():
+    job = jbi.parse(base().replace("C00005=450.000", "C00005=999999.000"))
+    assert job.problems == []

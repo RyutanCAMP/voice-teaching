@@ -64,8 +64,10 @@ _KNOWN_INST_DIRECTIVES = {"DATE", "ATTR", "COMM"}
 # INST部の命令の許可リスト（仮。今のコード・ダミー・仕様に出てくるものだけ。実機サンプルで本人と確定する）
 KNOWN_INST_COMMANDS = frozenset({
     "NOP", "END", "MOVL", "MOVJ", "MOVC", "MOVS", "DOUT", "TIMER", "JUMP", "CALL", "RET",
-    # 止めるために知っている命令
-    "SFTON", "SFTOF", "MSHIFT", "MFRAME", "IMOV", "SMOVL", "SMOVJ", "SMOVC", "SMOVS", "GETS",
+    # 止めるために知っている命令（ジョブにあれば位置の変更を止める。_BLOCKING）
+    "SFTON", "SFTOF", "MSHIFT", "MFRAME", "IMOV", "SMOVL", "SMOVJ", "SMOVC", "SMOVS",
+    # GETS は止める命令ではない。位置を参照する命令として「使う行」に数えられ、共用・MOVL でない で止まる
+    "GETS",
 })
 _LABEL_LINE = re.compile(r"\*[A-Za-z0-9_]+")
 _DIGIT_LIST = r"\d+(?:,\d+)*"
@@ -77,6 +79,8 @@ _POS_DIRECTIVE_ARGS = {
 # 1行の中に入っていると行の区切りがあいまいになる文字（タブ以外の制御文字など）
 _BAD_CHARS = re.compile(r"[\x00-\x08\x0a-\x1f\x7f\x85  ]")
 _ROBOT_VALUES = 6  # HC20 は6軸。ロボット座標の位置は値が6個のときだけ変える
+# 位置の値の整数部の桁の上限（このアプリで扱える桁。ロボットの動作範囲を決めるものではない）
+_MAX_INT_DIGITS = 6
 
 
 class JbiError(Exception):
@@ -189,6 +193,7 @@ class Job:
         limit = _as_float(max_abs_delta_mm, "移動量の上限の指定")
         if limit <= 0:
             raise JbiError("移動量の上限の指定が正しくないため、変更しません")
+        limit = min(limit, DEFAULT_MAX_SHIFT_MM)  # 引数は上限を下げる方向にだけ効く
         delta = _as_float(delta_mm, "移動量")
         if delta == 0:
             raise JbiError("移動量が0のため、変更しません")
@@ -236,21 +241,25 @@ class Job:
             raise JbiError(
                 f"{target.index + 1}行目「{target.text}」は位置 {position} を直線移動（MOVL）の行き先として"
                 "使っていないため、変更しません")
-        # 入る区間の始まり（直前の移動命令）に PL・CR があれば止める（ちょうど PL=0 は通す）
+        # 入る区間の始まり（直前の移動命令）と出る命令（次の移動命令）は、どちらも
+        # 「MOVL 位置 V=数値」（ちょうど PL=0 は可）でなければ止める（仕様v2.1 6章。MOVJ を始まりに認めるかは本人判断待ち）
+        # 前後の移動命令が無い位置は、入る／出る区間がジョブの中で決まらないので止める
         prev = self._prev_move(target.index)
-        if prev is not None:
-            what = _pl_or_cr(prev.text)
-            if what:
-                raise JbiError(
-                    f"位置 {position} へ入る移動の始まりの {prev.index + 1}行目「{prev.text}」に {what} が付いていて、"
-                    "通り道が変わるため、このアプリでは変更しません")
-        # 仕様v2.1 6章：出る命令が「MOVL 位置 V=数値」（PL=0 可）でなければ止める
+        if prev is None:
+            raise JbiError(
+                f"位置 {position} へ入る区間の始まり（直前の移動命令）がジョブの中に無く、入る移動が決まらないため、変更しません")
+        try:
+            _check_editable_move(prev)
+        except JbiError as e:
+            raise JbiError(f"位置 {position} へ入る移動の始まりの命令が、このアプリで変更できる形ではありません。{e}") from None
         nxt = self._next_move(target.index)
-        if nxt is not None:
-            try:
-                _check_editable_move(nxt)
-            except JbiError as e:
-                raise JbiError(f"位置 {position} から出る移動の命令が、このアプリで変更できる形ではありません。{e}") from None
+        if nxt is None:
+            raise JbiError(
+                f"位置 {position} から出る移動の命令（次の移動命令）がジョブの中に無く、出る移動が決まらないため、変更しません")
+        try:
+            _check_editable_move(nxt)
+        except JbiError as e:
+            raise JbiError(f"位置 {position} から出る移動の命令が、このアプリで変更できる形ではありません。{e}") from None
 
         line = self.lines[pos.line_index]
         body, ending = _split_ending(line)
@@ -304,19 +313,12 @@ class Job:
             warnings.append(
                 f"元のジョブ（基準）からの {axis} の累積の変更量は {_format_like(old_token, cumulative)}mm です")
 
-        affected = []
-        if prev is None:
-            affected.append("（この位置へ入る前の移動命令は見つかりません）")
-        else:
-            affected.append(f"{prev.index + 1}行目「{prev.text}」（この位置へ入る区間の始まり）")
-        affected.append(f"{target.index + 1}行目「{target.text}」（この位置へ入る移動）")
-        if nxt is None:
-            affected.append("（この後の移動命令は見つかりません）")
-        else:
-            note = "この位置から出る移動"
-            if _PL_LOOSE.search(nxt.text):
-                note += "。PL付き"
-            affected.append(f"{nxt.index + 1}行目「{nxt.text}」（{note}）")
+        note = "この位置から出る移動" + ("。PL=0 付き" if _PL_LOOSE.search(nxt.text) else "")
+        affected = [
+            f"{prev.index + 1}行目「{prev.text}」（この位置へ入る区間の始まり）",
+            f"{target.index + 1}行目「{target.text}」（この位置へ入る移動）",
+            f"{nxt.index + 1}行目「{nxt.text}」（{note}）",
+        ]
 
         return ChangeProposal(
             kind="shift", target=f"{position} {axis}", line_index=pos.line_index,
@@ -454,6 +456,7 @@ def parse(text: str, encoding: str = "utf-8") -> Job:
     unknown = False
     npos_count = None
     c_lines = 0
+    ended = False
 
     def problem(i: int, body: str, why: str) -> None:
         job.problems.append(f"{i + 1}行目「{body}」は{why}")
@@ -469,6 +472,10 @@ def parse(text: str, encoding: str = "utf-8") -> Job:
         if not body:
             problem(i, body, "空の行です")
             continue
+        # 全角空白・NBSP などの空白文字は、コメント（' の行・///COMM）以外では止める。読むのは続ける
+        if not (body.startswith("'") or body.startswith("///COMM ")) and any(
+                c.isspace() and c not in " \t" for c in body):
+            problem(i, body, "全角空白などの空白文字を含みます")
 
         # 見出し（//NAME・//POS・//INST だけを知っている）
         if body.startswith("//") and not body.startswith("///"):
@@ -532,6 +539,9 @@ def parse(text: str, encoding: str = "utf-8") -> Job:
             if not all(re.fullmatch(_NUM, v) for v in raw):
                 problem(i, body, "数値でない値があります")
                 continue
+            if any(_int_digits(v) > _MAX_INT_DIGITS for v in raw):
+                problem(i, body, "整数部が7桁以上の値があり、このアプリで扱える桁を超えます")
+                continue
             if len(raw) < 3:
                 problem(i, body, "値が3個未満です")
                 continue
@@ -557,9 +567,17 @@ def parse(text: str, encoding: str = "utf-8") -> Job:
             continue
         if body.startswith("'"):
             continue  # コメント行は命令として扱わない
+        words = body.split()
+        if not words:
+            continue  # 空白文字だけの行（problems には上で記録済み）
         # 命令を「認識できる」かの判定（許可リスト）。知らない命令も読み続け、problems に記録する
-        if not (_LABEL_LINE.fullmatch(body) or body.split()[0] in KNOWN_INST_COMMANDS):
+        if not (_LABEL_LINE.fullmatch(body) or words[0] in KNOWN_INST_COMMANDS):
             problem(i, body, "このアプリの命令の許可リストに無い命令です")
+        # END より後ろの命令は実行されない。その命令だけが使う位置などを取り違えないよう、ジョブごと止める
+        if ended:
+            problem(i, body, "END より後ろにある命令です（実行されません）")
+        if body == "END":
+            ended = True
         job.instructions.append(_parse_instruction(i, body))
 
     if "POS" in seen_headers:
