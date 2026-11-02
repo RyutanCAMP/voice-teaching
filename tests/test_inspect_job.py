@@ -96,3 +96,19 @@ def test_tool_is_read_only_by_construction():
                  "write_bytes", "socket", "urllib", "http", "subprocess", "os.system", "requests"]:
         assert word not in src, word
     assert src.count("write_text(") == 1  # HTML を書く1か所だけ
+
+
+def test_move_to_variable_position_breaks_the_line_and_is_noted():
+    """MOVL P000 のように位置がジョブの中に無い移動は描けないので、前後の点を直接つながず、注意を出す（Safety C2-5）"""
+    text = DUMMY.read_text(encoding="ascii").replace("MOVL C00004 V=80.0\n", "MOVL P000 V=80.0\nMOVL C00004 V=80.0\n")
+    html = inspect_job.html(jbi.parse(text), source_name="x.JBI")
+    assert '<line data-to="C00004"' not in html  # C00003 から C00004 へ直接の線を引かない
+    assert "描けない移動があります" in html
+
+
+def test_wording_is_read_only_and_figure_is_marked_as_reference():
+    html = inspect_job.html(jbi.load(DUMMY), source_name="DEMO_PLACE.JBI")
+    text = inspect_job.report(jbi.load(DUMMY))
+    for s in (html, text):
+        assert "断る" not in s and "通る" not in s
+    assert "参考表示" in html

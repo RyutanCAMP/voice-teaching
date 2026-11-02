@@ -1,4 +1,4 @@
-"""読むだけの確認用の道具：ジョブの形式・位置・使っている命令・検査の結果を表示し、2Dの図をHTMLで出す。
+"""読むだけの確認用の道具：ジョブの形式・位置・使っている命令・読めなかった行を表示し、2Dの参考図をHTMLで出す。
 
 使い方（実機のジョブは PC の中だけで扱う。リポジトリに入れない・Claude に送らない）:
     python -m voice_teaching.inspect_job ジョブ.JBI [--out 出力フォルダ]
@@ -12,6 +12,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import html as _html
 import sys
 from pathlib import Path
@@ -35,8 +36,18 @@ def _line_ending(job: jbi.Job) -> str:
     return "CRLF" if crlf and not lf else "LF" if lf and not crlf else f"混在（CRLF {crlf}・LF {lf}）"
 
 
+_MOVE_COMMAND = re.compile(r"^(S?MOV[LJCS]|IMOV)$", re.IGNORECASE)
+
+
 def _moves(job: jbi.Job) -> list[jbi.Instruction]:
-    return [i for i in job.instructions if i.position is not None]
+    """移動命令（位置が C で書かれていないもの、例 MOVL P000 も含む）"""
+    return [i for i in job.instructions if i.position is not None or _MOVE_COMMAND.match(i.command)]
+
+
+def _undrawable_moves(job: jbi.Job) -> list[jbi.Instruction]:
+    """図に描けない移動（位置がジョブの中に無い、またはロボット座標でない）"""
+    return [i for i in _moves(job) if i.position is None or i.position not in job.positions
+            or not job.positions[i.position].is_robot_coordinates()]
 
 
 def _is_plain_movl(ins: jbi.Instruction) -> bool:
@@ -55,7 +66,7 @@ def report(job: jbi.Job) -> str:
         f"位置の数: {len(job.positions)}　命令の行数: {len(job.instructions)}",
         f"すべての位置がロボット座標: {'はい' if job.is_robot_coordinates() else 'いいえ'}",
         "",
-        f"■ 確認できない点（1件でもあれば変更はすべて断る）: {len(job.problems)}件",
+        f"■ このアプリが読めなかった行・書き方: {len(job.problems)}件",
     ]
     out += [f"  - {p}" for p in job.problems] or ["  なし"]
     out += ["", "■ 位置"]
@@ -99,7 +110,7 @@ def _svg(job: jbi.Job, ax: int, ay: int, title: str) -> str:
              f'<rect x="0" y="0" width="{w}" height="{h}" fill="#fafafa" stroke="#ccc"/>']
     prev = None
     for ins in _moves(job):
-        p = pts.get(ins.position)
+        p = pts.get(ins.position) if ins.position else None
         if p is None:
             prev = None
             continue
@@ -134,15 +145,18 @@ def html(job: jbi.Job, source_name: str) -> str:
             f"（TOOL {e(str(pos.tool))}）</td><td>{'<br>'.join(f'{u.index + 1}行目 {e(u.text)}' for u in users) or 'なし'}"
             f"</td></tr>")
     problems = "".join(f"<li>{e(p)}</li>" for p in job.problems) or "<li>なし</li>"
+    skipped = _undrawable_moves(job)
+    undrawable = ("<p class=\"note\">図に描けない移動があります（その前後は線を切っています）：" +
+                  "、".join(f"{i.index + 1}行目 {e(i.text)}" for i in skipped) + "</p>") if skipped else ""
     return f"""<!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><title>{e(source_name)} の確認</title>
 <style>body{{font-family:sans-serif;margin:20px}}table{{border-collapse:collapse}}td,th{{border:1px solid #ccc;padding:4px 8px;font-size:13px;vertical-align:top}}
 .note{{background:#fff4e0;padding:8px;border:1px solid #e0b060}}.figs{{display:flex;gap:16px;flex-wrap:wrap}}</style></head><body>
 <h1>{e(source_name)}（ジョブ名 {e(job.name)}）</h1>
-<p class="note">{e(FIGURE_NOTE)} 実線は MOVL（PL・CRなし）の区間、点線はそれ以外（目安）。このページは読むだけで、ジョブは書き出しません。</p>
+<p class="note">{e(FIGURE_NOTE)} 実線は「MOVL 位置 V=数値」（PL=0 だけ付いたものを含む）の区間、点線はそれ以外（目安）。このページは読むだけで、ジョブは書き出しません。</p>
 <p>文字コード {e(job.encoding)}・改行 {e(_line_ending(job))}・すべての位置がロボット座標：{'はい' if job.is_robot_coordinates() else 'いいえ'}</p>
-<h2>確認できない点（1件でもあれば変更はすべて断る）</h2><ul>{problems}</ul>
-<h2>図</h2><div class="figs"><div><h3>X・Y（上から）</h3>{_svg(job, 0, 1, "X・Y")}</div>
+<h2>このアプリが読めなかった行・書き方</h2><ul>{problems}</ul>
+<h2>図（参考表示。実際のロボットの動きではありません）</h2>{undrawable}<div class="figs"><div><h3>X・Y（上から）</h3>{_svg(job, 0, 1, "X・Y")}</div>
 <div><h3>X・Z（横から）</h3>{_svg(job, 0, 2, "X・Z")}</div>
 <div><h3>Y・Z（横から）</h3>{_svg(job, 1, 2, "Y・Z")}</div></div>
 <h2>位置</h2><table><tr><th>位置</th><th>ファイルの行</th><th>形式</th><th>使っている行</th></tr>
