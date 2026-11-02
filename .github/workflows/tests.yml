@@ -1,0 +1,38 @@
+# 自動テスト：push と pull_request のたびに python -m pytest -q を実行する。
+# 秘密の情報（secrets）は使わない。外部のサービスへデータを送らない。
+# 使う action は GitHub 公式の actions/checkout と actions/setup-python だけ。
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: pytest (${{ matrix.os }}, Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.11", "3.13"]
+    steps:
+      - name: リポジトリを取り出す
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Python を用意する
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 依存をインストールする
+        run: python -m pip install -r requirements.txt
+
+      - name: テストを実行する
+        run: python -m pytest -q

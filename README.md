@@ -16,5 +16,13 @@
 - 画面の図は変更前後を見比べるためのもので、**干渉や安全を保証するものではありません**。実機では必ず低速で動作を確認してください。
 - ロボット・ペンダント・ジョブの転送機能は、安川電機の既存製品です。このリポジトリで作っているのは、それらとつなぐアプリの部分です。
 
+## テストの実行
+```
+python -m pip install -r requirements.txt
+python -m pytest -q
+python tools/quality_report.py
+```
+`tools/quality_report.py` は、テストの結果と「断定の言葉」「秘密の情報らしい文字列」「samples/dummy/ 以外の JBI」の点検を Markdown で表示します（引っかかれば終了コード 1）。`--out` を付けると `output/quality_report.md` にも書きます。push と Pull Request のたびに GitHub Actions でも `python -m pytest -q` を実行します。
+
 ## ライセンス
 [MIT License](LICENSE)
