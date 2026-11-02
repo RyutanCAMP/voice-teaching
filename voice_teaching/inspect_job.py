@@ -59,6 +59,27 @@ def _is_plain_movl(ins: jbi.Instruction) -> bool:
     return True
 
 
+_LOOSE_PL = re.compile(r"PL", re.IGNORECASE)
+_LOOSE_CR = re.compile(r"CR", re.IGNORECASE)
+_UNREADABLE = "読み取れない書き方（行の文字を見てください）"
+
+
+def _pl_text(ins: jbi.Instruction) -> str:
+    if ins.pl is not None:
+        return str(ins.pl)
+    return _UNREADABLE if _LOOSE_PL.search(ins.text) else "書かれていない"
+
+
+def _cr_text(ins: jbi.Instruction) -> str:
+    if ins.has_cr:
+        return "あり"
+    return _UNREADABLE if _LOOSE_CR.search(ins.text) else "書かれていない"
+
+
+def _speed_text(ins: jbi.Instruction) -> str:
+    return ins.speed_raw if ins.speed_raw is not None else "V= は読み取れない（行の文字を見てください）"
+
+
 def report(job: jbi.Job) -> str:
     out = [
         f"ジョブ名: {job.name}",
@@ -82,8 +103,7 @@ def report(job: jbi.Job) -> str:
     out += ["", "■ 移動命令"]
     for ins in _moves(job):
         out.append(f"{ins.index + 1}行目 {ins.text}")
-        out.append(f"    速度: {ins.speed_raw}　PL: {ins.pl}　CR: {'あり' if ins.has_cr else 'なし'}"
-)
+        out.append(f"    速度: {_speed_text(ins)}　PL: {_pl_text(ins)}　CR: {_cr_text(ins)}")
     return "\n".join(out)
 
 

@@ -112,3 +112,12 @@ def test_wording_is_read_only_and_figure_is_marked_as_reference():
     for s in (html, text):
         assert "断る" not in s and "通る" not in s
     assert "参考表示" in html
+
+
+@pytest.mark.parametrize("suffix", ["pl=3", "PL = 3", "PL=I001", "CR = 5"])
+def test_unreadable_pl_or_cr_is_not_shown_as_absent(suffix):
+    """読み取れない書き方の PL・CR を「なし」と出さない（QA 2回目 P2-2。チェック表の誤記録を防ぐ）"""
+    text = DUMMY.read_text(encoding="ascii").replace("MOVL C00004 V=80.0", f"MOVL C00004 V=80.0 {suffix}")
+    report = inspect_job.report(jbi.parse(text))
+    line = [l for l in report.splitlines() if "速度:" in l][5]  # C00004 の行（6番目の移動命令）
+    assert "読み取れない書き方" in line
