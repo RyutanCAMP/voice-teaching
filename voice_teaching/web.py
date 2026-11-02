@@ -13,7 +13,7 @@ from .preview import PreviewError, PreviewSession
 
 ROOT = Path(__file__).resolve().parent
 DUMMY = ROOT.parent / "samples/dummy/DEMO_PLACE.JBI"
-STATIC = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css",
+STATIC = {"/": "index.html", "/app.js": "app.js", "/speech.js": "speech.js", "/style.css": "style.css",
           "/vendor/three.module.js": "vendor/three.module.js",
           "/vendor/three.core.js": "vendor/three.core.js",
           "/vendor/OrbitControls.js": "vendor/OrbitControls.js"}

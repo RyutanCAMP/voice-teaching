@@ -1,10 +1,32 @@
 import * as THREE from '/vendor/three.module.js';
 import { OrbitControls } from '/vendor/OrbitControls.js';
+import { SpeechInput } from '/speech.js';
 
 const $ = id => document.getElementById(id);
 let session, state, selected = null, frozen = null, busy = false, playing = false, progress = 0;
 let scene, camera, renderer, controls, group, cursor, candidateCursor, labels = [], viewOK = false;
 let span = 600, frame, currentMove = null;
+let voiceState = 'idle', voiceToken = null;
+const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const speech = new SpeechInput(Recognition, {
+  state: value=>{
+    voiceState=value;
+    $('speech-status').textContent={starting:'マイクを準備しています。許可の表示が出たら確認してください。',listening:'聞いています。「この位置を上に10ミリ」のように話してください。',stopping:'認識文を確定しています。',idle:'音声入力は待機中です。'}[value];
+    updateButtons();
+  },
+  partial: text=>{$('speech-interim').textContent=text ? '認識中（未確定）：'+text : '';},
+  final: text=>{
+    $('utterance').value=text;
+    $('speech-status').textContent='文字起こしができました。内容を確認・修正し、「Claudeで解釈」を押してください。';
+    updateButtons();
+  },
+  error: message=>{
+    voiceToken=null;$('utterance').value='';
+    $('speech-status').textContent=message;report(new Error(message));updateButtons();
+    // 開始時点で旧候補を破棄済み。失敗した入力トークンも破棄する。
+    if(session && !busy) api('invalidate',{}).catch(report);
+  }
+});
 const safeText = (tag, text, cls) => {const n = document.createElement(tag); n.textContent = text; if(cls) n.className = cls; return n;};
 
 async function api(path, data) {
@@ -22,15 +44,19 @@ async function api(path, data) {
 function report(error) {$('error').textContent = error.message || '処理を完了できませんでした。'; $('error').hidden = false;}
 function action(fn) {return (...args) => Promise.resolve().then(()=>fn(...args)).catch(report);}
 function updateButtons() {
-  for(const el of document.querySelectorAll('button,input[type=file],select,textarea')) el.disabled = busy;
+  const recording=voiceState!=='idle', locked=busy || recording;
+  for(const el of document.querySelectorAll('button,input[type=file],select,textarea')) el.disabled = locked;
   const loaded = Boolean(state?.current?.positions && Object.keys(state.current.positions).length);
-  $('utterance').disabled = busy || !loaded;
-  $('interpret').disabled = busy || !loaded || !$('utterance').value.trim();
-  $('microphone').disabled = true;
-  for(const id of ['play','step','reset','seek']) $(id).disabled = busy || !viewOK || !state?.current?.playable;
-  $('approve').disabled = busy || !state?.candidate;
+  $('utterance').disabled = locked || !loaded;
+  $('interpret').disabled = locked || !loaded || !$('utterance').value.trim();
+  $('microphone').disabled = busy || !Recognition || !loaded || (!$('speech-mode').value && !recording) || voiceState==='stopping';
+  $('microphone').textContent=recording?'録音を終了':'マイクで話す';
+  $('voice-cancel').hidden=!recording;
+  $('voice-cancel').disabled=busy || !recording;
+  for(const id of ['play','step','reset','seek']) $(id).disabled = locked || !viewOK || !state?.current?.playable;
+  $('approve').disabled = locked || !state?.candidate;
 }
-function resetInput() {frozen = null; $('utterance').value = ''; $('frozen').textContent = '入力対象：未選択';}
+function resetInput() {frozen = null; voiceToken=null; $('utterance').value = ''; $('frozen').textContent = '入力対象：未選択';}
 function selectPosition(name) {
   selected = name;
   $('selected').textContent = name;
@@ -180,12 +206,31 @@ $('policy').onchange=action(async(e)=>{
   try {await api('policy',{policy:JSON.parse(await file.text())});} catch(error) {await api('policy',{policy:null});throw error;}
 });
 $('utterance').onfocus=()=>{if(!frozen && selected) {frozen=selected;$('frozen').textContent='入力対象（固定）：'+frozen;}};
-$('utterance').oninput=action(async()=>{if(state.candidate) await api('invalidate',{});updateButtons();});
+$('utterance').oninput=action(async()=>{voiceToken=null;if(state.candidate) await api('invalidate',{});updateButtons();});
+$('speech-mode').onchange=()=>{
+  $('speech-status').textContent=$('speech-mode').value==='local'?'端末内のみで処理します。対応と日本語の言語パックが必要です。':$('speech-mode').value==='browser'?'ブラウザー標準の音声認識です。音声がブラウザー提供元の外部サービスで処理される場合があります。':'音声の処理方法を選んでください。';
+  updateButtons();
+};
+$('microphone').onclick=action(async()=>{
+  if(speech.active) {speech.stop();return;}
+  playing=false;voiceToken=null;
+  const target=selected,mode=$('speech-mode').value;
+  resetInput();frozen=target;$('frozen').textContent='入力対象（録音開始時に固定）：'+target;
+  const start=await api('begin',{selected:target});voiceToken=start.input_token;
+  speech.start(mode);
+});
+$('voice-cancel').onclick=action(async()=>{
+  speech.cancel();resetInput();
+  $('speech-status').textContent='音声入力を取り消しました。認識文は採用していません。';
+  await api('invalidate',{});
+});
+window.addEventListener('pagehide',()=>speech.cancel());
 $('interpret').onclick=action(async()=>{
   playing=false;
   const target=frozen || selected, text=$('utterance').value;
-  const start=await api('begin',{selected:target});
-  await api('propose',{input_token:start.input_token,text});
+  const token=voiceToken || (await api('begin',{selected:target})).input_token;
+  voiceToken=null;
+  await api('propose',{input_token:token,text});
 });
 $('approve').onclick=action(async()=>{const id=state.candidate?.id;await api('approve',{candidate_id:id});resetInput();});
 $('cancel').onclick=action(async()=>{await api('invalidate',{});resetInput();});
@@ -200,4 +245,5 @@ try {
   const initial=await response.json();session=initial.session;state=initial.state;
   $('api-status').textContent=initial.claude_configured?'Claude API 設定済み · 接続未確認':'Claude API 未設定';
   init3D();render();
+  if(!Recognition) $('speech-status').textContent='このブラウザーは音声入力に未対応です。対応するChromeなどで開くか、文字で入力してください。';
 } catch(error) {report(error);}
