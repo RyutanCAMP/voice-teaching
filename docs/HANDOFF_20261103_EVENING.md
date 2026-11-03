@@ -13,7 +13,7 @@
 |---|---|---|
 | 安全修正（M1〜M3・MOVJ の表示・P0・FRAME ROBOT・上下の照合 K4・実機 JOB は確認のみ） | **完成**。クロちゃんの独立レビュー CHECKER_030 で **c41ebb7 が PASS** | `fix/checker026` |
 | 唐川さんの決定（ATTR と FRAME の並び・ATTR の無い JOB は止める） | 完成。内部レビュー CONDITIONAL PASS。**独立レビューはまだ** | `fix/checker026` 7e6f4e8 |
-| CHECKER_030 の SHOULD（〜ます は2択・ロボット名と確認者の常時表示・実機 JOB の承認後の案内）＋承認のあとの3つの状態 | できた（9d7434d。pytest 4171 passed・e2e OK 256・p0_split 0/26・frame_cases 0/17・b1 MUST 118/118）。内部レビュー中・独立レビューはまだ | `fix/checker030-should` |
+| CHECKER_030 の SHOULD（〜ます は2択・ロボット名と確認者の常時表示・実機 JOB の承認後の案内）＋承認のあとの3つの状態 | できた（9d7434d。pytest 4171 passed・e2e OK 256・p0_split 0/26・frame_cases 0/17・b1 MUST 118/118）。内部 Safety **CONDITIONAL PASS**（P1＝消えていたテスト2件 → 3c7e182 で直した）。独立レビューはまだ | `fix/checker030-should` |
 | 2回→3回（範囲をボタンで確定・2回→3回だけ・1回目／2回目／全体の範囲） | 動く。内部レビュー（f11279b）Safety・QA とも CONDITIONAL PASS → QA P1-A（範囲の確認の最中の声）ほかを **f7f871f で直した**（pytest 4016 passed・e2e NG 0）。f7f871f の差分の内部レビュー中 | `feat/repeat-count` |
 | 3D の再生の表示（いま何行目・何回目）・2回と3回の比較の再生・動きの並びのカード・「1・2・3」 | 動く（f61bfd1。pytest 3988 passed・node 52/52・e2e OK 286）。QA レビュー中 | `feat/demo-3d` |
 | Claude に聞く（読み取りだけ） | 動く。**本物の Claude で確かめた** | `feat/claude-explain` |
@@ -27,7 +27,7 @@
 | ブランチ | コミット | 中身 |
 |---|---|---|
 | `fix/checker026` | eb80ec2 | 安全修正（コード 7e6f4e8。c41ebb7 は CHECKER_030 PASS） |
-| `fix/checker030-should` | 9d7434d | CHECKER_030 の SHOULD 3件＋承認のあとの3つの状態（内部レビュー中） |
+| `fix/checker030-should` | 3c7e182 | CHECKER_030 の SHOULD 3件＋承認のあとの3つの状態（内部 Safety CONDITIONAL PASS） |
 | `feat/repeat-count` | f7f871f | 2回→3回（P1-A を直した。差分の内部レビュー中） |
 | `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び（QA レビュー中） |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ） |
@@ -53,7 +53,9 @@
 | fix/checker026 7e6f4e8（c41ebb7 のあと） | Safety CONDITIONAL PASS（S-1：「〜ます」が 17:14 の決定（2択）と食い違う → fix/checker030-should で直している） | **未** |
 | feat/repeat-count f11279b → f7f871f | f11279b：Safety・QA CONDITIONAL PASS → QA P1-A を f7f871f で直した。**f7f871f：Safety（QA の観点も）CONDITIONAL PASS、P1 なし**。P2：［この範囲を繰り返す］を目立たせたことが前の決め（ボタンは同じ重さ）と食い違う＝唐川さんの判断、一覧に無い言い方（「はい、この範囲を繰り返す」など）では範囲の確認が捨てられる | **未** |
 | feat/claude-explain 2c921e6 | 未 | CHECKER_031（設計の意見と確認項目 E1〜E7） |
-| feat/claude-talk・feat/demo-3d・fix/checker030-should・feat/ui-refresh | 未 | 未 |
+| fix/checker030-should 9d7434d | Safety CONDITIONAL PASS（P1 は 3c7e182 で直した。P2：場所の言葉と位置番号が一緒の「〜ます」は位置のボタンだけで候補になる＝M3 と同じ道、上下の向きの表示が2行） | 未 |
+| feat/demo-3d f61bfd1 | QA CONDITIONAL PASS（P1：1280×720 で操作ボタンが「→ ×3」を隠す → 修正中） | 未 |
+| feat/claude-talk・feat/ui-refresh | 未 | 未 |
 
 ## 5. Claude API の動作状況
 - 説明（読み取りだけ、feat/claude-explain）：2ターン成功、$0.0122（`records/api_usage.jsonl`）
@@ -140,6 +142,7 @@ git diff origin/feat/claude-talk origin/wip/backup-talk --stat
 ## 12. 唐川さんの判断が要ること
 - 台本 Scene 5：「じゃあ、上に10ミリ」と言う／「候補が3つ…どれですか？」のままでよいか／止める文を短くするか（安全修正のブランチの変更）
 - 台本 3-3：統合の前（説明の欄＋指示の欄）で撮るか、統合のあとで撮るか
+- 場所の言葉と位置番号が一緒の「〜ます」「〜動かします」（「C00005の置くところを3mm下げます」）は、位置を確かめるボタンだけで候補にしてよいか（2択も通すか）
 - 2回→3回の範囲の確認で［この範囲を繰り返す］を目立たせてよいか（前の決め：ボタンは同じ重さ）。区間の長さの上限（自動で探すときは10点）を、範囲を言ったときにも当てるか
 - 上下の向きの設定がジョブの中身に関係なく効く形（K4 の残るリスク）、相対ジョブでないジョブには並びを求めない扱い、「3回から3回にして」に［合計3回］の1択で聞く扱い
 - 設定があるときに `--robot` をどう扱うか（CHECKER_030 S30-1。fix/checker030-should では実装していない）：A 今のまま（表示で気づく）／B 設定があるときは `--robot` を必須、付けなければ上下は未確認（起動はする）＝**推奨**／C 既定値をなくす
