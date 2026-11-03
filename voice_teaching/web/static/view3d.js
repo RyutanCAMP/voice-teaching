@@ -6,16 +6,25 @@
 //   再生の印は MOVL の区間だけ線の上を動く。MOVJ・目安の区間では印を消し、終わったら終点に置く。
 // - 画面の上下は Z、奥行きは X・Y を回して見せる（表示の向きだけ。指示の方向の解釈には使わない）。
 // - 変更候補があるときは、動かす点に触れる区間（入る・出る）だけを変更後の色で描く。止まった候補は灰色の点線。
+// - 色はテーマ（ライト・ダーク）の図の色（theme.js の palette）。描き分けの決まり（止まった候補をオレンジにしない等）はテーマで変えない。
+// - JOB を読み込んだときだけ、点が順に現れ・直線の区間が引かれる短い演出（1秒以内）。prefers-reduced-motion のときはしない。
+//   演出は透明度と線の引き方だけで、点の位置・線の形・色の属性は変えない。
 "use strict";
 import { displayMinus, segmentLook, segmentTitle } from "/static/highlight.js";
+import { palette } from "/static/theme.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const DEFAULT_YAW = -0.75;    // 最初の向き（ラジアン）
 const DEFAULT_PITCH = 0.42;
 const OVERLAP_PX = 6;         // この距離より近く見える点は、まとめて選び分ける
-const C_AFTER = "#ff6a1a", C_AFTER_TEXT = "#c4470a";
-const C_STOPPED = "#8e8e93";  // 止まった候補（承認できない）の変更後：オレンジにしない
 const HOLD_MS = 700;          // MOVJ・目安の区間で、印を消しておく時間（画面の上だけ。実際の動きとは関係ない）
+export const REVEAL_MS = 1000;  // 読み込んだときの演出の長さの上限（これより後の描き直しでは演出しない）
+const REVEAL_SPREAD = 560;      // 点を順に出す時間（最初の点〜最後の点）。1つの点・線の演出は 300ms まで
+
+export function reducedMotion() {
+  return typeof window !== "undefined" && typeof window.matchMedia === "function"
+    && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 
 function svgEl(tag, attrs) {
   const e = document.createElementNS(SVG_NS, tag);
@@ -56,6 +65,7 @@ export class View3D {
     this.marker = null;      // 再生の印（世界座標）
     this.playToken = 0;
     this.chooser = null;
+    this.revealAt = 0;       // 読み込んだときの演出を始めた時刻（0 なら演出しない）
     host.classList.add("view3d");
     this._bind();
   }
@@ -71,6 +81,36 @@ export class View3D {
     this.lo = lo; this.hi = hi;
     this.span = Math.max(Math.hypot(hi[0] - lo[0], hi[1] - lo[1], hi[2] - lo[2]), 1);
     this.render();
+  }
+
+  // 読み込んだときの短い演出。prefers-reduced-motion のときはしない（host の data-reveal に結果を残す）
+  reveal() {
+    const reduce = reducedMotion();
+    this.host.dataset.reveal = reduce ? "skipped" : "played";
+    if (reduce || !this.data) { this.revealAt = 0; return false; }
+    this.revealAt = performance.now();
+    this.render();
+    return true;
+  }
+
+  _applyReveal(svg, elapsed) {
+    const order = Object.fromEntries(this.data.points.map((p, i) => [p.name, i]));
+    const n = this.data.points.length;
+    const step = Math.min(70, REVEAL_SPREAD / Math.max(1, n - 1));
+    const delay = (i, extra = 0) => `${Math.round(i * step + extra - elapsed)}ms`;
+    svg.classList.add("revealing");
+    for (const g of svg.querySelectorAll("g.pt3")) {
+      const i = Math.min(...g.dataset.names.split(" ").map((nm) => order[nm] ?? 0));
+      g.style.animationDelay = delay(i);
+    }
+    for (const line of svg.querySelectorAll("line.seg")) {
+      const i = order[line.dataset.from] ?? 0;
+      if (!line.hasAttribute("stroke-dasharray")) {  // 実線（MOVL）だけ線を引く。点線・破線は形を変えずに出す
+        line.classList.add("draw");
+        line.setAttribute("pathLength", "1");
+      }
+      line.style.animationDelay = delay(i, 60);
+    }
   }
 
   reset() {
@@ -103,10 +143,11 @@ export class View3D {
     const d = this.data;
     const svg = svgEl("svg", { viewBox: `0 0 ${this.W} ${this.H}`, width: this.W, height: this.H,
       role: "img", "aria-label": "3D の点と経路（ドラッグで回す・ホイールで拡大縮小）" });
-    this._floor(svg);
+    const P = palette();
+    this._floor(svg, P);
     const c = d.after;
     const stopped = !!(c && d.stopped);
-    const cAfter = stopped ? C_STOPPED : C_AFTER, cAfterText = stopped ? C_STOPPED : C_AFTER_TEXT;
+    const cAfter = stopped ? P.stopped : P.after, cAfterText = stopped ? P.stopped : P.afterText;
     // 経路（命令の順に結んだ直線）
     const lines = { before: [], after: [] };
     const seg = (s, pts, color, w, key) => {
@@ -117,7 +158,7 @@ export class View3D {
       const look = segmentLook(s.kind);
       const playing = this.marker && this.marker.seg === s;  // 再生中の区間は少し太く
       const line = svgEl("line", { x1: p[0], y1: p[1], x2: q[0], y2: q[1],
-        stroke: look.color && key === "before" ? look.color : color, "stroke-width": w * look.width + (playing ? 1.5 : 0),
+        stroke: look.color && key === "before" ? P.movj : color, "stroke-width": w * look.width + (playing ? 1.5 : 0),
         "stroke-linecap": "round", class: `seg ${key} seg-${look.kind}`, "data-kind": look.kind, "data-from": s.from, "data-to": s.to });
       if (look.dash) line.setAttribute("stroke-dasharray", look.dash);
       // 止まった候補は、目安の区間（6 5 の破線）・MOVJ の点線と見分けられる細かい点線
@@ -127,7 +168,7 @@ export class View3D {
       svg.append(line);
       lines[key].push(line);
     };
-    for (const s of d.segments) seg(s, d.points, c ? "#a1a6ad" : "#c7cbd1", 2.5, "before");
+    for (const s of d.segments) seg(s, d.points, c ? P.before : P.line, 2.5, "before");
     // 変更後は、動かす点に触れる区間だけ（ほかの区間は変更前と同じ線なので描き直さない）
     if (c) for (const s of c.segments) if (s.from === c.moved || s.to === c.moved) seg(s, c.points, cAfter, 3, "after");
     this.lines = lines;
@@ -141,7 +182,35 @@ export class View3D {
       if (g) g.names.push(it.p.name); else groups.push({ s: it.s, names: [it.p.name], p: it.p });
     }
     const moved = c ? c.moved : null;
-    const labelBoxes = [];  // 置いた名前の四角（変更後の名前を重ならない所に置くため）
+    const labelBoxes = [];  // 置いた名前の四角（あとの名前・変更量の文字を重ならない所に置くため）
+    // 名前を置いてはいけない所：すべての点・変更後の点の輪（r=14）・右上の拡大の窓。図の外にも置かない
+    const qAfter = c ? c.points.find((p) => p.name === moved) : null;
+    const afterS = qAfter ? this.project(qAfter.xyz) : null;
+    const keepOut = groups.map((g) => ({ x0: g.s[0] - 9, x1: g.s[0] + 9, y0: g.s[1] - 9, y1: g.s[1] + 9 }));
+    const insetBox = c ? { x0: this.W - 150, x1: this.W, y0: 0, y1: 150 } : null;
+    const boxOf = (x, y, anchor, tw) => (anchor === "start"
+      ? { x0: x - 2, x1: x + tw + 2, y0: y - 13, y1: y + 4 } : { x0: x - tw - 2, x1: x + 2, y0: y - 13, y1: y + 4 });
+    const ring = (m) => (afterS ? [{ x0: afterS[0] - m, x1: afterS[0] + m, y0: afterS[1] - m, y1: afterS[1] + m }] : []);
+    const free = (bx, ringM) => bx.x0 >= 2 && bx.x1 <= this.W - 2 && bx.y0 >= 2 && bx.y1 <= this.H - 2
+      && !(insetBox && overlaps(bx, insetBox)) && !keepOut.concat(ring(ringM)).some((q) => overlaps(bx, q))
+      && !labelBoxes.some((q) => overlaps(bx, q));
+    // 近くの空いた所に置く。近くが空いていなければ、少し離して引き出し線でつなぐ（同じ所に点が重なるとき・変更量の文字が近いとき）
+    const place = (px, py, tw, near, far, ringM = 17) => {
+      for (const [dx, dy, anchor, lead] of near.concat(far.map((f) => [...f, true]))) {
+        const bx = boxOf(px + dx, py + dy, anchor, tw);
+        if (free(bx, ringM)) return { x: px + dx, y: py + dy, anchor, lead: !!lead, bx };
+      }
+      const [dx, dy, anchor] = near[0];
+      return { x: px + dx, y: py + dy, anchor, lead: false, bx: boxOf(px + dx, py + dy, anchor, tw) };
+    };
+    const leader = (px, py, at, color) => {
+      const ex = at.anchor === "start" ? at.x - 3 : at.x + 3, ey = at.y - 4;
+      const len = Math.hypot(ex - px, ey - py) || 1;
+      return svgEl("line", { x1: px + (ex - px) / len * 9, y1: py + (ey - py) / len * 9, x2: ex, y2: ey,
+        stroke: color, "stroke-width": 1, "stroke-opacity": 0.7, class: "leader" });
+    };
+    const NAME_NEAR = [[12, -8, "start"], [-12, -8, "end"], [12, 18, "start"], [-12, 18, "end"]];
+    const NAME_FAR = [[30, -30, "start"], [-30, -30, "end"], [30, 40, "start"], [-30, 40, "end"], [46, 4, "start"], [-46, 4, "end"]];
     for (const g of groups) {
       const [x, y] = g.s;
       const sel = g.names.includes(d.selected);
@@ -149,27 +218,30 @@ export class View3D {
       const el = svgEl("g", { class: "pt3" + (sel ? " sel" : ""), "data-names": g.names.join(" ") });
       // 床への縦の補助線（奥行きを分かりやすくする）
       const floor = this.project([g.p.xyz[0], g.p.xyz[1], this.lo[2] - this.span * 0.08]);
-      svg.insertBefore(svgEl("line", { x1: x, y1: y, x2: floor[0], y2: floor[1], stroke: "#d8d8de",
-        "stroke-width": 1, "stroke-dasharray": "2 3" }), svg.firstChild.nextSibling);
+      svg.insertBefore(svgEl("line", { x1: x, y1: y, x2: floor[0], y2: floor[1], stroke: P.drop,
+        "stroke-width": 1, "stroke-dasharray": "2 3", class: "droplink" }), svg.firstChild.nextSibling);
       el.append(svgEl("circle", { cx: x, cy: y, r: 16, fill: "transparent" }));  // 押しやすい大きさ
-      if (sel) el.append(svgEl("circle", { cx: x, cy: y, r: 12, fill: "rgba(10,132,255,0.15)", stroke: "#0a84ff", "stroke-width": 2 }));
+      if (sel) el.append(svgEl("circle", { cx: x, cy: y, r: 12, fill: P.selFill, stroke: P.sel, "stroke-width": 2 }));
       // 会話で Claude（モック）が出した位置の候補：選んではいないので、選んだ点（青）と違う色の点線の輪で示す
       if (g.names.some((n) => (d.candidates || []).includes(n))) {
         el.classList.add("cand");
-        el.append(svgEl("circle", { cx: x, cy: y, r: 19, fill: "rgba(94,92,230,0.10)", stroke: "#5e5ce6",
+        el.append(svgEl("circle", { cx: x, cy: y, r: 19, fill: P.candFill, stroke: P.cand,
           "stroke-width": 2.5, "stroke-dasharray": "5 4", class: "cand-ring" }));
       }
-      el.append(svgEl("circle", { cx: x, cy: y, r: 6, fill: isMoved ? "#a1a6ad" : (sel ? "#0a84ff" : "#1d1d1f") }));
+      el.append(svgEl("circle", { cx: x, cy: y, r: 6, fill: isMoved ? P.movedBefore : (sel ? P.sel : P.point) }));
       // 動かす点の名前は、変更後の点の横に1つだけ出す（変更前の名前と重ならないように）
       const shownNames = isMoved && c ? g.names.filter((n) => n !== moved) : g.names;
       if (shownNames.length) {
-        const label = svgEl("text", { x: x + 12, y: y - 8, fill: sel && !isMoved ? "#0a84ff" : "#6e6e73",
+        const name = shownNames.join(" / ");
+        const at = place(x, y, textWidth(name), NAME_NEAR, NAME_FAR);
+        const color = sel && !isMoved ? P.selText : P.label;
+        if (at.lead) el.append(leader(x, y, at, color));
+        const label = svgEl("text", { x: at.x, y: at.y, "text-anchor": at.anchor, fill: color,
           "font-weight": sel && !isMoved ? "600" : "400" });
-        label.textContent = shownNames.join(" / ");
+        label.textContent = name;
         el.append(label);
-        labelBoxes.push({ x0: x + 12, x1: x + 12 + textWidth(label.textContent), y0: y - 20, y1: y - 4 });
+        labelBoxes.push(at.bx);
       }
-      labelBoxes.push({ x0: x - 8, x1: x + 8, y0: y - 8, y1: y + 8 });  // 点そのもの
       const t = svgEl("title", {});
       t.textContent = g.names.map((n) => {
         const p = d.points.find((q) => q.name === n);
@@ -188,43 +260,48 @@ export class View3D {
         svg.append(svgEl("circle", { cx: b[0], cy: b[1], r: 7, fill: cAfter, class: "after-pt" }));
         svg.append(svgEl("circle", { cx: b[0], cy: b[1], r: 14, fill: "none", stroke: cAfter, "stroke-width": 1.5, "stroke-opacity": 0.5 }));
         const text = `${moved} ${displayMinus(d.delta_label || "")}`.trim();
-        const tw = textWidth(text);
-        // 同じ所にほかの位置（共用の座標など）の名前があっても重ならないように、右下・左・右上・下の順に空いている所を探す
-        const spots = [[b[0] + 14, b[1] + 18, "start"], [b[0] - 20, b[1] + 4, "end"], [b[0] + 14, b[1] - 22, "start"],
-          [b[0] - 20, b[1] + 22, "end"], [b[0] + 14, b[1] + 36, "start"], [b[0] - 20, b[1] - 18, "end"]];
-        const box = ([x, y, anchor]) => (anchor === "start"
-          ? { x0: x, x1: x + tw, y0: y - 13, y1: y + 3 } : { x0: x - tw, x1: x, y0: y - 13, y1: y + 3 });
-        const spot = spots.find((s) => !labelBoxes.some((q) => overlaps(box(s), q))) || spots[0];
-        const lab = svgEl("text", { x: spot[0], y: spot[1], "text-anchor": spot[2], fill: cAfterText, "font-weight": "600", class: "moved-label" });
+        const tw = Math.ceil(textWidth(text) * 1.08);  // 太字
+        // 同じ所にほかの位置（共用の座標など）の名前があっても重ならないように、右下・左・右上・下の順に空いている所を探す。
+        // 近くが空いていなければ、離して引き出し線でつなぐ
+        const at = place(b[0], b[1], tw,
+          [[18, 24, "start"], [-18, 6, "end"], [18, -18, "start"], [-18, 24, "end"], [18, 40, "start"], [-18, -18, "end"]],
+          [[34, 48, "start"], [-34, 48, "end"], [34, -42, "start"], [-34, -42, "end"], [54, 8, "start"], [-54, 8, "end"],
+            [20, 66, "start"], [-20, 66, "end"]], 15);
+        if (at.lead) svg.append(leader(b[0], b[1], at, cAfterText));
+        const lab = svgEl("text", { x: at.x, y: at.y, "text-anchor": at.anchor, fill: cAfterText, "font-weight": "600", class: "moved-label" });
         lab.textContent = text;
         svg.append(lab);
-        this._inset(svg, p0.xyz, q.xyz, displayMinus(d.delta_label || ""), cAfter, cAfterText);
+        labelBoxes.push(at.bx);
+        this._inset(svg, p0.xyz, q.xyz, displayMinus(d.delta_label || ""), cAfter, cAfterText, P);
       }
     }
     if (this.marker && this.marker.xyz) {  // MOVJ・目安の区間の間は xyz が無い（印を出さない）
       const m = this.project(this.marker.xyz);
-      svg.append(svgEl("circle", { cx: m[0], cy: m[1], r: 9, fill: this.marker.color, stroke: "#fff", "stroke-width": 3, class: "marker" }));
+      svg.append(svgEl("circle", { cx: m[0], cy: m[1], r: 9, fill: this.marker.color, stroke: P.markerRing, "stroke-width": 3, class: "marker" }));
     }
+    const elapsed = this.revealAt ? performance.now() - this.revealAt : Infinity;
+    if (elapsed < REVEAL_MS && !c) this._applyReveal(svg, elapsed);
+    else this.revealAt = 0;
     this.host.querySelector("svg")?.remove();
     this.host.prepend(svg);
     this.svg = svg;
   }
 
   // 拡大の窓：変更前（灰）と変更後（オレンジ）を大きくして並べる。小さな変更も見えるように
-  _inset(svg, a, b, label, color = C_AFTER, textColor = C_AFTER_TEXT) {
+  _inset(svg, a, b, label, color, textColor, P) {
     const S = 132, x0 = this.W - S - 12, y0 = 12;
     const pa = this.project(a), pb = this.project(b);
     const dx = pb[0] - pa[0], dy = pb[1] - pa[1];
     const len = Math.hypot(dx, dy);
     const g = svgEl("g", { class: "inset" });
-    g.append(svgEl("rect", { x: x0, y: y0, width: S, height: S, rx: 14, fill: "#fff", stroke: "#e5e5ea" }));
+    g.append(svgEl("rect", { x: x0, y: y0, width: S, height: S, rx: 14, fill: P.insetBg, stroke: P.insetStroke }));
     const cx = x0 + S / 2, cy = y0 + S / 2 + 12;
     let ux = 0, uy = -1;
     if (len > 0.01) { ux = dx / len; uy = dy / len; }
     const L = 24;  // 窓の中では、向きはそのまま・長さは決まった大きさで見せる
     const ax = cx - ux * L, ay = cy - uy * L, bx = cx + ux * L, by = cy + uy * L;
     g.append(svgEl("line", { x1: ax, y1: ay, x2: bx, y2: by, stroke: color, "stroke-width": 3, "stroke-linecap": "round" }));
-    g.append(svgEl("circle", { cx: ax, cy: ay, r: 7, fill: "#a1a6ad" }));
+    g.append(svgEl("circle", { cx: ax, cy: ay, r: 7, fill: P.movedBefore }));
     g.append(svgEl("circle", { cx: bx, cy: by, r: 8, fill: color }));
     const head = svgEl("text", { x: x0 + 12, y: y0 + 20, class: "inset-head" });
     head.textContent = "変更（拡大）";
@@ -238,7 +315,7 @@ export class View3D {
   }
 
   // 床の格子と、X・Y・Z の軸（向きを知るため）
-  _floor(svg) {
+  _floor(svg, P) {
     const z0 = this.lo[2] - this.span * 0.08;
     const pad = this.span * 0.15;
     const x0 = this.lo[0] - pad, x1 = this.hi[0] + pad, y0 = this.lo[1] - pad, y1 = this.hi[1] + pad;
@@ -248,8 +325,8 @@ export class View3D {
       const p = this.project(a), q = this.project(b);
       g.append(svgEl("line", Object.assign({ x1: p[0], y1: p[1], x2: q[0], y2: q[1] }, attrs)));
     };
-    for (let x = Math.ceil(x0 / step) * step; x <= x1; x += step) line([x, y0, z0], [x, y1, z0], { stroke: "#dcdce2", "stroke-width": 1 });
-    for (let y = Math.ceil(y0 / step) * step; y <= y1; y += step) line([x0, y, z0], [x1, y, z0], { stroke: "#dcdce2", "stroke-width": 1 });
+    for (let x = Math.ceil(x0 / step) * step; x <= x1; x += step) line([x, y0, z0], [x, y1, z0], { stroke: P.grid, "stroke-width": 1 });
+    for (let y = Math.ceil(y0 / step) * step; y <= y1; y += step) line([x0, y, z0], [x1, y, z0], { stroke: P.grid, "stroke-width": 1 });
     // 軸（床の角から、格子1目盛りの長さ）
     const pts = this.data.points.map((p) => this.project(p.xyz));
     const mx = pts.reduce((a, q) => a + q[0], 0) / pts.length, my = pts.reduce((a, q) => a + q[1], 0) / pts.length;
@@ -257,7 +334,7 @@ export class View3D {
     const far = (c) => { const q = this.project(c); return Math.hypot(q[0] - mx, q[1] - my); };
     const o = corners.reduce((a, c) => (far(c) > far(a) ? c : a));
     const sx = o[0] === x0 ? 1 : -1, sy = o[1] === y0 ? 1 : -1;  // 角から床の内側へ向けて描く（＋の向きは矢印の先の文字で示す）
-    const axes = [["X", [sx * step, 0, 0], "#e5484d"], ["Y", [0, sy * step, 0], "#30a46c"], ["Z", [0, 0, step], "#0a84ff"]];
+    const axes = [["X", [sx * step, 0, 0], P.axisX], ["Y", [0, sy * step, 0], P.axisY], ["Z", [0, 0, step], P.axisZ]];
     // 軸の文字は、点と点の名前に重ならない所に置く（軸の線の上を、先の方から根元の方へずらして探す）
     const taken = pts.flatMap((q) => [
       { x0: q[0] - 9, x1: q[0] + 9, y0: q[1] - 9, y1: q[1] + 9 },          // 点

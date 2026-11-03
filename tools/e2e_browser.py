@@ -753,6 +753,7 @@ def run(out_dir: Path | None = None, log=print, shots: Path | None = None) -> li
             check_c026(b, url, check, shots)
             check_dialog(b, check, shots, errors, updown_cfg["DEMO_C_PLACE.JBI"])
             check_updown_unconfirmed(b, check, shots, errors)
+            check_ui_refresh(b, url, check, shots)
 
             # SpeechRecognition が無いブラウザー
             pg2 = b.new_page()
@@ -1571,6 +1572,235 @@ def check_four_steps(browser, url, check, shots: Path | None) -> None:
         check(pg.is_visible("#reply-message .friendly strong"), f"止まった指示には、次にすることを出す：{reply[:60]}")
         shot(pg, "7_blocked.png")
     ctx.close()
+
+
+# ---- feat/ui-refresh：テーマ（ライト・ダーク）・効果音（既定 OFF）・読み込みの演出（reduced-motion で出さない）・名前の重なり ----
+FAKE_AUDIO = """
+window.__tones = 0; window.__acMade = 0;
+class FakeAudioContext {
+  constructor() { window.__acMade++; this.currentTime = 0; this.destination = {}; this.state = "running"; }
+  createOscillator() { return { type: "", frequency: { setValueAtTime() {} }, connect() {}, start() { window.__tones++; }, stop() {} }; }
+  createGain() { return { gain: { setValueAtTime() {}, linearRampToValueAtTime() {}, exponentialRampToValueAtTime() {} }, connect() {} }; }
+  resume() { return Promise.resolve(); }
+}
+window.AudioContext = FakeAudioContext;
+window.webkitAudioContext = FakeAudioContext;
+"""
+
+# 同じ値の2点（C00000 と C00006）を持つ架空のジョブ（DEMO_C_PLACE から作る。実機のジョブは使わない）
+def same_pos_job() -> bytes:
+    src = (REPO / "samples/dummy/DEMO_C_PLACE.JBI").read_text(encoding="ascii")
+    job = (src.replace("//NAME DEMO_C_PLACE", "//NAME DEMO_SAME_POS")
+           .replace("C00006=400.000,150.000,300.000", "C00006=400.000,0.000,400.000")
+           .replace("C00007=400.000,0.000,400.000", "C00007=400.000,150.000,400.000"))
+    assert job.count("=400.000,0.000,400.000,") == 2
+    return job.encode("ascii")
+
+
+def name_clash(page, host):
+    """3D の名前・変更量の文字が、ほかの名前・点・変更後の点の輪に重なっている組（見た目の四角で比べる）。"""
+    return page.evaluate("""(host) => {
+      const q = (s) => [...document.querySelectorAll(host + ' ' + s)];
+      const texts = q('g.pt3 > text').concat(q('text.moved-label')).map((e) => ['名前 ' + e.textContent, e.getBoundingClientRect()]);
+      const dots = q('g.pt3').map((g) => { const cs = g.querySelectorAll('circle'); return ['点 ' + g.dataset.names, cs[cs.length - 1].getBoundingClientRect()]; });
+      const ring = q('circle.after-pt').map((e) => { const r = e.getBoundingClientRect(); const m = 7;  // 変更後の点の輪（r=14）
+        return ['変更後の点', { left: r.left - m, right: r.right + m, top: r.top - m, bottom: r.bottom + m }]; });
+      const hit = (a, b) => a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
+      const out = [];
+      for (let i = 0; i < texts.length; i++) {
+        for (let j = i + 1; j < texts.length; j++) if (hit(texts[i][1], texts[j][1])) out.push([texts[i][0], texts[j][0]]);
+        for (const d of dots.concat(ring)) if (hit(texts[i][1], d[1])) out.push([texts[i][0], d[0]]);
+      }
+      return out; }""", host)
+
+
+def check_ui_refresh(browser, url, check, shots: Path | None) -> None:
+    """feat/ui-refresh：テーマ（OS に合わせる・切り替え・覚える）、ダークでも赤い帯・注意・承認ボタンが読める、
+    効果音（既定 OFF・ON を覚える・止まった候補では鳴らさない）、読み込みの演出（1秒以内・reduced-motion で出さない）、
+    同じ値の2点がある架空のジョブで、3D の名前と変更量の文字が重ならない（シクロの指摘）。"""
+    import base64
+
+    def ctx_page(**kw):
+        ctx = browser.new_context(viewport={"width": 1280, "height": 800}, **kw)
+        pg = ctx.new_page()
+        pg.add_init_script(FAKE_RECOGNITION)
+        pg.add_init_script(FAKE_AUDIO)
+        pg.goto(url)
+        return ctx, pg
+
+    def load_sample(pg):
+        pg.click("#sample-button")
+        pg.wait_for_selector("#job-area:not([hidden])")
+
+    def bg(pg, sel="body"):
+        return pg.evaluate("(s) => getComputedStyle(document.querySelector(s)).backgroundColor", sel)
+
+    def point_fill(pg):
+        return pg.evaluate("""() => { const g = document.querySelector('#fig-3d g.pt3:not(.sel)');
+          const cs = g.querySelectorAll('circle'); return cs[cs.length - 1].getAttribute('fill'); }""")
+
+    def contrast(pg, sel):
+        # 文字の色と、地の色（透明なら親をたどる）のコントラスト比
+        return pg.evaluate("""(s) => {
+          const el = document.querySelector(s);
+          const rgb = (c) => (c.match(/[\\d.]+/g) || []).map(Number);
+          let n = el, b = null;
+          while (n) { const c = rgb(getComputedStyle(n).backgroundColor); if (c.length >= 3 && (c.length < 4 || c[3] > 0.5)) { b = c; break; } n = n.parentElement; }
+          const f = rgb(getComputedStyle(el).color);
+          const L = (c) => { const v = c.slice(0, 3).map((x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; });
+            return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]; };
+          const a = L(f), c2 = L(b || [255, 255, 255]);
+          return (Math.max(a, c2) + 0.05) / (Math.min(a, c2) + 0.05); }""", sel)
+
+    # ---- テーマ：OS の設定（ダーク）に合わせる → ボタンでライト → 覚えている ----
+    ctx, pg = ctx_page(color_scheme="dark")
+    check(pg.evaluate("document.documentElement.dataset.resolvedTheme") == "dark"
+          and bg(pg) == "rgb(10, 13, 18)" and pg.evaluate("localStorage.getItem('vt-theme')") is None,
+          f"テーマ：OS がダークならダークで出す（選んでいないので覚えない）：{bg(pg)}")
+    check(_primaries(pg) == 1 and pg.locator("button:visible").count() <= 3,
+          "テーマ：ダークでも最初の画面のボタンは3つまで・目立つものは1つ（切り替えは「？」の小窓の中）")
+    load_sample(pg)
+    dark_fill = point_fill(pg)
+    pg.click("#help-button")
+    check(pg.get_attribute('[data-theme-pref="auto"]', "aria-pressed") == "true"
+          and pg.get_attribute("#sound-off", "aria-pressed") == "true",
+          "「？」の小窓に、画面（自動・ライト・ダーク）と効果音（OFF・ON）。最初は自動・OFF")
+    pg.click('[data-theme-pref="light"]')
+    light_fill = point_fill(pg)
+    check(pg.evaluate("document.documentElement.dataset.theme") == "light" and bg(pg) == "rgb(245, 245, 247)"
+          and pg.evaluate("localStorage.getItem('vt-theme')") == "light" and dark_fill != light_fill and light_fill == "#1d1d1f",
+          f"テーマ：ライトに切り替えると画面と 3D の点の色が変わり、localStorage に覚える（点 {dark_fill} → {light_fill}）")
+    pg.reload()
+    check(pg.evaluate("document.documentElement.dataset.theme") == "light" and bg(pg) == "rgb(245, 245, 247)",
+          "テーマ：読み込み直しても、選んだライトのまま（OS はダーク）")
+    pg.evaluate("localStorage.setItem('vt-theme', 'dark')")
+    pg.reload()
+    # ダーク：止まった候補の確認表示で、赤い帯・承認ボタン・注意の文が読める
+    load_sample(pg)
+    pg.locator("#position-chips button", has_text="C00000").click()
+    until(pg, lambda: pg.inner_text("#voice-position strong") == "C00000")
+    pg.fill("#text-input", "Zプラス方向に10mm")
+    pg.click("#text-send")
+    until(pg, lambda: pg.get_attribute("#step-4", "aria-current") == "step")
+    after = pg.eval_on_selector_all("#fig-3d line.seg.after", "els => els.map(e => e.getAttribute('stroke'))")
+    check(after and all(c not in ("#ff6a1a", "#ff8a3d") for c in after),
+          f"ダーク：止まった候補の変更後もオレンジにしない：{after}")
+    pg.click("#open-confirm")
+    pg.wait_for_selector("#confirm-overlay:not([hidden])")
+    cb, cw = contrast(pg, "#confirm-blocked"), contrast(pg, "#confirm-warnings")
+    check(pg.is_visible("#confirm-blocked") and cb >= 4.5 and cw >= 4.5 and not pg.is_enabled("#approve-button"),
+          f"ダーク：赤い「承認できません」の帯と注意の文が読める（{cb:.1f}:1・{cw:.1f}:1）。承認ボタンは押せない")
+    if shots is not None:
+        pg.screenshot(path=str(shots / "R_dark_blocked_confirm.png"))
+    ctx.close()
+
+    # ダーク・ライトとも、承認できる候補の承認ボタンは目立つ（文字と地のコントラスト 3:1 以上・太字 18px）
+    for theme in ("light", "dark"):
+        ctx, pg = ctx_page(color_scheme=theme)
+        load_sample(pg)
+        pg.locator("#position-chips button", has_text="C00005").click()
+        until(pg, lambda: pg.inner_text("#voice-position strong") == "C00005")
+        pg.fill("#text-input", "Zプラス方向に10mm")
+        pg.click("#text-send")
+        until(pg, lambda: pg.get_attribute("#step-4", "aria-current") == "step")
+        pg.click("#open-confirm")
+        pg.wait_for_selector("#confirm-overlay:not([hidden])")
+        pg.fill("#approver-name", "テスト")
+        ca = contrast(pg, "#approve-button")
+        fw = pg.evaluate("() => getComputedStyle(document.querySelector('#approve-button')).fontWeight")
+        check(pg.is_enabled("#approve-button") and ca >= 3.0 and int(fw) >= 600 and pg.is_hidden("#confirm-blocked"),
+              f"{theme}：承認できる候補では承認ボタンが押せて目立つ（{ca:.1f}:1・太さ {fw}）。赤い帯は出さない")
+        ctx.close()
+
+    # ---- 効果音：既定 OFF（AudioContext も作らない）→ ON にすると鳴り、覚えている ----
+    ctx, pg = ctx_page()
+    check(pg.evaluate("localStorage.getItem('vt-sound')") is None, "効果音：最初は何も覚えていない（OFF）")
+    load_sample(pg)
+    pg.wait_for_timeout(100)
+    check(pg.evaluate("window.__tones") == 0 and pg.evaluate("window.__acMade") == 0,
+          "効果音：既定 OFF。読み込んでも鳴らさない（Web Audio も使わない）")
+    pg.click("#help-button")
+    pg.click("#sound-on")
+    check(pg.evaluate("localStorage.getItem('vt-sound')") == "on" and pg.get_attribute("#sound-on", "aria-pressed") == "true",
+          "効果音：ON を押すと localStorage に覚える")
+    pg.reload()
+    check(pg.get_attribute("#sound-on", "aria-pressed") == "true", "効果音：読み込み直しても ON のまま")
+    load_sample(pg)
+    pg.wait_for_timeout(100)
+    t_load = pg.evaluate("window.__tones")
+    check(t_load > 0, f"効果音：ON なら読み込みで短い音（{t_load}音）")
+    # 止まった候補では鳴らさない・承認できる候補では鳴らす
+    n0 = pg.evaluate("window.__tones")
+    pg.locator("#position-chips button", has_text="C00000").click()
+    until(pg, lambda: pg.inner_text("#voice-position strong") == "C00000")
+    pg.fill("#text-input", "Zプラス方向に10mm")
+    pg.click("#text-send")
+    until(pg, lambda: pg.get_attribute("#step-4", "aria-current") == "step")
+    pg.wait_for_timeout(50)
+    check(pg.evaluate("window.__tones") == n0, "効果音：止まった候補（承認できない）では鳴らさない")
+    pg.reload()
+    load_sample(pg)
+    pg.locator("#position-chips button", has_text="C00005").click()
+    until(pg, lambda: pg.inner_text("#voice-position strong") == "C00005")
+    n1 = pg.evaluate("window.__tones")
+    pg.fill("#text-input", "Zプラス方向に10mm")
+    pg.click("#text-send")
+    until(pg, lambda: pg.get_attribute("#step-4", "aria-current") == "step")
+    pg.wait_for_timeout(50)
+    n2 = pg.evaluate("window.__tones")
+    check(n2 > n1, f"効果音：承認できる候補ができたら鳴らす（{n1} → {n2}）。マイクが ON の間は鳴らさない決まりは node のテスト")
+    ctx.close()
+
+    # ---- 読み込みの演出：1秒以内。prefers-reduced-motion のときは出さない ----
+    ctx, pg = ctx_page(reduced_motion="no-preference")
+    load_sample(pg)
+    info = pg.evaluate("""() => {
+      const svg = document.querySelector('#fig-3d svg');
+      const anims = document.getAnimations().filter((a) => svg.contains(a.effect && a.effect.target));
+      const end = Math.max(0, ...anims.map((a) => { const t = a.effect.getComputedTiming(); return t.endTime + (a.startTime || 0) - (a.startTime || 0); }));
+      return [document.querySelector('#fig-3d').dataset.reveal, svg.classList.contains('revealing'), anims.length, end]; }""")
+    check(info[0] == "played" and info[1] and info[2] > 0 and info[3] <= 1000,
+          f"演出：読み込むと、点が順に現れ線が引かれる（{info[2]}個の動き・長さ {info[3]:.0f}ms。1秒以内）")
+    pg.wait_for_timeout(1100)
+    stuck = pg.evaluate("""() => [...document.querySelectorAll('#fig-3d g.pt3, #fig-3d line.seg')]
+      .filter((e) => parseFloat(getComputedStyle(e).opacity) < 0.99).length""")
+    check(stuck == 0, f"演出：終わったあと、点と線はすべて見えている（薄いまま {stuck}）")
+    ctx.close()
+    ctx, pg = ctx_page(reduced_motion="reduce")
+    load_sample(pg)
+    info = pg.evaluate("""() => [document.querySelector('#fig-3d').dataset.reveal,
+      document.querySelector('#fig-3d svg').classList.contains('revealing'),
+      document.getAnimations().filter((a) => document.querySelector('#fig-3d svg').contains(a.effect && a.effect.target)).length]""")
+    check(info == ["skipped", False, 0], f"演出：prefers-reduced-motion のときは出さない：{info}")
+    ctx.close()
+
+    # ---- 名前の重なり：同じ値の2点（C00000 と C00006）。変更量の文字・名前が、ほかの名前・点・変更後の点の輪に重ならない ----
+    data = same_pos_job()
+    for k, (moved, text) in enumerate([("C00000", "Zマイナス方向に3mm"), ("C00006", "Zマイナス方向に3mm"), ("C00006", "Zプラス方向に10mm")]):
+        ctx = browser.new_context(viewport={"width": 1280, "height": 800}, bypass_csp=True)
+        pg = ctx.new_page()
+        pg.add_init_script(FAKE_RECOGNITION)
+        pg.goto(url)
+        dt = pg.evaluate_handle(DROP_FILE, ["DEMO_SAME_POS.JBI", base64.b64encode(data).decode("ascii")])
+        pg.dispatch_event("#drop-zone", "drop", {"dataTransfer": dt})
+        pg.wait_for_selector("#job-area:not([hidden])")
+        pg.locator("#position-chips button", has_text=moved).click()
+        until(pg, lambda: pg.inner_text("#voice-position strong") == moved)
+        pg.fill("#text-input", text)
+        pg.click("#text-send")
+        until(pg, lambda: pg.get_attribute("#step-4", "aria-current") == "step")
+        pg.wait_for_timeout(200)
+        main = name_clash(pg, "#fig-3d")
+        pg.click("#open-confirm")
+        pg.wait_for_selector("#confirm-overlay:not([hidden])")
+        pg.wait_for_timeout(100)
+        conf = name_clash(pg, "#confirm-figure")
+        blocked = pg.is_visible("#confirm-blocked")
+        check(not main and not conf,
+              f"同じ値の2点：{moved} を「{text}」（{'承認できない' if blocked else '承認できる'}）。名前と変更量の文字が重ならない（図 {main}・確認表示 {conf}）")
+        if shots is not None:
+            pg.locator("#confirm-figure").screenshot(path=str(shots / f"R_same_pos_{k}_{moved}.png"))
+        ctx.close()
 
 
 def main() -> int:

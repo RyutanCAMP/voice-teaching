@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Yu Gothic UI, Meiryo, sans-serif">
+  <!-- デザイン案・未実装：繰り返しの回数（2回→3回）の変更前後の表示の案。アプリの画面には出していない -->
+  <rect width="1280" height="720" fill="#f5f5f7"/>
+  <!-- 上の帯 -->
+  <rect width="1280" height="62" fill="#ffffff"/>
+  <text x="32" y="38" font-size="17" font-weight="600" fill="#1d1d1f">ボイスティーチング</text>
+  <rect x="190" y="22" width="150" height="22" rx="11" fill="#e6f0ff"/>
+  <text x="265" y="38" font-size="12" font-weight="600" fill="#0058b0" text-anchor="middle">シミュレーションモード</text>
+  <text x="640" y="38" font-size="14" fill="#6e6e73" text-anchor="middle">① ② ③ ④ 確かめて承認</text>
+
+  <!-- 図（主役） -->
+  <rect x="24" y="84" width="848" height="600" rx="18" fill="#ffffff"/>
+  <rect x="40" y="130" width="816" height="470" rx="14" fill="#fbfbfd"/>
+  <text x="44" y="114" font-size="12" fill="#6e6e73" font-family="Consolas, monospace">DEMO_JOB.JBI（架空）</text>
+  <!-- 床の格子 -->
+  <g stroke="#dcdce2" stroke-width="1">
+    <line x1="200" y1="520" x2="600" y2="420"/><line x1="260" y1="560" x2="660" y2="460"/><line x1="320" y1="600" x2="720" y2="500"/>
+    <line x1="200" y1="520" x2="320" y2="600"/><line x1="400" y1="470" x2="520" y2="550"/><line x1="600" y1="420" x2="720" y2="500"/>
+  </g>
+  <!-- 繰り返す区間（変更前：2周＝灰の線を2本の細い帯で） -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M300 420 L420 300 L600 320 L560 440 Z" stroke="#9aa0a8" stroke-width="2.5"/>
+    <path d="M300 420 L420 300 L600 320 L560 440 Z" stroke="#ff6a1a" stroke-width="3" stroke-dasharray="10 6" transform="translate(8 -8)"/>
+  </g>
+  <g fill="#1d1d1f"><circle cx="300" cy="420" r="6"/><circle cx="420" cy="300" r="6"/><circle cx="600" cy="320" r="6"/><circle cx="560" cy="440" r="6"/></g>
+  <!-- 図の中の回数の札（左上） -->
+  <rect x="60" y="148" width="210" height="64" rx="12" fill="#ffffff" stroke="#e5e5ea"/>
+  <text x="76" y="172" font-size="12" fill="#6e6e73">くり返す区間（○行目〜○行目）</text>
+  <text x="76" y="200" font-size="22" font-weight="700" fill="#1d1d1f" font-family="Consolas, monospace">×2 <tspan fill="#6e6e73">→</tspan> <tspan fill="#c4470a">×3</tspan></text>
+  <text x="300" y="640" font-size="12" fill="#6e6e73">くり返す区間の線を太くし、ほかの区間は薄くする。回数は図の左上の札とカードで示す（線を3本重ねて描かない）</text>
+
+  <!-- 右のカード -->
+  <text x="900" y="120" font-size="26" font-weight="700" fill="#1d1d1f">確かめてください</text>
+  <rect x="896" y="140" width="360" height="400" rx="18" fill="#ffffff"/>
+  <text x="920" y="176" font-size="14" fill="#0066cc" font-family="Consolas, monospace">くり返しの回数</text>
+  <text x="920" y="226" font-size="40" font-weight="700" fill="#1d1d1f" font-family="Consolas, monospace">2回 <tspan fill="#6e6e73" font-size="30">→</tspan> <tspan fill="#c4470a">3回</tspan></text>
+  <!-- 回数の目盛り：変更前は灰、増える回はオレンジの枠 -->
+  <g font-size="14" font-weight="600" text-anchor="middle" font-family="Consolas, monospace">
+    <rect x="920" y="252" width="88" height="40" rx="10" fill="#f2f2f5"/><text x="964" y="277" fill="#1d1d1f">1回目</text>
+    <rect x="1016" y="252" width="88" height="40" rx="10" fill="#f2f2f5"/><text x="1060" y="277" fill="#1d1d1f">2回目</text>
+    <rect x="1112" y="252" width="88" height="40" rx="10" fill="#fff3e8" stroke="#ff6a1a" stroke-width="2" stroke-dasharray="5 4"/><text x="1156" y="277" fill="#c4470a">3回目</text>
+  </g>
+  <text x="920" y="320" font-size="13" fill="#6e6e73">変わる行：（命令の書き方は仕様が決まってから）</text>
+  <rect x="920" y="336" width="312" height="96" rx="12" fill="#fff8e6"/>
+  <text x="936" y="362" font-size="13" fill="#1d1d1f">・くり返す区間の動きが1回ふえます</text>
+  <text x="936" y="386" font-size="13" fill="#1d1d1f">・かかる時間も変わります（目安は出さない）</text>
+  <text x="936" y="410" font-size="13" fill="#1d1d1f">・経路は人が確かめてください</text>
+  <rect x="920" y="452" width="312" height="52" rx="26" fill="#e2560c"/>
+  <text x="1076" y="484" font-size="17" font-weight="600" fill="#ffffff" text-anchor="middle">確認して承認へ</text>
+
+  <!-- デザイン案・未実装 の印（上の帯の下に全幅の赤い帯と、図の右下の札） -->
+  <rect x="0" y="62" width="1280" height="20" fill="#d70015"/>
+  <text x="640" y="77" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">デザイン案・未実装 ― 回数の変更（feat/repeat-count）は未完成。アプリの画面には出していません</text>
+  <g transform="rotate(-6 690 560)">
+    <rect x="560" y="520" width="280" height="76" rx="12" fill="#d70015" fill-opacity="0.95"/>
+    <text x="700" y="556" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">デザイン案・未実装</text>
+    <text x="700" y="582" font-size="13" fill="#ffffff" text-anchor="middle">実装済みの画面ではありません</text>
+  </g>
+</svg>

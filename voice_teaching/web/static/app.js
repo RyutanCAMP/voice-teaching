@@ -8,9 +8,13 @@
 //   区間の種類（サーバーの kind）で描き分ける。MOVJ（関節移動）は直線移動のように見せず、再生の印も線の上を動かさない。
 // - 外部から何も読み込まない。サーバー（同じ 127.0.0.1）にだけ要求を送る。
 // - 画面は「説明が要らない」ことを目指す：右側には今のステップのカードだけ、目立たせる操作は1つだけ。
+// - 画面の明るさ（自動・ライト・ダーク）と効果音（既定 OFF）は「？」の小窓で切り替える（feat/ui-refresh）。
+//   効果音は合図だけで、承認・出力の働きには関わらない。マイクが ON の間は鳴らさない。
 "use strict";
 import { SpeechInput } from "/static/speech.js";
 import { View3D } from "/static/view3d.js";
+import { palette, onThemeChange, setThemePref, themePref } from "/static/theme.js";
+import { Sfx } from "/static/sfx.js";
 import { splitUnknown, displayMinus, segmentLook, segmentTitle, confirmHeading, updownStatus, updownConfirmLine, speechExamples }
   from "/static/highlight.js";
 
@@ -154,6 +158,8 @@ function applyLoad(res, fileName) {
   document.body.classList.add("loaded");
   renderAll();
   updateLocks();
+  if (!$("fig-3d").hidden) view3d.reveal();  // 点が順に現れる短い演出（prefers-reduced-motion のときはしない）
+  sfx.play("load");
 }
 
 $("file-input").addEventListener("change", (ev) => loadFile(ev.target.files[0]));
@@ -502,7 +508,10 @@ async function sendInstruction(text, source) {
   renderFacts(res.facts);
   applyResult(res, false);
   // 候補ができたら、まず図で変更前後の経路を再生して見せる（承認は確認表示のボタンだけ）
-  if (res.candidate_made && state.st && state.st.candidate) startPlayback();
+  if (res.candidate_made && state.st && state.st.candidate) {
+    startPlayback();
+    if (state.st.can_approve) sfx.play("candidate");  // 承認できない（止まった）候補では鳴らさない
+  }
   keepHeadingInView();
 }
 
@@ -599,7 +608,10 @@ async function chooseDialog(id, turn) {
   for (const x of $("dialog-choices").querySelectorAll("button")) x.disabled = true;  // 2回押しても1回だけ送る
   const res = await postJson("/api/dialog", { session_id: state.sessionId, choice: id, turn: turn });
   applyResult(res, false);
-  if (res.candidate_made && state.st && state.st.candidate) startPlayback();
+  if (res.candidate_made && state.st && state.st.candidate) {
+    startPlayback();
+    if (state.st.can_approve) sfx.play("candidate");  // 承認できない（止まった）候補では鳴らさない
+  }
   keepHeadingInView();
 }
 
@@ -767,6 +779,7 @@ async function onApproveClick() {
   closeConfirm();
   $("export-result").hidden = true;
   renderState();
+  sfx.play("approve");  // 合図だけ（承認はサーバーが受け付けたあと）
 }
 $("approve-button").addEventListener("click", onApproveClick);
 
@@ -861,8 +874,7 @@ function renderTables() {
 // ---- 図（大きな図1つ。3つの向きを切り替える。小さな図は詳細表示） ----
 const AXES = { X: 0, Y: 1, Z: 2 };
 const VIEWS = { xy: ["X", "Y"], xz: ["X", "Z"], yz: ["Y", "Z"] };
-const C_LINE = "#c7cbd1", C_BEFORE = "#a1a6ad", C_AFTER = "#ff6a1a", C_POINT = "#1d1d1f", C_SEL = "#0a84ff";
-const C_STOPPED = "#8e8e93";  // 止まった候補（承認できない）の変更後
+// 図の色はテーマ（ライト・ダーク）の図の色（theme.js）。止まった候補の変更後はオレンジにしない（P.stopped）
 
 // 位置の広がりがいちばん大きい2つの軸の図を、最初に大きく出す
 function bestView(positions) {
@@ -948,6 +960,7 @@ function hasKind(kind) {
 
 // 図を描き、再生のために座標の変換を返す
 function drawFigure(host, axA, axB, big) {
+  const P = palette();
   const v = state.view;
   const a = AXES[axA], b = AXES[axB];
   const selected = state.st ? state.st.selected : null;
@@ -980,7 +993,7 @@ function drawFigure(host, axA, axB, big) {
       const look = segmentLook(s.kind);
       const lw = width * look.width;
       const line = svgEl("line", { x1: sx(p.xyz[a]), y1: sy(p.xyz[b]), x2: sx(q.xyz[a]), y2: sy(q.xyz[b]),
-        stroke: look.color && key === "before" ? look.color : color, "stroke-width": lw, "stroke-linecap": "round",
+        stroke: look.color && key === "before" ? P.movj : color, "stroke-width": lw, "stroke-linecap": "round",
         class: `seg ${key} seg-${look.kind}`, "data-kind": look.kind });
       if (look.dash) line.setAttribute("stroke-dasharray", look.dash);
       const t = svgEl("title", {});
@@ -993,9 +1006,9 @@ function drawFigure(host, axA, axB, big) {
 
   const w = big ? 2.5 : 2;
   const stopped = !!(c && c.blocked_reason);
-  const cAfter = stopped ? C_STOPPED : C_AFTER;
+  const cAfter = stopped ? P.stopped : P.after;
   if (c) {
-    drawSegs(v.segments, before, C_BEFORE, w, "before");        // 変更前（灰色）
+    drawSegs(v.segments, before, P.before, w, "before");        // 変更前（灰色）
     // 変更後は、動かす点に触れる区間だけを見せる（オレンジ。止まった候補は灰色の点線）。
     // ほかの区間は変更前と同じ線なので見せない（再生の印が通れるように、線は透明で置いておく）
     drawSegs(c.after_segments, after, cAfter, w + 0.5, "after");
@@ -1004,7 +1017,7 @@ function drawFigure(host, axA, axB, big) {
       else if (stopped) { x.line.setAttribute("stroke-dasharray", "0.5 7"); x.line.setAttribute("stroke-width", "4"); }  // 目安の破線と見分ける
     }
   } else {
-    drawSegs(v.segments, before, C_LINE, w, "before");
+    drawSegs(v.segments, before, P.line, w, "before");
   }
 
   // 名前のラベルは、近くのラベルと重ならないように下へずらして置く
@@ -1022,11 +1035,11 @@ function drawFigure(host, axA, axB, big) {
     const sel = p.name === selected;
     const g = svgEl("g", { class: "pt" + (sel ? " sel" : ""), "data-name": p.name });
     g.append(svgEl("circle", { cx: x, cy: y, r: big ? 18 : 8, fill: "transparent" }));  // 押しやすい大きさ
-    if (sel) g.append(svgEl("circle", { cx: x, cy: y, r: big ? 14 : 7, fill: "rgba(10,132,255,0.15)", stroke: C_SEL, "stroke-width": 2 }));
-    g.append(svgEl("circle", { cx: x, cy: y, r: big ? 6 : 4, fill: moved ? C_BEFORE : (sel ? C_SEL : C_POINT) }));
+    if (sel) g.append(svgEl("circle", { cx: x, cy: y, r: big ? 14 : 7, fill: P.selFill, stroke: P.sel, "stroke-width": 2 }));
+    g.append(svgEl("circle", { cx: x, cy: y, r: big ? 6 : 4, fill: moved ? P.movedBefore : (sel ? P.sel : P.point) }));
     if (!moved) {  // 動かす点の名前は、変更後の点の横に1つだけ出す
       const label = svgEl("text", { x: x + 12, y: placeLabel(x, y, p.name.length * 8),
-        fill: sel ? C_SEL : "#6e6e73", "font-weight": sel ? "600" : "400" });
+        fill: sel ? P.selText : P.label, "font-weight": sel ? "600" : "400" });
       label.textContent = p.name;
       g.append(label);
     }
@@ -1042,7 +1055,7 @@ function drawFigure(host, axA, axB, big) {
       const x = sx(q.xyz[a]), y = sy(q.xyz[b]);
       svg.append(svgEl("circle", { cx: x, cy: y, r: big ? 7 : 4, fill: cAfter }));
       const text = `${q.name} ${displayMinus(`${c.target.split(" ")[1]} ${c.delta}mm`)}`;
-      const label = svgEl("text", { x: x + 12, y: placeLabel(x, y, text.length * 8), fill: stopped ? C_STOPPED : "#c4470a", "font-weight": "600" });
+      const label = svgEl("text", { x: x + 12, y: placeLabel(x, y, text.length * 8), fill: stopped ? P.stopped : P.afterText, "font-weight": "600" });
       label.textContent = text;
       svg.append(label);
     }
@@ -1071,9 +1084,10 @@ function startPlayback() {
   if (!fig) return;
   $("play-button").classList.add("playing");
   const c = state.st && state.st.candidate;
-  const runs = [{ name: c ? "変更前" : "命令の順", list: fig.segLines.before, color: c ? "#6e6e73" : C_POINT }];
-  if (c) runs.push({ name: "変更後", list: fig.segLines.after, color: C_AFTER });
-  const marker = svgEl("circle", { r: 9, fill: runs[0].color, stroke: "#fff", "stroke-width": 3, class: "marker" });
+  const P = palette();
+  const runs = [{ name: c ? "変更前" : "命令の順", list: fig.segLines.before, color: c ? P.runBefore : P.point }];
+  if (c) runs.push({ name: "変更後", list: fig.segLines.after, color: c.blocked_reason ? P.stopped : P.after });
+  const marker = svgEl("circle", { r: 9, fill: runs[0].color, stroke: P.markerRing, "stroke-width": 3, class: "marker" });
   fig.svg.append(marker);
   const SPEED = 260;  // 画面の上の速さ（px/秒）。実際のロボットの速度とは関係ない
   let ri = 0, si = 0, t0 = null;
@@ -1132,8 +1146,9 @@ function playStatus(name, i, n, look) {
 // 3D の再生：命令の順（変更前 → 変更後）に、MOVL の区間だけ線の上を印が動く（ロボットの動きではない）
 function startPlayback3d() {
   const d = data3d();
-  const runs = [{ name: d.after ? "変更前" : "命令の順", color: d.after ? "#6e6e73" : C_POINT, segments: d.segments, points: d.points }];
-  if (d.after) runs.push({ name: "変更後", color: C_AFTER, segments: d.after.segments, points: d.after.points });
+  const P = palette();
+  const runs = [{ name: d.after ? "変更前" : "命令の順", color: d.after ? P.runBefore : P.point, segments: d.segments, points: d.points }];
+  if (d.after) runs.push({ name: "変更後", color: d.stopped ? P.stopped : P.after, segments: d.after.segments, points: d.after.points });
   $("play-button").classList.add("playing");
   view3d.play(runs,
     (run, s) => {
@@ -1192,6 +1207,8 @@ function failText(kind, message) {
 state.netRetry = 0;
 state.quiet = 0;       // 声が無いまま止まって、続けて聞き直した回数
 const QUIET_MAX = 20;  // これを超えたら OFF にする（すぐに止まる失敗が続いても、聞き直しを繰り返さない）
+// 効果音（既定 OFF）。マイクが ON の間（聞いている・聞き直しを待っている）は鳴らさない
+const sfx = new Sfx(() => recording() || state.live);
 const voice = new SpeechInput(Recognition, {
   state: (value) => {
     state.voiceState = value;
@@ -1453,3 +1470,23 @@ $("voice-cancel").addEventListener("click", () => {
   updateLocks();
 });
 updateLocks();
+
+// ---- 表示と音（「？」の小窓の中）。選んだものはこのブラウザーの localStorage にだけ覚える ----
+function renderPrefs() {
+  for (const b of document.querySelectorAll("[data-theme-pref]")) {
+    b.setAttribute("aria-pressed", String(b.dataset.themePref === themePref()));
+  }
+  $("sound-on").setAttribute("aria-pressed", String(sfx.on));
+  $("sound-off").setAttribute("aria-pressed", String(!sfx.on));
+}
+for (const b of document.querySelectorAll("[data-theme-pref]")) {
+  b.addEventListener("click", () => { setThemePref(b.dataset.themePref); renderPrefs(); });
+}
+$("sound-on").addEventListener("click", () => { sfx.setOn(true); renderPrefs(); });
+$("sound-off").addEventListener("click", () => { sfx.setOn(false); renderPrefs(); });
+// テーマが変わったら、図を今のテーマの色で描き直す（確認表示が開いていれば、その図も）
+onThemeChange(() => {
+  if (state.view && state.st) renderFigures();
+  if (!$("confirm-overlay").hidden && confirm3d.data) confirm3d.render();
+});
+renderPrefs();

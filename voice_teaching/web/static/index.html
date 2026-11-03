@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>ボイスティーチング（シミュレーションモード）</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -20,8 +21,8 @@
     <li id="step-4" class="step"><span class="num">4</span><span class="label">確かめて承認</span></li>
   </ol>
   <div class="help-wrap">
-    <button type="button" id="help-button" class="help-btn" aria-expanded="false" aria-controls="help-pop" aria-label="使い方" title="使い方">？</button>
-    <div id="help-pop" class="help-pop" role="dialog" aria-label="使い方" hidden>
+    <button type="button" id="help-button" class="help-btn" aria-expanded="false" aria-controls="help-pop" aria-label="使い方・表示と音" title="使い方・表示と音">？</button>
+    <div id="help-pop" class="help-pop" role="dialog" aria-label="使い方・表示と音" hidden>
       <p class="help-head">たとえば、こう話します</p>
       <!-- 例は上下の向きの状態で変える（app.js が state.updown で入れ直す）。既定は未確認：上下の言葉を例に出さない -->
       <ul class="help-examples" id="help-examples">
@@ -33,6 +34,26 @@
       <p class="help-line">話した文は欄に入るだけ。『次へ』で送ります</p>
       <p class="help-line">聞き取った文がちがうときは、直してから送ってください</p>
       <p class="help-line">承認は確認表示のボタンだけです</p>
+      <!-- 表示と音（feat/ui-refresh）。選んだものはこのブラウザーにだけ覚える。効果音の既定は OFF -->
+      <div class="prefs" role="group" aria-label="表示と音">
+        <p class="help-head">表示と音</p>
+        <div class="pref-row">
+          <span class="pref-name" id="theme-label">画面</span>
+          <div class="seg" role="group" aria-labelledby="theme-label">
+            <button type="button" class="seg-btn" data-theme-pref="auto" aria-pressed="true">自動</button>
+            <button type="button" class="seg-btn" data-theme-pref="light" aria-pressed="false">ライト</button>
+            <button type="button" class="seg-btn" data-theme-pref="dark" aria-pressed="false">ダーク</button>
+          </div>
+        </div>
+        <div class="pref-row">
+          <span class="pref-name" id="sound-label">効果音</span>
+          <div class="seg" role="group" aria-labelledby="sound-label">
+            <button type="button" class="seg-btn" id="sound-off" aria-pressed="true">OFF</button>
+            <button type="button" class="seg-btn" id="sound-on" aria-pressed="false">ON</button>
+          </div>
+        </div>
+        <p class="help-line">効果音は、読み込み・変更候補・承認のときに短く鳴ります。マイクが ON の間は鳴りません</p>
+      </div>
     </div><!-- /help-pop -->
   </div>
   <button type="button" id="engineer-toggle" class="link" aria-expanded="false" aria-controls="engineer-view">詳細表示</button>
