@@ -15,7 +15,7 @@
 | 唐川さんの決定（ATTR と FRAME の並び・ATTR の無い JOB は止める） | 完成。内部レビュー CONDITIONAL PASS。**独立レビューはまだ** | `fix/checker026` 7e6f4e8 |
 | CHECKER_030 の SHOULD（〜ます は2択・ロボット名と確認者の常時表示・実機 JOB の承認後の案内）＋承認のあとの3つの状態 | **作業中** | `fix/checker030-should` |
 | 2回→3回（範囲をボタンで確定・2回→3回だけ・1回目／2回目／全体の範囲） | 動く。内部レビュー（f11279b）Safety・QA とも CONDITIONAL PASS → QA P1-A（範囲の確認の最中の声）ほかを **f7f871f で直した**（pytest 4016 passed・e2e NG 0）。f7f871f の差分の内部レビュー中 | `feat/repeat-count` |
-| 3D の再生の表示（いま何行目・何回目）・2回と3回の比較の再生・動きの並びのカード | **作業中**（再生の表示と比較は 6ec19bf でコミット済み） | `feat/demo-3d` |
+| 3D の再生の表示（いま何行目・何回目）・2回と3回の比較の再生・動きの並びのカード・「1・2・3」 | 動く（f61bfd1。pytest 3988 passed・node 52/52・e2e OK 286）。QA レビュー中 | `feat/demo-3d` |
 | Claude に聞く（読み取りだけ） | 動く。**本物の Claude で確かめた** | `feat/claude-explain` |
 | 自然な会話（E1 やさしい言葉・E2 人が教えた意味・E4 自動で光らせる・E7 意地悪な会話） | **作業中** | `feat/claude-talk` |
 | 画面の改善（テーマ・演出・音） | 案。内部レビューはまだ | `feat/ui-refresh` |
@@ -29,7 +29,7 @@
 | `fix/checker026` | eb80ec2 | 安全修正（コード 7e6f4e8。c41ebb7 は CHECKER_030 PASS） |
 | `fix/checker030-should` | fda8371 | CHECKER_030 の SHOULD（作業中） |
 | `feat/repeat-count` | f7f871f | 2回→3回（P1-A を直した。差分の内部レビュー中） |
-| `feat/demo-3d` | 6ec19bf | 3D の再生・比較（作業中） |
+| `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び（QA レビュー中） |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ） |
 | `feat/claude-talk` | 2c921e6 | 自然な会話（作業中。まだコミット無し） |
 | `feat/ui-refresh` | 2994ad7 | 画面の改善の案 |
