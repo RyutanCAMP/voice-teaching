@@ -16,7 +16,7 @@
 |---|---|---|
 | `fix/checker026` | eb80ec2 | 安全修正。c41ebb7 は CHECKER_030 **PASS**。7e6f4e8 は内部 CONDITIONAL PASS・**独立レビュー未** |
 | `fix/checker030-should` | 3c7e182 | CHECKER_030 の SHOULD＋承認のあとの3つの状態。内部 Safety CONDITIONAL PASS（P1 は直した）・**独立レビュー未** |
-| `feat/repeat-count` | f7f871f | 2回→3回。内部 Safety CONDITIONAL PASS（P1 なし）。**唐川さんの決定（範囲のボタンを目立たせる例外）と P2 の修正は作業中 → `wip/backup-repeat`** |
+| `feat/repeat-count` | **9ec263c** | 2回→3回。f7f871f は内部 Safety CONDITIONAL PASS（P1 なし）。9ec263c で唐川さんの決定（範囲のボタンは青で目立たせる例外・承認のオレンジと区別・「範囲を決めるだけです。承認は次の確認表示で行います」・［違う］は枠つき）と Safety の P2 を直した（pytest 4038 passed・node 37/37・e2e NG 0）。**9ec263c の内部レビューはまだ** |
 | `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び。QA CONDITIONAL PASS、**P1（1280×720 で操作ボタンが「→ ×3」を隠す）は修正中 → `wip/backup-demo3d`** |
 | `feat/claude-talk` | 6e4328b | 自然な会話 E1〜E7。**本物の Claude で見つかった2点（数の検査が厳しすぎる・意味は必ずボタンで確認）は修正中 → `wip/backup-talk`**。内部レビュー未 |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ）。本物で確かめ済み |
@@ -25,7 +25,7 @@
 | `wip/integrate-trial` | dd64183 | 統合の試し（使わない） |
 | `wip/backup-talk` | 738372e | feat/claude-talk 6e4328b の上の、**コミット前の作業**（未テスト・未レビュー） |
 | `wip/backup-demo3d` | f27c671 | feat/demo-3d f61bfd1 の上の、コミット前の作業（同上） |
-| `wip/backup-repeat` | 100a0ff | feat/repeat-count f7f871f の上の、コミット前の作業（同上） |
+| `wip/backup-repeat` | 100a0ff | **古い**（feat/repeat-count 9ec263c に全部入っている。使わない） |
 | `wip/backup-c030` | c3d2854 | **古い**（fix/checker030-should 3c7e182 に全部入っている。使わない） |
 
 > 会社のPCの担当（サブエージェント）は、終了の時点でまだ作業中だった。`wip/backup-*` は終了の直前の写しで、**そのあとの作業は残っていない**。
