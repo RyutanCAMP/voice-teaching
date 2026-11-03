@@ -69,7 +69,7 @@
 ## 8. 家のPCで必要な環境
 - Python 3.13、Git、Node.js、VS Code、Claude Code
 - リポジトリ：`RyutanCAMP/voice-teaching`（仕様とレビュー：`RyutanCAMP/claude-hackathon-idea-lab` の `review/chatgpt-post-kickoff-spec-20261102`）
-- 仮想環境（`.venv`）と、`requirements.txt` の中身、ブラウザのテスト用の Chromium（Playwright）
+- 仮想環境（`.venv`）と、`requirements.txt` の中身（pytest・anthropic。会社のPCは anthropic 2.4.0）、ブラウザのテスト用の Playwright（requirements.txt に無いので別に入れる）と Chromium
 
 ## 9. 家のPCで再開するコマンド（PowerShell の例）
 ```powershell
@@ -87,6 +87,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 $env:PYTHONUTF8 = "1"; $env:PYTHONIOENCODING = "utf-8"
 python -m pip install -r requirements.txt
+python -m pip install playwright      # ブラウザのテスト用（requirements.txt には入っていない。会社のPCは 1.64.1）
 python -m playwright install chromium
 
 # 4) テスト
