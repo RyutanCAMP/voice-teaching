@@ -14,7 +14,7 @@
 | 安全修正（M1〜M3・MOVJ の表示・P0・FRAME ROBOT・上下の照合 K4・実機 JOB は確認のみ） | **完成**。クロちゃんの独立レビュー CHECKER_030 で **c41ebb7 が PASS** | `fix/checker026` |
 | 唐川さんの決定（ATTR と FRAME の並び・ATTR の無い JOB は止める） | 完成。内部レビュー CONDITIONAL PASS。**独立レビューはまだ** | `fix/checker026` 7e6f4e8 |
 | CHECKER_030 の SHOULD（〜ます は2択・ロボット名と確認者の常時表示・実機 JOB の承認後の案内）＋承認のあとの3つの状態 | **作業中** | `fix/checker030-should` |
-| 2回→3回（範囲をボタンで確定・2回→3回だけ・1回目／2回目／全体の範囲） | 動く。内部レビュー（f11279b）Safety・QA とも CONDITIONAL PASS。QA P1-A（範囲の確認の最中の声）を**修正中** | `feat/repeat-count` |
+| 2回→3回（範囲をボタンで確定・2回→3回だけ・1回目／2回目／全体の範囲） | 動く。内部レビュー（f11279b）Safety・QA とも CONDITIONAL PASS → QA P1-A（範囲の確認の最中の声）ほかを **f7f871f で直した**（pytest 4016 passed・e2e NG 0）。f7f871f の差分の内部レビュー中 | `feat/repeat-count` |
 | 3D の再生の表示（いま何行目・何回目）・2回と3回の比較の再生・動きの並びのカード | **作業中**（再生の表示と比較は 6ec19bf でコミット済み） | `feat/demo-3d` |
 | Claude に聞く（読み取りだけ） | 動く。**本物の Claude で確かめた** | `feat/claude-explain` |
 | 自然な会話（E1 やさしい言葉・E2 人が教えた意味・E4 自動で光らせる・E7 意地悪な会話） | **作業中** | `feat/claude-talk` |
@@ -28,7 +28,7 @@
 |---|---|---|
 | `fix/checker026` | eb80ec2 | 安全修正（コード 7e6f4e8。c41ebb7 は CHECKER_030 PASS） |
 | `fix/checker030-should` | fda8371 | CHECKER_030 の SHOULD（作業中） |
-| `feat/repeat-count` | f11279b | 2回→3回（P1-A の修正は作業中） |
+| `feat/repeat-count` | f7f871f | 2回→3回（P1-A を直した。差分の内部レビュー中） |
 | `feat/demo-3d` | 6ec19bf | 3D の再生・比較（作業中） |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ） |
 | `feat/claude-talk` | 2c921e6 | 自然な会話（作業中。まだコミット無し） |
@@ -41,7 +41,7 @@
 | ブランチ | pytest | node | e2e | クロのスクリプト |
 |---|---|---|---|---|
 | fix/checker026 eb80ec2 | 3989 passed, 1 skipped | 33/33 | NG 0 | p0_split 0/26・frame_cases 0/17・b1_rereview（上下の確認済み）MUST 118/118 |
-| feat/repeat-count f11279b | 3981 passed, 1 skipped | 37/37 | OK 247・NG 0 | p0_split 0/26 |
+| feat/repeat-count f7f871f | 4016 passed, 1 skipped | 37/37 | NG 0 | （f11279b で p0_split 0/26） |
 | feat/claude-explain 2c921e6 | 3992 passed, 1 skipped | 37/37 | | |
 | feat/ui-refresh 2994ad7 | 3796 passed, 1 skipped | 46/46 | NG 0 | |
 | wip/integrate-trial dd64183 | 4179 passed, 1 skipped（e2e を除く） | | OK 256・NG 0 | |
@@ -51,7 +51,7 @@
 |---|---|---|
 | fix/checker026 c41ebb7 | Safety・QA CONDITIONAL PASS | **CHECKER_030 PASS** |
 | fix/checker026 7e6f4e8（c41ebb7 のあと） | Safety CONDITIONAL PASS（S-1：「〜ます」が 17:14 の決定（2択）と食い違う → fix/checker030-should で直している） | **未** |
-| feat/repeat-count f11279b | Safety・QA CONDITIONAL PASS（QA P1-A を修正中） | **未** |
+| feat/repeat-count f11279b → f7f871f | f11279b：Safety・QA CONDITIONAL PASS → QA P1-A を f7f871f で直した。f7f871f の差分レビュー中 | **未** |
 | feat/claude-explain 2c921e6 | 未 | CHECKER_031（設計の意見と確認項目 E1〜E7） |
 | feat/claude-talk・feat/demo-3d・fix/checker030-should・feat/ui-refresh | 未 | 未 |
 
