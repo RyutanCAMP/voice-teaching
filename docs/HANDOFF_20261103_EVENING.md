@@ -17,7 +17,7 @@
 | 2回→3回（範囲をボタンで確定・2回→3回だけ・1回目／2回目／全体の範囲） | 動く。内部レビュー（f11279b）Safety・QA とも CONDITIONAL PASS → QA P1-A（範囲の確認の最中の声）ほかを **f7f871f で直した**（pytest 4016 passed・e2e NG 0）。f7f871f の差分の内部レビュー中 | `feat/repeat-count` |
 | 3D の再生の表示（いま何行目・何回目）・2回と3回の比較の再生・動きの並びのカード・「1・2・3」 | 動く（f61bfd1。pytest 3988 passed・node 52/52・e2e OK 286）。QA レビュー中 | `feat/demo-3d` |
 | Claude に聞く（読み取りだけ） | 動く。**本物の Claude で確かめた** | `feat/claude-explain` |
-| 自然な会話（E1 やさしい言葉・E2 人が教えた意味・E4 自動で光らせる・E7 意地悪な会話） | **作業中** | `feat/claude-talk` |
+| 自然な会話（E1 やさしい言葉・E2 人が教えた意味・E4 自動で光らせる・E7 意地悪な会話） | できた（6e4328b。pytest 4082 passed・e2e OK）。**本物の Claude で通した結果**（DEMO_V6_FEASIBILITY.md 2-3）を受けて2点を修正中。内部レビューはまだ | `feat/claude-talk` |
 | 画面の改善（テーマ・演出・音） | 案。内部レビューはまだ | `feat/ui-refresh` |
 | 会話 → 範囲の確定 → 比較 → 承認 の一本の流れ（台本 3-3） | **まだ**（変更エンジンとの接続。安全修正の最新版の独立レビューのあと） | ― |
 | MOVJ の目標位置の変更・JOB の解説 | 設計だけ | `docs/frame-prep` |
@@ -31,7 +31,7 @@
 | `feat/repeat-count` | f7f871f | 2回→3回（P1-A を直した。差分の内部レビュー中） |
 | `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び（QA レビュー中） |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ） |
-| `feat/claude-talk` | 2c921e6 | 自然な会話（作業中。まだコミット無し） |
+| `feat/claude-talk` | 6e4328b | 自然な会話（本物の結果を受けて修正中） |
 | `feat/ui-refresh` | 2994ad7 | 画面の改善の案 |
 | `docs/frame-prep` | （この文書） | 設計メモ・統合の計画・台本 Ver.6 の実現性・この引き継ぎ |
 | `wip/integrate-trial` | dd64183 | 統合の試し（使わない） |
@@ -51,12 +51,14 @@
 |---|---|---|
 | fix/checker026 c41ebb7 | Safety・QA CONDITIONAL PASS | **CHECKER_030 PASS** |
 | fix/checker026 7e6f4e8（c41ebb7 のあと） | Safety CONDITIONAL PASS（S-1：「〜ます」が 17:14 の決定（2択）と食い違う → fix/checker030-should で直している） | **未** |
-| feat/repeat-count f11279b → f7f871f | f11279b：Safety・QA CONDITIONAL PASS → QA P1-A を f7f871f で直した。f7f871f の差分レビュー中 | **未** |
+| feat/repeat-count f11279b → f7f871f | f11279b：Safety・QA CONDITIONAL PASS → QA P1-A を f7f871f で直した。**f7f871f：Safety（QA の観点も）CONDITIONAL PASS、P1 なし**。P2：［この範囲を繰り返す］を目立たせたことが前の決め（ボタンは同じ重さ）と食い違う＝唐川さんの判断、一覧に無い言い方（「はい、この範囲を繰り返す」など）では範囲の確認が捨てられる | **未** |
 | feat/claude-explain 2c921e6 | 未 | CHECKER_031（設計の意見と確認項目 E1〜E7） |
 | feat/claude-talk・feat/demo-3d・fix/checker030-should・feat/ui-refresh | 未 | 未 |
 
 ## 5. Claude API の動作状況
 - 説明（読み取りだけ、feat/claude-explain）：2ターン成功、$0.0122（`records/api_usage.jsonl`）
+- 台本 Scene 3 の会話（feat/claude-talk）：3ターン×2回。1ターン目の良い文が数の検査で表示されなかった・2ターン目で区間を聞き返した → 修正中（`docs/DEMO_V6_FEASIBILITY.md` 2-3）。$0.0196
+- **料金の合計：約 $0.03**（説明の欄。位置の会話の分は記録が無く、数セントの見込み）
 - 位置の会話（台本 Scene 5、fix/checker026）：成功。「置くところ」は候補が3つ出た。最初の応答に 11秒（`docs/DEMO_V6_FEASIBILITY.md` 2-2）
 - モデル：`claude-sonnet-5-5`（`.env` の ANTHROPIC_MODEL、CLI の `--model`）。上限は累計 $5（`VOICE_TEACHING_API_BUDGET_USD`）
 
@@ -138,5 +140,6 @@ git diff origin/feat/claude-talk origin/wip/backup-talk --stat
 ## 12. 唐川さんの判断が要ること
 - 台本 Scene 5：「じゃあ、上に10ミリ」と言う／「候補が3つ…どれですか？」のままでよいか／止める文を短くするか（安全修正のブランチの変更）
 - 台本 3-3：統合の前（説明の欄＋指示の欄）で撮るか、統合のあとで撮るか
+- 2回→3回の範囲の確認で［この範囲を繰り返す］を目立たせてよいか（前の決め：ボタンは同じ重さ）。区間の長さの上限（自動で探すときは10点）を、範囲を言ったときにも当てるか
 - 上下の向きの設定がジョブの中身に関係なく効く形（K4 の残るリスク）、相対ジョブでないジョブには並びを求めない扱い、「3回から3回にして」に［合計3回］の1択で聞く扱い
 - 設定があるときに `--robot` をどう扱うか（CHECKER_030 S30-1。fix/checker030-should では実装していない）：A 今のまま（表示で気づく）／B 設定があるときは `--robot` を必須、付けなければ上下は未確認（起動はする）＝**推奨**／C 既定値をなくす
