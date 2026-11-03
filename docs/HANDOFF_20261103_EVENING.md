@@ -17,14 +17,14 @@
 | `fix/checker026` | eb80ec2 | 安全修正。c41ebb7 は CHECKER_030 **PASS**。7e6f4e8 は内部 CONDITIONAL PASS・**独立レビュー未** |
 | `fix/checker030-should` | 3c7e182 | CHECKER_030 の SHOULD＋承認のあとの3つの状態。内部 Safety CONDITIONAL PASS（P1 は直した）・**独立レビュー未** |
 | `feat/repeat-count` | **9ec263c** | 2回→3回。f7f871f は内部 Safety CONDITIONAL PASS（P1 なし）。9ec263c で唐川さんの決定（範囲のボタンは青で目立たせる例外・承認のオレンジと区別・「範囲を決めるだけです。承認は次の確認表示で行います」・［違う］は枠つき）と Safety の P2 を直した（pytest 4038 passed・node 37/37・e2e NG 0）。**9ec263c の内部レビューはまだ** |
-| `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び。QA CONDITIONAL PASS、**P1（1280×720 で操作ボタンが「→ ×3」を隠す）は修正中 → `wip/backup-demo3d`** |
+| `feat/demo-3d` | **72b029d** | 3D の再生・比較・動きの並び。f61bfd1 は QA CONDITIONAL PASS → **72b029d で P1（操作ボタンが「→ ×3」を隠す）と P2 の7件を直した**（ボタンは図の外・区間の点に寄せて拡大・一時停止中の表示 など。pytest 3988 passed・node 52/52・e2e OK 308・NG 0）。**72b029d の内部レビューはまだ** |
 | `feat/claude-talk` | 6e4328b | 自然な会話 E1〜E7。**本物の Claude で見つかった2点（数の検査が厳しすぎる・意味は必ずボタンで確認）は修正中 → `wip/backup-talk`**。内部レビュー未 |
 | `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ）。本物で確かめ済み |
 | `feat/ui-refresh` | 2994ad7 | 画面の改善の案。内部レビュー未 |
 | `docs/frame-prep` | （この文書） | 設計・統合の計画・台本 Ver.6 の実現性・引き継ぎ |
 | `wip/integrate-trial` | dd64183 | 統合の試し（使わない） |
 | `wip/backup-talk` | 738372e | feat/claude-talk 6e4328b の上の、**コミット前の作業**（未テスト・未レビュー） |
-| `wip/backup-demo3d` | f27c671 | feat/demo-3d f61bfd1 の上の、コミット前の作業（同上） |
+| `wip/backup-demo3d` | f27c671 | **古い**（feat/demo-3d 72b029d に全部入っている。使わない） |
 | `wip/backup-repeat` | 100a0ff | **古い**（feat/repeat-count 9ec263c に全部入っている。使わない） |
 | `wip/backup-c030` | c3d2854 | **古い**（fix/checker030-should 3c7e182 に全部入っている。使わない） |
 
@@ -33,7 +33,7 @@
 ### 0-2. 未解決の P0・P1
 - **P0：なし**
 - P1（どれも修正中で、`wip/backup-*` に途中の作業がある）
-  - feat/demo-3d：1280×720 で再生の操作ボタンが 3D の回数の印「→ ×3」を隠す（QA）
+  - ~~feat/demo-3d：1280×720 で再生の操作ボタンが「→ ×3」を隠す~~ → 72b029d で直した（再レビューはまだ）
   - feat/claude-talk：本物の Claude の良い文（「同じ3か所をめぐる動きを2回くり返し…」）が数の検査で表示されない／区間が1つでも人のボタンで確かめる流れ（唐川さんの決定）→ 直したら本物で Scene 3 をもう一度通す
 - レビュー待ち：上の表の「独立レビュー未」「内部レビュー未」
 
