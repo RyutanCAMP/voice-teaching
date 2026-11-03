@@ -8,6 +8,56 @@
 
 ---
 
+## 0. 会社のPCを終了した時点の状態（11/3 夜・最終。まずここを読む）
+**すべて GitHub に保存済み**（手元と GitHub の先頭が一致することを確かめた）。`main`（eca4339）・`feat/mvp`（f7eddc7）は朝から変えていない。
+
+### 0-1. ブランチの先頭
+| ブランチ | 先頭 | 状態 |
+|---|---|---|
+| `fix/checker026` | eb80ec2 | 安全修正。c41ebb7 は CHECKER_030 **PASS**。7e6f4e8 は内部 CONDITIONAL PASS・**独立レビュー未** |
+| `fix/checker030-should` | 3c7e182 | CHECKER_030 の SHOULD＋承認のあとの3つの状態。内部 Safety CONDITIONAL PASS（P1 は直した）・**独立レビュー未** |
+| `feat/repeat-count` | f7f871f | 2回→3回。内部 Safety CONDITIONAL PASS（P1 なし）。**唐川さんの決定（範囲のボタンを目立たせる例外）と P2 の修正は作業中 → `wip/backup-repeat`** |
+| `feat/demo-3d` | f61bfd1 | 3D の再生・比較・動きの並び。QA CONDITIONAL PASS、**P1（1280×720 で操作ボタンが「→ ×3」を隠す）は修正中 → `wip/backup-demo3d`** |
+| `feat/claude-talk` | 6e4328b | 自然な会話 E1〜E7。**本物の Claude で見つかった2点（数の検査が厳しすぎる・意味は必ずボタンで確認）は修正中 → `wip/backup-talk`**。内部レビュー未 |
+| `feat/claude-explain` | 2c921e6 | Claude に聞く（読み取りだけ）。本物で確かめ済み |
+| `feat/ui-refresh` | 2994ad7 | 画面の改善の案。内部レビュー未 |
+| `docs/frame-prep` | （この文書） | 設計・統合の計画・台本 Ver.6 の実現性・引き継ぎ |
+| `wip/integrate-trial` | dd64183 | 統合の試し（使わない） |
+| `wip/backup-talk` | 738372e | feat/claude-talk 6e4328b の上の、**コミット前の作業**（未テスト・未レビュー） |
+| `wip/backup-demo3d` | f27c671 | feat/demo-3d f61bfd1 の上の、コミット前の作業（同上） |
+| `wip/backup-repeat` | 100a0ff | feat/repeat-count f7f871f の上の、コミット前の作業（同上） |
+| `wip/backup-c030` | c3d2854 | **古い**（fix/checker030-should 3c7e182 に全部入っている。使わない） |
+
+> 会社のPCの担当（サブエージェント）は、終了の時点でまだ作業中だった。`wip/backup-*` は終了の直前の写しで、**そのあとの作業は残っていない**。
+
+### 0-2. 未解決の P0・P1
+- **P0：なし**
+- P1（どれも修正中で、`wip/backup-*` に途中の作業がある）
+  - feat/demo-3d：1280×720 で再生の操作ボタンが 3D の回数の印「→ ×3」を隠す（QA）
+  - feat/claude-talk：本物の Claude の良い文（「同じ3か所をめぐる動きを2回くり返し…」）が数の検査で表示されない／区間が1つでも人のボタンで確かめる流れ（唐川さんの決定）→ 直したら本物で Scene 3 をもう一度通す
+- レビュー待ち：上の表の「独立レビュー未」「内部レビュー未」
+
+### 0-3. 秘密の情報の確認（終了の前に実施）
+- 本物の API キー：GitHub に上げた全ブランチで **0件**（.env の値の一部で検索。テストの中の偽のキー `sk-ant-api03-TESTKE…`・`sk-ant-TEST…` だけがある）
+- `.env`・`records/`（api_usage.jsonl・updown.json）・`output/`：どのブランチにも無い
+- 実機 JOB の数値：0件（ファイル名「VT_TEST_XYZ」が設計メモ MOVJ_TARGET_DESIGN.md の文中に出るだけ）
+
+### 0-4. 家のPCで最初にやること（この順で）
+1. 9章のコマンドで `git fetch origin` し、0-1 の表と GitHub の先頭が合っているか確かめる
+2. 9章の「家のPCの `.env`」を作る（キーはチャット・GitHub に入れない）
+3. 10章のプロンプトをシクロに渡す。シクロは、**`wip/backup-talk`・`wip/backup-demo3d`・`wip/backup-repeat` を各ブランチに取り込み、テストを通してから正式にコミット**する（下の「WIP の取り込み方」）
+4. そのあと 11章の順で進める（会話の2点 → 本物の Claude で Scene 3 → 3D の P1 → 2回→3回の決定 → 内部レビュー → クロちゃんへ依頼）
+
+### WIP の取り込み方（例：会話）
+```powershell
+git fetch origin
+git switch feat/claude-talk
+git pull --ff-only
+git merge --ff-only origin/wip/backup-talk   # 写しのコミット（親が feat/claude-talk 6e4328b）をそのまま進める
+git reset --soft HEAD~1                       # 写しのコミットを外し、変更を作業中の状態に戻す
+python -m pytest -q                           # テストを通してから、意味のある単位でコミットし直す
+```
+
 ## 1. 完成した機能と、まだの機能
 | 機能 | 状態 | ブランチ |
 |---|---|---|
