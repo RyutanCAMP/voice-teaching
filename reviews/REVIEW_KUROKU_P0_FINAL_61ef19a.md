@@ -69,7 +69,7 @@ F-1 のほかに、P0 の4項目（取消・言い直しのあとの再承認／
 | pytest | `python -m pytest -q -x --ignore=tests/test_e2e_browser.py -p no:cacheprovider` | **6182 passed, 1 skipped, 1 xfailed**（シクロの報告と同じ） |
 | Node | `node --test tests/*.test.mjs` | **127 / 127** |
 | 169件の再生（API 0回） | `python tools/p0_qa/replay_all.py --run kuroku_final_61ef19a` | PASS 123・FAIL 36・REVIEW_REQUIRED 5・UPDATED_PENDING_QA 2・EXECUTION_ERROR 3（シクロの報告と同じ。終了コード 2 は FAIL があるため） |
-| ブラウザーの e2e | `python tools/e2e_browser.py` | 実行中（5章） |
+| ブラウザーの e2e | `python tools/e2e_browser.py` | **OK 1514・NG 0・すべて通りました** |
 | P0 のプローブ（モック） | `python p0_final.py <wt-final> p0_final.json` | 承認済み149通り・未承認149通り・残してよい文 8通り×2・場面20個。2章と3章を参照 |
 | 「いや」のプローブ（モック） | `python iya3.py <wt-final>` | 31通り×（承認済み・未承認）＝62件、NG 27件（承認済みで 11件） |
 | 本物の Claude：P0・台本など | `python real_runner_final.py <wt-final> <.env> real_set1.json --set 1 --repeat-script 5` | 52件：PASS 48・FAIL 4（R21・R25 は自然さ、R43 は F-3、R49 は Q-3 の「4回にして」） |
@@ -92,7 +92,7 @@ F-1 のほかに、P0 の4項目（取消・言い直しのあとの再承認／
 169件の再生の保存した答えの更新は、録音の扱いを決めているシクロ・QA の担当なので、していない（上の答えの json を使える）。
 
 ## 5. ブラウザーの e2e
-- **実行中**（このコミットの時点では終わっていない。終わったら追記する）。止まるまでの確かめに NG は出ていない
+- **OK 1514・NG 0・「すべて通りました」・終了コード 0**（シクロの報告と同じ）。e2e はモックの Claude と偽の音声認識で動くので、F-1 は確かめていない（F-1 の言い方は e2e に入っていない）
 
 ## 6. クロークの自然言語の改善の統合
 - 入っているもの：`feat/kuroku-natural-speech-1105` の **b5ac053 まで**（d7ea588）。
