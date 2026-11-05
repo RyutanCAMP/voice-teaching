@@ -1,0 +1,4 @@
+# Claude API
+anthropic>=0.40
+# テスト
+pytest>=8
