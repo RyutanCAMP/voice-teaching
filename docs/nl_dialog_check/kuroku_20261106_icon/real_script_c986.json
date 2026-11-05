@@ -1,0 +1,315 @@
+{
+ "mode": "実 Claude（本物の API）。実マイク・ブラウザーは使っていない",
+ "summary": {
+  "counts": {
+   "PASS": 2,
+   "FAIL": 0,
+   "ERROR": 0
+  },
+  "cases": 2,
+  "api_calls": 4,
+  "api_errors": 0,
+  "api_sec_median": 1.92,
+  "api_sec_max": 1.97,
+  "api_sec_min": 1.77,
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "tokens_in": 4592,
+  "tokens_out": 388
+ },
+ "calls": [
+  {
+   "sec": 1.97,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.92,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.88,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.77,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  }
+ ],
+ "results": [
+  {
+   "id": "S1",
+   "area": "8台本",
+   "title": "台本（1回目）：Zプラス方向に30ミリ → Zプラス方向に5ミリ → 比べる → 承認 → 出力 → 2回目の出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "sec": 4.17,
+   "turns": [
+    {
+     "turn": "t Zプラス方向に30ミリ",
+     "sec": 2.21,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Zプラス方向に5ミリ",
+     "sec": 1.93,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "compare",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export2",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "compare": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export2": {
+     "ok": false,
+     "error": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "session_closed": null
+    },
+    "export_files": [
+     "DEMO_C_PLACE_SIM.JBI.txt"
+    ],
+    "export_has_205": true
+   }
+  },
+  {
+   "id": "S2",
+   "area": "8台本",
+   "title": "台本（2回目）：Zプラス方向に30ミリ → Zプラス方向に5ミリ → 比べる → 承認 → 出力 → 2回目の出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "sec": 3.67,
+   "turns": [
+    {
+     "turn": "t Zプラス方向に30ミリ",
+     "sec": 1.89,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Zプラス方向に5ミリ",
+     "sec": 1.77,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "compare",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "compare": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export2": {
+     "ok": false,
+     "error": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "session_closed": null
+    },
+    "export_files": [
+     "DEMO_C_PLACE_SIM.JBI.txt"
+    ],
+    "export_has_205": true
+   }
+  }
+ ]
+}
