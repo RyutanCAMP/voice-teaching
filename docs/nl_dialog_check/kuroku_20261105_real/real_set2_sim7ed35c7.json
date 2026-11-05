@@ -1,0 +1,2099 @@
+{
+ "mode": "実 Claude（本物の API）。実マイク・ブラウザーは使っていない",
+ "summary": {
+  "counts": {
+   "PASS": 12,
+   "FAIL": 22,
+   "ERROR": 0
+  },
+  "cases": 34,
+  "api_calls": 30,
+  "api_errors": 0,
+  "api_sec_median": 1.56,
+  "api_sec_max": 3.42,
+  "api_sec_min": 1.25,
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "tokens_in": 23000,
+  "tokens_out": 3970
+ },
+ "calls": [
+  {
+   "sec": 3.42,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 194
+   },
+   "error": null
+  },
+  {
+   "sec": 2.95,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 198
+   },
+   "error": null
+  },
+  {
+   "sec": 2.89,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 197
+   },
+   "error": null
+  },
+  {
+   "sec": 2.12,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 195
+   },
+   "error": null
+  },
+  {
+   "sec": 2.15,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 217
+   },
+   "error": null
+  },
+  {
+   "sec": 2.58,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 200
+   },
+   "error": null
+  },
+  {
+   "sec": 2.08,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 165
+   },
+   "error": null
+  },
+  {
+   "sec": 1.56,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1151,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.74,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1152,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 2.21,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 196
+   },
+   "error": null
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.41,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.35,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.27,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.36,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 2.06,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 173
+   },
+   "error": null
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.25,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.35,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.36,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1151,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.27,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1151,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.31,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1150,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.87,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1150,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.66,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1151,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 2.37,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 214
+   },
+   "error": null
+  },
+  {
+   "sec": 1.44,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.99,
+   "model": "claude-sonnet-5-5",
+   "tools": true,
+   "usage": {
+    "in": 4,
+    "out": 178
+   },
+   "error": null
+  }
+ ],
+ "results": [
+  {
+   "id": "Q00",
+   "area": "3説明が隠れる",
+   "title": "このロボット、何をしているの？",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 3.88,
+   "turns": [
+    {
+     "turn": "t このロボット、何をしているの？",
+     "sec": 3.88,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q01",
+   "area": "3説明が隠れる",
+   "title": "このロボット、何をしているの？",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 2.97,
+   "turns": [
+    {
+     "turn": "t このロボット、何をしているの？",
+     "sec": 2.97,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q02",
+   "area": "3説明が隠れる",
+   "title": "このロボット、何をしているの？",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 2.91,
+   "turns": [
+    {
+     "turn": "t このロボット、何をしているの？",
+     "sec": 2.91,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q03",
+   "area": "3説明が隠れる",
+   "title": "この動き、何の作業？",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 2.14,
+   "turns": [
+    {
+     "turn": "t この動き、何の作業？",
+     "sec": 2.14,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q04",
+   "area": "3説明が隠れる",
+   "title": "ざっくり流れを教えて",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 2.17,
+   "turns": [
+    {
+     "turn": "t ざっくり流れを教えて",
+     "sec": 2.17,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q05",
+   "area": "3説明が隠れる",
+   "title": "C00005ではどんな動きをしてる？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "t C00005ではどんな動きをしてる？",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「どんな」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q10",
+   "area": "3説明が隠れる",
+   "title": "（回数のジョブ）何してる？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "sec": 2.59,
+   "turns": [
+    {
+     "turn": "t 何してる？",
+     "sec": 2.59,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "最初の位置へ動いたあと、Z方向に進んで戻る同じ動きをくり返し、最後に別の位置へ移ります。この動きは何かの作業ですか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q11",
+   "area": "3説明が隠れる",
+   "title": "（回数のジョブ）何回くり返す動き？",
+   "verdict": "FAIL",
+   "why": [
+    "説明が隠れた（安全側。自然さの FAIL）"
+   ],
+   "api_calls": 1,
+   "sec": 2.09,
+   "turns": [
+    {
+     "turn": "t 何回くり返す動き？",
+     "sec": 2.09,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに数（位置番号・回数・量など）が入っていたため、表示しません（数はアプリが動作データから表示します） 同じ動きを2回くり返しています。何をする動きか、教えてもらえますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q20",
+   "area": "1引き継ぎ（自然さ）",
+   "title": "10ミリ動かしたい → Yマイナス",
+   "verdict": "FAIL",
+   "why": [
+    "（自然さ）候補まで進まない。前の発話の量・向きを引き継がない"
+   ],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "t 10ミリ動かしたい",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「したい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q21",
+   "area": "1引き継ぎ（自然さ）",
+   "title": "10ミリずらして → Yマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "sec": 1.57,
+   "turns": [
+    {
+     "turn": "t 10ミリずらして",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス",
+     "sec": 1.56,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q22",
+   "area": "1引き継ぎ（自然さ）",
+   "title": "10ミリ動かしてほしい → Yマイナスで",
+   "verdict": "FAIL",
+   "why": [
+    "（自然さ）候補まで進まない。前の発話の量・向きを引き継がない"
+   ],
+   "api_calls": 0,
+   "sec": 0.0,
+   "turns": [
+    {
+     "turn": "t 10ミリ動かしてほしい",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「してほしい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナスで",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q23",
+   "area": "1引き継ぎ（自然さ）",
+   "title": "10ミリ動かして → Yマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "sec": 1.75,
+   "turns": [
+    {
+     "turn": "t 10ミリ動かして",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス",
+     "sec": 1.74,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q24",
+   "area": "1引き継ぎ（自然さ）",
+   "title": "Yのマイナスに動かしたいんだけど → 10ミリ",
+   "verdict": "FAIL",
+   "why": [
+    "（自然さ）候補まで進まない。前の発話の量・向きを引き継がない"
+   ],
+   "api_calls": 0,
+   "sec": 0.0,
+   "turns": [
+    {
+     "turn": "t Yのマイナスに動かしたいんだけど",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「したいんだけど」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 10ミリ",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q30",
+   "area": "4上げて（上下は未登録）",
+   "title": "Z座標を5ミリ上げて",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "sec": 2.22,
+   "turns": [
+    {
+     "turn": "t Z座標を5ミリ上げて",
+     "sec": 2.22,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Claude が、対象・方向・量を確かめたいと返しました。位置番号、方向（Zプラス・Yのマイナスのように、軸と向き）、量（mm）を言い直してください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q31",
+   "area": "4上げて（上下は未登録）",
+   "title": "C00005を5ミリ上げて",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "t C00005を5ミリ上げて",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "5mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス5ミリ」か「Zマイナス5ミリ」のように言ってください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q32",
+   "area": "4上げて（上下は未登録）",
+   "title": "Zを5ミリ上げて",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "t Zを5ミリ上げて",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q33",
+   "area": "4上げて（上下は未登録）",
+   "title": "Zプラス方向に5ミリ上げて",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "t Zプラス方向に5ミリ上げて",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q40",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ あ、ちょっと待って、やっぱりやめとく",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.36,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.35,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t あ、ちょっと待って、やっぱりやめとく",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「待って」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q41",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ それキャンセルで",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.42,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.41,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t それキャンセルで",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "今の変更候補を取り消しますか？ 取り消す場合は「取り消して」と言ってください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q42",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ なかったことにして",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.42,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.42,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t なかったことにして",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q43",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ 違う違う、プラス10ミリ",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.37,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.36,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 違う違う、プラス10ミリ",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「違う」「違う違う」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q44",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ やっぱりYプラス10ミリにして",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.48,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.47,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱりYプラス10ミリにして",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「やっぱり」「にして」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q45",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ 一回リセットして",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.29,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.28,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 一回リセットして",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q46",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ 最初からやり直したい",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 2,
+   "sec": 3.44,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.37,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 最初からやり直したい",
+     "sec": 2.07,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q47",
+   "area": "5取消",
+   "title": "（候補 Y−10）→ 今の変更はやめてください",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 1,
+   "sec": 1.44,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.44,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 今の変更はやめてください",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「やめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q50",
+   "area": "5取消",
+   "title": "（承認済み）→ やっぱりプラス → 承認 → 出力",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる",
+    "取消・言い直しのあとに出力できた"
+   ],
+   "api_calls": 1,
+   "sec": 1.27,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.26,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "t やっぱりプラス",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認済みです。出力は画面の［シミュレーション用に出力］のボタンで行います（声や文字では出力しません）",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "approve2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve2": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    }
+   }
+  },
+  {
+   "id": "Q51",
+   "area": "5取消",
+   "title": "（承認済み）→ 今のなしで → 承認 → 出力",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる",
+    "取消・言い直しのあとに出力できた"
+   ],
+   "api_calls": 1,
+   "sec": 1.37,
+   "turns": [
+    {
+     "turn": "t Yマイナス10ミリ",
+     "sec": 1.36,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "t 今のなしで",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認済みです。出力は画面の［シミュレーション用に出力］のボタンで行います（声や文字では出力しません）",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "approve2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00003 Y\", \"line_no\": 12, \"before_line\": \"C00003=400.000,-150.000,300.000,180.00,0.00,0.00\", \"after_line\": \"C00003=400.000,-160.000,300.000,180.00,0.00,0.00\", \"before_value\": \"-150.000\", \"after_value\": \"-160.000\", \"delta\": \"-10.000\", \"affected\": [\"25行目「MOVL C00002 V=50.0 PL=0」（この位置へ入る区間の始まり）\", \"28行目「MOVL C00003 V=50.0 PL=0」（この位置へ入る移動）\", \"29行目「MOVL C00004 V=200.0 PL=0」（",
+     "target": "C00003 Y",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve2": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    }
+   }
+  },
+  {
+   "id": "Q60",
+   "area": "5取消",
+   "title": "（回数 2→3）→ やっぱり2回のままでいい",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 0,
+   "sec": 0.0,
+   "turns": [
+    {
+     "turn": "r3",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱり2回のままでいい",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "往復や、範囲の決まらない繰り返しは、このアプリでは扱いません。回数を変えるときは「C00001からC00003の作業を2回から3回にして」のように、範囲を言ってください",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q61",
+   "area": "5取消",
+   "title": "（回数 2→3）→ 3回じゃなくて4回",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 0,
+   "sec": 0.01,
+   "turns": [
+    {
+     "turn": "r3",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 3回じゃなくて4回",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「回じゃなく」という打ち消しの言葉があるため、回数の希望としては読みません（記録もしません）。してほしいことだけを言ってください",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q62",
+   "area": "5取消",
+   "title": "（回数 2→3）→ いや4回",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補がサーバーで承認できる"
+   ],
+   "api_calls": 0,
+   "sec": 0.0,
+   "turns": [
+    {
+     "turn": "r3",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t いや4回",
+     "sec": 0.0,
+     "api": 0,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「いや」という打ち消しの言葉があるため、回数の希望としては読みません（記録もしません）。してほしいことだけを言ってください",
+     "cand": "{\"kind\": \"repeat\", \"target\": \"C00001〜C00003\", \"line_no\": 27, \"heading\": \"C00001〜C00003 の作業を 2回 → 3回 にします\", \"before_line\": \"\", \"after_line\": \"\", \"before_value\": \"2\", \"after_value\": \"3\", \"delta\": \"+1\", \"diff\": [{\"sign\": \"+\", \"line_no\": 27, \"text\": \"MOVL C00001 V=150.0\"}, {\"sign\": \"+\", \"line_no\": 28, \"text\": \"MOVL C00002 V=30.0\"}, {\"sign\": \"+\", \"line_no\": 29, \"text\": \"MOVL C00003 V=150.0\"}], \"affecte",
+     "target": "C00001〜C00003",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "side": {}
+  },
+  {
+   "id": "Q70",
+   "area": "8台本",
+   "title": "台本の言い換え：Zプラス方向に30ミリ動かして → じゃあZプラス方向に5ミリ → 比べる → 承認 → 出力 → 2回目の出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "sec": 2.64,
+   "turns": [
+    {
+     "turn": "t Zプラス方向に30ミリ動かして",
+     "sec": 1.36,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t じゃあZプラス方向に5ミリ",
+     "sec": 1.27,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "compare",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "compare": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export2": {
+     "ok": false,
+     "error": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "session_closed": null
+    },
+    "export_files": [
+     "DEMO_C_PLACE_SIM.JBI.txt"
+    ],
+    "export_has_205": true
+   }
+  },
+  {
+   "id": "Q71",
+   "area": "8台本",
+   "title": "台本の言い換え：ゼットプラス方向に30ミリ → ゼットプラス方向に5ミリ → 比べる → 承認 → 出力 → 2回目の出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "sec": 3.2,
+   "turns": [
+    {
+     "turn": "t ゼットプラス方向に30ミリ",
+     "sec": 1.32,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t ゼットプラス方向に5ミリ",
+     "sec": 1.87,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "compare",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "compare": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export2": {
+     "ok": false,
+     "error": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "session_closed": null
+    },
+    "export_files": [
+     "DEMO_C_PLACE_SIM.JBI.txt"
+    ],
+    "export_has_205": true
+   }
+  },
+  {
+   "id": "Q72",
+   "area": "8台本",
+   "title": "台本の言い換え：Zプラス方向に30ミリ → Zプラス方向に5ミリお願いします → 比べる → 承認 → 出力 → 2回目の出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "sec": 3.06,
+   "turns": [
+    {
+     "turn": "t Zプラス方向に30ミリ",
+     "sec": 1.38,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Zプラス方向に5ミリお願いします",
+     "sec": 1.67,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "compare",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export2",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "compare": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export2": {
+     "ok": false,
+     "error": "出力しませんでした：DEMO_C_PLACE_SIM.JBI.txt が既にあるため、上書きしません",
+     "session_closed": null
+    },
+    "export_files": [
+     "DEMO_C_PLACE_SIM.JBI.txt"
+    ],
+    "export_has_205": true
+   }
+  },
+  {
+   "id": "Q80",
+   "area": "6長い会話",
+   "title": "何してる？ → C00005は置く位置だよ → Zプラス方向に5ミリ → 何が変わるの？ → 承認 → 出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 3,
+   "sec": 5.87,
+   "turns": [
+    {
+     "turn": "t このロボット何してる？",
+     "sec": 2.38,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t C00005は置く位置だよ",
+     "sec": 0.01,
+     "api": 0,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「だよ」が分かりませんでした。何をするか、もう一度指示してください",
+     "cand": null,
+     "target": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Zプラス方向に5ミリ",
+     "sec": 1.45,
+     "api": 1,
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 何が変わるの？",
+     "sec": 2.02,
+     "api": 1,
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "sec": 0.0,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "sec": 0.01,
+     "api": 0,
+     "via": null,
+     "reply_by": null,
+     "msg": "",
+     "cand": "{\"kind\": \"shift\", \"target\": \"C00005 Z\", \"line_no\": 14, \"before_line\": \"C00005=400.000,150.000,200.000,180.00,0.00,0.00\", \"after_line\": \"C00005=400.000,150.000,205.000,180.00,0.00,0.00\", \"before_value\": \"200.000\", \"after_value\": \"205.000\", \"delta\": \"+5.000\", \"affected\": [\"29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）\", \"30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）\", \"34行目「MOVL C00006 V=50.0 PL=0」（この位置か",
+     "target": "C00005 Z",
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    }
+   ],
+   "side": {
+    "approve": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    },
+    "export": {
+     "ok": true,
+     "error": null,
+     "session_closed": null
+    }
+   }
+  }
+ ]
+}
