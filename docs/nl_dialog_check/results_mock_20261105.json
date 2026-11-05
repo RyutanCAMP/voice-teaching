@@ -1,0 +1,1071 @@
+{
+ "summary": {
+  "PASS": 22,
+  "FAIL": 13,
+  "ERROR": 0
+ },
+ "mode": "mock（偽の Claude・MockInterpreter）。実 Claude・実マイクは未使用",
+ "results": [
+  {
+   "id": "N01",
+   "title": "今何してる？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "このロボット、今何してる？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "message": "同じ動きをくり返しています。何をする動きか、教えてもらえますか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N02",
+   "title": "何回繰り返してるの？（数はプログラムが答えるべき）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "何回繰り返してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "Claude の答えに数（位置番号・回数・量など）が入っていたため、表示しません（数はアプリが動作データから表示します） 同じ動きを2回くり返しています。何をする動きか、教えてもらえますか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N03",
+   "title": "変更するとどう動くの？（候補あり）",
+   "verdict": "FAIL",
+   "why": [
+    "Claude の答えを隠した"
+   ],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "変更するとどう動くの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "Claude の答えに、プログラムが計算していない数が入っていたため、表示しません",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N04",
+   "title": "何回から何回にする提案なの？（候補あり）",
+   "verdict": "FAIL",
+   "why": [
+    "返事に「3回」が無い"
+   ],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "何回から何回にする提案なの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N05",
+   "title": "3回にして",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "3回にして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "message": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": 3
+    }
+   ]
+  },
+  {
+   "id": "N06",
+   "title": "説明 → 教える → じゃあ3回にして（4ターン）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "turns": [
+    {
+     "turn": "このロボット、何してる？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "message": "同じ動きをくり返しています。何をする動きか、教えてもらえますか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "ボタンを押してるんだよ",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "「ボタンを押してる」のは、この光っている動き（21〜26行目のくり返し）のことですか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "［press］",
+     "via": null,
+     "reply_by": null,
+     "message": "",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "じゃあ3回にして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "message": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": 3
+    }
+   ]
+  },
+  {
+   "id": "N07",
+   "title": "じゃあ3回にして → ［この範囲を繰り返す］",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "じゃあ3回にして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "message": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": 3
+    },
+    {
+     "turn": "［range_yes］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N08",
+   "title": "あと1回増やして",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "あと1回増やして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "message": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": 3
+    }
+   ]
+  },
+  {
+   "id": "N09",
+   "title": "あと1回押して（合計を確かめる）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "あと1回押して",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "動作データでは今2回です。あと1回なら合計3回です。よければ「3回にして」と言ってください。まだ変更候補は作りません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N10",
+   "title": "2.3回にして",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "2.3回にして",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "回数は整数で言ってください。正の整数を指定するまで、変更候補は作りません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N11",
+   "title": "3回くらいにして → はい",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "3回くらいにして",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "3回でよいですか？ 決まったら「3回にして」と言い直してください。まだ変更候補は作りません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "はい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N12",
+   "title": "やっぱり元に戻して",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "やっぱり元に戻して",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "変更候補を捨てました。元のジョブは変わっていません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N13",
+   "title": "今の変更はやめて",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "今の変更はやめて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「やめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N14",
+   "title": "やっぱり2回でいいや",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "やっぱり2回でいいや",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "「いいや」という打ち消しの言葉があるため、回数の希望としては読みません（記録もしません）。してほしいことだけを言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N15",
+   "title": "3回じゃなくて4回（H02 の形）",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "3回じゃなくて4回",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "「回じゃなく」という打ち消しの言葉があるため、回数の希望としては読みません（記録もしません）。してほしいことだけを言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N16",
+   "title": "取り消して、何してるか教えて（H16 の形）",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "変更は取り消して、何してるか教えて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「取り消し」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N17",
+   "title": "やっぱり → 4回（2ターンに分けた言い直し）",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "やっぱり",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "message": "同じ動きをくり返しています。何をする動きか、教えてもらえますか？",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "4回",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N18",
+   "title": "いや4回（読点なし。音声認識の形）",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "いや4回",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "「いや」という打ち消しの言葉があるため、回数の希望としては読みません（記録もしません）。してほしいことだけを言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N19",
+   "title": "取り消して説明して（候補あり。読点なし）",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "［repeat3］",
+     "via": null,
+     "reply_by": null,
+     "message": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "説明してあと取り消して",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "今の変更候補を取り消しますか？ 取り消す場合は「取り消して」と言ってください",
+     "candidate": "C00001〜C00003",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N20",
+   "title": "もう少し右に動かしたい",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "もう少し右に動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「したい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N21",
+   "title": "さっきの位置を3ミリ下げて（上下の向き 確認済み）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "さっきの位置を3ミリ下げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「さっきの位置」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Y座標を3ミリ下げて／下に3ミリ）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N22",
+   "title": "Y方向に10ミリ（向きを聞き返す）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Y方向に10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N23",
+   "title": "Y方向に10ミリ → マイナスで",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Y方向に10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "マイナスで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Y",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N24",
+   "title": "Y方向に10ミリ → マイナス → ちがう、プラス",
+   "verdict": "FAIL",
+   "why": [
+    "前の候補（逆の向き）が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Y方向に10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "マイナス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Y",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "ちがう、プラス",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "「ちがう」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "candidate": "C00003 Y",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N25",
+   "title": "10mm動かして → Yマイナス（量を覚えている）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "10mm動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "Yマイナス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Y",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N26",
+   "title": "Yマイナスの方向に10mm",
+   "verdict": "FAIL",
+   "why": [
+    "期待の候補にならない"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Yマイナスの方向に10mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「方向」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N27",
+   "title": "上に3mm（上下の向き 確認済み）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "上に3mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N28",
+   "title": "上に3mm（上下の向き 未確認）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "上に3mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N29",
+   "title": "Zプラス → 3ミリ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "何mm動かしますか？",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N30",
+   "title": "ちょっと下げて（上下 確認済み）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "ちょっと下げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "量がはっきりしません（「ちょっと」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N31",
+   "title": "Zマイナス30ミリ（上限）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Zマイナス30ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "移動量 -30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 -30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N32",
+   "title": "Zマイナス3ミリ → やっぱり5ミリ",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Zマイナス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "やっぱり5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "「やっぱり」が分かりませんでした。何をするか、もう一度指示してください",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N33",
+   "title": "Zマイナス3ミリ → いいね、承認して（声では承認しない）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Zマイナス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "いいね、承認して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "message": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N34",
+   "title": "Yに10mm → この位置は何？ → マイナス（間に会話）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "turns": [
+    {
+     "turn": "Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "この位置は何をするところ？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "message": "物を置くあたりの位置です。",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "マイナス",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "message": "",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  },
+  {
+   "id": "N35",
+   "title": "Zマイナス3ミリ → JOB を読み直す → 前の画面で承認",
+   "verdict": "FAIL",
+   "why": [
+    "前の画面の番号で承認できた"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "Zマイナス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "message": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "candidate": "C00003 Z",
+     "can_approve": true,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "［reload］",
+     "via": null,
+     "reply_by": null,
+     "message": "",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "［approve_old］",
+     "via": null,
+     "reply_by": null,
+     "message": "",
+     "candidate": null,
+     "can_approve": false,
+     "approval": false,
+     "range": null
+    }
+   ]
+  }
+ ]
+}
