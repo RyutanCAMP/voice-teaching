@@ -1,0 +1,26 @@
+== F1 基本：右に10mm→押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   press: -> cand=C00003 Y appr=True | 位置 C00003 を Y方向に +10.000mm 動かします（Y：-150.000 → -140.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これ
+== F2 talk の新しい発話のあと押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   talk:Zプラス -> cand=None appr=False | 何mm動かしますか？
+   press: -> cand=None appr=False | この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください
+== F3 /api/hear に新しい発話（Zプラス）のあと押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   hear:Zプラス -> cand=None appr=False | 何mm動かしますか？
+   press: -> cand=None appr=False | この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください
+== F4 /api/hear に「3回にして」のあと押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   hear:3回にして -> cand=None appr=False | このジョブには、続けて2回以上書かれた移動の区間（1回分は2〜10行）が見つかりません。回数を変えるときは「C00001からC00003の作業を2回から3回にして」のように、範囲（
+   press: -> cand=None appr=False | この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください
+== F5 /api/ask に質問のあと押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   ask:この位置は何？ -> cand=None appr=False | 
+   press: -> cand=None appr=False | この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください
+== F6 /api/hear に別の指示（Yマイナス10mm）→候補→元に戻すなし→押す (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   hear:Zプラス5ミリ -> cand=C00003 Z appr=True | 位置 C00003 を Z方向に +5.000mm 動かします（Z：300.000 → 305.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいい
+   press: -> cand=C00003 Z appr=True | この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください
+== F7 ボタンの文を talk で送る (button found)
+   talk:右に10mm -> cand=None appr=False | 右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？
+   press_talk: -> cand=None appr=False | この位置へ動く動作です。

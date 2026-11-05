@@ -1,0 +1,3037 @@
+{
+ "summary": {
+  "PASS": 64,
+  "FAIL": 16,
+  "ERROR": 0
+ },
+ "mode": "mock のみ（MockInterpreter・偽の Claude）。実 Claude・実マイクは未使用",
+ "results": [
+  {
+   "id": "K01",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → マイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K02",
+   "area": "A引き継ぎ",
+   "title": "10mm動かして → Yマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 10mm動かして",
+     "via": [
+      "hear"
+     ],
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K03",
+   "area": "A引き継ぎ",
+   "title": "Zプラス → 5ミリ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス",
+     "via": [
+      "hear"
+     ],
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 5ミリ",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Z方向に +5.000mm 動かします（Z：300.000 → 305.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Z",
+      "kind": "shift",
+      "delta": "+5.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K04",
+   "area": "A引き継ぎ",
+   "title": "Yに10ミリ → マイナスでお願いします",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナスでお願いします",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K05",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → C00004 を選び直す → マイナス（別の位置に当てない）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "sel C00004",
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K06",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm →［元に戻す］→ マイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "undo",
+     "via": null,
+     "msg": "元に戻す変更候補はありません。元のジョブはそのままです",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K07",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → 3回にして → マイナス（間に別の話）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 3回にして",
+     "via": [
+      "ask"
+     ],
+     "msg": "回数を変えるご希望として受け取りました。まだ動作データは変えていません。何回にするかを、数で言ってください（例：3回にして）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K08",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → Zマイナス（別の軸の答え。量を別の軸に借りない）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Zマイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K09",
+   "area": "A引き継ぎ",
+   "title": "10mm動かして → マイナス（軸がまだ無い）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 10mm動かして",
+     "via": [
+      "hear"
+     ],
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K10",
+   "area": "A引き継ぎ",
+   "title": "Yマイナス10mm（候補）→ もう5mm（足し算を推測しない）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t もう5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K11",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → えーと → マイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t えーと",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K12",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → /api/hear に「マイナス」",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "api_hear マイナス",
+     "via": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K13",
+   "area": "A引き継ぎ",
+   "title": "Yに10mm → /api/ask に「何をするところ？」→ マイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 2,
+   "turns": [
+    {
+     "turn": "t Yに10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "api_ask この位置は何をするところ？",
+     "via": null,
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K20",
+   "area": "Bあいまい",
+   "title": "Yに少し",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに少し",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「少し」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K21",
+   "area": "Bあいまい",
+   "title": "Yマイナスにちょっとだけ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナスにちょっとだけ",
+     "via": [
+      "hear"
+     ],
+     "msg": "「だけ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K22",
+   "area": "Bあいまい",
+   "title": "10mmくらいYマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 10mmくらいYマイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "「くらい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K23",
+   "area": "Bあいまい",
+   "title": "マイナス10mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t マイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K24",
+   "area": "Bあいまい",
+   "title": "Yに10mmか20mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10mmか20mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「か」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K25",
+   "area": "Bあいまい",
+   "title": "たぶんYマイナス10mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t たぶんYマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「たぶん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K26",
+   "area": "Bあいまい",
+   "title": "Yマイナス10mmかな",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mmかな",
+     "via": [
+      "hear"
+     ],
+     "msg": "「かな」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K27",
+   "area": "Bあいまい",
+   "title": "Yマイナス10mmぐらい",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mmぐらい",
+     "via": [
+      "hear"
+     ],
+     "msg": "「ぐらい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K28",
+   "area": "Bあいまい",
+   "title": "右に10mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 右に10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "右に10mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K29",
+   "area": "Bあいまい",
+   "title": "上に5mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 上に5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "5mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス5ミリ」か「Zマイナス5ミリ」のように言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K30",
+   "area": "Bあいまい",
+   "title": "Yをいい感じに",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yをいい感じに",
+     "via": [
+      "hear"
+     ],
+     "msg": "「をいい感じ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K31",
+   "area": "Bあいまい",
+   "title": "さっきと同じだけYマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t さっきと同じだけYマイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "「さっきと同じだけ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K32",
+   "area": "Bあいまい",
+   "title": "C00003かC00004をZプラス5mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t C00003かC00004をZプラス5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置が 2つ（C00003・C00004）あります。1回の指示で変えるのは1つの位置だけです。1つずつ指示してください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K33",
+   "area": "Bあいまい",
+   "title": "YかZにマイナス10mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t YかZにマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「か」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K34",
+   "area": "Bあいまい",
+   "title": "Yマイナス10mmとZプラス5mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mmとZプラス5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "量が2つ以上あります。1つの量で指示してください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K35",
+   "area": "Bあいまい",
+   "title": "Yマイナス約10mm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス約10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「約」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K40",
+   "area": "C説明",
+   "title": "Yマイナス10mmにしたらどうなる？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mmにしたらどうなる？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「にしたらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K41",
+   "area": "C説明",
+   "title": "Zプラス5mm動かしたら危ない？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス5mm動かしたら危ない？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「動かしたら危ない」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K42",
+   "area": "C説明",
+   "title": "Yマイナス10mmってどういう意味？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mmってどういう意味？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「ってどういう意味」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K43",
+   "area": "C説明",
+   "title": "C00003をZプラス5mmにする理由を教えて",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t C00003をZプラス5mmにする理由を教えて",
+     "via": [
+      "hear"
+     ],
+     "msg": "「にする理由を教えて」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K44",
+   "area": "C説明",
+   "title": "もしYマイナス10mm動かすなら、どこを通る？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t もしYマイナス10mm動かすなら、どこを通る？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「もし」「なら」「どこを通る」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K45",
+   "area": "C説明",
+   "title": "Zプラス5mmにしてもいいと思う？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス5mmにしてもいいと思う？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「にしてもいいと思う」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K46",
+   "area": "C説明",
+   "title": "3回にしたらどうなる？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "t 3回にしたらどうなる？",
+     "via": [
+      "ask"
+     ],
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K47",
+   "area": "C説明",
+   "title": "Zプラス5mmとZプラス10mmの違いは？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス5mmとZプラス10mmの違いは？",
+     "via": [
+      "hear"
+     ],
+     "msg": "1回の指示では、1つのことだけを行います。1つずつ指示してください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K48",
+   "area": "C説明",
+   "title": "Yマイナス10mm、って言ったらどうなるの？",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm、って言ったらどうなるの？",
+     "via": [
+      "hear"
+     ],
+     "msg": "「って言ったらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K50",
+   "area": "D単位",
+   "title": "Yマイナス10",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「10」に単位が付いていません。「10ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K51",
+   "area": "D単位",
+   "title": "Zプラス5",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス5",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「5」に単位が付いていません。「5ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K52",
+   "area": "D単位",
+   "title": "Yに10",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「10」に単位が付いていません。「10ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K53",
+   "area": "D単位",
+   "title": "Yマイナス10センチ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10センチ",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「10センチ」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K54",
+   "area": "D単位",
+   "title": "Yマイナス1cm",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス1cm",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「1CM」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K55",
+   "area": "D単位",
+   "title": "Yマイナス0.01m",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス0.01m",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「0.01M」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K56",
+   "area": "D単位",
+   "title": "Yマイナス10m",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10m",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「10M」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K57",
+   "area": "D単位",
+   "title": "Zプラス五",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス五",
+     "via": [
+      "hear"
+     ],
+     "msg": "「五」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K58",
+   "area": "D単位",
+   "title": "Yマイナス1インチ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス1インチ",
+     "via": [
+      "hear"
+     ],
+     "msg": "「インチ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K59",
+   "area": "D単位",
+   "title": "Zプラス5ｍ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Zプラス5ｍ",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「5M」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K60",
+   "area": "D単位",
+   "title": "Yに10 → マイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yに10",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「10」に単位が付いていません。「10ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t マイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「10」に単位が付いていません。「10ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K61",
+   "area": "D単位",
+   "title": "Zプラス → 5",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "t Zプラス",
+     "via": [
+      "hear"
+     ],
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 5",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K62",
+   "area": "D単位",
+   "title": "10動かして → Yマイナス",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t 10動かして",
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません。「10」に単位が付いていません。「10ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス",
+     "via": [
+      "hear"
+     ],
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K63",
+   "area": "D単位",
+   "title": "Zプラス → 5センチ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 1,
+   "turns": [
+    {
+     "turn": "t Zプラス",
+     "via": [
+      "hear"
+     ],
+     "msg": "何mm動かしますか？",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 5センチ",
+     "via": [
+      "ask"
+     ],
+     "msg": "この位置へ動く動作です。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K64",
+   "area": "D単位",
+   "title": "Yマイナス十ミリ（漢数字）：止めるか −10 だけ",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス十ミリ",
+     "via": [
+      "hear"
+     ],
+     "msg": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K70",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ 取り消して",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 取り消して",
+     "via": [
+      "hear"
+     ],
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K71",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ キャンセル",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t キャンセル",
+     "via": [
+      "hear"
+     ],
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K72",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ キャンセルして",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t キャンセルして",
+     "via": [
+      "hear"
+     ],
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K73",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ やっぱりやめる",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱりやめる",
+     "via": [
+      "ask"
+     ],
+     "msg": "「やっぱりやめ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K74",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ 今のなしで",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 今のなしで",
+     "via": [
+      "ask"
+     ],
+     "msg": "「なし」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K75",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ ストップ",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t ストップ",
+     "via": [
+      "ask"
+     ],
+     "msg": "「ストップ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K76",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ 止めて",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 止めて",
+     "via": [
+      "ask"
+     ],
+     "msg": "「止めて」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K77",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ いやプラス",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t いやプラス",
+     "via": [
+      "ask"
+     ],
+     "msg": "「いや」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K78",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ ちがう、プラス",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t ちがう、プラス",
+     "via": [
+      "ask"
+     ],
+     "msg": "「ちがう」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K79",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ やっぱりYプラス10mm",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱりYプラス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「やっぱり」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K80",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ Yプラス10mm",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yプラス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "承認待ちの変更候補があります。比べるか、元に戻してから指示してください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K81",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ Yマイナス5mmにして",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t Yマイナス5mmにして",
+     "via": [
+      "hear"
+     ],
+     "msg": "「にして」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K82",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ やっぱり5mm",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱり5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "「やっぱり」が分かりませんでした。何をするか、もう一度指示してください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K83",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ さっきのは間違い",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t さっきのは間違い",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K84",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ それじゃなくて",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t それじゃなくて",
+     "via": [
+      "ask"
+     ],
+     "msg": "前に教えてもらった意味に「それ」がないため、置き換えません。何をする動きか、もう一度教えてください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K85",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ 戻して",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 戻して",
+     "via": [
+      "hear"
+     ],
+     "msg": "今の変更候補を取り消しますか？ 取り消す場合は「取り消して」と言ってください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K86",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ 元に戻して",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 元に戻して",
+     "via": [
+      "hear"
+     ],
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K90",
+   "area": "E取消",
+   "title": "（候補 Y−10・承認済み）→ やっぱり5mm → 出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "via": null,
+     "msg": "",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "t やっぱり5mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。「やっぱり」が分かりませんでした。何をするか、もう一度指示してください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "via": null,
+     "msg": "承認されていないため、出力しません（承認は確認表示の承認ボタンで行います）",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "export_now": {
+     "ok": false,
+     "error": "承認されていないため、出力しません（承認は確認表示の承認ボタンで行います）",
+     "session_closed": null
+    }
+   }
+  },
+  {
+   "id": "K91",
+   "area": "E取消",
+   "title": "（候補 Y−10・承認済み）→ 取り消して → 出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "via": null,
+     "msg": "",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "t 取り消して",
+     "via": [
+      "hear"
+     ],
+     "msg": "前の承認と変更候補を取り消しました。元のJOBは変更されていません。",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "export",
+     "via": null,
+     "msg": "承認されていないため、出力しません（承認は確認表示の承認ボタンで行います）",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "export_now": {
+     "ok": false,
+     "error": "承認されていないため、出力しません（承認は確認表示の承認ボタンで行います）",
+     "session_closed": null
+    }
+   }
+  },
+  {
+   "id": "K92",
+   "area": "E取消",
+   "title": "（回数 2→3）→ 4回にして",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "r3",
+     "via": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00001〜C00003",
+      "kind": "repeat",
+      "delta": "+1",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t 4回にして",
+     "via": [
+      "ask"
+     ],
+     "msg": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "cand": {
+      "target": "C00001〜C00003",
+      "kind": "repeat",
+      "delta": "+1",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K93",
+   "area": "E取消",
+   "title": "（回数 2→3）→ やっぱり2回のままで",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "r3",
+     "via": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00001〜C00003",
+      "kind": "repeat",
+      "delta": "+1",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "t やっぱり2回のままで",
+     "via": [
+      "hear"
+     ],
+     "msg": "往復や、範囲の決まらない繰り返しは、このアプリでは扱いません。回数を変えるときは「C00001からC00003の作業を2回から3回にして」のように、範囲を言ってください",
+     "cand": {
+      "target": "C00001〜C00003",
+      "kind": "repeat",
+      "delta": "+1",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K94",
+   "area": "E取消",
+   "title": "（候補 Y−10）→ /api/ask に「取り消して」",
+   "verdict": "FAIL",
+   "why": [
+    "古い候補が承認できるまま残る"
+   ],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "api_ask 取り消して",
+     "via": null,
+     "msg": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K95",
+   "area": "E取消",
+   "title": "（候補 Y−10）→［元に戻す］",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "undo",
+     "via": null,
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {}
+  },
+  {
+   "id": "K100",
+   "area": "F読み直し",
+   "title": "候補 → 同じジョブを読み直し → 前の番号で承認・出力・会話・選択・元に戻す",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "reload",
+     "via": null,
+     "msg": "",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_approve",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_export",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_talk Zプラス5mm",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_select C00004",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_undo",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "approve": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    },
+    "export": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    },
+    "talk": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    },
+    "select": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    },
+    "undo": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    }
+   }
+  },
+  {
+   "id": "K101",
+   "area": "F読み直し",
+   "title": "承認済み → 読み直し → 前の番号で出力",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "approve",
+     "via": null,
+     "msg": "",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": false,
+     "can_export": true,
+     "approval": true,
+     "range": null
+    },
+    {
+     "turn": "reload",
+     "via": null,
+     "msg": "",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_export",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "export": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    }
+   }
+  },
+  {
+   "id": "K102",
+   "area": "F読み直し",
+   "title": "候補 → 別のジョブを読む（previous なし）→ 前の番号で承認",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "load_other",
+     "via": null,
+     "msg": "",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_approve",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_export",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "approve": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    },
+    "export": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    }
+   }
+  },
+  {
+   "id": "K103",
+   "area": "F読み直し",
+   "title": "候補 → 読めないファイルを読む → 前の番号で承認（Q-5）",
+   "verdict": "PASS",
+   "why": [],
+   "api_calls": 0,
+   "turns": [
+    {
+     "turn": "t Yマイナス10mm",
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "cand": {
+      "target": "C00003 Y",
+      "kind": "shift",
+      "delta": "-10.000",
+      "before": null,
+      "after": null,
+      "summary": null
+     },
+     "can_approve": true,
+     "can_export": false,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "load_bad",
+     "via": null,
+     "msg": "ジョブ名の行（//NAME）が読めないため、読み込みません",
+     "cand": null,
+     "can_approve": null,
+     "can_export": null,
+     "approval": false,
+     "range": null
+    },
+    {
+     "turn": "old_approve",
+     "via": null,
+     "msg": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "cand": null,
+     "can_approve": null,
+     "can_export": null,
+     "approval": false,
+     "range": null
+    }
+   ],
+   "extra": {
+    "load_bad": {
+     "ok": false,
+     "error": "ジョブ名の行（//NAME）が読めないため、読み込みません"
+    },
+    "approve": {
+     "ok": false,
+     "error": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+     "session_closed": true
+    }
+   }
+  }
+ ],
+ "target": "試しの統合 7ed35c7（4fa07c5 + 9dab764、flow.py の衝突は両側を残して解いた。push していない）"
+}
