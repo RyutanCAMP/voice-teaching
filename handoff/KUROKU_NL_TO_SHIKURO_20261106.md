@@ -1,7 +1,7 @@
 # クローク → シクロ：自然言語の改善ブランチの統合のお願い（2026-11-06）
 
 - 書いた人：クローク（シクロと同じ Claude。外部の独立レビューの代わりにはならない）
-- ブランチ：`feat/kuroku-natural-speech-1105`（先頭 **f42026e**。土台は `feat/nl-demo-1106` 9dab764）
+- ブランチ：`feat/kuroku-natural-speech-1105`（先頭 **57d86d2**。土台は `feat/nl-demo-1106` 9dab764）
 - 記録：`reviews/REPORT_KUROKU_NL_REAL_20261106.md`（このブランチ `review/kuroku-nl-safety-1105`）
 - **唐川さんの判断：P0 が残っている間は、撮影の確定版として承認しない**。この改善は P0 を直していない
 
@@ -14,13 +14,13 @@
 | ファイル | 中身 |
 |---|---|
 | voice_teaching/utterance.py | 希望の言い方・方言の頼み方・「〜てくれん」・言いよどみ 4語・「みり」・「ミリメートル」・漢数字とひらがなの数・「今の位置」「これ、」・「もうちょい」・向きの確かめのあとの書き換えの不具合・1つの発話の中の言い直し（self_correction） |
-| voice_teaching/session.py | **3行**：hear で pre_check のすぐあと、`self.candidate is None` のときだけ `ut.self_correction(facts)` に置き換える |
+| voice_teaching/session.py | **7行**：hear で pre_check のすぐあと、`self.candidate is None` のときだけ `ut.self_correction(facts)` に置き換える（ボタンの文の位置がジョブに無ければ置き換えない） |
 | voice_teaching/claude_explain.py | プロンプトに 2項目（お礼・気持ちの言葉を書かない／答えが隠れる言葉を言い換える）。隠す検査は変えていない |
 | tests/test_kuroku_natural_speech_1105.py | 新しい受入テスト（約 170件） |
 | tests/test_utterance.py・test_nl_demo_1106.py・test_session.py・test_c028_r3.py | **唐川さんの仕様の変更（11/6「十ミリ」）に合わせて直した 6か所**。読めない漢数字（一五・三点五）の聞き返しを残して意図を保った（記録の表を参照） |
 
 ## 3. P0 の直しとぶつかるところ
-- session.py の 3行（`v = ut.self_correction(facts) or v`）は、**候補が無いときだけ**動く。P0 で候補があるときの言い直しを無効にする道を作るときは、
+- session.py の 7行（`c = ut.self_correction(facts)` … `v = c`）は、**候補が無いときだけ**動く。P0 で候補があるときの言い直しを無効にする道を作るときは、
   この行より前（または候補があるときの道）で扱ってほしい。候補が無効になったあとに言い直しの確かめが出るのは問題ない（ボタンの文はふつうの指示として全部の検査を通る）
 - `_NEGATION_RE`・`NEGATION_WORDS`・取消の言葉の一覧は変えていない
 - 「やっぱり」「いや」「違う」「じゃなくて」「ごめん」「まちがえた」「じゃなかった」を言い直しの印として使った（`_CORRECTION_MARK`）。P0 の見分けの言葉の一覧と合わせて見てほしい
