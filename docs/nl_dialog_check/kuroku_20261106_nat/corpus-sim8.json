@@ -1,0 +1,9276 @@
+{
+ "mode": "実 Claude（本物の API）。実マイク・ブラウザーは使っていない",
+ "root_sha": null,
+ "summary": {
+  "total": {
+   "cases": 243,
+   "understood": 172,
+   "needless_stop": 67,
+   "good_ask": 49,
+   "ask_cases": 120,
+   "danger": 0,
+   "error": 0,
+   "turns": 287
+  },
+  "by_cat": {
+   "標準語": {
+    "cases": 25,
+    "understood": 23,
+    "needless_stop": 1,
+    "good_ask": 3,
+    "ask_cases": 3,
+    "danger": 0,
+    "error": 0,
+    "turns": 29
+   },
+   "方言": {
+    "cases": 30,
+    "understood": 22,
+    "needless_stop": 8,
+    "good_ask": 9,
+    "ask_cases": 22,
+    "danger": 0,
+    "error": 0,
+    "turns": 33
+   },
+   "希望": {
+    "cases": 20,
+    "understood": 19,
+    "needless_stop": 0,
+    "good_ask": 4,
+    "ask_cases": 6,
+    "danger": 0,
+    "error": 0,
+    "turns": 24
+   },
+   "言いよどみ": {
+    "cases": 15,
+    "understood": 9,
+    "needless_stop": 5,
+    "good_ask": 0,
+    "ask_cases": 9,
+    "danger": 0,
+    "error": 0,
+    "turns": 16
+   },
+   "言い直し": {
+    "cases": 15,
+    "understood": 12,
+    "needless_stop": 3,
+    "good_ask": 10,
+    "ask_cases": 13,
+    "danger": 0,
+    "error": 0,
+    "turns": 15
+   },
+   "途中終了": {
+    "cases": 15,
+    "understood": 12,
+    "needless_stop": 3,
+    "good_ask": 10,
+    "ask_cases": 15,
+    "danger": 0,
+    "error": 0,
+    "turns": 15
+   },
+   "誤認識": {
+    "cases": 22,
+    "understood": 14,
+    "needless_stop": 8,
+    "good_ask": 0,
+    "ask_cases": 11,
+    "danger": 0,
+    "error": 0,
+    "turns": 22
+   },
+   "省略": {
+    "cases": 15,
+    "understood": 7,
+    "needless_stop": 8,
+    "good_ask": 2,
+    "ask_cases": 13,
+    "danger": 0,
+    "error": 0,
+    "turns": 17
+   },
+   "複数ターン": {
+    "cases": 20,
+    "understood": 13,
+    "needless_stop": 6,
+    "good_ask": 4,
+    "ask_cases": 10,
+    "danger": 0,
+    "error": 0,
+    "turns": 43
+   },
+   "区別": {
+    "cases": 20,
+    "understood": 6,
+    "needless_stop": 14,
+    "good_ask": 0,
+    "ask_cases": 0,
+    "danger": 0,
+    "error": 0,
+    "turns": 20
+   },
+   "数字表記": {
+    "cases": 22,
+    "understood": 20,
+    "needless_stop": 2,
+    "good_ask": 1,
+    "ask_cases": 3,
+    "danger": 0,
+    "error": 0,
+    "turns": 23
+   },
+   "指示の例": {
+    "cases": 24,
+    "understood": 15,
+    "needless_stop": 9,
+    "good_ask": 6,
+    "ask_cases": 15,
+    "danger": 0,
+    "error": 0,
+    "turns": 30
+   }
+  },
+  "api_calls": 124,
+  "api_errors": 0,
+  "api_sec_median": 1.5,
+  "api_sec_p90": 2.35,
+  "api_sec_max": 3.3,
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "tokens_in": 118534,
+  "tokens_out": 14072,
+  "usd": 0.3778,
+  "usd_cumulative": 2.6198,
+  "stopped_by_budget": false
+ },
+ "calls": [
+  {
+   "sec": 2.3,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 96
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 97
+  },
+  {
+   "sec": 1.53,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1152,
+   "out": 99
+  },
+  {
+   "sec": 1.35,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.84,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 97
+  },
+  {
+   "sec": 1.47,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.42,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.47,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.35,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 99
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1152,
+   "out": 96
+  },
+  {
+   "sec": 2.77,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 2.19,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.53,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1155,
+   "out": 97
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 2.04,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.52,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 96
+  },
+  {
+   "sec": 1.86,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.75,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1151,
+   "out": 97
+  },
+  {
+   "sec": 1.54,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1158,
+   "out": 97
+  },
+  {
+   "sec": 1.75,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1155,
+   "out": 97
+  },
+  {
+   "sec": 1.51,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 2.52,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 202
+  },
+  {
+   "sec": 2.19,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 156
+  },
+  {
+   "sec": 2.28,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 211
+  },
+  {
+   "sec": 1.41,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 1.52,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 97
+  },
+  {
+   "sec": 1.89,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1158,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1152,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1155,
+   "out": 97
+  },
+  {
+   "sec": 1.36,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 96
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1161,
+   "out": 97
+  },
+  {
+   "sec": 1.33,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.32,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.45,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.36,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 97
+  },
+  {
+   "sec": 1.45,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1156,
+   "out": 97
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 1.7,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 1.81,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.89,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 97
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1155,
+   "out": 97
+  },
+  {
+   "sec": 1.44,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 96
+  },
+  {
+   "sec": 2.12,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 154
+  },
+  {
+   "sec": 1.32,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.44,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1143,
+   "out": 97
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.5,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.48,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.45,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1141,
+   "out": 97
+  },
+  {
+   "sec": 1.41,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.61,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.62,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.82,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1144,
+   "out": 97
+  },
+  {
+   "sec": 2.2,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1143,
+   "out": 97
+  },
+  {
+   "sec": 1.48,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 96
+  },
+  {
+   "sec": 1.3,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.31,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.44,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 2.09,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.3,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1151,
+   "out": 97
+  },
+  {
+   "sec": 1.94,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1151,
+   "out": 97
+  },
+  {
+   "sec": 1.32,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1162,
+   "out": 97
+  },
+  {
+   "sec": 1.89,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 154
+  },
+  {
+   "sec": 1.96,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 154
+  },
+  {
+   "sec": 2.35,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 200
+  },
+  {
+   "sec": 2.69,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 270
+  },
+  {
+   "sec": 1.59,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1158,
+   "out": 97
+  },
+  {
+   "sec": 1.5,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1150,
+   "out": 97
+  },
+  {
+   "sec": 2.06,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 150
+  },
+  {
+   "sec": 3.3,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 318
+  },
+  {
+   "sec": 1.89,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 168
+  },
+  {
+   "sec": 1.61,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1152,
+   "out": 97
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.96,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.26,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 2.55,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 202
+  },
+  {
+   "sec": 2.82,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 192
+  },
+  {
+   "sec": 2.69,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 163
+  },
+  {
+   "sec": 1.77,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 153
+  },
+  {
+   "sec": 2.56,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 221
+  },
+  {
+   "sec": 2.92,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 188
+  },
+  {
+   "sec": 1.32,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1145,
+   "out": 97
+  },
+  {
+   "sec": 1.56,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1143,
+   "out": 97
+  },
+  {
+   "sec": 1.96,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.56,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1160,
+   "out": 97
+  },
+  {
+   "sec": 1.76,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 147
+  },
+  {
+   "sec": 1.43,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1144,
+   "out": 97
+  },
+  {
+   "sec": 1.25,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.42,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.5,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1147,
+   "out": 97
+  },
+  {
+   "sec": 1.74,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1151,
+   "out": 97
+  },
+  {
+   "sec": 2.25,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.71,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1160,
+   "out": 97
+  },
+  {
+   "sec": 2.2,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1162,
+   "out": 97
+  },
+  {
+   "sec": 2.07,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 151
+  },
+  {
+   "sec": 3.18,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 185
+  },
+  {
+   "sec": 1.53,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1151,
+   "out": 97
+  },
+  {
+   "sec": 1.88,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 165
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 2.37,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 171
+  },
+  {
+   "sec": 2.64,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 202
+  },
+  {
+   "sec": 1.52,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.46,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 97
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  }
+ ],
+ "results": [
+  {
+   "id": "A01",
+   "cat": "標準語",
+   "said": "Zプラス3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 3.07,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A02",
+   "cat": "標準語",
+   "said": "Yマイナス10ミリ動かして",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.45,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス10ミリ動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A03",
+   "cat": "標準語",
+   "said": "C00003をXプラス2ミリ",
+   "exp": [
+    "cand",
+    "X",
+    2
+   ],
+   "got": [
+    "C00003",
+    "X",
+    2.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.41,
+   "last": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "C00003をXプラス2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A04",
+   "cat": "標準語",
+   "said": "Zのマイナス方向に5ミリ移動してください",
+   "exp": [
+    "cand",
+    "Z",
+    -5
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    -5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.41,
+   "last": "位置 C00003 を Z方向に -5.000mm 動かします（Z：300.000 → 295.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zのマイナス方向に5ミリ移動してください",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に -5.000mm 動かします（Z：300.000 → 295.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A05",
+   "cat": "標準語",
+   "said": "Y軸プラス方向に1.5ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    1.5
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    1.5
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.54,
+   "last": "位置 C00003 を Y方向に +1.500mm 動かします（Y：-150.000 → -148.500）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Y軸プラス方向に1.5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に +1.500mm 動かします（Y：-150.000 → -148.500）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A06",
+   "cat": "標準語",
+   "said": "上に3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.36,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "上に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A07",
+   "cat": "標準語",
+   "said": "3ミリ下げてください",
+   "exp": [
+    "cand",
+    "Z",
+    -3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    -3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.85,
+   "last": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "3ミリ下げてください",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A08",
+   "cat": "標準語",
+   "said": "右に5ミリ寄せてください",
+   "exp": [
+    "cand",
+    "Y",
+    5
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    5.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.49,
+   "last": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "右に5ミリ寄せてください",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A09",
+   "cat": "標準語",
+   "said": "Zプラス30ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.43,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "Zプラス30ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "cat": "標準語",
+   "said": "Zプラス20ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    20
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    20.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.48,
+   "last": "位置 C00003 を Z方向に +20.000mm 動かします（Z：300.000 → 320.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス20ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +20.000mm 動かします（Z：300.000 → 320.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "cat": "標準語",
+   "said": "Yマイナス0.5ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    -0.5
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -0.5
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.37,
+   "last": "位置 C00003 を Y方向に -0.500mm 動かします（Y：-150.000 → -150.500）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス0.5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -0.500mm 動かします（Y：-150.000 → -150.500）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "cat": "標準語",
+   "said": "Xマイナス方向へ4ミリずらして",
+   "exp": [
+    "cand",
+    "X",
+    -4
+   ],
+   "got": [
+    "C00003",
+    "X",
+    -4.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.42,
+   "last": "位置 C00003 を X方向に -4.000mm 動かします（X：400.000 → 396.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Xマイナス方向へ4ミリずらして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に -4.000mm 動かします（X：400.000 → 396.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "cat": "標準語",
+   "said": "この位置をZプラスに2ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    2
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    2.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.79,
+   "last": "位置 C00003 を Z方向に +2.000mm 動かします（Z：300.000 → 302.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この位置をZプラスに2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +2.000mm 動かします（Z：300.000 → 302.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "cat": "標準語",
+   "said": "C00004をYプラス3ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    3
+   ],
+   "got": [
+    "C00004",
+    "Y",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.21,
+   "last": "位置 C00004 を Y方向に +3.000mm 動かします（Y：150.000 → 153.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "C00004をYプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00004 を Y方向に +3.000mm 動かします（Y：150.000 → 153.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "cat": "標準語",
+   "said": "Zプラス3ミリお願いします",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.43,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリお願いします",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A16",
+   "cat": "標準語",
+   "said": "Yのプラス3ミリ動かしてもらえますか",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「Yのプラス3ミリ動かして」でよいですか？",
+   "log": [
+    {
+     "said": "Yのプラス3ミリ動かしてもらえますか",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「Yのプラス3ミリ動かして」でよいですか？",
+     "labels": [
+      "Yのプラス3ミリ動かして"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A17",
+   "cat": "標準語",
+   "said": "Zプラス3ミリ動かしてくれる？",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「Zプラス3ミリ動かして」でよいですか？",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてくれる？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「Zプラス3ミリ動かして」でよいですか？",
+     "labels": [
+      "Zプラス3ミリ動かして"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A18",
+   "cat": "標準語",
+   "said": "Yマイナス10ミリにして",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「にして」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Yマイナス10ミリにして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「にして」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A19",
+   "cat": "標準語",
+   "said": "Zプラス3ミリメートル",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリメートル",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A20",
+   "cat": "標準語",
+   "said": "前に3ミリ",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「前」は、ロボットを正面から見て手前（X＋）ですか、奥（X−）ですか？",
+   "log": [
+    {
+     "said": "前に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「前」は、ロボットを正面から見て手前（X＋）ですか、奥（X−）ですか？",
+     "labels": [
+      "手前（X＋）",
+      "奥（X−）"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A21",
+   "cat": "標準語",
+   "said": "この位置を上に3mm上げたい",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.55,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この位置を上に3mm上げたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A22",
+   "cat": "標準語",
+   "said": "Zプラス方向に5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.41,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A23",
+   "cat": "標準語",
+   "said": "Zプラス方向に30ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.05,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "Zプラス方向に30ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A24",
+   "cat": "標準語",
+   "said": "Zマイナス2ミリ下げて",
+   "exp": [
+    "cand",
+    "Z",
+    -2
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.02,
+   "last": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+   "log": [
+    {
+     "said": "Zマイナス2ミリ下げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "A25",
+   "cat": "標準語",
+   "said": "Xのプラスに1ミリ",
+   "exp": [
+    "cand",
+    "X",
+    1
+   ],
+   "got": [
+    "C00003",
+    "X",
+    1.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.54,
+   "last": "位置 C00003 を X方向に +1.000mm 動かします（X：400.000 → 401.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Xのプラスに1ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に +1.000mm 動かします（X：400.000 → 401.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B01",
+   "cat": "方言",
+   "said": "この位置、上に3ミリ上げてくれん？",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「この位置、 Zプラス方向に3ミリ動かして」でよいですか？",
+   "log": [
+    {
+     "said": "この位置、上に3ミリ上げてくれん？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "「この位置、 Zプラス方向に3ミリ動かして」でよいですか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "cat": "方言",
+   "said": "Zプラスに3ミリ動かしてくれんね",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+   "log": [
+    {
+     "said": "Zプラスに3ミリ動かしてくれんね",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+     "labels": [
+      "変更したい",
+      "説明です"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "cat": "方言",
+   "said": "Zプラスに3ミリ動かしちゃって",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.87,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスに3ミリ動かしちゃって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "cat": "方言",
+   "said": "3ミリ上げとって",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.42,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "3ミリ上げとって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "cat": "方言",
+   "said": "Yマイナス10ミリずらしとって",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.77,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス10ミリずらしとって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かしてやって",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.39,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてやって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かしてほしいっちゃけど",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.56,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてほしいっちゃけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かしたいっちゃん",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.77,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしたいっちゃん",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "cat": "方言",
+   "said": "Zプラス3ミリばい",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.06,
+   "last": "「ばい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリばい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ばい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "cat": "方言",
+   "said": "Zプラス3ミリたい",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.07,
+   "last": "「たい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「たい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "cat": "方言",
+   "said": "そこば3ミリ下げてくれんですか",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ば」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "そこば3ミリ下げてくれんですか",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ば」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かしてくれんかいな",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてくれんかいな",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+     "labels": [
+      "変更したい",
+      "説明です"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "cat": "方言",
+   "said": "この位置ば上に3ミリ上げたいっちゃけど",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ば」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "この位置ば上に3ミリ上げたいっちゃけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ば」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "cat": "方言",
+   "said": "Yマイナスに10ミリずらしてくれんやろか",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「Yマイナスに10ミリずらして」でよいですか？",
+   "log": [
+    {
+     "said": "Yマイナスに10ミリずらしてくれんやろか",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「Yマイナスに10ミリずらして」でよいですか？",
+     "labels": [
+      "Yマイナスに10ミリずらして"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "cat": "方言",
+   "said": "Zプラス3ミリやって",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「やって」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリやって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「やって」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かしときー",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.52,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしときー",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "cat": "方言",
+   "said": "Zプラス3ミリ、動かしてくれんね",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、動かしてくれんね",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Zのプラス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+     "labels": [
+      "変更したい",
+      "説明です"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "cat": "方言",
+   "said": "なんしよると？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.54,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "なんしよると？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "cat": "方言",
+   "said": "これ何回繰り返しよっと？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.2,
+   "last": "同じ動きをくり返す部分があります。回数はアプリが画面に出します。",
+   "log": [
+    {
+     "said": "これ何回繰り返しよっと？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "同じ動きをくり返す部分があります。回数はアプリが画面に出します。",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "cat": "方言",
+   "said": "Zプラス30ミリ動かしてくれん？",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません",
+   "log": [
+    {
+     "said": "Zプラス30ミリ動かしてくれん？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "cat": "方言",
+   "said": "よかよ、承認して",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+   "log": [
+    {
+     "said": "よかよ、承認して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B22",
+   "cat": "方言",
+   "said": "上げんでいい",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「んでいい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "上げんでいい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「んでいい」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B23",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かさんで",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「さん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かさんで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「さん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B24",
+   "cat": "方言",
+   "said": "Zプラス3ミリ動かさんといて",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「さんといて」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かさんといて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「さんといて」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B25",
+   "cat": "方言",
+   "said": "ちょっとZプラスに3ミリ動かしてみて",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.02,
+   "last": "量がはっきりしません（「ちょっと」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+   "log": [
+    {
+     "said": "ちょっとZプラスに3ミリ動かしてみて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません（「ちょっと」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B26",
+   "cat": "方言",
+   "said": "Zプラス3ミリ上げてもらえる？",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+   "log": [
+    {
+     "said": "Zプラス3ミリ上げてもらえる？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B27",
+   "cat": "方言",
+   "said": "この点、3ミリ下げてくれんね",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -3
+   ],
+   "got": null,
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Zのマイナス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+   "log": [
+    {
+     "said": "この点、3ミリ下げてくれんね",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "Zのマイナス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B28",
+   "cat": "方言",
+   "said": "どげんなっとると？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.3,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "どげんなっとると？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B29",
+   "cat": "方言",
+   "said": "Yマイナスに10ミリ動かしてくれんと？",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「Yマイナスに10ミリ動かして」でよいですか？",
+   "log": [
+    {
+     "said": "Yマイナスに10ミリ動かしてくれんと？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「Yマイナスに10ミリ動かして」でよいですか？",
+     "labels": [
+      "Yマイナスに10ミリ動かして"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B30",
+   "cat": "方言",
+   "said": "Zプラス3ミリでよか",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「でよ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリでよか",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「でよ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C01",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしたい",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.42,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C02",
+   "cat": "希望",
+   "said": "Yマイナスに10ミリずらしたいんですが",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.53,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナスに10ミリずらしたいんですが",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C03",
+   "cat": "希望",
+   "said": "3ミリ下げてほしいんです",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    -3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.9,
+   "last": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "3ミリ下げてほしいんです",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に -3.000mm 動かします（Z：300.000 → 297.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C04",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしてほしい",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてほしい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C05",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしてもらいたいです",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてもらいたいです",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C06",
+   "cat": "希望",
+   "said": "Xプラス2ミリ移動したいです",
+   "exp": [
+    "cand",
+    "X",
+    2
+   ],
+   "got": [
+    "C00003",
+    "X",
+    2.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.36,
+   "last": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Xプラス2ミリ移動したいです",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C07",
+   "cat": "希望",
+   "said": "この位置を上に3ミリ上げたいんだけど",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この位置を上に3ミリ上げたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C08",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしたいかも",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「したいか」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしたいかも",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「したいか」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C09",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしたくない",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「動かしたくない」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしたくない",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「動かしたくない」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしてもらってもいい？",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「Zプラス3ミリ動かして」でよいですか？",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてもらってもいい？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「Zプラス3ミリ動かして」でよいですか？",
+     "labels": [
+      "Zプラス3ミリ動かして"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C11",
+   "cat": "希望",
+   "said": "Zプラス3ミリ動かしてほしいな",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.34,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてほしいな",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C12",
+   "cat": "希望",
+   "said": "右に5ミリ動かしたい",
+   "exp": [
+    "cand",
+    "Y",
+    5
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    5.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.33,
+   "last": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "右に5ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C13",
+   "cat": "希望",
+   "said": "Zプラス方向に5ミリ動かしたい",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.46,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C14",
+   "cat": "希望",
+   "said": "Zプラス方向に30ミリ動かしたい",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.43,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "Zプラス方向に30ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C15",
+   "cat": "希望",
+   "said": "Zプラス3動かしたい",
+   "exp": [
+    "ask",
+    "unit"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "量がはっきりしません。「3」に単位が付いていません。「3ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス3動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません。「3」に単位が付いていません。「3ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C16",
+   "cat": "希望",
+   "said": "Zプラスに動かしたい",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Zプラスに動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C17",
+   "cat": "希望",
+   "said": "3ミリ動かしたい",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+   "log": [
+    {
+     "said": "3ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C18",
+   "cat": "希望",
+   "said": "Yマイナス10ミリ動かしていただきたい",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.37,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス10ミリ動かしていただきたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C19",
+   "cat": "希望",
+   "said": "Zプラス3ミリ上げたいです",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+   "log": [
+    {
+     "said": "Zプラス3ミリ上げたいです",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "C20",
+   "cat": "希望",
+   "said": "上に3ミリ上げてほしいです",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.46,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "上に3ミリ上げてほしいです",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D01",
+   "cat": "言いよどみ",
+   "said": "えーっと、Zプラス3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.47,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "えーっと、Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D02",
+   "cat": "言いよどみ",
+   "said": "あのー、Yマイナス10ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.71,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "あのー、Yマイナス10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D03",
+   "cat": "言いよどみ",
+   "said": "えっと、えっと、Zプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.82,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "えっと、えっと、Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D04",
+   "cat": "言いよどみ",
+   "said": "Zプラス、えーと、3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+   "log": [
+    {
+     "said": "Zプラス、えーと、3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D05",
+   "cat": "言いよどみ",
+   "said": "うーん、Zプラス3ミリかな",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「うーん」「かな」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "うーん、Zプラス3ミリかな",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「うーん」「かな」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D06",
+   "cat": "言いよどみ",
+   "said": "あ、Zプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「あ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "あ、Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「あ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D07",
+   "cat": "言いよどみ",
+   "said": "んー、Yマイナス10ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「んー」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "んー、Yマイナス10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「んー」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D08",
+   "cat": "言いよどみ",
+   "said": "えーっとですね、Zプラス3ミリ動かして",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「えーっとですね」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "えーっとですね、Zプラス3ミリ動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「えーっとですね」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D09",
+   "cat": "言いよどみ",
+   "said": "Zプラス3ミリ、えーと、お願いします",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.9,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、えーと、お願いします",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D10",
+   "cat": "言いよどみ",
+   "said": "あのう、上に3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.35,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "あのう、上に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D11",
+   "cat": "言いよどみ",
+   "said": "えー、この位置を、Zプラスに、3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "えー、この位置を、Zプラスに、3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D12",
+   "cat": "言いよどみ",
+   "said": "えっとー、Xプラス2ミリ",
+   "exp": [
+    "cand_or_ask",
+    "X",
+    2
+   ],
+   "got": [
+    "C00003",
+    "X",
+    2.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.45,
+   "last": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "えっとー、Xプラス2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D13",
+   "cat": "言いよどみ",
+   "said": "まあ、Zプラス3ミリで",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「まあ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "まあ、Zプラス3ミリで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「まあ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D14",
+   "cat": "言いよどみ",
+   "said": "えーと、えーと、たぶんZプラス3ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「たぶん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "えーと、えーと、たぶんZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「たぶん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "D15",
+   "cat": "言いよどみ",
+   "said": "あのですね、Yマイナス10ミリずらしてください",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「あのですね」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "あのですね、Yマイナス10ミリずらしてください",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「あのですね」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E01",
+   "cat": "言い直し",
+   "said": "Zプラス10ミリ、いや5ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス10ミリ、いや5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス5ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E02",
+   "cat": "言い直し",
+   "said": "10ミリ、いや5ミリ、Zプラス",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "10ミリ、いや5ミリ、Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス5ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E03",
+   "cat": "言い直し",
+   "said": "Yマイナス、違うプラス、3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「違う」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "Yマイナス、違うプラス、3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「違う」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E04",
+   "cat": "言い直し",
+   "said": "Zマイナス、じゃなくてZプラス3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zマイナス、じゃなくてZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス3ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E05",
+   "cat": "言い直し",
+   "said": "Yに3ミリ、あ、Xだった",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「あ」「だった」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Yに3ミリ、あ、Xだった",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「あ」「だった」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E06",
+   "cat": "言い直し",
+   "said": "C00004、じゃなかったC00003をZプラス3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「C00003をZプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "C00004、じゃなかったC00003をZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「C00003をZプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「C00003をZプラス3ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E07",
+   "cat": "言い直し",
+   "said": "やっぱり今のなし",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「やっぱり今のなし」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "log": [
+    {
+     "said": "やっぱり今のなし",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「やっぱり今のなし」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E08",
+   "cat": "言い直し",
+   "said": "Zプラス3ミリ、やっぱりやめた",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「やっぱりやめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、やっぱりやめた",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「やっぱりやめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E09",
+   "cat": "言い直し",
+   "said": "Zプラス5ミリ、ごめん3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス5ミリ、ごめん3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス3ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E10",
+   "cat": "言い直し",
+   "said": "Zプラス3ミリ、いや、Zマイナス3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "言い直しがありました。最後の言い方「Zマイナス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、いや、Zマイナス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zマイナス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zマイナス3ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E11",
+   "cat": "言い直し",
+   "said": "上に、いや下に3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「いや」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "上に、いや下に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「いや」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "E12",
+   "cat": "言い直し",
+   "said": "Yプラス、まちがえた、Yマイナス10ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「Yマイナス10ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Yプラス、まちがえた、Yマイナス10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Yマイナス10ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Yマイナス10ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E13",
+   "cat": "言い直し",
+   "said": "Zプラス3ミリ、じゃなくて2ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "言い直しがありました。最後の言い方「Zプラス2ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、じゃなくて2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス2ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス2ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E14",
+   "cat": "言い直し",
+   "said": "Zプラス30ミリ、いや3ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス30ミリ、いや3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス3ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス3ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E15",
+   "cat": "言い直し",
+   "said": "Xプラス2ミリ…やっぱりYプラス2ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しがありました。最後の言い方「Yプラス2ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Xプラス2ミリ…やっぱりYプラス2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Yプラス2ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Yプラス2ミリ」で指示する"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F01",
+   "cat": "途中終了",
+   "said": "Zプラスに……",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Zプラスに……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F02",
+   "cat": "途中終了",
+   "said": "5ミリ動かして……",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+   "log": [
+    {
+     "said": "5ミリ動かして……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F03",
+   "cat": "途中終了",
+   "said": "Zプラス",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F04",
+   "cat": "途中終了",
+   "said": "Yマイナスに",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Yマイナスに",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F05",
+   "cat": "途中終了",
+   "said": "この位置を",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.14,
+   "last": "この位置を、どうしたいですか？動かしたいのか、説明がほしいのか、教えてください。",
+   "log": [
+    {
+     "said": "この位置を",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "この位置を、どうしたいですか？動かしたいのか、説明がほしいのか、教えてください。",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F06",
+   "cat": "途中終了",
+   "said": "3ミリ",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F07",
+   "cat": "途中終了",
+   "said": "上に",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+   "log": [
+    {
+     "said": "上に",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F08",
+   "cat": "途中終了",
+   "said": "Zプラス3",
+   "exp": [
+    "ask",
+    "unit"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "量がはっきりしません。「3」に単位が付いていません。「3ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス3",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません。「3」に単位が付いていません。「3ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F09",
+   "cat": "途中終了",
+   "said": "C00003を",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "C00003を",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F10",
+   "cat": "途中終了",
+   "said": "えーと、Zの",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "えーと、Zの",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F11",
+   "cat": "途中終了",
+   "said": "Yマイナス10ミ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「ミ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Yマイナス10ミ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ミ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F12",
+   "cat": "途中終了",
+   "said": "Zプラス方向に5ミリ動か",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.33,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ動か",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F13",
+   "cat": "途中終了",
+   "said": "右に",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "log": [
+    {
+     "said": "右に",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F14",
+   "cat": "途中終了",
+   "said": "Zプラス3ミリ、で",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.47,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ、で",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "F15",
+   "cat": "途中終了",
+   "said": "Xの、えーと……",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Xの、えーと……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G01",
+   "cat": "誤認識",
+   "said": "ぜっとぷらす3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ぜっとぷらす3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G02",
+   "cat": "誤認識",
+   "said": "Zプラス3みり",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3みり",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G03",
+   "cat": "誤認識",
+   "said": "Zプラス3mn",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「MN」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3mn",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「MN」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G04",
+   "cat": "誤認識",
+   "said": "ゼットプラス3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ゼットプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G05",
+   "cat": "誤認識",
+   "said": "Zプラスさんミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.51,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスさんミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G06",
+   "cat": "誤認識",
+   "said": "Zプラス3ミル",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ミル」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミル",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ミル」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G07",
+   "cat": "誤認識",
+   "said": "Zぷらす3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.49,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zぷらす3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G08",
+   "cat": "誤認識",
+   "said": "ジープラス3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ジー」が分かりませんでした。何をするか、もう一度指示してください",
+   "log": [
+    {
+     "said": "ジープラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ジー」が分かりませんでした。何をするか、もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G09",
+   "cat": "誤認識",
+   "said": "Zプラス 3 ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.46,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス 3 ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G10",
+   "cat": "誤認識",
+   "said": "Z+3mm",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.39,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Z+3mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G11",
+   "cat": "誤認識",
+   "said": "Ｚ＋３ｍｍ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.42,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Ｚ＋３ｍｍ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G12",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリ。。",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.62,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリ。。",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G13",
+   "cat": "誤認識",
+   "said": "Zプラス三ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.48,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス三ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G14",
+   "cat": "誤認識",
+   "said": "ワイマイナス10ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.63,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ワイマイナス10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G15",
+   "cat": "誤認識",
+   "said": "Yマイナス10みり",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.83,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス10みり",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G16",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリ動かしで",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「し」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「し」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G17",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリ動か して",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「して」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動か して",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「して」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G18",
+   "cat": "誤認識",
+   "said": "zぷらす3mm",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.21,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "zぷらす3mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G19",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「リ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「リ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G20",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリ ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ミリ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ミリ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G21",
+   "cat": "誤認識",
+   "said": "エックスプラス2ミリ",
+   "exp": [
+    "cand",
+    "X",
+    2
+   ],
+   "got": [
+    "C00003",
+    "X",
+    2.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.49,
+   "last": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "エックスプラス2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に +2.000mm 動かします（X：400.000 → 402.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "G22",
+   "cat": "誤認識",
+   "said": "Zプラス3ミリ動かしてて",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「してて」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしてて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「してて」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H01",
+   "cat": "省略",
+   "said": "これを3ミリ上げて",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.32,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "これを3ミリ上げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H02",
+   "cat": "省略",
+   "said": "そこをZプラス3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.32,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "そこをZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H03",
+   "cat": "省略",
+   "said": "さっきの位置をZプラス3ミリ",
+   "exp": [
+    "ask",
+    "position"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「さっきの位置」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "さっきの位置をZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「さっきの位置」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H04",
+   "cat": "省略",
+   "said": "あれをZプラス3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「あれ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "あれをZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「あれ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H05",
+   "cat": "省略",
+   "said": "ここ、Zプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ここ、Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H06",
+   "cat": "省略",
+   "said": "同じだけ下げて",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「同じだけ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "同じだけ下げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「同じだけ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H07",
+   "cat": "省略",
+   "said": "もう3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "もう3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H08",
+   "cat": "省略",
+   "said": "さっきと同じ方向に3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「さっきと同じ方向」が分かりませんでした。何をするか、もう一度指示してください",
+   "log": [
+    {
+     "said": "さっきと同じ方向に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「さっきと同じ方向」が分かりませんでした。何をするか、もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H09",
+   "cat": "省略",
+   "said": "今の位置をZプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.1,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "今の位置をZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H10",
+   "cat": "省略",
+   "said": "こっちをZプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「こっち」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "こっちをZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「こっち」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H11",
+   "cat": "省略",
+   "said": "この点、Zプラス3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この点、Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H12",
+   "cat": "省略",
+   "said": "この位置をZプラス3ミリ",
+   "exp": [
+    "ask",
+    "position"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "位置が決まっていないため、変更の提案をしていません。位置を選ぶか、位置番号（C と5桁の数字）で言ってください",
+   "log": [
+    {
+     "said": "この位置をZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置が決まっていないため、変更の提案をしていません。位置を選ぶか、位置番号（C と5桁の数字）で言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H13",
+   "cat": "省略",
+   "said": "そこの点を3ミリ下げてくれる",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -3
+   ],
+   "got": null,
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Zのマイナス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+   "log": [
+    {
+     "said": "そこの点を3ミリ下げてくれる",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "Zのマイナス方向に3mm動かす変更をご希望ですか？ それとも操作の説明でしょうか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H14",
+   "cat": "省略",
+   "said": "それZプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "「それ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "それZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「それ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "H15",
+   "cat": "省略",
+   "said": "次の位置をZプラス3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「次の位置」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "次の位置をZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「次の位置」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I01",
+   "cat": "複数ターン",
+   "said": "Zプラス → 3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I02",
+   "cat": "複数ターン",
+   "said": "3ミリ動かして → Zプラス",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.31,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "3ミリ動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I03",
+   "cat": "複数ターン",
+   "said": "Yに10ミリ → マイナスで",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.96,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 10mm",
+      "Yのマイナス 10mm"
+     ]
+    },
+    {
+     "said": "マイナスで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I04",
+   "cat": "複数ターン",
+   "said": "この位置、上に3ミリ上げたいんだけど",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.33,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この位置、上に3ミリ上げたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I05",
+   "cat": "複数ターン",
+   "said": "この位置、上に3ミリ上げたいんだけど → うん、そう",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.91,
+   "last": "何についての「そう」か確かめさせてください。動作データのどの動きについて、うなずいていますか？",
+   "log": [
+    {
+     "said": "この位置、上に3ミリ上げたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "うん、そう",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "何についての「そう」か確かめさせてください。動作データのどの動きについて、うなずいていますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I06",
+   "cat": "複数ターン",
+   "said": "Zプラス → えーと → 3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 3,
+   "api": 1,
+   "sec": 1.99,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "えーと",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    },
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I07",
+   "cat": "複数ターン",
+   "said": "Yに10ミリ → この位置は何をするところ？ → マイナス",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 3,
+   "api": 2,
+   "sec": 5.08,
+   "last": "Zのマイナス方向への動きのことですか？",
+   "log": [
+    {
+     "said": "Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 10mm",
+      "Yのマイナス 10mm"
+     ]
+    },
+    {
+     "said": "この位置は何をするところ？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    },
+    {
+     "said": "マイナス",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "Zのマイナス方向への動きのことですか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I08",
+   "cat": "複数ターン",
+   "said": "10ミリ動かしたいんだけど → Yマイナス",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.6,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "10ミリ動かしたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "Yマイナス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I09",
+   "cat": "複数ターン",
+   "said": "Zプラスに → 5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.52,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスに",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I10",
+   "cat": "複数ターン",
+   "said": "Zプラス3 → ミリで",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 2.08,
+   "last": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス3",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません。「3」に単位が付いていません。「3ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "labels": []
+    },
+    {
+     "said": "ミリで",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I11",
+   "cat": "複数ターン",
+   "said": "Zプラス方向に5 → 5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 3.31,
+   "last": "Claude が、対象・方向・量を確かめたいと返しました。位置番号、方向（Zプラス・Yのマイナスのように、軸と向き）、量（mm）を言い直してください",
+   "log": [
+    {
+     "said": "Zプラス方向に5",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません。「5」に単位が付いていません。「5ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "labels": []
+    },
+    {
+     "said": "5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Claude が、対象・方向・量を確かめたいと返しました。位置番号、方向（Zプラス・Yのマイナスのように、軸と向き）、量（mm）を言い直してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I12",
+   "cat": "複数ターン",
+   "said": "Yに10ミリ → マイナスやね",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.02,
+   "last": "どの動きのことか、プログラムで確かめられませんでした。意味は覚えていません",
+   "log": [
+    {
+     "said": "Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 10mm",
+      "Yのマイナス 10mm"
+     ]
+    },
+    {
+     "said": "マイナスやね",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "どの動きのことか、プログラムで確かめられませんでした。意味は覚えていません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I13",
+   "cat": "複数ターン",
+   "said": "Yに10ミリ → うーん、マイナスかな",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.02,
+   "last": "「かな」のように確かでない言い方のため、意味としては覚えません。確かなときに、もう一度教えてください",
+   "log": [
+    {
+     "said": "Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 10mm",
+      "Yのマイナス 10mm"
+     ]
+    },
+    {
+     "said": "うーん、マイナスかな",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「かな」のように確かでない言い方のため、意味としては覚えません。確かなときに、もう一度教えてください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I14",
+   "cat": "複数ターン",
+   "said": "3ミリ → 上",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.91,
+   "last": "Claude の答えに「上」「下」の言葉が入っていましたが、上下の向きはまだ確認されていないため、表示しません（Z方向として扱います）",
+   "log": [
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    },
+    {
+     "said": "上",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに「上」「下」の言葉が入っていましたが、上下の向きはまだ確認されていないため、表示しません（Z方向として扱います）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I15",
+   "cat": "複数ターン",
+   "said": "Zプラス → やっぱりYマイナス → 10ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -10
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 3,
+   "api": 0,
+   "sec": 0.02,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "やっぱりYマイナス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「やっぱり」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    },
+    {
+     "said": "10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I16",
+   "cat": "複数ターン",
+   "said": "Zプラスに…… → 3ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.62,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスに……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I17",
+   "cat": "複数ターン",
+   "said": "5ミリ動かして…… → Zプラス",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.48,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "5ミリ動かして……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I18",
+   "cat": "複数ターン",
+   "said": "Zプラス方向に30ミリ → じゃあ5ミリで",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    5
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.97,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "Zプラス方向に30ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    },
+    {
+     "said": "じゃあ5ミリで",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I19",
+   "cat": "複数ターン",
+   "said": "Yに10ミリ → プラスかな、いやマイナス",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「かな」のように確かでない言い方のため、意味としては覚えません。確かなときに、もう一度教えてください",
+   "log": [
+    {
+     "said": "Yに10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 10mm",
+      "Yのマイナス 10mm"
+     ]
+    },
+    {
+     "said": "プラスかな、いやマイナス",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「かな」のように確かでない言い方のため、意味としては覚えません。確かなときに、もう一度教えてください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I20",
+   "cat": "複数ターン",
+   "said": "右に5ミリ動かしたい",
+   "exp": [
+    "cand",
+    "Y",
+    5
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    5.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.27,
+   "last": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "右に5ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J01",
+   "cat": "区別",
+   "said": "このロボット何してるの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.59,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "このロボット何してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J02",
+   "cat": "区別",
+   "said": "Zプラス3ミリって上のこと？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「って上のこ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリって上のこと？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「って上のこ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J03",
+   "cat": "区別",
+   "said": "C00005は何の位置？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「何の位置」が分かりませんでした。何をするか、もう一度指示してください",
+   "log": [
+    {
+     "said": "C00005は何の位置？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「何の位置」が分かりませんでした。何をするか、もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J04",
+   "cat": "区別",
+   "said": "Zプラス3ミリ動かしたらどうなる？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「したらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしたらどうなる？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「したらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J05",
+   "cat": "区別",
+   "said": "承認して",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+   "log": [
+    {
+     "said": "承認して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J06",
+   "cat": "区別",
+   "said": "ロボットを動かして",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.03,
+   "last": "「ロボット」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "ロボットを動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ロボット」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J07",
+   "cat": "区別",
+   "said": "出力して",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+   "log": [
+    {
+     "said": "出力して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J08",
+   "cat": "区別",
+   "said": "なんで30ミリだとだめなの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「だめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "なんで30ミリだとだめなの？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「だめ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J09",
+   "cat": "区別",
+   "said": "この動き、何の作業？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.84,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "この動き、何の作業？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J10",
+   "cat": "区別",
+   "said": "何回繰り返してるの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.7,
+   "last": "Claude の答えに、プログラムが計算していない数が入っていたため、表示しません 同じ動きを2回くり返しています。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "何回繰り返してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、プログラムが計算していない数が入っていたため、表示しません 同じ動きを2回くり返しています。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J11",
+   "cat": "区別",
+   "said": "Zプラス3ミリ動かしても大丈夫？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.02,
+   "last": "「しても大丈夫」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリ動かしても大丈夫？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「しても大丈夫」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J12",
+   "cat": "区別",
+   "said": "上ってZプラスのこと？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「上って」「のこ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "上ってZプラスのこと？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「上って」「のこ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J13",
+   "cat": "区別",
+   "said": "どっちがYのプラス？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「どっち」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "どっちがYのプラス？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「どっち」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J14",
+   "cat": "区別",
+   "said": "C00003はどこ？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「はどこ」が分かりませんでした。何をするか、もう一度指示してください",
+   "log": [
+    {
+     "said": "C00003はどこ？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「はどこ」が分かりませんでした。何をするか、もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J15",
+   "cat": "区別",
+   "said": "Zプラス3ミリにしたらどこを通るの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「にしたらどこを通る」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス3ミリにしたらどこを通るの？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「にしたらどこを通る」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J16",
+   "cat": "区別",
+   "said": "今の変更候補は何？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.8,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "今の変更候補は何？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J17",
+   "cat": "区別",
+   "said": "ロボット起動して",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "このアプリからはロボットを動かしません。ロボットはペンダントで選んで、人がスタートします",
+   "log": [
+    {
+     "said": "ロボット起動して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "このアプリからはロボットを動かしません。ロボットはペンダントで選んで、人がスタートします",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J18",
+   "cat": "区別",
+   "said": "転送して",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+   "log": [
+    {
+     "said": "転送して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J19",
+   "cat": "区別",
+   "said": "これ、何をするための動き？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.65,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "これ、何をするための動き？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J20",
+   "cat": "区別",
+   "said": "ボタンを押す動きなの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.95,
+   "last": "動作データからは、ボタンを押す動きかどうかは分かりません。同じ動きをくり返しているのが分かるだけです。ボタンを押す動作ですか？",
+   "log": [
+    {
+     "said": "ボタンを押す動きなの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "動作データからは、ボタンを押す動きかどうかは分かりません。同じ動きをくり返しているのが分かるだけです。ボタンを押す動作ですか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K01",
+   "cat": "数字表記",
+   "said": "Zプラス十ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.33,
+   "last": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス十ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K02",
+   "cat": "数字表記",
+   "said": "Zプラス三ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.37,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス三ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K03",
+   "cat": "数字表記",
+   "said": "Zプラス十五ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    15
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    15.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.34,
+   "last": "位置 C00003 を Z方向に +15.000mm 動かします（Z：300.000 → 315.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス十五ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +15.000mm 動かします（Z：300.000 → 315.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K04",
+   "cat": "数字表記",
+   "said": "Zプラス１０ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス１０ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K05",
+   "cat": "数字表記",
+   "said": "Zプラス10ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.35,
+   "last": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K06",
+   "cat": "数字表記",
+   "said": "Zプラス10mm",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.57,
+   "last": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス10mm",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K07",
+   "cat": "数字表記",
+   "said": "Zプラスじゅうミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.97,
+   "last": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスじゅうミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +10.000mm 動かします（Z：300.000 → 310.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K08",
+   "cat": "数字表記",
+   "said": "Zプラス3ミリメートル",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.57,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス3ミリメートル",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K09",
+   "cat": "数字表記",
+   "said": "じゃあこの位置を十ミリ上げて",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    10.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.38,
+   "last": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "じゃあこの位置を十ミリ上げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "10mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス10ミリ」か「Zマイナス10ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K10",
+   "cat": "数字表記",
+   "said": "ゼットプラスさんミリ",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.77,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ゼットプラスさんミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K11",
+   "cat": "数字表記",
+   "said": "Zぷらす3みり",
+   "exp": [
+    "cand",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zぷらす3みり",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K12",
+   "cat": "数字表記",
+   "said": "Zプラス十か十五ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「十か」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス十か十五ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「十か」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K13",
+   "cat": "数字表記",
+   "said": "Zプラス三十ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.26,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "Zプラス三十ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K14",
+   "cat": "数字表記",
+   "said": "Zプラス二十ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    20
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    20.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.44,
+   "last": "位置 C00003 を Z方向に +20.000mm 動かします（Z：300.000 → 320.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス二十ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +20.000mm 動かします（Z：300.000 → 320.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K15",
+   "cat": "数字表記",
+   "said": "Zプラス二十一ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.5,
+   "last": "移動量 21mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 21mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "Zプラス二十一ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 21mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 21mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K16",
+   "cat": "数字表記",
+   "said": "Zプラス一五ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+   "log": [
+    {
+     "said": "Zプラス一五ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K17",
+   "cat": "数字表記",
+   "said": "Zプラス三点五ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「三点」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラス三点五ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「三点」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K18",
+   "cat": "数字表記",
+   "said": "Zプラスにじゅうミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「じゅうミリ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "Zプラスにじゅうミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「じゅうミリ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K19",
+   "cat": "数字表記",
+   "said": "Yマイナス十ミリ動かしたい",
+   "exp": [
+    "cand",
+    "Y",
+    -10
+   ],
+   "got": [
+    "C00003",
+    "Y",
+    -10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.75,
+   "last": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yマイナス十ミリ動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に -10.000mm 動かします（Y：-150.000 → -160.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K20",
+   "cat": "数字表記",
+   "said": "Zプラス じゅうごミリ",
+   "exp": [
+    "cand",
+    "Z",
+    15
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    15.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.26,
+   "last": "位置 C00003 を Z方向に +15.000mm 動かします（Z：300.000 → 315.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス じゅうごミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +15.000mm 動かします（Z：300.000 → 315.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U01",
+   "cat": "指示の例",
+   "said": "これ、3ミリ上げたいんだけど",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.72,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "これ、3ミリ上げたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U02",
+   "cat": "指示の例",
+   "said": "ちょっと上に動かしてほしい",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+   "log": [
+    {
+     "said": "ちょっと上に動かしてほしい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U03",
+   "cat": "指示の例",
+   "said": "この位置、もう少し下げたい",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.0,
+   "last": "下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+   "log": [
+    {
+     "said": "この位置、もう少し下げたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "下げたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U04",
+   "cat": "指示の例",
+   "said": "これ、3ミリ上げたいっちゃけど",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    3.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 2.22,
+   "last": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "これ、3ミリ上げたいっちゃけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上げたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に +3.000mm 動かします（Z：300.000 → 303.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U05",
+   "cat": "指示の例",
+   "said": "もうちょい右にずらしとって",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "log": [
+    {
+     "said": "もうちょい右にずらしとって",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "U06",
+   "cat": "指示の例",
+   "said": "そこ、ちょっと下げちゃってん",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ちゃってん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "そこ、ちょっと下げちゃってん",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ちゃってん」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U07",
+   "cat": "指示の例",
+   "said": "10ミリ、いや5ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "言い直しのあとの量は 5mm ですね。どの軸の、どちらの向きですか？（「Xプラス5ミリ」「Zマイナス5ミリ」のように、軸と向きと量を一緒に言ってください）",
+   "log": [
+    {
+     "said": "10ミリ、いや5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しのあとの量は 5mm ですね。どの軸の、どちらの向きですか？（「Xプラス5ミリ」「Zマイナス5ミリ」のように、軸と向きと量を一緒に言ってください）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U08",
+   "cat": "指示の例",
+   "said": "プラス、違う、マイナス",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「違う」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "log": [
+    {
+     "said": "プラス、違う、マイナス",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「違う」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U09",
+   "cat": "指示の例",
+   "said": "さっきのなしで",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「なし」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "log": [
+    {
+     "said": "さっきのなしで",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「なし」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "cat": "指示の例",
+   "said": "今の間違えた",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.08,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "今の間違えた",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "cat": "指示の例",
+   "said": "この位置をZプラスに……",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "この位置をZプラスに……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "cat": "指示の例",
+   "said": "5ミリ動かして……",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+   "log": [
+    {
+     "said": "5ミリ動かして……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "cat": "指示の例",
+   "said": "えーっと、C00005を……",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何をするか分かりませんでした。もう一度指示してください",
+   "log": [
+    {
+     "said": "えーっと、C00005を……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何をするか分かりませんでした。もう一度指示してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "cat": "指示の例",
+   "said": "Cゼロゼロゼロゼロ5",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 3.2,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "Cゼロゼロゼロゼロ5",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "cat": "指示の例",
+   "said": "上に3ミリあげた……",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「た」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "上に3ミリあげた……",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「た」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "cat": "指示の例",
+   "said": "上に動かしたい → 3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 2,
+   "api": 0,
+   "sec": 0.01,
+   "last": "上下の向きが確認されていないため、「上に」は使えません。「Zプラス3ミリ」「Zマイナス3ミリ」のように、軸と向きと量を一緒に言ってください",
+   "log": [
+    {
+     "said": "上に動かしたい",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "上下の向きが確認されていないため、「上に」は使えません。「Zプラス3ミリ」「Zマイナス3ミリ」のように、軸と向きと量を一緒に言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "cat": "指示の例",
+   "said": "5ミリ動かして → Zプラス",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 1.55,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "5ミリ動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    },
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "cat": "指示の例",
+   "said": "この位置を変えて → 下に2ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -2
+   ],
+   "got": [
+    "C00003",
+    "Z",
+    -2.0
+   ],
+   "pressed": true,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 3,
+   "api": 2,
+   "sec": 3.25,
+   "last": "位置 C00003 を Z方向に -2.000mm 動かします（Z：300.000 → 298.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "この位置を変えて",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "位置を変えるご希望として受け取りました。まだ動作データは変えていません。3D で位置を選んで、軸と向きと量で指示してください（例：Zマイナス3ミリ） 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです",
+     "labels": []
+    },
+    {
+     "said": "下に2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "2mm下に動かしたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス2ミリ」か「Zマイナス2ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "［合っている］",
+     "via": null,
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に -2.000mm 動かします（Z：300.000 → 298.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "cat": "指示の例",
+   "said": "やっぱり最初の位置で",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.38,
+   "last": "最初の位置についてのご希望ですね。何を最初の位置にしたいのか、たとえば開始の位置を動かしたいという意味ですか？",
+   "log": [
+    {
+     "said": "やっぱり最初の位置で",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "最初の位置についてのご希望ですね。何を最初の位置にしたいのか、たとえば開始の位置を動かしたいという意味ですか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "cat": "指示の例",
+   "said": "これ5ミリ動かしたらどうなる？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「これ」「したらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "これ5ミリ動かしたらどうなる？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「これ」「したらどうなる」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "cat": "指示の例",
+   "said": "このロボット、何してるの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.66,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "このロボット、何してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U22",
+   "cat": "指示の例",
+   "said": "30ミリだと何でダメなの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「ダメ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+   "log": [
+    {
+     "said": "30ミリだと何でダメなの？",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「ダメ」などの打ち消しの言葉があるため、変更しません。してほしいことだけを言ってください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U23",
+   "cat": "指示の例",
+   "said": "C00005、Zプラス方向に30ミリ",
+   "exp": [
+    "stop"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.53,
+   "last": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+   "log": [
+    {
+     "said": "C00005、Zプラス方向に30ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U24",
+   "cat": "指示の例",
+   "said": "C00005、Zプラス方向に5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.48,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "C00005、Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K21",
+   "cat": "数字表記",
+   "said": "Zプラスに十ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.38,
+   "last": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラスに十ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "K22",
+   "cat": "数字表記",
+   "said": "ゼットプラスに十ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    10
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    10.0
+   ],
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 1.39,
+   "last": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "ゼットプラスに十ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ]
+  }
+ ]
+}
