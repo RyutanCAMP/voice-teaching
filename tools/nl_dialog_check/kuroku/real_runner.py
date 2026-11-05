@@ -176,6 +176,47 @@ if A.set == 2:
          sel="C00005", cand=("Z", 5))
 
 
+if A.set == 3:
+    # ---- 3回目：自然な話し言葉（クロークの改善 feat/kuroku-natural-speech-1105 の確かめ） ----
+    C.clear()
+    P = ("press_yes",)
+    case("N01", "最優先", "この位置を上に3mm上げたい →［合っている］", [T("この位置を上に3mm上げたい"), P],
+         cand=("Z", 3), first_no_cand=True, button=True, no_courtesy=True)
+    case("N02", "最優先", "この位置を上に3mm上げたい → そうです（声では確かめにしない）",
+         [T("この位置を上に3mm上げたい"), T("そうです")], none=True)
+    for i, (s, ax, v) in enumerate([("3ミリ上げたい", "Z", 3), ("この点を3ミリ下げてほしい", "Z", -3),
+                                    ("右に10ミリ動かしたい", "Y", 10), ("この位置を上に3ミリメートル上げたい", "Z", 3),
+                                    ("下に1.5ミリ下げたい", "Z", -1.5)]):
+        case(f"N1{i}", "希望＋向きの確かめ", f"{s} →［合っている］", [T(s), P], cand=(ax, v), first_no_cand=True, button=True)
+    for i, (s, ax, v, sel) in enumerate([("Zプラスに3ミリ動かしたい", "Z", 3, "C00003"),
+                                         ("Yのマイナスに10ミリずらしたいです", "Y", -10, "C00003"),
+                                         ("Zプラス3ミリメートル", "Z", 3, "C00003"),
+                                         ("Yマイナス10ミリ動かしていただきたいです", "Y", -10, "C00003"),
+                                         ("Xプラスに2ミリ寄せたい", "X", 2, "C00003"),
+                                         ("えっと、Zプラス方向に5ミリ動かしてほしいです", "Z", 5, "C00005")]):
+        case(f"N2{i}", "希望（軸つき）", s, [T(s)], sel=sel, cand=(ax, v))
+    case("N26", "希望（軸つき）", "C00004をZプラス3ミリ動かしたい", [T("C00004をZプラス3ミリ動かしたい")], cand=("Z", 3),
+         target="C00004")
+    case("N27", "引き継ぎ", "10ミリ動かしたいんだけど → Yマイナス", [T("10ミリ動かしたいんだけど"), T("Yマイナス")], cand=("Y", -10))
+    for i, s in enumerate(["Zプラス方向に30ミリ動かしたい", "Zプラス3動かしたい", "3mm上げたくない", "Zプラス3ミリくらい動かしたい",
+                           "上に3mm下げたい", "ちょっと上げたい", "Zプラス3センチ上げたい"]):
+        case(f"N3{i}", "止める", s, [T(s)], none=True)
+    case("N37", "止める", "（位置を選んでいない）この位置を上に3mm上げたい", [T("この位置を上に3mm上げたい"), P], sel=None, none=True)
+    case("N38", "止める", "（候補 Y−10）→ Zプラス5ミリ動かしたい（候補は作り直さない）", MV + [T("Zプラス5ミリ動かしたい")],
+         keep_cand=("Y", -10))
+    case("N40", "台本", "C00005を上に5ミリ上げたい →［合っている］（台本の言い換え）", [T("C00005を上に5ミリ上げたい"), P],
+         sel="C00005", cand=("Z", 5), first_no_cand=True, button=True)
+    for k in range(3):
+        case(f"S{k + 1}", "台本", f"台本（{k + 1}回目）", [T("Zプラス方向に30ミリ"), T("Zプラス方向に5ミリ"), ("compare",), ("approve",),
+                                                    ("export",), ("export2",)], sel="C00005", script=True)
+    for i, s in enumerate(["このロボット、何をしているの？", "この動き、何の作業？"]):
+        case(f"N5{i}", "口調", s, [T(s)], sel=None, none=True, no_courtesy=True)
+    case("N52", "口調", "（回数のジョブ）何してる？ → ボタンを押してるんだよ", [T("何してる？"), T("ボタンを押してるんだよ")],
+         job=BR, sel=None, none=True, no_courtesy=True)
+    case("N53", "口調", "（回数のジョブ）何してる？ → これはワークを置く動きです", [T("何してる？"), T("これはワークを置く動きです")],
+         job=BR, sel=None, none=True, no_courtesy=True)
+
+
 def msg_of(r) -> str:
     if not isinstance(r, dict):
         return ""
@@ -198,11 +239,18 @@ def run(c, tmp: Path) -> dict:
     if c["sel"]:
         w.select(sid, c["sel"])
     log, side = [], {}
+    r = {}
     for st in c["turns"]:
         k = st[0]
         n0 = len(CALLS)
         t0 = time.perf_counter()
-        if k == "t":
+        if k == "press_yes":
+            # 向きの確かめのボタン［合っている］（画面と同じく /api/hear に送る）。前の返事にボタンが無ければ押せない
+            prev = r if isinstance(r, dict) else {}
+            btn = next((x["text"] for x in ((prev.get("hear") or {}).get("choices") or []) if x.get("label") == "合っている"), None)
+            side["button_shown"] = btn is not None
+            r = w.hear(sid, btn, "text") if btn else {"message": "（［合っている］のボタンが出ていない）"}
+        elif k == "t":
             r = w.talk(sid, st[1], "voice")
         elif k == "ask":
             r = w.ask(sid, st[1])
@@ -272,6 +320,12 @@ def run(c, tmp: Path) -> dict:
     if "keep_approved" in e:
         if not has(*e["keep_approved"]) or not s.get("approval"):
             fails.append("承認済みの候補が勝手に変わった")
+    if e.get("first_no_cand") and log and log[0]["cand"]:
+        fails.append("確かめる前に候補ができた")
+    if e.get("no_courtesy"):
+        fails += [f"お礼・気持ちの言葉「{x}」" for x in ("ありがとう", "お気持ち", "気持ちは受け取") if x in allm]
+    if e.get("button") and not side.get("button_shown"):
+        fails.append("向きの確かめのボタンが出ない")
     if "want_cand" in e and not cand:
         fails.append("（自然さ）候補まで進まない。前の発話の量・向きを引き継がない")
     if "keep_cand" in e and not has(*e["keep_cand"]):
