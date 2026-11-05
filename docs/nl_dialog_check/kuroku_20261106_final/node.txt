@@ -1,0 +1,9 @@
+✔ view3d.js の色の意味：変更後はオレンジ（承認へ進むボタンと同じ系統）、止まった候補はオレンジにしない (0.1616ms)
+ℹ tests 127
+ℹ suites 0
+ℹ pass 127
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 505.7529
