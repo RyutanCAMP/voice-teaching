@@ -3014,17 +3014,17 @@ OK  確かめの段では、文字の「3mm」では進めない（ボタンを�
 OK  ボタンで確かめると候補になる（手で選んだ位置なので推定の印は付けない）
 OK  390px：送ったあと、見出し（次にすること）が上の帯の下に隠れない（間 12px）
 Traceback (most recent call last):
-  File "C:\Users\User\AppData\Local\Temp\claude\c--Users-User-voice-teaching\e3366ecf-9bbd-48a8-be19-d5abf89410f4\scratchpad\wt-sim8\tools\e2e_browser.py", line 4881, in <module>
+  File "<local-path>", line 4881, in <module>
     sys.exit(main())
              ~~~~^^
-  File "C:\Users\User\AppData\Local\Temp\claude\c--Users-User-voice-teaching\e3366ecf-9bbd-48a8-be19-d5abf89410f4\scratchpad\wt-sim8\tools\e2e_browser.py", line 4875, in main
+  File "<local-path>", line 4875, in main
     fails = run(Path(d), shots=shots)
-  File "C:\Users\User\AppData\Local\Temp\claude\c--Users-User-voice-teaching\e3366ecf-9bbd-48a8-be19-d5abf89410f4\scratchpad\wt-sim8\tools\e2e_browser.py", line 3488, in run
+  File "<local-path>", line 3488, in run
     check_dialog(b, check, shots, errors, updown_cfg["DEMO_C_PLACE.JBI"])
     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\claude\c--Users-User-voice-teaching\e3366ecf-9bbd-48a8-be19-d5abf89410f4\scratchpad\wt-sim8\tools\e2e_browser.py", line 3909, in check_dialog
+  File "<local-path>", line 3909, in check_dialog
     until(pg, lambda: pg.is_visible("#reply-message button.choice"))
     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\claude\c--Users-User-voice-teaching\e3366ecf-9bbd-48a8-be19-d5abf89410f4\scratchpad\wt-sim8\tools\e2e_browser.py", line 2998, in until
+  File "<local-path>", line 2998, in until
     raise TimeoutError("待っても画面が変わりませんでした")
 TimeoutError: 待っても画面が変わりませんでした
