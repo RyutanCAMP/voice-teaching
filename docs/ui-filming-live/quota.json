@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-11-05T11:47:59.309704+00:00",
+  "primary_remaining_percent": 53,
+  "primary_window_minutes": 300,
+  "secondary_remaining_percent": 93,
+  "stop_threshold_percent": 50,
+  "new_work_allowed": true,
+  "source": "Codex app-server account/rateLimits/read",
+  "not_anthropic_balance": true
+}

@@ -1,0 +1,2663 @@
+{
+  "tested_sha": "a5e146413f27d2096603bb521a01a9227f96ca33",
+  "runtime_sha": "a5e146413f27d2096603bb521a01a9227f96ca33",
+  "model": "claude-sonnet-5-5",
+  "chrome": "156.0.8078.80",
+  "cases": [
+    {
+      "id": "F30",
+      "input": "C00005、Zプラス方向に30ミリ",
+      "condition": "live_configuration",
+      "api_start": 0,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": null,
+          "hear": {
+            "ok": true,
+            "heard": "C00005、Zプラス方向に30ミリ",
+            "source": "text",
+            "facts": {
+              "text": "C00005、Zプラス方向に30ミリ",
+              "kinds": [
+                "move"
+              ],
+              "positions": [
+                "C00005"
+              ],
+              "bad_positions": [],
+              "amounts": [
+                "30ミリ"
+              ],
+              "unclear_amounts": [],
+              "axes": [
+                "Z"
+              ],
+              "explicit_axes": [
+                "Z"
+              ],
+              "value_axes": [],
+              "vertical": false,
+              "sides": [],
+              "refers_to_selection": false,
+              "requested_value": 30.0,
+              "stop_reasons": [],
+              "unknown_words": [],
+              "negations": [],
+              "undo_negations": [],
+              "question": false,
+              "question_text": null,
+              "repeat": null,
+              "place_ref": null,
+              "place_as_destination": false,
+              "relative_dir": []
+            },
+            "tool_calls": [
+              {
+                "tool": "propose_change",
+                "args": {
+                  "kind": "shift",
+                  "position": "C00005",
+                  "axis": "Z",
+                  "delta_mm": 30.0
+                }
+              }
+            ],
+            "dialog": false,
+            "status": "stop",
+            "message": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+            "blocked_reason": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません",
+            "candidate_made": false,
+            "choices": [],
+            "state": {
+              "session_id": "R-oxUGguuSbjRIFRLs2PKA",
+              "mode": "simulation",
+              "job_name": "DEMO_C_PLACE",
+              "selected": null,
+              "facts": {
+                "text": "C00005、Zプラス方向に30ミリ",
+                "kinds": [
+                  "move"
+                ],
+                "positions": [
+                  "C00005"
+                ],
+                "bad_positions": [],
+                "amounts": [
+                  "30ミリ"
+                ],
+                "unclear_amounts": [],
+                "axes": [
+                  "Z"
+                ],
+                "explicit_axes": [
+                  "Z"
+                ],
+                "value_axes": [],
+                "vertical": false,
+                "sides": [],
+                "refers_to_selection": false,
+                "requested_value": 30.0,
+                "stop_reasons": [],
+                "unknown_words": [],
+                "negations": [],
+                "undo_negations": [],
+                "question": false,
+                "question_text": null,
+                "repeat": null,
+                "place_ref": null,
+                "place_as_destination": false,
+                "relative_dir": []
+              },
+              "direction_names": {},
+              "direction_names_source": "確認済みの方向の名前はありません",
+              "updown": {
+                "status": "unconfirmed",
+                "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+                "confirmed_by": null,
+                "confirmed_at": null,
+                "fingerprint": null,
+                "robot": null,
+                "app_robot": "HC20DT"
+              },
+              "facing": {
+                "confirmed": false,
+                "message": null
+              },
+              "candidate": null,
+              "confirmation_text": null,
+              "blocked_reason": null,
+              "approval": null,
+              "can_approve": false,
+              "exportable": true,
+              "can_export": false,
+              "exported": null,
+              "after_approval": null,
+              "out_dir": "C:\\Users\\User\\voice-teaching-cock-filming\\output\\sim",
+              "mock_notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）",
+              "interpreter": {
+                "kind": "claude",
+                "model": "claude-sonnet-5-5",
+                "notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+              },
+              "log": [
+                {
+                  "kind": "Claude",
+                  "text": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：C00005、Zプラス方向に30ミリ"
+                },
+                {
+                  "kind": "Claude",
+                  "text": "道具 propose_change を呼びました：kind=shift、position=C00005、axis=Z、delta_mm=30.0"
+                },
+                {
+                  "kind": "止めた理由",
+                  "text": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません"
+                },
+                {
+                  "kind": "止めた理由",
+                  "text": "シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません"
+                }
+              ],
+              "dialog": {
+                "step": null,
+                "turn": 0,
+                "word": null,
+                "relative": null,
+                "candidates": [],
+                "choices": [],
+                "position": null,
+                "amount_mm": null,
+                "direction": null,
+                "estimated": null,
+                "speaker": "Claude",
+                "locator": {
+                  "kind": "claude",
+                  "label": "Claude（claude-sonnet-5-5）"
+                },
+                "turns": []
+              },
+              "repeat_range": null,
+              "status_line": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ"
+            }
+          },
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.9752,
+      "api_call_ids": [
+        1
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+        "conversation": "人\nC00005、Zプラス方向に30ミリ\nアプリ\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false
+    },
+    {
+      "id": "F05",
+      "input": "C00005、Zプラス方向に5ミリ",
+      "condition": "live_configuration",
+      "api_start": 1,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": null,
+          "hear": {
+            "ok": true,
+            "heard": "C00005、Zプラス方向に5ミリ",
+            "source": "text",
+            "facts": {
+              "text": "C00005、Zプラス方向に5ミリ",
+              "kinds": [
+                "move"
+              ],
+              "positions": [
+                "C00005"
+              ],
+              "bad_positions": [],
+              "amounts": [
+                "5ミリ"
+              ],
+              "unclear_amounts": [],
+              "axes": [
+                "Z"
+              ],
+              "explicit_axes": [
+                "Z"
+              ],
+              "value_axes": [],
+              "vertical": false,
+              "sides": [],
+              "refers_to_selection": false,
+              "requested_value": 5.0,
+              "stop_reasons": [],
+              "unknown_words": [],
+              "negations": [],
+              "undo_negations": [],
+              "question": false,
+              "question_text": null,
+              "repeat": null,
+              "place_ref": null,
+              "place_as_destination": false,
+              "relative_dir": []
+            },
+            "tool_calls": [
+              {
+                "tool": "propose_change",
+                "args": {
+                  "kind": "shift",
+                  "position": "C00005",
+                  "axis": "Z",
+                  "delta_mm": 5.0
+                }
+              }
+            ],
+            "dialog": false,
+            "status": "ok",
+            "message": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+            "blocked_reason": null,
+            "candidate_made": true,
+            "choices": [],
+            "state": {
+              "session_id": "R-oxUGguuSbjRIFRLs2PKA",
+              "mode": "simulation",
+              "job_name": "DEMO_C_PLACE",
+              "selected": "C00005",
+              "facts": {
+                "text": "C00005、Zプラス方向に5ミリ",
+                "kinds": [
+                  "move"
+                ],
+                "positions": [
+                  "C00005"
+                ],
+                "bad_positions": [],
+                "amounts": [
+                  "5ミリ"
+                ],
+                "unclear_amounts": [],
+                "axes": [
+                  "Z"
+                ],
+                "explicit_axes": [
+                  "Z"
+                ],
+                "value_axes": [],
+                "vertical": false,
+                "sides": [],
+                "refers_to_selection": false,
+                "requested_value": 5.0,
+                "stop_reasons": [],
+                "unknown_words": [],
+                "negations": [],
+                "undo_negations": [],
+                "question": false,
+                "question_text": null,
+                "repeat": null,
+                "place_ref": null,
+                "place_as_destination": false,
+                "relative_dir": []
+              },
+              "direction_names": {},
+              "direction_names_source": "確認済みの方向の名前はありません",
+              "updown": {
+                "status": "unconfirmed",
+                "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+                "confirmed_by": null,
+                "confirmed_at": null,
+                "fingerprint": null,
+                "robot": null,
+                "app_robot": "HC20DT"
+              },
+              "facing": {
+                "confirmed": false,
+                "message": null
+              },
+              "candidate": {
+                "kind": "shift",
+                "target": "C00005 Z",
+                "line_no": 14,
+                "before_line": "C00005=400.000,150.000,200.000,180.00,0.00,0.00",
+                "after_line": "C00005=400.000,150.000,205.000,180.00,0.00,0.00",
+                "before_value": "200.000",
+                "after_value": "205.000",
+                "delta": "+5.000",
+                "affected": [
+                  "29行目「MOVL C00004 V=200.0 PL=0」（この位置へ入る区間の始まり）",
+                  "30行目「MOVL C00005 V=50.0 PL=0」（この位置へ入る移動）",
+                  "34行目「MOVL C00006 V=50.0 PL=0」（この位置から出る移動。PL=0 付き）"
+                ],
+                "warnings": [
+                  "この位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。",
+                  "この位置はツール番号 0 で書かれています"
+                ],
+                "blocked_reason": null,
+                "heard": "C00005、Zプラス方向に5ミリ",
+                "after_positions": [
+                  {
+                    "name": "C00000",
+                    "line_no": 9,
+                    "line": "C00000=400.000,0.000,400.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      0.0,
+                      400.0
+                    ]
+                  },
+                  {
+                    "name": "C00001",
+                    "line_no": 10,
+                    "line": "C00001=400.000,-150.000,300.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      -150.0,
+                      300.0
+                    ]
+                  },
+                  {
+                    "name": "C00002",
+                    "line_no": 11,
+                    "line": "C00002=400.000,-150.000,200.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      -150.0,
+                      200.0
+                    ]
+                  },
+                  {
+                    "name": "C00003",
+                    "line_no": 12,
+                    "line": "C00003=400.000,-150.000,300.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      -150.0,
+                      300.0
+                    ]
+                  },
+                  {
+                    "name": "C00004",
+                    "line_no": 13,
+                    "line": "C00004=400.000,150.000,300.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      150.0,
+                      300.0
+                    ]
+                  },
+                  {
+                    "name": "C00005",
+                    "line_no": 14,
+                    "line": "C00005=400.000,150.000,205.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      150.0,
+                      205.0
+                    ]
+                  },
+                  {
+                    "name": "C00006",
+                    "line_no": 15,
+                    "line": "C00006=400.000,150.000,300.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      150.0,
+                      300.0
+                    ]
+                  },
+                  {
+                    "name": "C00007",
+                    "line_no": 16,
+                    "line": "C00007=400.000,0.000,400.000,180.00,0.00,0.00",
+                    "format": "ROBOT",
+                    "rectan": true,
+                    "robot_coordinates": true,
+                    "after_unknown_directive": false,
+                    "tool": "0",
+                    "user": null,
+                    "rconf": "0,0,0,0,0,0,0,0",
+                    "xyz": [
+                      400.0,
+                      0.0,
+                      400.0
+                    ]
+                  }
+                ],
+                "after_segments": [
+                  {
+                    "from": "C00000",
+                    "to": "C00001",
+                    "line_no": 24,
+                    "text": "MOVL C00001 V=200.0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00001",
+                    "to": "C00002",
+                    "line_no": 25,
+                    "text": "MOVL C00002 V=50.0 PL=0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00002",
+                    "to": "C00003",
+                    "line_no": 28,
+                    "text": "MOVL C00003 V=50.0 PL=0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00003",
+                    "to": "C00004",
+                    "line_no": 29,
+                    "text": "MOVL C00004 V=200.0 PL=0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00004",
+                    "to": "C00005",
+                    "line_no": 30,
+                    "text": "MOVL C00005 V=50.0 PL=0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00005",
+                    "to": "C00006",
+                    "line_no": 34,
+                    "text": "MOVL C00006 V=50.0 PL=0",
+                    "kind": "movl",
+                    "solid": true
+                  },
+                  {
+                    "from": "C00006",
+                    "to": "C00007",
+                    "line_no": 35,
+                    "text": "MOVL C00007 V=200.0",
+                    "kind": "movl",
+                    "solid": true
+                  }
+                ],
+                "moved": "C00005",
+                "before_xyz": [
+                  "400.000",
+                  "150.000",
+                  "200.000"
+                ],
+                "after_xyz": [
+                  "400.000",
+                  "150.000",
+                  "205.000"
+                ],
+                "estimated": null,
+                "direction_names": {},
+                "updown": {
+                  "status": "unconfirmed",
+                  "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+                  "confirmed_by": null,
+                  "confirmed_at": null,
+                  "fingerprint": null,
+                  "robot": null
+                }
+              },
+              "confirmation_text": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+              "blocked_reason": null,
+              "approval": null,
+              "can_approve": true,
+              "exportable": true,
+              "can_export": false,
+              "exported": null,
+              "after_approval": null,
+              "out_dir": "C:\\Users\\User\\voice-teaching-cock-filming\\output\\sim",
+              "mock_notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）",
+              "interpreter": {
+                "kind": "claude",
+                "model": "claude-sonnet-5-5",
+                "notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+              },
+              "log": [
+                {
+                  "kind": "Claude",
+                  "text": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：C00005、Zプラス方向に30ミリ"
+                },
+                {
+                  "kind": "Claude",
+                  "text": "道具 propose_change を呼びました：kind=shift、position=C00005、axis=Z、delta_mm=30.0"
+                },
+                {
+                  "kind": "止めた理由",
+                  "text": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません"
+                },
+                {
+                  "kind": "止めた理由",
+                  "text": "シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：C00005、Zプラス方向に5ミリ"
+                },
+                {
+                  "kind": "Claude",
+                  "text": "道具 propose_change を呼びました：kind=shift、position=C00005、axis=Z、delta_mm=5.0"
+                },
+                {
+                  "kind": "候補",
+                  "text": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います"
+                }
+              ],
+              "dialog": {
+                "step": null,
+                "turn": 0,
+                "word": null,
+                "relative": null,
+                "candidates": [],
+                "choices": [],
+                "position": null,
+                "amount_mm": null,
+                "direction": null,
+                "estimated": null,
+                "speaker": "Claude",
+                "locator": {
+                  "kind": "claude",
+                  "label": "Claude（claude-sonnet-5-5）"
+                },
+                "turns": []
+              },
+              "repeat_range": null,
+              "status_line": "アプリの記録：変更の候補 あり（まだ動作データは変えていません）／承認 まだ／出力 まだ"
+            }
+          },
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "approve",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "export",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "load",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.3059,
+      "api_call_ids": [
+        2
+      ],
+      "ui": {
+        "next": "動きを確かめてください",
+        "reply": "",
+        "conversation": "人\nC00005、Zプラス方向に30ミリ\nアプリ\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません\n人\nC00005、Zプラス方向に5ミリ\nアプリ\n位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+        "candidate": "C00005\n\nZ方向に +5.000mm\n\nZ 200.000→205.000\n\n指示：「C00005、Zプラス方向に5ミリ」\n\n\tX\tY\tZ\n変更前\t400.000\t150.000\t200.000\n変更後\t400.000\t150.000\t205.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。\nこの位置はツール番号 0 で書かれています",
+        "xyz": [
+          "400.000",
+          "150.000",
+          "200.000",
+          "400.000",
+          "150.000",
+          "205.000"
+        ],
+        "status": "アプリの記録：変更の候補 あり（まだ動作データは変えていません）／承認 まだ／出力 まだ",
+        "can_open_review": true,
+        "mic_visible": false
+      },
+      "from_voice_transcript_double": false
+    },
+    {
+      "id": "C1",
+      "input": "このロボット、何してる？",
+      "condition": "live_configuration",
+      "api_start": 2,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 1,
+            "first_turn": true,
+            "reply": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+            "reply_by": "app",
+            "checked": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+            "notes": [],
+            "evidence": [
+              {
+                "line": 24,
+                "text": "MOVL C00001 V=200.0",
+                "note": "C00001 へ直線で動く",
+                "positions": [
+                  "C00001"
+                ]
+              },
+              {
+                "line": 25,
+                "text": "MOVL C00002 V=50.0 PL=0",
+                "note": "C00002 へ直線で動く",
+                "positions": [
+                  "C00002"
+                ]
+              },
+              {
+                "line": 26,
+                "text": "DOUT OT#(1) ON",
+                "note": "信号を入れる",
+                "positions": []
+              },
+              {
+                "line": 28,
+                "text": "MOVL C00003 V=50.0 PL=0",
+                "note": "C00003 へ直線で動く",
+                "positions": [
+                  "C00003"
+                ]
+              },
+              {
+                "line": 29,
+                "text": "MOVL C00004 V=200.0 PL=0",
+                "note": "C00004 へ直線で動く",
+                "positions": [
+                  "C00004"
+                ]
+              },
+              {
+                "line": 30,
+                "text": "MOVL C00005 V=50.0 PL=0",
+                "note": "C00005 へ直線で動く",
+                "positions": [
+                  "C00005"
+                ]
+              },
+              {
+                "line": 32,
+                "text": "DOUT OT#(1) OFF",
+                "note": "信号を切る",
+                "positions": []
+              },
+              {
+                "line": 34,
+                "text": "MOVL C00006 V=50.0 PL=0",
+                "note": "C00006 へ直線で動く",
+                "positions": [
+                  "C00006"
+                ]
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 206,
+              "cache_creation_input_tokens": 3587,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.011036,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 4,
+              "output_tokens": 206,
+              "cache_creation_input_tokens": 3587,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.011036,
+              "calls": 1
+            },
+            "total_cost_usd": 0.011036,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                24,
+                25,
+                26,
+                28,
+                29,
+                30,
+                32,
+                34
+              ],
+              "positions": [
+                "C00001",
+                "C00002",
+                "C00003",
+                "C00004",
+                "C00005",
+                "C00006"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）",
+              "25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）",
+              "26行目：DOUT OT#(1) ON（信号を入れる）",
+              "28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）",
+              "29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）",
+              "30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）",
+              "32行目：DOUT OT#(1) OFF（信号を切る）",
+              "34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）"
+            ],
+            "source": "voice",
+            "heard": "このロボット、何してる？",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 3.2809,
+      "api_call_ids": [
+        3
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": true,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+        "reply_by": "app",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C2",
+      "input": "一言で説明して",
+      "condition": "live_configuration",
+      "api_start": 3,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 2,
+            "first_turn": false,
+            "reply": "信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？",
+            "reply_by": "claude",
+            "checked": null,
+            "notes": [],
+            "evidence": [
+              {
+                "line": 26,
+                "text": "DOUT OT#(1) ON",
+                "note": "信号を入れる",
+                "positions": []
+              },
+              {
+                "line": 29,
+                "text": "MOVL C00004 V=200.0 PL=0",
+                "note": "C00004 へ直線で動く",
+                "positions": [
+                  "C00004"
+                ]
+              },
+              {
+                "line": 32,
+                "text": "DOUT OT#(1) OFF",
+                "note": "信号を切る",
+                "positions": []
+              },
+              {
+                "line": 35,
+                "text": "MOVL C00007 V=200.0",
+                "note": "C00007 へ直線で動く",
+                "positions": [
+                  "C00007"
+                ]
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [
+              "何かをつかんで運ぶ動きですか？"
+            ],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 167,
+              "cache_creation_input_tokens": 328,
+              "cache_read_input_tokens": 3587
+            },
+            "cost_usd": 0.003215,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 8,
+              "output_tokens": 373,
+              "cache_creation_input_tokens": 3915,
+              "cache_read_input_tokens": 3587,
+              "cost_usd": 0.014251,
+              "calls": 2
+            },
+            "total_cost_usd": 0.014251,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                26,
+                29,
+                32,
+                35
+              ],
+              "positions": [
+                "C00004",
+                "C00007"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "26行目：DOUT OT#(1) ON（信号を入れる）",
+              "29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）",
+              "32行目：DOUT OT#(1) OFF（信号を切る）",
+              "35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）"
+            ],
+            "source": "text",
+            "heard": "一言で説明して",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.549,
+      "api_call_ids": [
+        4
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？",
+        "reply_by": "claude",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C3",
+      "input": "初めて見る人に、動きの流れをできるだけ詳しく説明して",
+      "condition": "live_configuration",
+      "api_start": 4,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 3,
+            "first_turn": false,
+            "reply": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+            "reply_by": "app",
+            "checked": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+            "notes": [],
+            "evidence": [
+              {
+                "line": 24,
+                "text": "MOVL C00001 V=200.0",
+                "note": "C00001 へ直線で動く",
+                "positions": [
+                  "C00001"
+                ]
+              },
+              {
+                "line": 25,
+                "text": "MOVL C00002 V=50.0 PL=0",
+                "note": "C00002 へ直線で動く",
+                "positions": [
+                  "C00002"
+                ]
+              },
+              {
+                "line": 26,
+                "text": "DOUT OT#(1) ON",
+                "note": "信号を入れる",
+                "positions": []
+              },
+              {
+                "line": 27,
+                "text": "TIMER T=0.50",
+                "note": "待つ",
+                "positions": []
+              },
+              {
+                "line": 28,
+                "text": "MOVL C00003 V=50.0 PL=0",
+                "note": "C00003 へ直線で動く",
+                "positions": [
+                  "C00003"
+                ]
+              },
+              {
+                "line": 29,
+                "text": "MOVL C00004 V=200.0 PL=0",
+                "note": "C00004 へ直線で動く",
+                "positions": [
+                  "C00004"
+                ]
+              },
+              {
+                "line": 30,
+                "text": "MOVL C00005 V=50.0 PL=0",
+                "note": "C00005 へ直線で動く",
+                "positions": [
+                  "C00005"
+                ]
+              },
+              {
+                "line": 31,
+                "text": "TIMER T=3.00",
+                "note": "待つ",
+                "positions": []
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 337,
+              "cache_creation_input_tokens": 220,
+              "cache_read_input_tokens": 3915
+            },
+            "cost_usd": 0.004711,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 12,
+              "output_tokens": 710,
+              "cache_creation_input_tokens": 4135,
+              "cache_read_input_tokens": 7502,
+              "cost_usd": 0.018962,
+              "calls": 3
+            },
+            "total_cost_usd": 0.018962,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "positions": [
+                "C00001",
+                "C00002",
+                "C00003",
+                "C00004",
+                "C00005"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）",
+              "25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）",
+              "26行目：DOUT OT#(1) ON（信号を入れる）",
+              "27行目：TIMER T=0.50（待つ）",
+              "28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）",
+              "29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）",
+              "30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）",
+              "31行目：TIMER T=3.00（待つ）"
+            ],
+            "source": "text",
+            "heard": "初めて見る人に、動きの流れをできるだけ詳しく説明して",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 4.0054,
+      "api_call_ids": [
+        5
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）\n人\n初めて見る人に、動きの流れをできるだけ詳しく説明して\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　31行目：TIMER T=3.00（待つ）\n\n根拠の行（8）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）",
+        "reply_by": "app",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C4",
+      "input": "何回繰り返している？",
+      "condition": "live_configuration",
+      "api_start": 5,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 4,
+            "first_turn": false,
+            "reply": "この動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。",
+            "reply_by": "claude",
+            "checked": null,
+            "notes": [],
+            "evidence": [
+              {
+                "line": 21,
+                "text": "NOP",
+                "note": "",
+                "positions": []
+              },
+              {
+                "line": 36,
+                "text": "END",
+                "note": "",
+                "positions": []
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 155,
+              "cache_creation_input_tokens": 453,
+              "cache_read_input_tokens": 4135
+            },
+            "cost_usd": 0.003517,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 16,
+              "output_tokens": 865,
+              "cache_creation_input_tokens": 4588,
+              "cache_read_input_tokens": 11637,
+              "cost_usd": 0.022479,
+              "calls": 4
+            },
+            "total_cost_usd": 0.022479,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                21,
+                36
+              ],
+              "positions": [],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "21行目：NOP",
+              "36行目：END"
+            ],
+            "source": "text",
+            "heard": "何回繰り返している？",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.5148,
+      "api_call_ids": [
+        6
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）\n人\n初めて見る人に、動きの流れをできるだけ詳しく説明して\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　31行目：TIMER T=3.00（待つ）\n\n根拠の行（8）\n人\n何回繰り返している？\nClaude\nこの動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。\n\n補足 21行目：NOP　36行目：END\n\n根拠の行（2）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "この動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。",
+        "reply_by": "claude",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C5",
+      "input": "どこからどこまで動く？",
+      "condition": "live_configuration",
+      "api_start": 6,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 5,
+            "first_turn": false,
+            "reply": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）",
+            "reply_by": "app",
+            "checked": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）",
+            "notes": [],
+            "evidence": [
+              {
+                "line": 23,
+                "text": "MOVL C00000 V=200.0",
+                "note": "C00000 へ直線で動く",
+                "positions": [
+                  "C00000"
+                ]
+              },
+              {
+                "line": 24,
+                "text": "MOVL C00001 V=200.0",
+                "note": "C00001 へ直線で動く",
+                "positions": [
+                  "C00001"
+                ]
+              },
+              {
+                "line": 25,
+                "text": "MOVL C00002 V=50.0 PL=0",
+                "note": "C00002 へ直線で動く",
+                "positions": [
+                  "C00002"
+                ]
+              },
+              {
+                "line": 28,
+                "text": "MOVL C00003 V=50.0 PL=0",
+                "note": "C00003 へ直線で動く",
+                "positions": [
+                  "C00003"
+                ]
+              },
+              {
+                "line": 29,
+                "text": "MOVL C00004 V=200.0 PL=0",
+                "note": "C00004 へ直線で動く",
+                "positions": [
+                  "C00004"
+                ]
+              },
+              {
+                "line": 30,
+                "text": "MOVL C00005 V=50.0 PL=0",
+                "note": "C00005 へ直線で動く",
+                "positions": [
+                  "C00005"
+                ]
+              },
+              {
+                "line": 34,
+                "text": "MOVL C00006 V=50.0 PL=0",
+                "note": "C00006 へ直線で動く",
+                "positions": [
+                  "C00006"
+                ]
+              },
+              {
+                "line": 35,
+                "text": "MOVL C00007 V=200.0",
+                "note": "C00007 へ直線で動く",
+                "positions": [
+                  "C00007"
+                ]
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 196,
+              "cache_creation_input_tokens": 192,
+              "cache_read_input_tokens": 4588
+            },
+            "cost_usd": 0.003366,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 20,
+              "output_tokens": 1061,
+              "cache_creation_input_tokens": 4780,
+              "cache_read_input_tokens": 16225,
+              "cost_usd": 0.025845,
+              "calls": 5
+            },
+            "total_cost_usd": 0.025845,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                23,
+                24,
+                25,
+                28,
+                29,
+                30,
+                34,
+                35
+              ],
+              "positions": [
+                "C00000",
+                "C00001",
+                "C00002",
+                "C00003",
+                "C00004",
+                "C00005",
+                "C00006",
+                "C00007"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）",
+              "24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）",
+              "25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）",
+              "28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）",
+              "29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）",
+              "30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）",
+              "34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）",
+              "35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）"
+            ],
+            "source": "text",
+            "heard": "どこからどこまで動く？",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.4027,
+      "api_call_ids": [
+        7
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）\n人\n初めて見る人に、動きの流れをできるだけ詳しく説明して\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　31行目：TIMER T=3.00（待つ）\n\n根拠の行（8）\n人\n何回繰り返している？\nClaude\nこの動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。\n\n補足 21行目：NOP　36行目：END\n\n根拠の行（2）\n人\nどこからどこまで動く？\nアプリ\nClaude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）\n\n補足 23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）　24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（8）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）",
+        "reply_by": "app",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C6",
+      "input": "今の説明を短くまとめて",
+      "condition": "live_configuration",
+      "api_start": 7,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 6,
+            "first_turn": false,
+            "reply": "最初の位置から動き始めて、最後の位置まで順に動きます。",
+            "reply_by": "claude",
+            "checked": null,
+            "notes": [],
+            "evidence": [
+              {
+                "line": 23,
+                "text": "MOVL C00000 V=200.0",
+                "note": "C00000 へ直線で動く",
+                "positions": [
+                  "C00000"
+                ]
+              },
+              {
+                "line": 35,
+                "text": "MOVL C00007 V=200.0",
+                "note": "C00007 へ直線で動く",
+                "positions": [
+                  "C00007"
+                ]
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 146,
+              "cache_creation_input_tokens": 314,
+              "cache_read_input_tokens": 4780
+            },
+            "cost_usd": 0.003209,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 24,
+              "output_tokens": 1207,
+              "cache_creation_input_tokens": 5094,
+              "cache_read_input_tokens": 21005,
+              "cost_usd": 0.029054,
+              "calls": 6
+            },
+            "total_cost_usd": 0.029054,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                23,
+                35
+              ],
+              "positions": [
+                "C00000",
+                "C00007"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）",
+              "35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）"
+            ],
+            "source": "text",
+            "heard": "今の説明を短くまとめて",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 2.405,
+      "api_call_ids": [
+        8
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）\n人\n初めて見る人に、動きの流れをできるだけ詳しく説明して\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　31行目：TIMER T=3.00（待つ）\n\n根拠の行（8）\n人\n何回繰り返している？\nClaude\nこの動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。\n\n補足 21行目：NOP　36行目：END\n\n根拠の行（2）\n人\nどこからどこまで動く？\nアプリ\nClaude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）\n\n補足 23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）　24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（8）\n人\n今の説明を短くまとめて\nClaude\n最初の位置から動き始めて、最後の位置まで順に動きます。\n\n補足 23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（2）",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "app_answer": {
+        "ok": true,
+        "status": "answered",
+        "reply": "最初の位置から動き始めて、最後の位置まで順に動きます。",
+        "reply_by": "claude",
+        "error": null,
+        "model": "claude-sonnet-5-5",
+        "hidden_reason": null
+      }
+    },
+    {
+      "id": "C7-limit",
+      "input": "ありがとう",
+      "condition": "live_configuration",
+      "api_start": 8,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": false,
+            "status": "too_many_turns",
+            "error": "この会話は 6 回の質問の上限に達しました。「会話をやり直す」で始め直してください",
+            "reply_by": "app",
+            "highlight": {
+              "lines": [],
+              "positions": [],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [],
+            "source": "text",
+            "heard": "ありがとう",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "load",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": false,
+        "send_disabled": false,
+        "load_disabled": false,
+        "heading": "話しかけるか、点か番号を押してください"
+      },
+      "seconds": 0.9699,
+      "api_call_ids": [],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）\n\n根拠の行（8）\n人\n一言で説明して\nClaude\n信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？\n\n? AI の推定（未確定）何かをつかんで運ぶ動きですか？\n\n補足 26行目：DOUT OT#(1) ON（信号を入れる）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（4）\n人\n初めて見る人に、動きの流れをできるだけ詳しく説明して\nアプリ\nClaude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　31行目：TIMER T=3.00（待つ）\n\n根拠の行（8）\n人\n何回繰り返している？\nClaude\nこの動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。\n\n補足 21行目：NOP　36行目：END\n\n根拠の行（2）\n人\nどこからどこまで動く？\nアプリ\nClaude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）\n\n補足 23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）　24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　34行目：MOVL C00006 V=50.0 PL=0（C00006 へ直線で動く）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（8）\n人\n今の説明を短くまとめて\nClaude\n最初の位置から動き始めて、最後の位置まで順に動きます。\n\n補足 23行目：MOVL C00000 V=200.0（C00000 へ直線で動く）　35行目：MOVL C00007 V=200.0（C00007 へ直線で動く）\n\n根拠の行（2）\n人\nありがとう\nアプリ\nこの会話は 6 回の質問の上限に達しました。「会話をやり直す」で始め直してください\n会話をやり直す",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false,
+      "scroll": {
+        "height": 478,
+        "content": 2684,
+        "top": 0
+      }
+    },
+    {
+      "id": "D1",
+      "input": "C00005を5ミリ動かして",
+      "condition": "live_configuration",
+      "api_start": 8,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": null,
+          "hear": {
+            "ok": true,
+            "heard": "C00005を5ミリ動かして",
+            "source": "text",
+            "facts": {
+              "text": "C00005を5ミリ動かして",
+              "kinds": [
+                "move"
+              ],
+              "positions": [
+                "C00005"
+              ],
+              "bad_positions": [],
+              "amounts": [
+                "5ミリ"
+              ],
+              "unclear_amounts": [],
+              "axes": [],
+              "explicit_axes": [],
+              "value_axes": [],
+              "vertical": false,
+              "sides": [],
+              "refers_to_selection": false,
+              "requested_value": null,
+              "stop_reasons": [],
+              "unknown_words": [],
+              "negations": [],
+              "undo_negations": [],
+              "question": false,
+              "question_text": null,
+              "repeat": null,
+              "place_ref": null,
+              "place_as_destination": false,
+              "relative_dir": []
+            },
+            "tool_calls": [],
+            "dialog": false,
+            "status": "ask",
+            "message": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+            "blocked_reason": null,
+            "candidate_made": false,
+            "choices": [],
+            "state": {
+              "session_id": "1Ww0a7yEc5FegPaquvcDMA",
+              "mode": "simulation",
+              "job_name": "DEMO_C_PLACE",
+              "selected": null,
+              "facts": {
+                "text": "C00005を5ミリ動かして",
+                "kinds": [
+                  "move"
+                ],
+                "positions": [
+                  "C00005"
+                ],
+                "bad_positions": [],
+                "amounts": [
+                  "5ミリ"
+                ],
+                "unclear_amounts": [],
+                "axes": [],
+                "explicit_axes": [],
+                "value_axes": [],
+                "vertical": false,
+                "sides": [],
+                "refers_to_selection": false,
+                "requested_value": null,
+                "stop_reasons": [],
+                "unknown_words": [],
+                "negations": [],
+                "undo_negations": [],
+                "question": false,
+                "question_text": null,
+                "repeat": null,
+                "place_ref": null,
+                "place_as_destination": false,
+                "relative_dir": []
+              },
+              "direction_names": {},
+              "direction_names_source": "確認済みの方向の名前はありません",
+              "updown": {
+                "status": "unconfirmed",
+                "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+                "confirmed_by": null,
+                "confirmed_at": null,
+                "fingerprint": null,
+                "robot": null,
+                "app_robot": "HC20DT"
+              },
+              "facing": {
+                "confirmed": false,
+                "message": null
+              },
+              "candidate": null,
+              "confirmation_text": null,
+              "blocked_reason": null,
+              "approval": null,
+              "can_approve": false,
+              "exportable": true,
+              "can_export": false,
+              "exported": null,
+              "after_approval": null,
+              "out_dir": "C:\\Users\\User\\voice-teaching-cock-filming\\output\\sim",
+              "mock_notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）",
+              "interpreter": {
+                "kind": "claude",
+                "model": "claude-sonnet-5-5",
+                "notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+              },
+              "log": [
+                {
+                  "kind": "Claude",
+                  "text": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：C00005を5ミリ動かして"
+                },
+                {
+                  "kind": "聞き返し",
+                  "text": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？"
+                }
+              ],
+              "dialog": {
+                "step": null,
+                "turn": 0,
+                "word": null,
+                "relative": null,
+                "candidates": [],
+                "choices": [],
+                "position": null,
+                "amount_mm": null,
+                "direction": null,
+                "estimated": null,
+                "speaker": "Claude",
+                "locator": {
+                  "kind": "claude",
+                  "label": "Claude（claude-sonnet-5-5）"
+                },
+                "turns": []
+              },
+              "repeat_range": null,
+              "status_line": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ"
+            }
+          },
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": false,
+        "send_disabled": false,
+        "load_disabled": false,
+        "heading": "話しかけるか、点か番号を押してください"
+      },
+      "seconds": 0.9927,
+      "api_call_ids": [],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "もう少し教えてください\n\nどの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？\n\n次にすること移動する方向を指定してください例：「Zプラス方向に10mm」",
+        "conversation": "人\nC00005を5ミリ動かして\nアプリ\nどの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false
+    },
+    {
+      "id": "D2",
+      "input": "右へ5ミリ",
+      "condition": "live_configuration",
+      "api_start": 8,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": null,
+          "hear": {
+            "ok": true,
+            "heard": "右へ5ミリ",
+            "source": "text",
+            "facts": {
+              "text": "右へ5ミリ",
+              "kinds": [
+                "move"
+              ],
+              "positions": [],
+              "bad_positions": [],
+              "amounts": [
+                "5ミリ"
+              ],
+              "unclear_amounts": [],
+              "axes": [],
+              "explicit_axes": [],
+              "value_axes": [],
+              "vertical": false,
+              "sides": [
+                "右"
+              ],
+              "refers_to_selection": false,
+              "requested_value": null,
+              "stop_reasons": [],
+              "unknown_words": [],
+              "negations": [],
+              "undo_negations": [],
+              "question": false,
+              "question_text": null,
+              "repeat": null,
+              "place_ref": null,
+              "place_as_destination": false,
+              "relative_dir": [
+                "右"
+              ]
+            },
+            "tool_calls": [],
+            "dialog": false,
+            "status": "ask",
+            "message": "右へ5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+            "blocked_reason": null,
+            "candidate_made": false,
+            "choices": [
+              {
+                "label": "合っている",
+                "text": "［向きの確かめ：合っている］#e5d2d4cd42369a2b"
+              },
+              {
+                "label": "違う",
+                "text": "［向きの確かめ：違う］#e5d2d4cd42369a2b"
+              }
+            ],
+            "state": {
+              "session_id": "1Ww0a7yEc5FegPaquvcDMA",
+              "mode": "simulation",
+              "job_name": "DEMO_C_PLACE",
+              "selected": null,
+              "facts": {
+                "text": "右へ5ミリ",
+                "kinds": [
+                  "move"
+                ],
+                "positions": [],
+                "bad_positions": [],
+                "amounts": [
+                  "5ミリ"
+                ],
+                "unclear_amounts": [],
+                "axes": [],
+                "explicit_axes": [],
+                "value_axes": [],
+                "vertical": false,
+                "sides": [
+                  "右"
+                ],
+                "refers_to_selection": false,
+                "requested_value": null,
+                "stop_reasons": [],
+                "unknown_words": [],
+                "negations": [],
+                "undo_negations": [],
+                "question": false,
+                "question_text": null,
+                "repeat": null,
+                "place_ref": null,
+                "place_as_destination": false,
+                "relative_dir": [
+                  "右"
+                ]
+              },
+              "direction_names": {},
+              "direction_names_source": "確認済みの方向の名前はありません",
+              "updown": {
+                "status": "unconfirmed",
+                "message": "上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+                "confirmed_by": null,
+                "confirmed_at": null,
+                "fingerprint": null,
+                "robot": null,
+                "app_robot": "HC20DT"
+              },
+              "facing": {
+                "confirmed": false,
+                "message": null
+              },
+              "candidate": null,
+              "confirmation_text": null,
+              "blocked_reason": null,
+              "approval": null,
+              "can_approve": false,
+              "exportable": true,
+              "can_export": false,
+              "exported": null,
+              "after_approval": null,
+              "out_dir": "C:\\Users\\User\\voice-teaching-cock-filming\\output\\sim",
+              "mock_notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）",
+              "interpreter": {
+                "kind": "claude",
+                "model": "claude-sonnet-5-5",
+                "notice": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+              },
+              "log": [
+                {
+                  "kind": "Claude",
+                  "text": "本物の Claude（claude-sonnet-5-5）で解釈します。送るのは、指示の文・選んでいる位置番号・位置番号の一覧です。「置くところ」などの場所の言葉のときだけ、架空のサンプルのジョブの命令の行も送ります（座標値・ジョブ名は送りません）"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：C00005を5ミリ動かして"
+                },
+                {
+                  "kind": "聞き返し",
+                  "text": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？"
+                },
+                {
+                  "kind": "発話",
+                  "text": "文字：右へ5ミリ"
+                },
+                {
+                  "kind": "聞き返し",
+                  "text": "右へ5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？"
+                }
+              ],
+              "dialog": {
+                "step": null,
+                "turn": 0,
+                "word": null,
+                "relative": null,
+                "candidates": [],
+                "choices": [],
+                "position": null,
+                "amount_mm": null,
+                "direction": null,
+                "estimated": null,
+                "speaker": "Claude",
+                "locator": {
+                  "kind": "claude",
+                  "label": "Claude（claude-sonnet-5-5）"
+                },
+                "turns": []
+              },
+              "repeat_range": null,
+              "status_line": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ"
+            }
+          },
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": false,
+        "send_disabled": false,
+        "load_disabled": false,
+        "heading": "話しかけるか、点か番号を押してください"
+      },
+      "seconds": 0.6065,
+      "api_call_ids": [],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "もう少し教えてください\n\n右へ5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？\n\n合っている\n違う",
+        "conversation": "人\nC00005を5ミリ動かして\nアプリ\nどの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？\n人\n右へ5ミリ\nアプリ\n右へ5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false
+    },
+    {
+      "id": "D3",
+      "input": "このロボットは何をしているの？",
+      "condition": "live_configuration",
+      "api_start": 8,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": true,
+            "status": "answered",
+            "turn": 1,
+            "first_turn": true,
+            "reply": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します）",
+            "reply_by": "app",
+            "checked": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します）",
+            "notes": [
+              "動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？"
+            ],
+            "evidence": [
+              {
+                "line": 24,
+                "text": "MOVL C00001 V=200.0",
+                "note": "C00001 へ直線で動く",
+                "positions": [
+                  "C00001"
+                ]
+              },
+              {
+                "line": 25,
+                "text": "MOVL C00002 V=50.0 PL=0",
+                "note": "C00002 へ直線で動く",
+                "positions": [
+                  "C00002"
+                ]
+              },
+              {
+                "line": 26,
+                "text": "DOUT OT#(1) ON",
+                "note": "信号を入れる",
+                "positions": []
+              },
+              {
+                "line": 27,
+                "text": "TIMER T=0.50",
+                "note": "待つ",
+                "positions": []
+              },
+              {
+                "line": 28,
+                "text": "MOVL C00003 V=50.0 PL=0",
+                "note": "C00003 へ直線で動く",
+                "positions": [
+                  "C00003"
+                ]
+              },
+              {
+                "line": 29,
+                "text": "MOVL C00004 V=200.0 PL=0",
+                "note": "C00004 へ直線で動く",
+                "positions": [
+                  "C00004"
+                ]
+              },
+              {
+                "line": 30,
+                "text": "MOVL C00005 V=50.0 PL=0",
+                "note": "C00005 へ直線で動く",
+                "positions": [
+                  "C00005"
+                ]
+              },
+              {
+                "line": 32,
+                "text": "DOUT OT#(1) OFF",
+                "note": "信号を切る",
+                "positions": []
+              }
+            ],
+            "intent": "explain",
+            "change_request": null,
+            "change_record": null,
+            "guesses": [],
+            "usage": {
+              "input_tokens": 4,
+              "output_tokens": 198,
+              "cache_creation_input_tokens": 3589,
+              "cache_read_input_tokens": 0
+            },
+            "cost_usd": 0.01096,
+            "estimated_worst_case": false,
+            "session_usage": {
+              "input_tokens": 4,
+              "output_tokens": 198,
+              "cache_creation_input_tokens": 3589,
+              "cache_read_input_tokens": 0,
+              "cost_usd": 0.01096,
+              "calls": 1
+            },
+            "total_cost_usd": 0.040014,
+            "budget_usd": 5.0,
+            "model": "claude-sonnet-5-5",
+            "usage_notice": null,
+            "highlight": {
+              "lines": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                32
+              ],
+              "positions": [
+                "C00001",
+                "C00002",
+                "C00003",
+                "C00004",
+                "C00005"
+              ],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [
+              "24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）",
+              "25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）",
+              "26行目：DOUT OT#(1) ON（信号を入れる）",
+              "27行目：TIMER T=0.50（待つ）",
+              "28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）",
+              "29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）",
+              "30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）",
+              "32行目：DOUT OT#(1) OFF（信号を切る）"
+            ],
+            "source": "text",
+            "heard": "このロボットは何をしているの？",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "load",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": true,
+        "send_disabled": true,
+        "load_disabled": true,
+        "heading": "少しお待ちください"
+      },
+      "seconds": 3.2174,
+      "api_call_ids": [
+        9
+      ],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nC00005を5ミリ動かして\nアプリ\nどの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？\n人\n右へ5ミリ\nアプリ\n右へ5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？\n人\nこのロボットは何をしているの？\nアプリ\nClaude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します）\n\n補足 24行目：MOVL C00001 V=200.0（C00001 へ直線で動く）　25行目：MOVL C00002 V=50.0 PL=0（C00002 へ直線で動く）　26行目：DOUT OT#(1) ON（信号を入れる）　27行目：TIMER T=0.50（待つ）　28行目：MOVL C00003 V=50.0 PL=0（C00003 へ直線で動く）　29行目：MOVL C00004 V=200.0 PL=0（C00004 へ直線で動く）　30行目：MOVL C00005 V=50.0 PL=0（C00005 へ直線で動く）　32行目：DOUT OT#(1) OFF（信号を切る）\n\n根拠の行（8）\nアプリ\n動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false
+    },
+    {
+      "id": "E-timeout",
+      "input": "このロボット、何してる？",
+      "condition": "SDK_TIMEOUT_INJECTED_NO_PROVIDER_CALL",
+      "api_start": 9,
+      "http": [
+        {
+          "path": "talk",
+          "status": 200,
+          "ask": {
+            "ok": false,
+            "status": "error",
+            "error": "Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください",
+            "reply_by": "app",
+            "total_cost_usd": 0.040014,
+            "highlight": {
+              "lines": [],
+              "positions": [],
+              "context_lines": [],
+              "entry_lines": []
+            },
+            "supplement": [],
+            "source": "text",
+            "heard": "このロボット、何してる？",
+            "taught_note": null,
+            "talk": {
+              "meanings": [],
+              "pending": null,
+              "human_mark": "ユーザー登録情報（人が教えた・この会話の中だけ）",
+              "ai_mark": "AI の推定（未確定）",
+              "notices": []
+            }
+          },
+          "hear": null,
+          "error": null,
+          "ok": true
+        },
+        {
+          "path": "ask",
+          "status": 200,
+          "ask": null,
+          "hear": null,
+          "error": null,
+          "ok": true
+        }
+      ],
+      "waiting": {
+        "thinking": false,
+        "send_disabled": false,
+        "load_disabled": false,
+        "heading": "話しかけるか、点か番号を押してください"
+      },
+      "seconds": 1.1541,
+      "api_call_ids": [],
+      "ui": {
+        "next": "話しかけるか、点か番号を押してください",
+        "reply": "",
+        "conversation": "人\nこのロボット、何してる？\nアプリ\nClaude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください",
+        "candidate": "",
+        "xyz": [],
+        "status": "アプリの記録：変更の候補 なし／承認 まだ／出力 まだ",
+        "can_open_review": false,
+        "mic_visible": true
+      },
+      "from_voice_transcript_double": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "initial UI visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mic displayed with real browser API",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "30mm rejected without candidate",
+      "passed": true,
+      "detail": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません"
+    },
+    {
+      "name": "30mm stop reason visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "5mm exact target/XYZ",
+      "passed": true,
+      "detail": [
+        "400.000",
+        "150.000",
+        "200.000",
+        "400.000",
+        "150.000",
+        "205.000"
+      ]
+    },
+    {
+      "name": "5mm candidate review reachable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review warnings visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "review exact changed Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "human approval reflected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "synthetic simulation export created",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recognition double fills input without API/auto-send",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C1: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C1: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C1: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C1: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C2: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C2: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C2: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C2: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C3: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C3: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C3: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C3: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C4: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C4: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C4: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C4: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C5: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C5: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C5: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C5: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C6: response text displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C6: waiting locks visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C6: application reply preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C6: no horizontal page clipping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conversation limit shown without new API",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conversation scroll available",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D plays alongside conversation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D view controls alongside conversation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D1: no silent approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D1: no definite candidate for unknown direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D1: question visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D2: no silent approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D2: no definite candidate for unknown direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D2: question visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "D3: no silent approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeout error visible",
+      "passed": true,
+      "detail": "人\nこのロボット、何してる？\nアプリ\nClaude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください"
+    },
+    {
+      "name": "browser connection error visible",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "errors": [],
+  "provider_calls": 9,
+  "provider_success": 9,
+  "transport_attempts": 9,
+  "tokens": {
+    "input_tokens": 2326,
+    "output_tokens": 1599,
+    "cache_creation_input_tokens": 8683,
+    "cache_read_input_tokens": 21005
+  },
+  "estimated_cost_usd": 0.04445,
+  "median_api_seconds": 1.8153,
+  "real_microphone": "NOT_RUN: no human utterance captured",
+  "recognition_double": true,
+  "safety_final_verdict": "NOT_EVALUATED; Issue 5/6 remain with implementation owner"
+}

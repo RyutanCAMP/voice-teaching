@@ -1,0 +1,19 @@
+{
+  "python": "Python 3.13.17",
+  "packages": {
+    "anthropic": "2.5.0",
+    "httpx2": "2.16.0",
+    "playwright": "1.64.1"
+  },
+  "runtime_sha": "a5e146413f27d2096603bb521a01a9227f96ca33",
+  "api_base": "https://api.anthropic.com",
+  "model": "claude-sonnet-5-5",
+  "SDK_max_retries": 1,
+  "timeout_seconds": 30,
+  "viewport": [
+    1920,
+    1080
+  ],
+  "credentials_copied": false,
+  "runtime_diff": []
+}

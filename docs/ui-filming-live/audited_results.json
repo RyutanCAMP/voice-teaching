@@ -1,0 +1,45 @@
+{
+  "source": "results.json + api_calls.json, saved actual API trace; NO new API calls",
+  "ui_pass": 49,
+  "ui_fail": 0,
+  "conversation_delivery_checks": [
+    {
+      "name": "C1: requested explanation delivered as Claude text",
+      "passed": false,
+      "detail": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）"
+    },
+    {
+      "name": "C2: requested explanation delivered as Claude text",
+      "passed": true,
+      "detail": "信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？"
+    },
+    {
+      "name": "C3: requested explanation delivered as Claude text",
+      "passed": false,
+      "detail": "Claude の答えに、安全・距離・動かしてよいかを決めつける言い方が入っていたため、表示しません（このアプリでは判断しません。人が確かめてください）"
+    },
+    {
+      "name": "C4: requested explanation delivered as Claude text",
+      "passed": true,
+      "detail": "この動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。"
+    },
+    {
+      "name": "C5: requested explanation delivered as Claude text",
+      "passed": false,
+      "detail": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です）"
+    },
+    {
+      "name": "C6: requested explanation delivered as Claude text",
+      "passed": true,
+      "detail": "最初の位置から動き始めて、最後の位置まで順に動きます。"
+    },
+    {
+      "name": "D3: requested explanation delivered as Claude text",
+      "passed": false,
+      "detail": "Claude の答えに、動く大きさ（大きく・少し など）を言う言い方が入っていたため、表示しません（動く量は、アプリが動作データから表示します）"
+    }
+  ],
+  "delivery_pass": 3,
+  "delivery_fail": 4,
+  "combined_expected_exit_code": 1
+}

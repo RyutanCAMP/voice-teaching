@@ -1,0 +1,7 @@
+{
+  "scanned_files": 25,
+  "findings": [],
+  "exact_api_key_checked_in_memory_only": true,
+  "env_copied": false,
+  "only_synthetic_test_payloads": true
+}

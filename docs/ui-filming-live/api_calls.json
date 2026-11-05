@@ -1,0 +1,462 @@
+{
+  "calls": [
+    {
+      "id": 1,
+      "case": "F30",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1149,
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "propose_position",
+          "input": {
+            "position": "C00005",
+            "direction": "Z+",
+            "amount_mm": 30
+          },
+          "text": null
+        }
+      ],
+      "seconds": 2.0934
+    },
+    {
+      "id": 2,
+      "case": "F05",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 1149,
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "propose_position",
+          "input": {
+            "position": "C00005",
+            "direction": "Z+",
+            "amount_mm": 5
+          },
+          "text": null
+        }
+      ],
+      "seconds": 1.3768
+    },
+    {
+      "id": 3,
+      "case": "C1",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 3587
+        },
+        "cache_creation_input_tokens": 3587,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 206,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "Z方向に動いて信号を入れ、少し待ってから横に移動します。その後も同じようにZ方向に動き、信号を切って最後に離れていきます。物をつかんで運ぶ動きですか？",
+            "evidence_lines": [
+              24,
+              25,
+              26,
+              28,
+              29,
+              30,
+              32,
+              34,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 2.4841
+    },
+    {
+      "id": 4,
+      "case": "C2",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 328
+        },
+        "cache_creation_input_tokens": 328,
+        "cache_read_input_tokens": 3587,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 167,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "信号を入れて切りながら、決まった順に動く動作データです。何かをつかんで運ぶ動きですか？",
+            "evidence_lines": [
+              26,
+              29,
+              32,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 1.7221
+    },
+    {
+      "id": 5,
+      "case": "C3",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 220
+        },
+        "cache_creation_input_tokens": 220,
+        "cache_read_input_tokens": 3915,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 337,
+        "output_tokens_details": {
+          "thinking_tokens": 135
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "Z方向に動いて信号を入れ、少し待って横へ移動します。次にまたZ方向に動いて待ち、信号を切って離れていきます。",
+            "evidence_lines": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              34,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 3.0647
+    },
+    {
+      "id": 6,
+      "case": "C4",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 453
+        },
+        "cache_creation_input_tokens": 453,
+        "cache_read_input_tokens": 4135,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 155,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "この動作データには、くり返しの命令は入っていません。最初から最後まで順に動くだけです。",
+            "evidence_lines": [
+              21,
+              36
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 1.7511
+    },
+    {
+      "id": 7,
+      "case": "C5",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 192
+        },
+        "cache_creation_input_tokens": 192,
+        "cache_read_input_tokens": 4588,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 196,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "最初の位置から動き始め、Z方向と横方向に動いたあと、最後の位置で終わります。最初の位置が待機の場所か、確かめたいですか？",
+            "evidence_lines": [
+              23,
+              24,
+              25,
+              28,
+              29,
+              30,
+              34,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 1.8153
+    },
+    {
+      "id": 8,
+      "case": "C6",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 314
+        },
+        "cache_creation_input_tokens": 314,
+        "cache_read_input_tokens": 4780,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "最初の位置から動き始めて、最後の位置まで順に動きます。",
+            "evidence_lines": [
+              23,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 1.7118
+    },
+    {
+      "id": 9,
+      "case": "D3",
+      "model": "claude-sonnet-5-5",
+      "ok": true,
+      "stop_reason": "tool_use",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 3589
+        },
+        "cache_creation_input_tokens": 3589,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 4,
+        "output_tokens": 198,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": null,
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "response_model": "claude-sonnet-5-5",
+      "answers": [
+        {
+          "type": "tool_use",
+          "name": "answer",
+          "input": {
+            "reply": "直線で動いて、Z方向に動いてから信号を出し、少し待って場所を移し、また信号を切って戻る動きです。何かを持ち運ぶ動作ですか？",
+            "evidence_lines": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              32,
+              34,
+              35
+            ],
+            "intent": "explain",
+            "change_request": null
+          },
+          "text": null
+        }
+      ],
+      "seconds": 2.4837
+    }
+  ],
+  "transport_attempts": [
+    {
+      "case": "F30",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "F05",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C1",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C2",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C3",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C4",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C5",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "C6",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    },
+    {
+      "case": "D3",
+      "method": "POST",
+      "path": "/v1/messages",
+      "status_code": 200
+    }
+  ]
+}
