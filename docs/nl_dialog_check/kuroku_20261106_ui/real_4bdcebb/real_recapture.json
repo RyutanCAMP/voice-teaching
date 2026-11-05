@@ -1,0 +1,177 @@
+{
+ "summary": {
+  "calls": 8,
+  "errors": 0,
+  "tokens_in": 2318,
+  "tokens_out": 1276,
+  "usd_est": 0.0174,
+  "models": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "root": "<tmp>",
+ "results": [
+  {
+   "id": "G04",
+   "run": 1,
+   "title": "Zプラスに十ミリ（契約：C00005 Z +10）",
+   "verdict": "PASS",
+   "reply": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "cand": {
+    "target": "C00005 Z",
+    "delta": "+10.000",
+    "before": null,
+    "after": null
+   },
+   "api": 1
+  },
+  {
+   "id": "G11",
+   "run": 1,
+   "title": "ゼットプラスに十ミリ（契約：clarify＝候補なし）",
+   "verdict": "FAIL",
+   "reply": "位置 C00005 を Z方向に +10.000mm 動かします（Z：200.000 → 210.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "cand": {
+    "target": "C00005 Z",
+    "delta": "+10.000",
+    "before": null,
+    "after": null
+   },
+   "api": 1
+  },
+  {
+   "id": "H16",
+   "run": 1,
+   "title": "（3回の候補）変更は取り消して、何してるか教えて",
+   "verdict": "PASS",
+   "reply": "前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。元の動作データは変わっていません。続けて、読み込んだ元の動作データについて答えます / Claude の答えに、プログラムが計算していない数が入っていたため、表示しません",
+   "cand_after": false,
+   "g0": 1,
+   "g": 2,
+   "approve": false,
+   "export_old": false,
+   "export_now": false,
+   "api": 1,
+   "status": "アプリの記録：変更の候補 なし（前の候補は取消のため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "id": "H16a",
+   "run": 1,
+   "title": "（3回の候補・承認済み）変更は取り消して、何してるか教えて",
+   "verdict": "PASS",
+   "reply": "前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。元の動作データは変わっていません。続けて、読み込んだ元の動作データについて答えます前の承認も取り消しました。 / Claude の答えに、プログラムが計算していない数が入っていたため、表示しません",
+   "cand_after": false,
+   "g0": 1,
+   "g": 2,
+   "approve": false,
+   "export_old": false,
+   "export_now": false,
+   "api": 1,
+   "status": "アプリの記録：変更の候補 なし（前の候補は取消のため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "id": "H02",
+   "run": 1,
+   "title": "（3回の候補）さっきの3回じゃなくて2回",
+   "verdict": "PASS",
+   "reply": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。元の動作データは変わっていません。動作データでは今2回です。2回のままなら、変更はありません",
+   "cand_after": false,
+   "g0": 1,
+   "g": 2,
+   "approve": false,
+   "export_old": false,
+   "export_now": false,
+   "api": 0,
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "id": "H02a",
+   "run": 1,
+   "title": "（3回の候補・承認済み）さっきの3回じゃなくて2回",
+   "verdict": "PASS",
+   "reply": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。動作データでは今2回です。2回のままなら、変更はありません",
+   "cand_after": false,
+   "g0": 1,
+   "g": 2,
+   "approve": false,
+   "export_old": false,
+   "export_now": false,
+   "api": 0,
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  }
+ ],
+ "calls": [
+  {
+   "sec": 1.9,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.33,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 2.62,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 168
+   },
+   "error": null
+  },
+  {
+   "sec": 2.23,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 188
+   },
+   "error": null
+  },
+  {
+   "sec": 2.04,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 173
+   },
+   "error": null
+  },
+  {
+   "sec": 3.0,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 185
+   },
+   "error": null
+  },
+  {
+   "sec": 2.22,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 195
+   },
+   "error": null
+  },
+  {
+   "sec": 2.14,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 4,
+    "out": 173
+   },
+   "error": null
+  }
+ ]
+}
