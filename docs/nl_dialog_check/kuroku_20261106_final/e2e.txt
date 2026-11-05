@@ -902,9 +902,9 @@ OK  11/5 夜 H3 オープニング（出し直し）：Space を2回：消える
 OK  11/5 夜 H3 オープニング（出し直し）：Escape を2回で飛ばしても、下の画面に届かない（届いた：なし・ファイルの窓 0・送信 0）
 OK  11/5 夜 H3 オープニング（出し直し）：Escape を2回：消えるまで 517ms（消えかけの分だけ。待ちを足さない）
 OK  11/5 H10（1920×1080）：承認後の出力先の注意は、アプリの中の場所（output\sim）だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「出力先：…\output\sim\（.JBI.txt）。実機での取り違えを完全に防ぐものではありません。実機には入れないでください。」 title=絶対パス
-OK  11/5 H10（1920×1080）：出力のあとの結果は、ファイル名と output\sim だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「✓ シミュレーション用に出力しました（実機には入れないでください） DEMO_C_PLACE_SIM.JBI.txt（場所：…\output\sim\）」 title=['C:\\Users\\User\\AppData\\Local\\Temp\\tmpe3buef9e\\h10_1920\\output\\sim\\DEMO_C_PLACE_SIM.JBI.txt']
+OK  11/5 H10（1920×1080）：出力のあとの結果は、ファイル名と output\sim だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「✓ シミュレーション用に出力しました（実機には入れないでください） DEMO_C_PLACE_SIM.JBI.txt（場所：…\output\sim\）」 title=['<tmp>\\h10_1920\\output\\sim\\DEMO_C_PLACE_SIM.JBI.txt']
 OK  11/5 H10（1280×720）：承認後の出力先の注意は、アプリの中の場所（output\sim）だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「出力先：…\output\sim\（.JBI.txt）。実機での取り違えを完全に防ぐものではありません。実機には入れないでください。」 title=絶対パス
-OK  11/5 H10（1280×720）：出力のあとの結果は、ファイル名と output\sim だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「✓ シミュレーション用に出力しました（実機には入れないでください） DEMO_C_PLACE_SIM.JBI.txt（場所：…\output\sim\）」 title=['C:\\Users\\User\\AppData\\Local\\Temp\\tmpe3buef9e\\h10_1280\\output\\sim\\DEMO_C_PLACE_SIM.JBI.txt']
+OK  11/5 H10（1280×720）：出力のあとの結果は、ファイル名と output\sim だけを見せる（利用者のフォルダを出さない）。絶対パスは title に残す：「✓ シミュレーション用に出力しました（実機には入れないでください） DEMO_C_PLACE_SIM.JBI.txt（場所：…\output\sim\）」 title=['<tmp>\\h10_1280\\output\\sim\\DEMO_C_PLACE_SIM.JBI.txt']
 OK  11/5 N4(a)：声で入った文を確かめるときの見出しは、本当のボタン［送る］の名前で言う（目立つのは［送る］だけ）：文を確かめて［送る］
 OK  11/5 N4(c)：指示の答えを待っている間は、待っていると言う（🎤 を押すように言わない）：少しお待ちください
 OK  11/5 N4(c)：答えのあとは、ふだんの見出しに戻る：動きを確かめてください
