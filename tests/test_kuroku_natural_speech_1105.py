@@ -414,3 +414,112 @@ def test_kore_and_motto_never_make_a_candidate_on_their_own(tmp_path, text):
     w, _, sid = A.place_flow(tmp_path)
     r = w.talk(sid, text, "voice")
     assert not cand(r) and not r["state"]["approval"], (text, hear(r).get("message"))
+
+
+# ---- 11. 1つの発話の中の言い直し（唐川さん 11/6：「10ミリ、いや5ミリ」は最後の意思を理解して聞き返す） ----
+# 候補にはしない。最後の言い方をボタンで確かめ、押したらその文がふつうの指示として全部の検査を通る。
+# 承認待ちの候補があるときは出さない（候補があるときの言い直しは P0。シクロの担当なので今までどおり）
+@pytest.mark.parametrize("said,final,target,delta", [
+    ("Zプラス10ミリ、いや5ミリ", "Zプラス5ミリ", "C00003 Z", "+5.000"),
+    ("10ミリ、いや5ミリ、Zプラス", "Zプラス5ミリ", "C00003 Z", "+5.000"),
+    ("Zマイナス、じゃなくてZプラス3ミリ", "Zプラス3ミリ", "C00003 Z", "+3.000"),
+    ("C00004、じゃなかったC00003をZプラス3ミリ", "C00003をZプラス3ミリ", "C00003 Z", "+3.000"),
+    ("Zプラス5ミリ、ごめん3ミリ", "Zプラス3ミリ", "C00003 Z", "+3.000"),
+    ("Zプラス3ミリ、いや、Zマイナス3ミリ", "Zマイナス3ミリ", "C00003 Z", "-3.000"),
+    ("Yプラス、まちがえた、Yマイナス10ミリ", "Yマイナス10ミリ", "C00003 Y", "-10.000"),
+    ("Zプラス3ミリ、じゃなくて2ミリ", "Zプラス2ミリ", "C00003 Z", "+2.000"),
+    ("Zプラス30ミリ、いや3ミリ", "Zプラス3ミリ", "C00003 Z", "+3.000"),
+    ("Xプラス2ミリ…やっぱりYプラス2ミリ", "Yプラス2ミリ", "C00003 Y", "+2.000"),
+    ("Zプラス十ミリ、いや五ミリ", "Zプラス5ミリ", "C00003 Z", "+5.000"),
+])
+def test_self_correction_asks_the_last_wording_by_button(tmp_path, said, final, target, delta):
+    w, fake, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, said, "voice")
+    assert not cand(r) and not w.approve(sid, "QA", candidate_gen=w.candidate_gen_of(sid))["ok"]  # 確かめる前は承認できるものが無い（P0 で世代番号が必須になった）
+    msg = hear(r).get("message", "")
+    assert f"最後の言い方「{final}」" in msg, msg
+    (label, text), = [(c["label"], c["text"]) for c in hear(r)["choices"]]
+    assert label == f"「{final}」で指示する"
+    assert len(fake.requests) == 0  # 言い直しの読み取りはプログラムだけ（Claude は呼ばない）
+    # 声の「はい」「そうです」では候補にしない（ボタンだけ。会話の道なので Claude に聞く係は呼ばれる）
+    for yes in ("はい", "そうです"):
+        assert not cand(w.talk(sid, yes, "voice"))
+    r = w.talk(sid, said, "voice")
+    text = next(c["text"] for c in hear(r)["choices"])
+    c = w.hear(sid, text, "text")["state"]["candidate"]
+    assert c and (c["target"], c["delta"]) == (target, delta), (said, c)
+
+
+@pytest.mark.parametrize("said", [
+    "上に、いや下に3ミリ", "Zプラス3ミリ、いや", "Zプラス3ミリ、やっぱりやめた", "Zプラス3ミリ承認して、いや5ミリ",
+    "Zプラス3ミリ、いや5ミリ、いや4ミリ", "Zプラス3ミリ動かさないで、いや5ミリ", "Yマイナス、違うプラス、3ミリ", "Zプラス3ミリ、いや5ミリくらい",
+    "Zプラス3ミリ、いや右に5ミリ", "Zプラス3ミリ、いやYとZに5ミリ", "いや、Zプラス3ミリ",
+])
+def test_self_correction_is_not_offered_when_unclear(tmp_path, said):
+    w, _, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, said, "voice")
+    assert not cand(r)
+    assert "最後の言い方" not in hear(r).get("message", ""), (said, hear(r))
+
+
+def test_self_correction_over_the_limit_is_still_refused(tmp_path):
+    w, _, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, "Zプラス3ミリ、いや30ミリ", "voice")
+    text = next(c["text"] for c in hear(r)["choices"])
+    r2 = w.hear(sid, text, "text")
+    assert not r2["state"]["candidate"] and "上限" in (r2.get("message") or hear(r2).get("message", ""))
+
+
+def test_self_correction_is_not_offered_with_a_pending_candidate(tmp_path):
+    """候補があるときの言い直しは P0（シクロ）の道：ボタンを出さない。古い候補（+3）は無効になり、承認・出力できない。
+    新しい候補もその場では作らない（11/6：P0・F-1 の修正のあとの挙動に合わせた。前の期待「+3 の候補が残る」は古い）。"""
+    w, _, sid = A.place_flow(tmp_path)
+    w.talk(sid, "Zプラス3ミリ")
+    g0 = w.candidate_gen_of(sid)
+    r = w.talk(sid, "Zプラス10ミリ、いや5ミリ", "voice")
+    assert "最後の言い方" not in hear(r).get("message", "") and not labels(r)
+    assert r["state"]["candidate"] is None
+    assert not w.approve(sid, "QA", candidate_gen=g0)["ok"]
+    assert not w.export(sid, candidate_gen=g0)["ok"]
+
+
+@pytest.mark.parametrize("said,n", [("10ミリ、いや5ミリ", "5"), ("10ミリ、ごめん、5ミリ", "5"), ("十ミリ、いや三ミリ", "3")])
+def test_self_correction_without_axis_asks_only_axis_and_direction(tmp_path, said, n):
+    """「10ミリ、いや5ミリ」：最後の量だけ分かった。軸と向きだけを聞く（候補・ボタンなし。1つの向きを勧めない）。"""
+    w, fake, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, said, "voice")
+    msg = hear(r).get("message", "")
+    assert not cand(r) and not labels(r)
+    assert msg.startswith(f"言い直しのあとの量は {n}mm ですね。どの軸の、どちらの向きですか？"), msg
+    assert f"Xプラス{n}ミリ" in msg and f"Zマイナス{n}ミリ" in msg
+    assert len(fake.requests) == 0
+
+
+# ---- 12. 「Yのマイナスに10ミリ」（軸と符号の間の「の」）・「〜てほしいな」・「〜てもらってもいい？」 ----
+@pytest.mark.parametrize("new,old", [
+    ("Yのマイナスに10ミリ", "Yマイナスに10ミリ"),
+    ("Xのプラスに1ミリ", "Xプラスに1ミリ"),
+    ("Yのマイナスへ10ミリ", "Yマイナスへ10ミリ"),
+    ("Yのマイナスに10ミリずらしたいです", "Yマイナスに10ミリずらして"),
+    ("Zプラス3ミリ動かしてほしいな", "Zプラス3ミリ動かして"),
+    ("Zプラス3ミリ動かしてもらってもいい？", "Zプラス3ミリ動かしてくれる？"),
+    ("Zプラス3ミリ動かしてもらってもいいですか", "Zプラス3ミリ動かしてくれる？"),
+])
+def test_round3_wording_is_read_like_the_known_wording(tmp_path, new, old):
+    assert outcome(tmp_path / "a", new) == outcome(tmp_path / "b", old), (new, old)
+
+
+@pytest.mark.parametrize("text", ["Yの方向に10mm", "Yのに10ミリ", "Yのマイナスに", "Yのマイナスにプラス10ミリ", "Zプラス3ミリ動かしたいな",
+                                  "Yのマイナスに10ミリくらい", "Yのマイナスに30ミリ"])
+def test_round3_still_no_candidate(tmp_path, text):
+    w, _, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, text, "voice")
+    assert not cand(r), (text, hear(r).get("message"))
+
+
+def test_self_correction_to_a_position_not_in_the_job_is_not_offered(tmp_path):
+    """ジョブに無い位置（C00099）への言い直しは、ボタンを出さずに今どおり止める。"""
+    w, _, sid = A.place_flow(tmp_path)
+    r = w.talk(sid, "C00004、いやC00099をZプラス3ミリ", "voice")
+    assert not cand(r) and not labels(r), hear(r)
+    assert "最後の言い方" not in hear(r).get("message", "")

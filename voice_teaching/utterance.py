@@ -181,7 +181,8 @@ _VAGUE = re.compile(r"そこそこ|半分|もうちょっと|もうちょい|少
 # 符号の言葉は + − プラス マイナス だけ（長音「ー」・正・負・側・向き・方 は読まない。聞き返す）
 _AXIS_RE = re.compile(r"(?<![A-Z])(?P<axis>[XYZ])\s?(?:"
                       r"(?:軸\s?)?(?:の\s?)?(?P<sign_dir>マイナス|プラス|[+\-])\s?(?:の\s?)?(?:軸方向|方向)"
-                      r"|(?P<sign>マイナス|プラス|[+\-])?\s?(?:方向|軸|に|へ))")
+                      # 「Yのマイナスに10ミリ」「Xのプラスに1ミリ」：軸と符号の間の「の」も（クローク 11/6。「Yマイナスに」と同じ）
+                      r"|(?:の\s?(?=マイナス|プラス|[+\-]))?(?P<sign>マイナス|プラス|[+\-])?\s?(?:方向|軸|に|へ))")
 # 「Xマイナス5ミリ」「Y +3 mm」「X の -5ミリ」：軸のすぐ後（「の」をはさんでもよい）に符号と数字。符号は量の側（_SIGN_BEFORE）で読むので、ここでは軸だけ
 _AXIS_SIGNED_NUM = re.compile(r"(?<![A-Z])([XYZ])\s?(?:の\s?)?(?=(?:マイナス|プラス|[+\-])\s?[0-9])")
 # 文の終わりの「Zマイナス」「Zのプラス」「Z-」（数字が後に無い）：軸と向き（聞き返しへの答え「Zマイナス」→「3ミリ」のため）
@@ -587,7 +588,8 @@ _MASU_END = re.compile(rf"(?<={'|'.join(MASU_AFTER)})(?:ておき)?ます[ねよ
 # 「〜ます」と同じく外して2択で確かめる（候補にしない。安全の決まりは緩めない）。「くれない」「もらえない」は外さない
 # 博多弁・北九州の「〜てくれん（？）」「〜てくれんね」「〜てくれんかいな」「〜てくれんやろか」「〜てもらえん」（＝〜してくれない？）も、
 # お願いとも質問とも読めるので同じ2択（クローク 11/5 夜。候補にしない）
-_KURERU_END = re.compile(r"(?<=て)(?:くれる|くれます|もらえる|もらえます"
+# 「〜てもらってもいい（ですか）」「〜てもらえますか」（11/6）も同じ2択
+_KURERU_END = re.compile(r"(?<=て)(?:くれる|くれます|もらえる|もらえます|もらってもいい(?:です)?"
                          r"|(?:くれ|もらえ)ん(?:ね|と|です|か(?:いな|ね)?|やろ(?:か|う)?)?)[ねよ]?[\s　。．.!！]*$")
 _NI_SHIMASU_END = re.compile(r"([0-9０-９]+(?:[.．][0-9０-９]+)?\s*(?:mm|ＭＭ|MM|ｍｍ|ミリメートル|ミリ))\s*に(?:しておき|し)ます[ねよ]?[\s　。．.!！]*$", re.I)
 # 文の終わりの希望の言い方（クローク 11/5 夜。唐川さんの実マイク「この位置を上に3mm上げたい」→「「たい」が分かりませんでした」）。
@@ -598,11 +600,13 @@ _NI_SHIMASU_END = re.compile(r"([0-9０-９]+(?:[.．][0-9０-９]+)?\s*(?:mm|�
 WISH_AFTER = ("動かさせ", "移動させ", "動かし", "ずらし", "移動し", "上げ", "下げ", "あげ", "さげ", "寄せ")
 # 言い終わりの続き：「です」「んです（けど・が）」「んだけど」「のですが」、博多弁の「っちゃけど」「っちゃん」
 _WISH_TAIL = r"(?:です|んです(?:けど|が)?|んだけど|のですが|っちゃけど|っちゃん)?"
+# 「〜てほしいな」（やわらかい頼み方）も。「〜たいな」は、ためらいとも読めるので入れない
+_WISH_SOFT = r"てほしいな"
 # 話し言葉・博多弁の頼み方：「上げとって」「上げといて」「動かしちゃって」「動かしてやって」「動かしてみて」「動かしときー」
 # （＝〜しておいて・〜してしまって。お願い）。同じ文の「〜て」と同じに読む。「動かしよって」（〜している）は入れない
 _DIALECT_REQUEST = r"とって|といて|ときー?|ちゃって|てやって|てみて"
 _WISH_END = re.compile(f"(?:{_alt(WISH_AFTER)})"
-                       rf"(?P<wish>(?:たい|て(?:ほしい|もらいたい|いただきたい)){_WISH_TAIL}|{_DIALECT_REQUEST})"
+                       rf"(?P<wish>{_WISH_SOFT}|(?:たい|て(?:ほしい|もらいたい|いただきたい)){_WISH_TAIL}|{_DIALECT_REQUEST})"
                        r"[\s　。．.!！]*$")
 
 
@@ -1436,6 +1440,57 @@ def pre_check(facts: UtteranceFacts, selected: str | None = None,
     if not t:
         return _ask(QUESTION_RESTATE_MESSAGE)
     return _ask(f"「{t}」でよいですか？", ((t, t),))
+
+
+# ---- 1つの発話の中の言い直し（「Zプラス10ミリ、いや5ミリ」。唐川さん 11/6：最後の意思を理解して聞き返す） ----
+# 言い直しの印がちょうど1つあり、印の後ろ（最後の意思）を優先して、足りない軸・符号・量・位置だけを前から足すと、
+# 軸・符号・量・位置がそれぞれ1つに決まるときだけ、その文をボタンで確かめる（候補にしない。ボタンの文はふつうの指示として全部の検査を通る）。
+# 上下・右左・あいまいな量・知らない言葉・打ち消しが残るとき、数が決まらないときは None（今どおり打ち消しで止める）。
+# 承認待ちの候補があるときは使わない（Session が候補の無いときだけ呼ぶ。候補があるときの言い直しは P0 の扱い）
+_CORRECTION_MARK = re.compile(r"[、,，\s]*(?:じゃなかった|じゃなくて|ではなくて|ではなく|じゃなく|まちがえた|間違えた|ちがう|違う|ごめん|いや|やっぱり)[、,，\s]*")
+SELF_CORRECTION_MESSAGE = "言い直しがありました。最後の言い方「{text}」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）"
+SELF_CORRECTION_AXIS_MESSAGE = ("言い直しのあとの量は {n}mm ですね。どの軸の、どちらの向きですか？"
+                                "（「Xプラス{n}ミリ」「Zマイナス{n}ミリ」のように、軸と向きと量を一緒に言ってください）")
+
+
+def _correction_parts(f: UtteranceFacts) -> dict | None:
+    if (set(f.kinds) - {"move", "select"} or f.unknown_words or f.negations or f.undo_negations or f.unclear_amounts or f.vertical or f.sides
+            or f.relative_dir or f.speed_signs or f.repeat or f.place_ref or f.bad_positions or f.stray_signs
+            or len(f.axes) > 1 or len(set(f.axis_signs)) > 1 or len(f.amounts) > 1 or len(f.positions) > 1):
+        return None
+    sign = f.axis_signs[0] if f.axis_signs else (f.amounts[0].sign if f.amounts and f.amounts[0].sign else None)
+    return {"axis": f.axes[0] if f.axes else None, "sign": sign,
+            "amount": f.amounts[0] if f.amounts else None, "position": f.positions[0] if f.positions else None}
+
+
+def self_correction(facts: UtteranceFacts) -> Verdict | None:
+    """「Zプラス10ミリ、いや5ミリ」→「Zプラス5ミリ」でよいかをボタンで確かめる。決まらなければ None。"""
+    if facts.question or not (facts.op == "move" or (facts.op is None and not facts.kinds and facts.amounts)):
+        return None  # 移動の指示（または「10ミリ、いや5ミリ」のように量だけの発話）のときだけ
+    t = _spoken(normalize(facts.raw)).strip()
+    marks = list(_CORRECTION_MARK.finditer(t))
+    if len(marks) != 1:
+        return None
+    before, after = t[: marks[0].start()].strip(), t[marks[0].end():].strip(" 、。,.!！")
+    if not before or not after:
+        return None
+    a, b = _correction_parts(read_utterance(after)), _correction_parts(read_utterance(before))
+    if a is None or b is None or not any(a.values()):
+        return None
+    merged = {k: a[k] if a[k] is not None else b[k] for k in a}
+    if merged["amount"] is not None and merged["amount"].unit == "mm" and (merged["axis"] is None or merged["sign"] is None):
+        # 「10ミリ、いや5ミリ」：最後の量だけ分かった。足りない軸と向きだけを聞く（候補・ボタンなし。例は1つの向きを勧めない）
+        n = _num(merged["amount"].value)
+        return _ask(SELF_CORRECTION_AXIS_MESSAGE.format(n=n))
+    if merged["axis"] is None or merged["sign"] is None or merged["amount"] is None or merged["amount"].unit != "mm":
+        return None
+    v = merged["amount"].value
+    text = (f"{merged['position']}を" if merged["position"] else "") + \
+        f"{merged['axis']}{'プラス' if merged['sign'] > 0 else 'マイナス'}{_num(v)}ミリ"
+    final = read_utterance(text)
+    if final.unknown_words or final.negations or len(final.amounts) != 1 or final.amounts[0].value != v:
+        return None
+    return Verdict("ask", SELF_CORRECTION_MESSAGE.format(text=text), ((f"「{text}」で指示する", text),))
 
 
 _SHORT_POS = re.compile(r"C\s?([0-9]{1,4})")
