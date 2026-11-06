@@ -1,0 +1,2871 @@
+{
+ "sha": "b361565",
+ "api": 0,
+ "res": [
+  {
+   "id": "B-F2-3ミリにして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-3ミリで",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-量は3ミリ",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-2ミリ減らして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-Zプラス方向に3ミリ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+3.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00004 を Z方向に +3.000mm 動かします（Z：180.000 → 183.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-Zマイナス方向に5ミリ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "-5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00004 を Z方向に -5.000mm 動かします（Z：180.000 → 175.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-C00004をZプラス方向に3ミリ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+3.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00004 を Z方向に +3.000mm 動かします（Z：180.000 → 183.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-5ミリで合ってる？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-F2-出力済み→Zプラス方向に10ミリ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+10.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。出力したファイル（DEMO_RJ_XYZ_SIM.JBI.txt）は、そのまま残っています（実機には入れないでください）。位置 C00004 を Z方向に +10.000mm 動かします（Z：180.000 → 190.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタン",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-未承認-4回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-未承認-やっぱり4回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-未承認-1回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。C00001〜C00003 は今 2 回です。減らす変更は、このプロトタイプでは扱いません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-未承認-じゃあ5回",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。5回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-承認済-4回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-承認済-やっぱり4回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-承認済-1回にして",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。C00001〜C00003 は今 2 回です。減らす変更は、このプロトタイプでは扱いません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-Q3-承認済-じゃあ5回",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "言い直し"
+   },
+   "gen_changed": true,
+   "msg": "言い直しを受け取ったため、前の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。5回にはしません。3回にする場合は「3回にして」と言ってください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-未承認-もうちょっと上",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-未承認-もう少し上",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-未承認-もうちょっと",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-未承認-もう少し右",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-承認済-もうちょっと上",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-承認済-もう少し上",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-承認済-もうちょっと",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-R1R2-承認済-もう少し右",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。量や向きが決まっていないため、今の変更候補（C00004 の Z を 180.0 → 185.0）を保留にしました（承認・出力はできません）。どのくらい動かしますか？ 軸と向きと量を一緒に、もう一度言ってください（例：「Zプラス○ミリ」）。今のままでよければ［このまま残す］を押してから、承認ボタンでもう一度承認してください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-未承認-じゃあ3回にして",
+   "state": {
+    "cand": [
+     "C00001〜C00003",
+     "+1"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-未承認-うーん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "B-ASK-未承認-C00004を3ミリ下げて",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-未承認-この動きは何をしている？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "B-ASK-承認済-じゃあ3回にして",
+   "state": {
+    "cand": [
+     "C00001〜C00003",
+     "+1"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-承認済-うーん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-承認済-C00004を3ミリ下げて",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "B-ASK-承認済-この動きは何をしている？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": false,
+    "can_approve": false,
+    "can_export": true,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "msg": "",
+   "old_export": true,
+   "old_reapprove": true
+  },
+  {
+   "id": "B-R8",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "choices": [
+    "「Zプラス5ミリ」で指示する"
+   ],
+   "msg": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "after_press": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "msg2": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います"
+  },
+  {
+   "id": "B-撮影D",
+   "s1": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "msg1": "5mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス5ミリ」か「Zマイナス5ミリ」のように言ってください",
+   "choices1": [
+    "合っている",
+    "違う"
+   ],
+   "s2": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "msg2": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません"
+  },
+  {
+   "id": "B-R10",
+   "msg1": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "msg2": "右に5mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "choices2": [
+    "合っている",
+    "違う"
+   ],
+   "msg3": "「右」「左」は、専門家が枠の設定で軸を決めるまで使えません（軸が決まっていません）。Zプラス・Yのマイナスのように、軸（X・Y・Z）と向きで指示してください",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "dead_end": true
+  },
+  {
+   "id": "G-①否定-none-だめ",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "だめ",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「だめ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-だめ",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "だめ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「だめ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-だめ",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "だめ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-ダメ",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "ダメ",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「ダメ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-ダメ",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "ダメ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「ダメ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-ダメ",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "ダメ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-ノー",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "ノー",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-①否定-unapproved-ノー",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "ノー",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-ノー",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "ノー",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-No",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "No",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-①否定-unapproved-No",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "No",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-No",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "No",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-いいえ",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "いいえ",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「いいえ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-いいえ",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "いいえ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「いいえ」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-approved-いいえ",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "いいえ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "button"
+   ],
+   "claude": 0,
+   "msg": "承認済みです。出力は画面の［シミュレーション用に出力］のボタンで行います（声や文字では出力しません）",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-違う",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "違う",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「違う」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-違う",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "違う",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-approved-違う",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "違う",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-やめて",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "やめて",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "元に戻す変更候補はありません。元のジョブはそのままです"
+  },
+  {
+   "id": "G-①否定-unapproved-やめて",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "やめて",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "取消"
+   },
+   "gen_changed": true,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "変更候補を捨てました。元のジョブは変わっていません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-approved-やめて",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "やめて",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 2,
+    "range": false,
+    "voided": "取消"
+   },
+   "gen_changed": true,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "前の承認と変更候補を取り消しました。元のJOBは変更されていません。",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-出さないで",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "出さないで",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「出さないで」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-出さないで",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "出さないで",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「出さないで」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-出さないで",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "出さないで",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-きゃんせる",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "きゃんせる",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-①否定-unapproved-きゃんせる",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "きゃんせる",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-きゃんせる",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "きゃんせる",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-あかん",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "あかん",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-①否定-unapproved-あかん",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "あかん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-①否定-approved-あかん",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "あかん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-それじゃない",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "それじゃない",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「それじゃない」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-それじゃない",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "それじゃない",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-approved-それじゃない",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "それじゃない",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-none-いや",
+   "grp": "①否定",
+   "scene": "none",
+   "word": "いや",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「いや」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-①否定-unapproved-いや",
+   "grp": "①否定",
+   "scene": "unapproved",
+   "word": "いや",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-①否定-approved-いや",
+   "grp": "①否定",
+   "scene": "approved",
+   "word": "いや",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-大丈夫？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "大丈夫？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-大丈夫？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "大丈夫？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-大丈夫？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "大丈夫？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-これ大丈夫？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "これ大丈夫？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-これ大丈夫？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "これ大丈夫？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-これ大丈夫？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "これ大丈夫？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-合ってる？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "合ってる？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-合ってる？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "合ってる？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-合ってる？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "合ってる？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-5ミリで合ってる？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "5ミリで合ってる？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "「合ってる」が分かりませんでした。何をするか、もう一度指示してください"
+  },
+  {
+   "id": "G-②質問-unapproved-5ミリで合ってる？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "5ミリで合ってる？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-approved-5ミリで合ってる？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "5ミリで合ってる？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "新しい変更の指示かもしれないため、前の承認を取り消しました。今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-本当に？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "本当に？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-本当に？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "本当に？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-本当に？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "本当に？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-ほんとに？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "ほんとに？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-ほんとに？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "ほんとに？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-ほんとに？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "ほんとに？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-高すぎない？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "高すぎない？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-高すぎない？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "高すぎない？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-高すぎない？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "高すぎない？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-え？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "え？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-え？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "え？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-え？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "え？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-②質問-none-なんで？",
+   "grp": "②質問",
+   "scene": "none",
+   "word": "なんで？",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-②質問-unapproved-なんで？",
+   "grp": "②質問",
+   "scene": "unapproved",
+   "word": "なんで？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-②質問-approved-なんで？",
+   "grp": "②質問",
+   "scene": "approved",
+   "word": "なんで？",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-none-うーん",
+   "grp": "③どちらとも",
+   "scene": "none",
+   "word": "うーん",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-③どちらとも-unapproved-うーん",
+   "grp": "③どちらとも",
+   "scene": "unapproved",
+   "word": "うーん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-③どちらとも-approved-うーん",
+   "grp": "③どちらとも",
+   "scene": "approved",
+   "word": "うーん",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-none-ちょっと待って",
+   "grp": "③どちらとも",
+   "scene": "none",
+   "word": "ちょっと待って",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「待って」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください"
+  },
+  {
+   "id": "G-③どちらとも-unapproved-ちょっと待って",
+   "grp": "③どちらとも",
+   "scene": "unapproved",
+   "word": "ちょっと待って",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 0,
+   "msg": "「待って」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-approved-ちょっと待って",
+   "grp": "③どちらとも",
+   "scene": "approved",
+   "word": "ちょっと待って",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "button"
+   ],
+   "claude": 0,
+   "msg": "承認済みです。出力は画面の［シミュレーション用に出力］のボタンで行います（声や文字では出力しません）",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-none-まだ",
+   "grp": "③どちらとも",
+   "scene": "none",
+   "word": "まだ",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-③どちらとも-unapproved-まだ",
+   "grp": "③どちらとも",
+   "scene": "unapproved",
+   "word": "まだ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-③どちらとも-approved-まだ",
+   "grp": "③どちらとも",
+   "scene": "approved",
+   "word": "まだ",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-none-えーと",
+   "grp": "③どちらとも",
+   "scene": "none",
+   "word": "えーと",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-③どちらとも-unapproved-えーと",
+   "grp": "③どちらとも",
+   "scene": "unapproved",
+   "word": "えーと",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-③どちらとも-approved-えーと",
+   "grp": "③どちらとも",
+   "scene": "approved",
+   "word": "えーと",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": true,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "hear"
+   ],
+   "claude": 0,
+   "msg": "今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+   "old_export": false,
+   "old_reapprove": false
+  },
+  {
+   "id": "G-③どちらとも-none-どうしよう",
+   "grp": "③どちらとも",
+   "scene": "none",
+   "word": "どうしよう",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。"
+  },
+  {
+   "id": "G-③どちらとも-unapproved-どうしよう",
+   "grp": "③どちらとも",
+   "scene": "unapproved",
+   "word": "どうしよう",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": false,
+   "old_reapprove": true
+  },
+  {
+   "id": "G-③どちらとも-approved-どうしよう",
+   "grp": "③どちらとも",
+   "scene": "approved",
+   "word": "どうしよう",
+   "state": {
+    "cand": [
+     "C00004 Z",
+     "+5.000"
+    ],
+    "approval": true,
+    "hold": false,
+    "can_approve": false,
+    "can_export": true,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "gen_changed": false,
+   "via": [
+    "ask"
+   ],
+   "claude": 1,
+   "msg": "この位置へ動く動作です。",
+   "old_export": true,
+   "old_reapprove": true
+  },
+  {
+   "id": "C02",
+   "msg1": "右に動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "ch1": [
+    "合っている",
+    "違う"
+   ],
+   "msg2": "量がはっきりしません（「もう少し」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+   "msg3": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "ch3": [],
+   "state": {
+    "cand": [
+     "C00003 Y",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "facing": {
+    "confirmed": true,
+    "message": "向き：正面から見た向き（この画面で確かめ済み）"
+   }
+  },
+  {
+   "id": "C-同じ位置",
+   "msg2": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "state2": {
+    "cand": [
+     "C00003 Y",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "msg3": "位置 C00003 を Y方向に +3.000mm 動かします（Y：-150.000 → -147.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "ch3": [],
+   "asked_again": false,
+   "state3": {
+    "cand": [
+     "C00003 Y",
+     "+3.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   }
+  },
+  {
+   "id": "C05",
+   "msg2": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "state2": {
+    "cand": [
+     "C00003 Y",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "msg3": "位置 C00004 を Y方向に +3.000mm 動かします（Y：150.000 → 153.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "ch3": [],
+   "asked_again": false,
+   "state3": {
+    "cand": [
+     "C00004 Y",
+     "+3.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   }
+  },
+  {
+   "id": "C06",
+   "msg2": "位置 C00003 を Y方向に +5.000mm 動かします（Y：-150.000 → -145.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "state2": {
+    "cand": [
+     "C00003 Y",
+     "+5.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 1,
+    "range": false,
+    "voided": null
+   },
+   "msg3": "右に3mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "ch3": [
+    "合っている",
+    "違う"
+   ],
+   "asked_again": true,
+   "state3": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "old_session": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください"
+  },
+  {
+   "id": "C-違う",
+   "msg2": "分かりました。Zプラス・Yマイナスのように、軸と向きで言ってください",
+   "state2": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   },
+   "msg3": "「右」「左」は、専門家が枠の設定で軸を決めるまで使えません（軸が決まっていません）。Zプラス・Yのマイナスのように、軸（X・Y・Z）と向きで指示してください",
+   "ch3": []
+  },
+  {
+   "id": "C-確認中に位置を変えて古いボタン",
+   "msg2": "この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   }
+  },
+  {
+   "id": "C-読み直して古いボタン",
+   "msg2": "この向きの確かめは、もう使えません（新しい指示がありました）。もう一度指示してください",
+   "state": {
+    "cand": null,
+    "approval": false,
+    "hold": false,
+    "can_approve": false,
+    "can_export": false,
+    "gen": 0,
+    "range": false,
+    "voided": null
+   }
+  },
+  {
+   "id": "C-右の確認のあとで左",
+   "msg3": "位置 C00003 を Y方向に -3.000mm 動かします（Y：-150.000 → -153.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "ch3": [],
+   "state": {
+    "cand": [
+     "C00003 Y",
+     "-3.000"
+    ],
+    "approval": false,
+    "hold": false,
+    "can_approve": true,
+    "can_export": false,
+    "gen": 3,
+    "range": false,
+    "voided": null
+   }
+  }
+ ]
+}
