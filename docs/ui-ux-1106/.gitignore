@@ -1,0 +1,14 @@
+# All audit captures remain local; keep the nine requested screenshot pairs in Git.
+before/*.png
+after/*.png
+!before/*_loaded.png
+!after/*_loaded.png
+!before/*_candidate.png
+!after/*_candidate.png
+before/*_repeat_candidate.png
+after/*_repeat_candidate.png
+!before/*_long_conversation.png
+!after/*_long_conversation.png
+# Raw HTTP logs add no evidence beyond the structured audit.json.
+before/run.log
+after/run.log

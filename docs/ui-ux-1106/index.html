@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voice Teaching UI比較 — 60f3d24</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#080f1d;color:#eaf1ff;font:16px/1.6 system-ui,sans-serif}
+  header{padding:20px 28px;border-bottom:1px solid #324564}h1{font-size:22px;margin:0 0 6px}p{margin:0 0 12px;color:#b9c9df}
+  nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}select,button,a{font:inherit;color:inherit}select,button{background:#182840;border:1px solid #506784;border-radius:8px;min-height:44px;padding:6px 14px}
+  button[aria-pressed=true]{background:#295282;border-color:#7cbcff}main{padding:20px 28px}figure{margin:0}figcaption{padding:8px 0;font-weight:600}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}img{width:100%;display:block;border:1px solid #324564;border-radius:10px}
+  .note{font-size:14px;margin-top:12px}.single .pair{display:block}.single figure{display:none}.single figure.show{display:block}
+  .single img{width:auto;max-width:100%;border-radius:0}@media(max-width:800px){.pair{grid-template-columns:1fr}}
+</style>
+<header>
+  <h1>Voice Teaching：変更前／変更後</h1>
+  <p>基準60f3d24。合成JOB・モックClaude・音声認識ダブル。撮影版8896は変更していません。</p>
+  <nav>
+    <label>解像度 <select id="size"><option>1920x1080</option><option>1440x900</option><option>1280x720</option></select></label>
+    <label>場面 <select id="scene"><option value="loaded">読み込み後</option><option value="candidate">変更候補・座標差分</option><option value="long_conversation">長い会話</option></select></label>
+    <button id="pair" aria-pressed="true">並べて比較</button><button id="before" aria-pressed="false">変更前だけ</button><button id="after" aria-pressed="false">変更後だけ</button>
+  </nav>
+</header>
+<main>
+  <div class="pair">
+    <figure id="before-view"><figcaption>変更前：60f3d24</figcaption><a id="before-link"><img id="before-img" alt="変更前の画面"></a></figure>
+    <figure id="after-view"><figcaption>変更後：UI専用CSS</figcaption><a id="after-link"><img id="after-img" alt="変更後の画面"></a></figure>
+  </div>
+  <p class="note">画像を押すと元の解像度で開きます。文字入力と再生のラベル、座標表と会話の文字を比較できます。警告・承認内容・上下方向の表示は保持しています。</p>
+  <p class="note">会話履歴は末尾に追従します。長文の折り返し変更により、過去メッセージの見える範囲は変わります。候補では再生を止めて撮影しています。</p>
+</main>
+<script>
+  const size=document.querySelector('#size'),scene=document.querySelector('#scene');
+  function images(){for(const side of ['before','after']){const url=`${side}/${size.value}_${scene.value}.png`;document.querySelector(`#${side}-img`).src=url;document.querySelector(`#${side}-link`).href=url;}}
+  size.addEventListener('change',images);scene.addEventListener('change',images);
+  for(const mode of ['pair','before','after'])document.querySelector(`#${mode}`).addEventListener('click',()=>{document.body.classList.toggle('single',mode!=='pair');for(const side of ['before','after'])document.querySelector(`#${side}-view`).classList.toggle('show',mode===side);for(const m of ['pair','before','after'])document.querySelector(`#${m}`).setAttribute('aria-pressed',String(m===mode));});
+  images();
+</script>
+</html>

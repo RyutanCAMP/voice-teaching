@@ -1,0 +1,6933 @@
+{
+  "base_sha": "60f3d2469fe125da3913e950b74f9974d95055f5",
+  "tested_head": "60f3d2469fe125da3913e950b74f9974d95055f5",
+  "api_calls": 0,
+  "mode": "mock + fake SpeechRecognition; Chrome",
+  "checks": [
+    {
+      "pass": true,
+      "name": "(1920, 1080) initial: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) loaded: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): keyboard touch target >=44px"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) voice_consent: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) listening_double: no horizontal page overflow"
+    },
+    {
+      "pass": false,
+      "name": "(1920, 1080): keyboard entry reachable with mic tooltip open"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) tooltip_blocked: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): tooltip close button remains usable"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) rejected: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): rejected move cannot be confirmed"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): 3D height >= 300px"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) confirm: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): empty name does not approve; recovery message visible"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) approved: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): synthetic SIM export succeeds"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) exported: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) hold: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): held/cancelled candidate cannot export"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) long_conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) conversation_history: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) range_question: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): range confirmation is displayed"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080) repeat_candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1920, 1080): before/after playback available"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) initial: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) loaded: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): keyboard touch target >=44px"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) voice_consent: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) listening_double: no horizontal page overflow"
+    },
+    {
+      "pass": false,
+      "name": "(1440, 900): keyboard entry reachable with mic tooltip open"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) tooltip_blocked: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): tooltip close button remains usable"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) rejected: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): rejected move cannot be confirmed"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): 3D height >= 300px"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) confirm: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): empty name does not approve; recovery message visible"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) approved: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): synthetic SIM export succeeds"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) exported: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) hold: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): held/cancelled candidate cannot export"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) long_conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) conversation_history: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) range_question: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): range confirmation is displayed"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900) repeat_candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1440, 900): before/after playback available"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) initial: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) loaded: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): keyboard touch target >=44px"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) voice_consent: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) listening_double: no horizontal page overflow"
+    },
+    {
+      "pass": false,
+      "name": "(1280, 720): keyboard entry reachable with mic tooltip open"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) tooltip_blocked: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): tooltip close button remains usable"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) rejected: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): rejected move cannot be confirmed"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): 3D height >= 300px"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) confirm: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): empty name does not approve; recovery message visible"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) approved: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): synthetic SIM export succeeds"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) exported: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) hold: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): held/cancelled candidate cannot export"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) long_conversation: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) conversation_history: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) range_question: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): range confirmation is displayed"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720) repeat_candidate: no horizontal page overflow"
+    },
+    {
+      "pass": true,
+      "name": "(1280, 720): before/after playback available"
+    },
+    {
+      "pass": true,
+      "name": "no browser JavaScript errors"
+    }
+  ],
+  "screens": [
+    {
+      "name": "initial",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_initial.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "loaded",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_loaded.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#mic-button": {
+            "x": 169.59375,
+            "y": 404.75,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 235.59375,
+            "y": 634.75,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 37.359375,
+            "y": 333.25,
+            "width": 440.46875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "voice_consent",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_voice_consent.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#mic-button": {
+            "x": 169.59375,
+            "y": 377.75,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 235.59375,
+            "y": 729.75,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 118.921875,
+            "y": 306.25,
+            "width": 277.34375,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "listening_double",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_listening_double.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#mic-button": {
+            "x": 169.59375,
+            "y": 397.25,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 235.59375,
+            "y": 710.25,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 143.125,
+            "y": 325.75,
+            "width": 228.921875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "tooltip_blocked",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_tooltip_blocked.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#mic-button": {
+            "x": 169.59375,
+            "y": 425.25,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 235.59375,
+            "y": 682.25,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 37.359375,
+            "y": 353.75,
+            "width": 440.46875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "rejected",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_rejected.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 728,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 728,
+            "clientHeight": 728
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 27,
+            "y": 456.59375,
+            "width": 459.1875,
+            "height": 108.5,
+            "fontSize": 16,
+            "lineHeight": "28px",
+            "overflowY": "auto",
+            "scrollHeight": 107,
+            "clientHeight": 107
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_candidate.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 922,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 922,
+            "clientHeight": 922
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          ".cand-pop": {
+            "x": 1495,
+            "y": 472.8125,
+            "width": 380,
+            "height": 475.1875,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 476,
+            "clientHeight": 475
+          },
+          "#candidate-panel": {
+            "x": 1495,
+            "y": 472.8125,
+            "width": 380,
+            "height": 371.453125,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 369,
+            "clientHeight": 369
+          },
+          "#candidate-view .cand-change": {
+            "x": 1512,
+            "y": 540.703125,
+            "width": 346,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 1508,
+            "y": 863.265625,
+            "width": 278.09375,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "confirm",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_confirm.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 922,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 922,
+            "clientHeight": 922
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          ".cand-pop": {
+            "x": 1495,
+            "y": 472.8125,
+            "width": 380,
+            "height": 475.1875,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 476,
+            "clientHeight": 475
+          },
+          "#candidate-panel": {
+            "x": 1495,
+            "y": 472.8125,
+            "width": 380,
+            "height": 371.453125,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 369,
+            "clientHeight": 369
+          },
+          "#candidate-view .cand-change": {
+            "x": 1512,
+            "y": 540.703125,
+            "width": 346,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 1508,
+            "y": 863.265625,
+            "width": 278.09375,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#approve-button": {
+            "x": 1376.453125,
+            "y": 858.78125,
+            "width": 127.453125,
+            "height": 48,
+            "fontSize": 17,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "approved",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_approved.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 852,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 852,
+            "clientHeight": 852
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          ".cand-pop": {
+            "x": 1495,
+            "y": 503.0625,
+            "width": 380,
+            "height": 444.9375,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 445,
+            "clientHeight": 445
+          },
+          "#candidate-panel": {
+            "x": 1495,
+            "y": 503.0625,
+            "width": 380,
+            "height": 300.375,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 298,
+            "clientHeight": 298
+          },
+          "#candidate-view .cand-change": {
+            "x": 1510,
+            "y": 535.0625,
+            "width": 350,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 1508,
+            "y": 822.4375,
+            "width": 278.09375,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 1510,
+            "y": 692.4375,
+            "width": 350,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "exported",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_exported.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 852,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 852,
+            "clientHeight": 852
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          ".cand-pop": {
+            "x": 1495,
+            "y": 416.0625,
+            "width": 380,
+            "height": 531.9375,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 532,
+            "clientHeight": 532
+          },
+          "#candidate-panel": {
+            "x": 1495,
+            "y": 416.0625,
+            "width": 380,
+            "height": 338.75,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 337,
+            "clientHeight": 337
+          },
+          "#candidate-view .cand-change": {
+            "x": 1510,
+            "y": 448.0625,
+            "width": 350,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 1508,
+            "y": 773.8125,
+            "width": 278.09375,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 1510,
+            "y": 605.4375,
+            "width": 350,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "hold",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_hold.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 728,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 831,
+            "clientHeight": 728
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 11
+          },
+          {
+            "fontSize": 15,
+            "text": 100
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 109
+          },
+          {
+            "fontSize": 16,
+            "text": 10
+          },
+          {
+            "fontSize": 15,
+            "text": 96
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_conversation.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 702,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 702,
+            "clientHeight": 702
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 12
+          },
+          {
+            "fontSize": 16,
+            "text": 56
+          }
+        ]
+      }
+    },
+    {
+      "name": "long_conversation",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_long_conversation.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 702,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 796,
+            "clientHeight": 702
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 12
+          },
+          {
+            "fontSize": 16,
+            "text": 56
+          },
+          {
+            "fontSize": 16,
+            "text": 7
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation_history",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_conversation_history.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 702,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2019,
+            "clientHeight": 702
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 12
+          },
+          {
+            "fontSize": 16,
+            "text": 56
+          },
+          {
+            "fontSize": 16,
+            "text": 7
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_question",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_range_question.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 617.546875,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2905,
+            "clientHeight": 618
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 842,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 842,
+            "clientHeight": 842
+          },
+          "#text-input": {
+            "x": 38,
+            "y": 1000,
+            "width": 307.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 405.1875,
+            "y": 1000,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 223.59375,
+            "y": 926,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 27,
+            "y": 454.921875,
+            "width": 459.1875,
+            "height": 287.625,
+            "fontSize": 16,
+            "lineHeight": "28px",
+            "overflowY": "auto",
+            "scrollHeight": 286,
+            "clientHeight": 286
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 998,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 12
+          },
+          {
+            "fontSize": 16,
+            "text": 56
+          },
+          {
+            "fontSize": 16,
+            "text": 7
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 8
+          },
+          {
+            "fontSize": 15,
+            "text": 80
+          },
+          {
+            "fontSize": 15,
+            "text": 62
+          },
+          {
+            "fontSize": 15,
+            "text": 137
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeat_candidate",
+      "size": [
+        1920,
+        1080
+      ],
+      "path": "1920x1080_repeat_candidate.png",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "document": [
+          1920,
+          1080
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 8,
+            "y": 61,
+            "width": 499.1875,
+            "height": 1011,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 1009,
+            "clientHeight": 1009
+          },
+          "#side-scroll": {
+            "x": 25,
+            "y": 127,
+            "width": 465.1875,
+            "height": 922,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2705,
+            "clientHeight": 922
+          },
+          "#fig-3d": {
+            "x": 540.1875,
+            "y": 122,
+            "width": 1350.8125,
+            "height": 782,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 782,
+            "clientHeight": 782
+          },
+          ".cand-pop": {
+            "x": 1495,
+            "y": 359.34375,
+            "width": 380,
+            "height": 528.65625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 530,
+            "clientHeight": 529
+          },
+          "#candidate-panel": {
+            "x": 1495,
+            "y": 359.34375,
+            "width": 380,
+            "height": 424.921875,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 423,
+            "clientHeight": 423
+          },
+          "#candidate-view .cand-change": {
+            "x": 1512,
+            "y": 427.234375,
+            "width": 346,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 29,
+            "y": 78,
+            "width": 457.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 1508,
+            "y": 803.265625,
+            "width": 278.09375,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 540.1875,
+            "y": 938,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 16,
+            "text": 12
+          },
+          {
+            "fontSize": 16,
+            "text": 56
+          },
+          {
+            "fontSize": 16,
+            "text": 7
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 6
+          },
+          {
+            "fontSize": 16,
+            "text": 161
+          },
+          {
+            "fontSize": 16,
+            "text": 8
+          },
+          {
+            "fontSize": 15,
+            "text": 80
+          },
+          {
+            "fontSize": 15,
+            "text": 62
+          },
+          {
+            "fontSize": 15,
+            "text": 137
+          },
+          {
+            "fontSize": 15,
+            "text": 26
+          }
+        ]
+      }
+    },
+    {
+      "name": "initial",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_initial.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "loaded",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_loaded.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#mic-button": {
+            "x": 166.796875,
+            "y": 313.75,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 232.796875,
+            "y": 543.75,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 34.5625,
+            "y": 242.25,
+            "width": 440.46875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "voice_consent",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_voice_consent.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#mic-button": {
+            "x": 166.796875,
+            "y": 286.75,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 232.796875,
+            "y": 638.75,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 116.125,
+            "y": 215.25,
+            "width": 277.34375,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "listening_double",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_listening_double.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#mic-button": {
+            "x": 166.796875,
+            "y": 306.25,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 232.796875,
+            "y": 619.25,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 140.328125,
+            "y": 234.75,
+            "width": 228.921875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "tooltip_blocked",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_tooltip_blocked.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#mic-button": {
+            "x": 166.796875,
+            "y": 334.25,
+            "width": 176,
+            "height": 176,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 174,
+            "clientHeight": 172
+          },
+          "#kbd-button": {
+            "x": 232.796875,
+            "y": 591.25,
+            "width": 44,
+            "height": 46,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 44,
+            "clientHeight": 44
+          },
+          "#next-action": {
+            "x": 34.5625,
+            "y": 262.75,
+            "width": 440.46875,
+            "height": 40.5,
+            "fontSize": 27,
+            "lineHeight": "40.5px",
+            "overflowY": "visible",
+            "scrollHeight": 41,
+            "clientHeight": 41
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "rejected",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_rejected.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 558,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 558,
+            "clientHeight": 558
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 25,
+            "y": 431.75,
+            "width": 457.59375,
+            "height": 108.5,
+            "fontSize": 14,
+            "lineHeight": "24.5px",
+            "overflowY": "auto",
+            "scrollHeight": 107,
+            "clientHeight": 107
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_candidate.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 752,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 752,
+            "clientHeight": 752
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 622,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 623,
+            "clientHeight": 622
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 518.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 516,
+            "clientHeight": 516
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 195.890625,
+            "width": 455.59375,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 665.265625,
+            "width": 387.6875,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "confirm",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_confirm.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 752,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 752,
+            "clientHeight": 752
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 622,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 623,
+            "clientHeight": 622
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 518.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 516,
+            "clientHeight": 516
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 195.890625,
+            "width": 455.59375,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 665.265625,
+            "width": 387.6875,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#approve-button": {
+            "x": 1136.453125,
+            "y": 763.28125,
+            "width": 127.453125,
+            "height": 48,
+            "fontSize": 17,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "approved",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_approved.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 682,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 682,
+            "clientHeight": 682
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 622,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 622,
+            "clientHeight": 622
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 477.4375,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 475,
+            "clientHeight": 475
+          },
+          "#candidate-view .cand-change": {
+            "x": 25,
+            "y": 160,
+            "width": 459.59375,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 23,
+            "y": 624.4375,
+            "width": 387.6875,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 25,
+            "y": 284.390625,
+            "width": 459.59375,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "exported",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_exported.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 682,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 682,
+            "clientHeight": 682
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 622,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 622,
+            "clientHeight": 622
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 466.8125,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 465,
+            "clientHeight": 465
+          },
+          "#candidate-view .cand-change": {
+            "x": 25,
+            "y": 160,
+            "width": 459.59375,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 23,
+            "y": 613.8125,
+            "width": 387.6875,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 25,
+            "y": 284.390625,
+            "width": 459.59375,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "hold",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_hold.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 558,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 752,
+            "clientHeight": 558
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 96
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_conversation.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 532,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 532,
+            "clientHeight": 532
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          }
+        ]
+      }
+    },
+    {
+      "name": "long_conversation",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_long_conversation.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 532,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 731,
+            "clientHeight": 532
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation_history",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_conversation_history.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 532,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 1812,
+            "clientHeight": 532
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_question",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_range_question.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 448,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2639,
+            "clientHeight": 448
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 676,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 676,
+            "clientHeight": 676
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 824,
+            "width": 305.59375,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 401.59375,
+            "y": 824,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 220.796875,
+            "y": 750,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 25,
+            "y": 279.375,
+            "width": 457.59375,
+            "height": 287.625,
+            "fontSize": 14,
+            "lineHeight": "24.5px",
+            "overflowY": "auto",
+            "scrollHeight": 286,
+            "clientHeight": 286
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 822,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 8
+          },
+          {
+            "fontSize": 14,
+            "text": 80
+          },
+          {
+            "fontSize": 14,
+            "text": 62
+          },
+          {
+            "fontSize": 14,
+            "text": 137
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeat_candidate",
+      "size": [
+        1440,
+        900
+      ],
+      "path": "1440x900_repeat_candidate.png",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "document": [
+          1440,
+          900
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 489.59375,
+            "height": 835,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 833,
+            "clientHeight": 833
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 121,
+            "width": 463.59375,
+            "height": 752,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2430,
+            "clientHeight": 752
+          },
+          "#fig-3d": {
+            "x": 532.59375,
+            "y": 118,
+            "width": 876.40625,
+            "height": 616,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 616,
+            "clientHeight": 616
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 622,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 623,
+            "clientHeight": 622
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 489.59375,
+            "height": 518.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 516,
+            "clientHeight": 516
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 195.890625,
+            "width": 455.59375,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 455.59375,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 665.265625,
+            "width": 387.6875,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 532.59375,
+            "y": 762,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 8
+          },
+          {
+            "fontSize": 14,
+            "text": 80
+          },
+          {
+            "fontSize": 14,
+            "text": 62
+          },
+          {
+            "fontSize": 14,
+            "text": 137
+          },
+          {
+            "fontSize": 13,
+            "text": 26
+          }
+        ]
+      }
+    },
+    {
+      "name": "initial",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_initial.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "loaded",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_loaded.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#mic-button": {
+            "x": 163.59375,
+            "y": 256,
+            "width": 128,
+            "height": 128,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 126,
+            "clientHeight": 124
+          },
+          "#kbd-button": {
+            "x": 205.59375,
+            "y": 418,
+            "width": 44,
+            "height": 44,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          },
+          "#next-action": {
+            "x": 48.140625,
+            "y": 202,
+            "width": 358.90625,
+            "height": 33,
+            "fontSize": 22,
+            "lineHeight": "33px",
+            "overflowY": "visible",
+            "scrollHeight": 33,
+            "clientHeight": 33
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "voice_consent",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_voice_consent.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#mic-button": {
+            "x": 163.59375,
+            "y": 219.5,
+            "width": 128,
+            "height": 128,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 126,
+            "clientHeight": 124
+          },
+          "#kbd-button": {
+            "x": 205.59375,
+            "y": 516.5,
+            "width": 44,
+            "height": 44,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          },
+          "#next-action": {
+            "x": 114.59375,
+            "y": 165.5,
+            "width": 225.984375,
+            "height": 33,
+            "fontSize": 22,
+            "lineHeight": "33px",
+            "overflowY": "visible",
+            "scrollHeight": 33,
+            "clientHeight": 33
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "listening_double",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_listening_double.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#mic-button": {
+            "x": 163.59375,
+            "y": 251.5,
+            "width": 128,
+            "height": 128,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 126,
+            "clientHeight": 124
+          },
+          "#kbd-button": {
+            "x": 205.59375,
+            "y": 484.5,
+            "width": 44,
+            "height": 44,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          },
+          "#next-action": {
+            "x": 134.328125,
+            "y": 197.5,
+            "width": 186.53125,
+            "height": 33,
+            "fontSize": 22,
+            "lineHeight": "33px",
+            "overflowY": "visible",
+            "scrollHeight": 33,
+            "clientHeight": 33
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "tooltip_blocked",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_tooltip_blocked.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#mic-button": {
+            "x": 163.59375,
+            "y": 276.5,
+            "width": 128,
+            "height": 128,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 126,
+            "clientHeight": 124
+          },
+          "#kbd-button": {
+            "x": 205.59375,
+            "y": 459.5,
+            "width": 44,
+            "height": 44,
+            "fontSize": 14,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          },
+          "#next-action": {
+            "x": 48.140625,
+            "y": 222.5,
+            "width": 358.90625,
+            "height": 33,
+            "fontSize": 22,
+            "lineHeight": "33px",
+            "overflowY": "visible",
+            "scrollHeight": 33,
+            "clientHeight": 33
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": []
+      }
+    },
+    {
+      "name": "rejected",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_rejected.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 390,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 417,
+            "clientHeight": 390
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 25,
+            "y": 390.5,
+            "width": 403.1875,
+            "height": 108.5,
+            "fontSize": 14,
+            "lineHeight": "24.5px",
+            "overflowY": "auto",
+            "scrollHeight": 107,
+            "clientHeight": 107
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_candidate.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 584,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 584,
+            "clientHeight": 584
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 464,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 465,
+            "clientHeight": 464
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 360.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 358,
+            "clientHeight": 358
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 191.546875,
+            "width": 401.1875,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 507.265625,
+            "width": 333.28125,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "confirm",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_confirm.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 584,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 584,
+            "clientHeight": 584
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 464,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 465,
+            "clientHeight": 464
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 360.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 358,
+            "clientHeight": 358
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 191.546875,
+            "width": 401.1875,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 507.265625,
+            "width": 333.28125,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#approve-button": {
+            "x": 1018.046875,
+            "y": 629.390625,
+            "width": 127.453125,
+            "height": 48,
+            "fontSize": 17,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "approved",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_approved.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 514,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 540,
+            "clientHeight": 514
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 464,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 464,
+            "clientHeight": 464
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 319.4375,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 317,
+            "clientHeight": 317
+          },
+          "#candidate-view .cand-change": {
+            "x": 25,
+            "y": 160,
+            "width": 405.1875,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 23,
+            "y": 466.4375,
+            "width": 333.28125,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 25,
+            "y": 284.390625,
+            "width": 405.1875,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "exported",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_exported.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 514,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 540,
+            "clientHeight": 514
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 464,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 464,
+            "clientHeight": 464
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 289.8125,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 304,
+            "clientHeight": 288
+          },
+          "#candidate-view .cand-change": {
+            "x": 25,
+            "y": 160,
+            "width": 405.1875,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#export-button": {
+            "x": 23,
+            "y": 436.8125,
+            "width": 333.28125,
+            "height": 69.1875,
+            "fontSize": 16,
+            "lineHeight": "21.6px",
+            "overflowY": "visible",
+            "scrollHeight": 67,
+            "clientHeight": 67
+          },
+          "#approval-status": {
+            "x": 25,
+            "y": 284.390625,
+            "width": 405.1875,
+            "height": 20,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 20,
+            "clientHeight": 20
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          }
+        ]
+      }
+    },
+    {
+      "name": "hold",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_hold.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 390,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 770,
+            "clientHeight": 390
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 11
+          },
+          {
+            "fontSize": 14,
+            "text": 100
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 109
+          },
+          {
+            "fontSize": 14,
+            "text": 10
+          },
+          {
+            "fontSize": 14,
+            "text": 96
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_conversation.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 364,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 366,
+            "clientHeight": 364
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          }
+        ]
+      }
+    },
+    {
+      "name": "long_conversation",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_long_conversation.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 364,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 751,
+            "clientHeight": 364
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "conversation_history",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_conversation_history.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 364,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 1904,
+            "clientHeight": 364
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "range_question",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_range_question.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 280,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2574,
+            "clientHeight": 280
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 496,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 496,
+            "clientHeight": 496
+          },
+          "#text-input": {
+            "x": 36,
+            "y": 644,
+            "width": 251.1875,
+            "height": 48,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "clip",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#text-send": {
+            "x": 347.1875,
+            "y": 644,
+            "width": 72,
+            "height": 48,
+            "fontSize": 15,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 46,
+            "clientHeight": 46
+          },
+          "#mic-button": {
+            "x": 193.59375,
+            "y": 570,
+            "width": 68,
+            "height": 68,
+            "fontSize": 21,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 68,
+            "clientHeight": 66
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#reply-message": {
+            "x": 25,
+            "y": 113,
+            "width": 403.1875,
+            "height": 276,
+            "fontSize": 14,
+            "lineHeight": "24.5px",
+            "overflowY": "auto",
+            "scrollHeight": 286,
+            "clientHeight": 274
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 642,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 8
+          },
+          {
+            "fontSize": 14,
+            "text": 80
+          },
+          {
+            "fontSize": 14,
+            "text": 62
+          },
+          {
+            "fontSize": 14,
+            "text": 137
+          }
+        ]
+      }
+    },
+    {
+      "name": "repeat_candidate",
+      "size": [
+        1280,
+        720
+      ],
+      "path": "1280x720_repeat_candidate.png",
+      "metrics": {
+        "viewport": [
+          1280,
+          720
+        ],
+        "document": [
+          1280,
+          720
+        ],
+        "boxes": {
+          ".top": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 53,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 53,
+            "clientHeight": 52
+          },
+          ".side": {
+            "x": 10,
+            "y": 59,
+            "width": 435.1875,
+            "height": 655,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 653,
+            "clientHeight": 653
+          },
+          "#side-scroll": {
+            "x": 23,
+            "y": 111,
+            "width": 409.1875,
+            "height": 584,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 2544,
+            "clientHeight": 584
+          },
+          "#fig-3d": {
+            "x": 470.1875,
+            "y": 118,
+            "width": 786.8125,
+            "height": 436,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 436,
+            "clientHeight": 436
+          },
+          ".cand-pop": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 464,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "hidden",
+            "scrollHeight": 465,
+            "clientHeight": 464
+          },
+          "#candidate-panel": {
+            "x": 10,
+            "y": 128,
+            "width": 435.1875,
+            "height": 360.265625,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "auto",
+            "scrollHeight": 358,
+            "clientHeight": 358
+          },
+          "#candidate-view .cand-change": {
+            "x": 27,
+            "y": 191.546875,
+            "width": 401.1875,
+            "height": 39,
+            "fontSize": 26,
+            "lineHeight": "39px",
+            "overflowY": "visible",
+            "scrollHeight": 39,
+            "clientHeight": 39
+          },
+          "#next-action": {
+            "x": 27,
+            "y": 72,
+            "width": 401.1875,
+            "height": 27,
+            "fontSize": 18,
+            "lineHeight": "27px",
+            "overflowY": "visible",
+            "scrollHeight": 27,
+            "clientHeight": 27
+          },
+          "#open-confirm": {
+            "x": 23,
+            "y": 507.265625,
+            "width": 333.28125,
+            "height": 47,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 45,
+            "clientHeight": 45
+          },
+          "#play-button": {
+            "x": 470.1875,
+            "y": 582,
+            "width": 44,
+            "height": 44,
+            "fontSize": 16,
+            "lineHeight": "normal",
+            "overflowY": "visible",
+            "scrollHeight": 42,
+            "clientHeight": 42
+          }
+        },
+        "smallButtons": [],
+        "bubbleText": [
+          {
+            "fontSize": 14,
+            "text": 12
+          },
+          {
+            "fontSize": 15,
+            "text": 56
+          },
+          {
+            "fontSize": 14,
+            "text": 7
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 6
+          },
+          {
+            "fontSize": 15,
+            "text": 161
+          },
+          {
+            "fontSize": 14,
+            "text": 8
+          },
+          {
+            "fontSize": 14,
+            "text": 80
+          },
+          {
+            "fontSize": 14,
+            "text": 62
+          },
+          {
+            "fontSize": 14,
+            "text": 137
+          },
+          {
+            "fontSize": 13,
+            "text": 26
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "browser_version": "156.0.8078.80",
+  "pass": 76,
+  "fail": 3
+}

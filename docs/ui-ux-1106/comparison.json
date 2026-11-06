@@ -1,0 +1,196 @@
+{
+  "base_sha": "60f3d2469fe125da3913e950b74f9974d95055f5",
+  "common_cases": 76,
+  "before_common_pass": 73,
+  "before_common_fail": 3,
+  "after_common_pass": 76,
+  "after_common_fail": 0,
+  "improved": [
+    "(1280, 720): keyboard entry reachable with mic tooltip open",
+    "(1440, 900): keyboard entry reachable with mic tooltip open",
+    "(1920, 1080): keyboard entry reachable with mic tooltip open"
+  ],
+  "regressed": [],
+  "before_only_supplemental_checks": [
+    "(1280, 720) tooltip_blocked: no horizontal page overflow",
+    "(1440, 900) tooltip_blocked: no horizontal page overflow",
+    "(1920, 1080) tooltip_blocked: no horizontal page overflow"
+  ],
+  "unexpected_missing_cases": [],
+  "after_only_checks": [],
+  "execution_errors": {
+    "before": null,
+    "after": null
+  },
+  "css_before_sha256": "862d6105e074bcadfc2ab7456641be36254dbf9de9191e57fc92d91e74803c87",
+  "css_after_sha256_lf": "ae9d59ea2521f3619d5b43e040c1239e57667a11e6126d059ba42608ebad050c",
+  "mock_only": true,
+  "real_api_calls": 0,
+  "microphone_precision_tested": false,
+  "screenshots": [
+    {
+      "path": "before\\1920x1080_loaded.png",
+      "sha256": "53ca71fc992fce548ffe647b0e01a8954efdbda47b78f8e5fe93d773763717af"
+    },
+    {
+      "path": "after\\1920x1080_loaded.png",
+      "sha256": "6df6c79439924822c1259506b09b59d6b4d9dad3615a508045297ce0c3f9bf0c"
+    },
+    {
+      "path": "before\\1920x1080_candidate.png",
+      "sha256": "bf593a06d636e140429bf4e820071ec66fbddded3fb05e59cd5c52e29ec29265"
+    },
+    {
+      "path": "after\\1920x1080_candidate.png",
+      "sha256": "a7cfe87a0fb73705914e1da87a658ff17f32c31d330a1ef545f7337ac3d516ea"
+    },
+    {
+      "path": "before\\1920x1080_long_conversation.png",
+      "sha256": "e10d0824eed2b64b377d3264bfe7bc08bbdd083105ba67695c23e1ef53a3d8b4"
+    },
+    {
+      "path": "after\\1920x1080_long_conversation.png",
+      "sha256": "9267d103db2df24a161c5fb7a72a5c70f373932c1a3bea6768d9d584b1ac2776"
+    },
+    {
+      "path": "before\\1440x900_loaded.png",
+      "sha256": "964043eb71dc1033aad176f656f0fb1601fb3076f9d19d30c322eafc07fce272"
+    },
+    {
+      "path": "after\\1440x900_loaded.png",
+      "sha256": "ffe3391b6869c83f37a6355ac903e13b849edf85082b30fbd53b59b35c2de608"
+    },
+    {
+      "path": "before\\1440x900_candidate.png",
+      "sha256": "8fc58ffcca72fb461b59028124fe275205554d0f0aa781ace2a90832320c197d"
+    },
+    {
+      "path": "after\\1440x900_candidate.png",
+      "sha256": "3ef06cd7e2af95ba71a861a538c3ae8a8b9e350d798af60b1e82431ca7ab898c"
+    },
+    {
+      "path": "before\\1440x900_long_conversation.png",
+      "sha256": "21b61b8e623498e19f4c01783535042169a24885b146d458574e9333dded436a"
+    },
+    {
+      "path": "after\\1440x900_long_conversation.png",
+      "sha256": "e87b02faca9c3cbd8773b0d000daaf342cad87fff6a01fd6de77022dc7dd5a28"
+    },
+    {
+      "path": "before\\1280x720_loaded.png",
+      "sha256": "efe1eed5a794cce86d91f2377d805e5071907478647e934b69e7cc5b0fa3dd13"
+    },
+    {
+      "path": "after\\1280x720_loaded.png",
+      "sha256": "32fd02bc005069a193180a89e40db356faaa0d92de31e67fb3a47e7a5c55e181"
+    },
+    {
+      "path": "before\\1280x720_candidate.png",
+      "sha256": "7471a270e2743c32b328be2c24c7dab513979dc6547d4507876f9aa2b6029ae5"
+    },
+    {
+      "path": "after\\1280x720_candidate.png",
+      "sha256": "91244f464551bd3f36dac2ba093e4ea69143b2bb7fd1117ba731b20c100de6c1"
+    },
+    {
+      "path": "before\\1280x720_long_conversation.png",
+      "sha256": "c2a941a50f0dc8b01d11e1ec4c196860b00d6b3ac2fb61a951da3be4ec410887"
+    },
+    {
+      "path": "after\\1280x720_long_conversation.png",
+      "sha256": "526f0d193ebd8af42e5948a84840fc5d46727edab2427a35b386a66e5674a2e2"
+    }
+  ],
+  "figure_sizes": [
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "state": "loaded",
+      "before": [
+        1350.8,
+        842
+      ],
+      "after": [
+        1370.8,
+        842
+      ]
+    },
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "state": "repeat_candidate",
+      "before": [
+        1350.8,
+        782
+      ],
+      "after": [
+        1370.8,
+        782
+      ]
+    },
+    {
+      "size": [
+        1440,
+        900
+      ],
+      "state": "loaded",
+      "before": [
+        876.4,
+        676
+      ],
+      "after": [
+        896.4,
+        676
+      ]
+    },
+    {
+      "size": [
+        1440,
+        900
+      ],
+      "state": "repeat_candidate",
+      "before": [
+        876.4,
+        616
+      ],
+      "after": [
+        896.4,
+        616
+      ]
+    },
+    {
+      "size": [
+        1280,
+        720
+      ],
+      "state": "loaded",
+      "before": [
+        786.8,
+        496
+      ],
+      "after": [
+        790.8,
+        496
+      ]
+    },
+    {
+      "size": [
+        1280,
+        720
+      ],
+      "state": "repeat_candidate",
+      "before": [
+        786.8,
+        436
+      ],
+      "after": [
+        790.8,
+        436
+      ]
+    }
+  ]
+}
