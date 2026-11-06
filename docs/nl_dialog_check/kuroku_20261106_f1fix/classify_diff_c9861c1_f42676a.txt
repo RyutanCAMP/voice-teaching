@@ -1,0 +1,75 @@
+C00005、Zプラス方向に30ミリ | other(11 other) -> other(11 other)
+C00005、Zプラス方向に5ミリ | other(11 other) -> other(11 other)
+Zプラス方向に5ミリ | other(11 other) -> other(11 other)
+Zプラスに十ミリ | other(11 other) -> other(11 other)
+C00005を選んで | other(11 other) -> other(11 other)
+これでいい | other(11 other) -> other(11 other)
+このままでいい | keep(3 keep) -> keep(3 keep)
+はい | other(11 other) -> other(11 other)
+いいよ | other(11 other) -> other(11 other)
+OK | other(11 other) -> other(11 other)
+お願いします | other(11 other) -> other(11 other)
+出力して | other(2 button) -> other(2 button)
+承認したい | other(2 button) -> other(2 button)
+いやです | other(11 other) -> other(11 other)
+いやだ | other(11 other) -> other(11 other)
+いやいや | unsure(7 bare marker) -> unsure(7 bare marker)
+いや、まあいいか | other(3c question) -> other(3c question)
+いやー、いい感じ | other(11 other) -> other(11 other)
+いやあ、すごい | other(11 other) -> other(11 other)
+いやほんとに | other(11 other) -> other(11 other)
+いいや | unsure(4a hold word) -> unsure(4a hold word)
+いえいえ | unsure(8 marker+other) -> unsure(8 marker+other)
+いえ、大丈夫です | unsure(8 marker+other) -> unsure(8 marker+other)
+家の前 | other(11 other) -> other(11 other)
+嫌です | other(11 other) -> other(11 other)
+上に5ミリ | other(11 other) -> other(11 other)
+下に3ミリ | other(11 other) -> other(11 other)
+上がりすぎ？ | other(11 other) -> other(11 other)
+上ってどっち？ | other(11 other) -> other(11 other)
+前の位置に戻すの？ | unsure(4 hesitate) -> unsure(4 hesitate)
+後で出力する | other(2 button) -> other(2 button)
+右から見せて | other(11 other) -> other(11 other)
+左の図 | other(11 other) -> other(11 other)
+逆方向に5ミリ | other(11 other) -> unsure(4a hold word)  変化
+Zマイナス方向、つまり逆に5ミリ | other(11 other) -> unsure(4a hold word)  変化
+反対側から見せて | other(11 other) -> unsure(4a hold word)  変化
+逆さまに見える | other(11 other) -> unsure(4a hold word)  変化
+逆光で見えない | other(11 other) -> unsure(4a hold word)  変化
+反対の意味？ | other(11 other) -> unsure(4a hold word)  変化
+プラスだった？ | other(11 other) -> other(11 other)
+そうだった | other(11 other) -> unsure(8 marker+other)  変化
+5ミリだったよね？ | other(11 other) -> other(11 other)
+さっきは何ミリだった？ | other(11 other) -> other(11 other)
+確認だった | other(11 other) -> unsure(8 marker+other)  変化
+良かった | other(11 other) -> other(11 other)
+ありがとうございました | other(11 other) -> other(11 other)
+わかった | other(11 other) -> other(11 other)
+やった | other(11 other) -> unsure(7 bare marker)  変化
+やったー | other(11 other) -> other(11 other)
+できた | other(11 other) -> other(11 other)
+C00004も見たい | other(11 other) -> other(11 other)
+X方向はどっち | other(11 other) -> other(11 other)
+Yの範囲は？ | other(11 other) -> other(11 other)
+ワイヤーは関係ある？ | other(11 other) -> other(11 other)
+プラスとマイナスはどっち？ | other(11 other) -> other(11 other)
+いや上 | other(11 other) -> unsure(8 marker+other)  変化
+いやX | other(11 other) -> unsure(8 marker+other)  変化
+いやC00003 | other(11 other) -> correction(6 correction)  変化
+いえZプラス3ミリ | other(11 other) -> correction(6 correction)  変化
+あいや | unsure(8 marker+other) -> unsure(8 marker+other)
+ばいやー | other(11 other) -> other(11 other)
+ハイヤー | other(11 other) -> other(11 other)
+タイヤ | unsure(8 marker+other) -> unsure(8 marker+other)
+いやなら取り消して | unsure(4 hesitate) -> unsure(4 hesitate)
+いやじゃない | unsure(8 marker+other) -> unsure(8 marker+other)
+やなくて | other(11 other) -> unsure(7 bare marker)  変化
+何をしてるか教えて | other(11 other) -> other(11 other)
+ちょっと待って | unsure(4a hold word) -> unsure(4a hold word)
+違くない？ | unsure(4 hesitate) -> unsure(4 hesitate)
+取り消して | cancel(5 cancel) -> cancel(5 cancel)
+やっぱり3ミリ | correction(6 correction) -> correction(6 correction)
+ごめん、マイナスじゃなくてプラスだった | correction(6 correction) -> correction(6 correction)
+さっきの3回じゃなくて2回 | correction(6 correction) -> correction(6 correction)
+変更は取り消して、何してるか教えて | cancel_explain(5 cancel+explain) -> cancel_explain(5 cancel+explain)
+変わった数: 14 / 74

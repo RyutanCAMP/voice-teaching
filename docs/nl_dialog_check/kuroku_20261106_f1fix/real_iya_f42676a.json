@@ -1,0 +1,133 @@
+{
+ "summary": {
+  "calls": 5,
+  "errors": 0,
+  "tokens_in": 5740,
+  "tokens_out": 485,
+  "usd_est": 0.0163
+ },
+ "results": [
+  {
+   "phrase": "いやZプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いやZマイナス5ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いや上に3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いやプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いや、Zプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  }
+ ],
+ "calls": [
+  {
+   "sec": 2.21,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.77,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.89,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.86,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.32,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  }
+ ]
+}
