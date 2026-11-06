@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><title>変更候補</title><style>
+*{box-sizing:border-box;margin:0}
+body{width:1920px;height:1080px;overflow:hidden;font-family:"Yu Gothic UI","Segoe UI","Meiryo",sans-serif;color:#e8eefc;
+ background:radial-gradient(1200px 800px at 72% 52%,#0f2147 0%,#0a1530 45%,#060c1c 100%);letter-spacing:.01em}
+svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+header{position:absolute;left:0;right:0;top:0;height:72px;display:flex;align-items:center;padding:0 40px;gap:14px}
+.logo{display:flex;align-items:center;gap:12px;font-size:19px;font-weight:600;color:#dfe8ff}
+.logo b{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;letter-spacing:.04em;
+ background:radial-gradient(circle at 35% 30%,#7fb6ff,#2f6fe0 60%,#1a3f8f);box-shadow:0 0 18px rgba(77,148,255,.65)}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:6px}
+.sim{font-size:12px;font-weight:700;letter-spacing:.12em;color:#7fb2ff;border:1px solid rgba(127,178,255,.4);border-radius:999px;padding:4px 10px;margin-right:10px}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#8d9abb}
+.ic svg{width:22px;height:22px}
+.appr{display:flex;align-items:center;gap:6px;font-size:13px;margin-right:6px}
+.appr svg{width:22px;height:22px}
+.left{position:absolute;left:0;top:72px;width:560px;bottom:0;display:flex;flex-direction:column;align-items:center}
+.job{margin-top:34px;font-size:14px;color:#8a97b5;display:flex;gap:10px;align-items:center}
+.job i{width:6px;height:6px;border-radius:50%;background:#4f8fff;box-shadow:0 0 8px #4f8fff;display:inline-block}
+.target{margin-top:70px;text-align:center}
+.target small{display:block;font-size:14px;color:#8a97b5;margin-bottom:6px;letter-spacing:.08em}
+.target strong{font-size:44px;font-weight:600;letter-spacing:.06em;font-family:"Cascadia Mono","Consolas",monospace;color:#f2f6ff}
+.mic{margin-top:64px;position:relative;width:210px;height:210px;border-radius:50%;display:grid;place-items:center;
+ background:radial-gradient(circle at 38% 32%,#76b0ff 0%,#3577ec 45%,#1d4cb3 100%);
+ box-shadow:0 0 0 14px rgba(61,139,255,.10),0 0 0 34px rgba(61,139,255,.05),0 0 90px rgba(61,139,255,.55)}
+.mic svg{width:78px;height:78px;stroke:#fff;stroke-width:1.6}
+.say{margin-top:46px;font-size:28px;font-weight:600;color:#eef3ff}
+.ex{margin-top:14px;font-size:17px;color:#7f8db0}
+.kbd{margin-top:40px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#8d9abb;background:rgba(255,255,255,.04)}
+.kbd svg{width:24px;height:24px}
+.stage{position:absolute;left:540px;top:72px;right:0;bottom:0}
+.scene{position:absolute;left:0;top:0;width:1380px;height:940px}
+.grid{stroke:rgba(120,160,255,.10);stroke-width:1}
+.drop{stroke:rgba(150,180,255,.16);stroke-width:1;stroke-dasharray:3 5}
+.route{stroke:#cdd9f5;stroke-width:2.2;opacity:.85}
+.route.ghost{stroke:#6f7c9a;stroke-dasharray:5 6;opacity:.55}
+.route.after{stroke:#5aa2ff;stroke-width:2.6;opacity:1;filter:drop-shadow(0 0 6px rgba(90,162,255,.6))}
+.pt{fill:#dfe7fb;stroke:none}.pt.sel{fill:#7fb6ff}
+.ring{stroke:#7fb6ff;stroke-width:2}
+.pt-before{fill:none;stroke:#8590ab;stroke-width:2;stroke-dasharray:3 3}
+.pt-after{fill:#7fb6ff;stroke:#fff;stroke-width:2}
+.arrow{stroke:#7fb6ff;stroke-width:2;marker-end:none}
+.lab{fill:#9aa7c6;stroke:none;font-size:15px;font-family:"Cascadia Mono","Consolas",monospace}
+.lab.sel{fill:#cfe2ff;font-size:17px;font-weight:600}
+.lab.delta{fill:#7fb6ff;font-size:15px}
+.axes text{fill:#7d8aab;stroke:none;font-size:13px}.ax-y{stroke:#45c48a}.ax-z{stroke:#5aa2ff}
+.reset{position:absolute;right:44px;top:24px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#a9b6d6;
+ background:rgba(255,255,255,.05)}
+.reset svg{width:22px;height:22px}
+.play{position:absolute;left:50%;transform:translateX(-50%);bottom:56px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+ color:#dce6ff;background:rgba(255,255,255,.07)}
+.play svg{width:20px;height:20px}
+.note{position:absolute;left:44px;bottom:22px;font-size:13px;color:#6f7da0}
+/* 候補 */
+.chat{margin-top:40px;width:440px;display:flex;flex-direction:column;gap:14px}
+.u{align-self:flex-end;max-width:360px;padding:11px 16px;border-radius:18px 18px 4px 18px;background:rgba(255,255,255,.07);font-size:17px;color:#e7edfb}
+.stop{padding:12px 16px;border-radius:14px;background:rgba(255,181,71,.08);color:#ffcf86;font-size:15px;line-height:1.55}
+.stop b{color:#ffb547}
+.mic.small{width:112px;height:112px;margin-top:auto;margin-bottom:22px;box-shadow:0 0 0 10px rgba(61,139,255,.08),0 0 50px rgba(61,139,255,.45)}
+.mic.small svg{width:44px;height:44px}
+.hint{font-size:14px;color:#7f8db0;margin-bottom:56px}
+.card{position:absolute;left:1040px;top:560px;width:400px;padding:26px 28px;border-radius:22px;background:rgba(13,26,56,.82);
+ box-shadow:0 20px 60px rgba(0,0,0,.45),inset 0 0 0 1px rgba(127,178,255,.18);backdrop-filter:blur(8px)}
+.card .t{font-size:14px;color:#8a97b5;letter-spacing:.06em}
+.card .pos{margin-top:6px;font-size:22px;font-weight:600}
+.card .v{margin-top:16px;display:flex;align-items:baseline;gap:14px;font-family:"Cascadia Mono","Consolas",monospace}
+.card .v .ax{font-size:16px;color:#5aa2ff;font-weight:700}
+.card .v .a{font-size:26px;color:#9aa6c2}.card .v .to{color:#5aa2ff;font-size:22px}.card .v .b{font-size:30px;color:#fff;font-weight:600}
+.card .d{margin-top:4px;font-size:15px;color:#7fb6ff;font-family:"Cascadia Mono","Consolas",monospace}
+.card .w{margin-top:16px;font-size:14px;color:#a9b3cc;line-height:1.6}
+.btn{margin-top:22px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:18px;font-weight:600;color:#fff;
+ background:linear-gradient(180deg,#4a8fff,#2d6ee6);box-shadow:0 8px 28px rgba(61,139,255,.45)}
+.ghost-btn{margin-top:10px;height:44px;display:grid;place-items:center;font-size:15px;color:#8d9abb}
+/* 承認確認 */
+.veil{position:absolute;inset:0;background:rgba(4,9,22,.62);backdrop-filter:blur(6px)}
+.modal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:760px;padding:44px 52px 36px;border-radius:28px;
+ background:linear-gradient(180deg,rgba(18,34,72,.96),rgba(11,22,48,.96));box-shadow:0 30px 90px rgba(0,0,0,.6),inset 0 0 0 1px rgba(127,178,255,.2)}
+.modal .k{font-size:14px;color:#7fb2ff;letter-spacing:.16em;font-weight:700}
+.modal h1{margin-top:12px;font-size:34px;font-weight:600;line-height:1.4;color:#f3f6ff}
+.modal h1 em{font-style:normal;color:#7fb6ff}
+.big{margin-top:26px;display:flex;align-items:baseline;gap:20px;font-family:"Cascadia Mono","Consolas",monospace}
+.big .ax{font-size:20px;color:#5aa2ff;font-weight:700}.big .a{font-size:34px;color:#8f9bb8}.big .to{font-size:28px;color:#5aa2ff}.big .b{font-size:44px;color:#fff;font-weight:600}
+.facts{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:8px 22px;font-size:15px;color:#a9b3cc}
+.facts span:nth-child(odd){color:#6f7da0}
+.caution{margin-top:22px;padding:12px 16px;border-radius:12px;background:rgba(255,181,71,.07);color:#ffd398;font-size:14px;line-height:1.6}
+.name{margin-top:26px;display:flex;gap:14px;align-items:center}
+.name label{font-size:14px;color:#8a97b5;white-space:nowrap}
+.name .in{flex:1;height:52px;border-radius:14px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(127,178,255,.25);
+ display:flex;align-items:center;padding:0 16px;font-size:18px;color:#e8eefc}
+.row{margin-top:22px;display:flex;gap:14px;align-items:center}
+.row .btn{margin:0;flex:1;height:60px;font-size:20px}
+.row .back{width:140px;height:60px;display:grid;place-items:center;font-size:16px;color:#8d9abb;border-radius:16px;background:rgba(255,255,255,.04)}
+.foot{margin-top:18px;font-size:13px;color:#6f7da0;text-align:center}
+.tag{position:absolute;left:40px;bottom:16px;font-size:12px;color:#3d4a68}
+</style></head><body><header><div class="logo"><b>VT</b>Voice Teaching</div><div class="hdr-right"><span class="sim" title="シミュレーションモード">SIM</span><span class="appr" style="color:#9aa6c2" title="承認の状態：未承認"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.4M12 16.6v.2"/></svg></span></div></header>
+<section class="left">
+  <p class="job"><i></i>DEMO_C_PLACE　8 points</p>
+  <div class="chat">
+    <p class="u">Zプラス方向に30ミリ</p>
+    <p class="stop"><b>変更しません。</b>30 mm は 1回の仮の上限 20 mm（確認待ち）を超えています。</p>
+    <p class="u">Zプラス方向に5ミリ</p>
+  </div>
+  <div class="mic small"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg></div>
+  <p class="hint">続けて話せます</p>
+</section><div class="stage"><svg viewBox="0 0 1380 940" class="scene">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#5aa2ff" stop-opacity=".9"/><stop offset="1" stop-color="#5aa2ff" stop-opacity="0"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="6"/></filter></defs>
+<line x1="-390" y1="869" x2="236" y2="773" class="grid"/>
+<line x1="-270" y1="869" x2="287" y2="773" class="grid"/>
+<line x1="-150" y1="869" x2="337" y2="773" class="grid"/>
+<line x1="-30" y1="869" x2="388" y2="773" class="grid"/>
+<line x1="90" y1="869" x2="438" y2="773" class="grid"/>
+<line x1="210" y1="869" x2="488" y2="773" class="grid"/>
+<line x1="330" y1="869" x2="539" y2="773" class="grid"/>
+<line x1="450" y1="869" x2="589" y2="773" class="grid"/>
+<line x1="570" y1="869" x2="640" y2="773" class="grid"/>
+<line x1="690" y1="869" x2="690" y2="773" class="grid"/>
+<line x1="810" y1="869" x2="740" y2="773" class="grid"/>
+<line x1="930" y1="869" x2="791" y2="773" class="grid"/>
+<line x1="1050" y1="869" x2="841" y2="773" class="grid"/>
+<line x1="1170" y1="869" x2="892" y2="773" class="grid"/>
+<line x1="1290" y1="869" x2="942" y2="773" class="grid"/>
+<line x1="1410" y1="869" x2="992" y2="773" class="grid"/>
+<line x1="1530" y1="869" x2="1043" y2="773" class="grid"/>
+<line x1="1650" y1="869" x2="1093" y2="773" class="grid"/>
+<line x1="1770" y1="869" x2="1144" y2="773" class="grid"/>
+<line x1="-410" y1="869" x2="1790" y2="869" class="grid" opacity="1.00"/>
+<line x1="-250" y1="845" x2="1630" y2="845" class="grid" opacity="0.85"/>
+<line x1="-110" y1="824" x2="1490" y2="824" class="grid" opacity="0.72"/>
+<line x1="11" y1="806" x2="1369" y2="806" class="grid" opacity="0.60"/>
+<line x1="113" y1="790" x2="1267" y2="790" class="grid" opacity="0.51"/>
+<line x1="196" y1="778" x2="1184" y2="778" class="grid" opacity="0.43"/>
+<line x1="690" y1="212" x2="690" y2="799" class="drop"/>
+<line x1="338" y1="682" x2="338" y2="799" class="drop"/>
+<line x1="1042" y1="682" x2="1042" y2="799" class="drop"/>
+<path d="M690.0,211.5 L337.5,446.5 L337.5,681.5 L337.5,446.5 L1042.5,446.5 L1042.5,681.5 L1042.5,446.5 L690.0,211.5" class="route"/>
+<path d="M1042.5,446.5 L1042.5,669.8 L1042.5,446.5" class="route after"/>
+<circle cx="690" cy="212" r="7" class="pt"/>
+<text x="710" y="198" class="lab">C00000 · C00007</text>
+<circle cx="338" cy="446" r="7" class="pt"/>
+<text x="318" y="432" class="lab" text-anchor="end">C00001 · C00003</text>
+<circle cx="338" cy="682" r="7" class="pt"/>
+<text x="318" y="668" class="lab" text-anchor="end">C00002</text>
+<circle cx="1042" cy="446" r="7" class="pt"/>
+<text x="1062" y="432" class="lab">C00004 · C00006</text>
+<circle cx="1042" cy="682" r="9" class="pt-before"/>
+<circle cx="1042" cy="670" r="46" fill="url(#g)" opacity=".55"/>
+<circle cx="1042" cy="670" r="11" class="pt-after"/>
+<line x1="1042" y1="668" x2="1042" y2="686" class="arrow"/>
+<text x="1104" y="668" class="lab sel">C00005</text>
+<text x="1104" y="692" class="lab delta">Z +5.000 mm</text>
+<g class="axes"><line x1="90" y1="860" x2="136" y2="860" class="ax-y"/><text x="144" y="865">Y</text><line x1="90" y1="860" x2="90" y2="814" class="ax-z"/><text x="85" y="806">Z</text></g>
+</svg><span class="reset" title="正面に戻す"><svg viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.7h3.7"/><circle cx="12" cy="12" r="1.6"/></svg></span><span class="play" title="再生"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" stroke="none"/></svg></span><p class="note">図は参考表示です。実際の動作・干渉は保証しません。離れて見えても当たらないとは限りません。</p></div>
+<div class="card">
+  <p class="t">変更候補</p>
+  <p class="pos">C00005</p>
+  <div class="v"><span class="ax">Z</span><span class="a">200.000</span><span class="to">→</span><span class="b">205.000</span></div>
+  <p class="d">+5.000 mm</p>
+  <p class="w">この点に入る区間と出る区間も変わります。</p>
+  <div class="btn">確認して承認へ</div>
+  <div class="ghost-btn">やめる</div>
+</div><p class="tag">MOCK 2/3 変更候補</p></body></html>
