@@ -1632,18 +1632,20 @@ body.hero #kbd-button > span { display: inline; font-size: 14px; }
    安全の表示（SIM・盾・20mm・差分・承認・止めた理由）は消さない・小さくしない。 */
 
 /* K1（P1）1500px 以上：候補のポップアップが、動かす点・変更の線・拡大の窓を隠さない。
-   JOB を読んだときから 3D の枠の右にポップアップの幅を空けておく（11/5 F7：候補の前後で 3D の点は動かさない、を守る） */
+   1100〜1499px で決めてある置き方（会話の欄の上に重ねる）を 1500px 以上にもそろえる。3D の大きさ・点の位置は変えない（11/5 F6・F7）。
+   見出し（動きを確かめてください）と、下の文字の入力欄（承認のあとの質問）はふさがない。ポップアップの中身は最新の答えと同じ候補 */
 @media (min-width: 1500px) {
-  .fig-wrap .fig-3d { right: 372px; }
-  .cand-pop { width: 356px; right: 12px; }
+  .stage { backdrop-filter: none; }  /* fixed の基準を画面にする */
+  .fig-wrap { overflow: visible; }
+  .cand-pop { position: fixed; left: 10px; right: auto; top: 112px; bottom: 150px; max-height: none; z-index: 6;
+    width: 500px; }  /* 会話の欄（left 10px・幅 500px）にぴったり重ねる */
 }
-/* 1920×1080：会話の欄を少し細くして、3D の大きさを前と同じ程度に保つ（会話の文字の大きさは変えない） */
 @media (min-width: 1700px) and (min-height: 950px) {
-  .work { grid-template-columns: clamp(380px, 21vw, 420px) minmax(0, 1fr); }
+  .cand-pop { left: 8px; width: min(26vw, 500px); top: 118px; bottom: 156px; }  /* 会話の欄（left 8px・幅 26vw）に合わせる */
 }
 
-/* K2（P2）1100〜1499px：ポップアップを会話の欄の上に重ねるとき、後ろの吹き出しが切れて覗かないよう、ひと続きの面にする */
-@media (min-width: 1100px) and (max-width: 1499px) {
+/* K2（P2）1100px 以上：ポップアップを会話の欄の上に重ねるとき、後ろの吹き出しが切れて覗かないよう、ひと続きの面にする */
+@media (min-width: 1100px) {
   .cand-pop { background: #0a1324; border-radius: 16px; box-shadow: 0 0 0 1px var(--glass-line), 0 18px 40px rgba(0, 0, 0, 0.55); }
   .cand-pop .cand-card, .cand-pop .dock-actions { box-shadow: none; }
 }

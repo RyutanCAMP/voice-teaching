@@ -1,6 +1,7 @@
 {
  "1920x1080": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 11,
@@ -10,6 +11,7 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -26,6 +28,7 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -42,6 +45,7 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -58,6 +62,11 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [
+    "C00004",
+    "C00005",
+    "C00003"
+   ],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -74,6 +83,11 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [
+    "C00004",
+    "C00005",
+    "C00003"
+   ],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -90,6 +104,11 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [
+    "C00004",
+    "C00005",
+    "C00003"
+   ],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -106,6 +125,11 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [
+    "C00004",
+    "C00005",
+    "C00003"
+   ],
    "fig3d": {
     "x": 530.1875,
     "y": 122,
@@ -125,6 +149,7 @@
  },
  "1440x900": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 11,
@@ -134,6 +159,7 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -150,6 +176,7 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -166,6 +193,7 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -182,6 +210,7 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -198,6 +227,7 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -214,6 +244,7 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -230,6 +261,7 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -249,6 +281,7 @@
  },
  "1280x720": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 11,
@@ -258,6 +291,7 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -274,6 +308,7 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -290,6 +325,7 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -306,6 +342,7 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -322,6 +359,7 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -338,6 +376,7 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -354,6 +393,7 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,

@@ -1,6 +1,7 @@
 {
  "1920x1080": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 12,
@@ -10,13 +11,14 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 2,
@@ -26,13 +28,14 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 2,
@@ -42,13 +45,14 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 2,
@@ -58,13 +62,14 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 4,
@@ -74,13 +79,14 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 7,
@@ -90,13 +96,14 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 4,
@@ -106,13 +113,14 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [],
    "fig3d": {
-    "x": 434.1875,
+    "x": 530.1875,
     "y": 122,
-    "w": 1094.8125,
+    "w": 1370.8125,
     "h": 842
    },
-   "fig3dRatio": 0.445,
+   "fig3dRatio": 0.557,
    "minFontPx": 11,
    "minFontText": "格子 100mm",
    "under12px": 4,
@@ -125,6 +133,7 @@
  },
  "1440x900": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 12,
@@ -134,6 +143,7 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -150,6 +160,7 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -166,6 +177,7 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -182,6 +194,7 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -198,6 +211,7 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -214,6 +228,7 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -230,6 +245,7 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 522.59375,
     "y": 118,
@@ -249,6 +265,7 @@
  },
  "1280x720": {
   "01_start": {
+   "pointsUnderPopup": [],
    "fig3d": null,
    "fig3dRatio": 0,
    "minFontPx": 12,
@@ -258,6 +275,7 @@
    "devWords": []
   },
   "02_loaded": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -274,6 +292,7 @@
    ]
   },
   "03_selected": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -290,6 +309,7 @@
    ]
   },
   "04_refused_30mm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -306,6 +326,7 @@
    ]
   },
   "05_candidate": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -322,6 +343,7 @@
    ]
   },
   "06_confirm": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -338,6 +360,7 @@
    ]
   },
   "07_approved": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
@@ -354,6 +377,7 @@
    ]
   },
   "08_exported": {
+   "pointsUnderPopup": [],
    "fig3d": {
     "x": 468.1875,
     "y": 118,
