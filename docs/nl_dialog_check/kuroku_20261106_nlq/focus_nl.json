@@ -1,0 +1,2165 @@
+{
+ "mode": "実 Claude（本物の API）。実マイク・ブラウザーは使っていない",
+ "summary": {
+  "by_item": {
+   "1 基本": {
+    "cases": 6,
+    "understood": 6,
+    "danger": 0,
+    "old_kept": 0,
+    "error": 0,
+    "hidden": 0,
+    "generic": 0,
+    "next_hint": 6,
+    "jargon": 0,
+    "chars_median": 109,
+    "chars_max": 112
+   },
+   "2 言い直し": {
+    "cases": 10,
+    "understood": 5,
+    "danger": 0,
+    "old_kept": 5,
+    "error": 0,
+    "hidden": 2,
+    "generic": 0,
+    "next_hint": 9,
+    "jargon": 0,
+    "chars_median": 121,
+    "chars_max": 139
+   },
+   "3 聞き返し": {
+    "cases": 7,
+    "understood": 6,
+    "danger": 0,
+    "old_kept": 0,
+    "error": 0,
+    "hidden": 1,
+    "generic": 0,
+    "next_hint": 6,
+    "jargon": 0,
+    "chars_median": 34,
+    "chars_max": 54
+   },
+   "4 方向": {
+    "cases": 10,
+    "understood": 9,
+    "danger": 0,
+    "old_kept": 0,
+    "error": 0,
+    "hidden": 0,
+    "generic": 1,
+    "next_hint": 10,
+    "jargon": 0,
+    "chars_median": 62,
+    "chars_max": 125
+   },
+   "5 回数": {
+    "cases": 8,
+    "understood": 7,
+    "danger": 0,
+    "old_kept": 0,
+    "error": 0,
+    "hidden": 0,
+    "generic": 0,
+    "next_hint": 7,
+    "jargon": 1,
+    "chars_median": 175,
+    "chars_max": 192
+   },
+   "6-7 説明": {
+    "cases": 6,
+    "understood": 2,
+    "danger": 0,
+    "old_kept": 1,
+    "error": 0,
+    "hidden": 4,
+    "generic": 0,
+    "next_hint": 6,
+    "jargon": 0,
+    "chars_median": 121,
+    "chars_max": 121
+   }
+  },
+  "cases": 47,
+  "understood": 35,
+  "danger": 0,
+  "old_kept": 6,
+  "api_calls": 29,
+  "api_errors": 0,
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "usd": 0.0753
+ },
+ "calls": [
+  {
+   "sec": 1.73,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.23,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1149,
+   "out": 97
+  },
+  {
+   "sec": 1.27,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.33,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1146,
+   "out": 96
+  },
+  {
+   "sec": 1.51,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1153,
+   "out": 97
+  },
+  {
+   "sec": 1.39,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1152,
+   "out": 97
+  },
+  {
+   "sec": 1.4,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 2.73,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 155
+  },
+  {
+   "sec": 1.34,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.36,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.63,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.41,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.78,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 2.07,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 178
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.71,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 2.13,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 156
+  },
+  {
+   "sec": 2.49,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 172
+  },
+  {
+   "sec": 2.09,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 176
+  },
+  {
+   "sec": 2.01,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 172
+  },
+  {
+   "sec": 2.11,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 176
+  },
+  {
+   "sec": 2.23,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 187
+  },
+  {
+   "sec": 2.33,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 191
+  },
+  {
+   "sec": 3.53,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 202
+  },
+  {
+   "sec": 2.2,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 160
+  },
+  {
+   "sec": 2.49,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 187
+  },
+  {
+   "sec": 1.41,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1148,
+   "out": 97
+  },
+  {
+   "sec": 2.45,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 180
+  }
+ ],
+ "results": [
+  {
+   "id": "F101",
+   "item": "1 基本",
+   "said": "Zプラス方向に5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "old": null,
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 109,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.22,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F102",
+   "item": "1 基本",
+   "said": "Zマイナス方向に2ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    -2
+   ],
+   "old": null,
+   "got": [
+    "C00003",
+    "Z",
+    -2.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 109,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.24,
+   "last": "位置 C00003 を Z方向に -2.000mm 動かします（Z：300.000 → 298.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zマイナス方向に2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Z方向に -2.000mm 動かします（Z：300.000 → 298.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F103",
+   "item": "1 基本",
+   "said": "Yプラス方向に10ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    10
+   ],
+   "old": null,
+   "got": [
+    "C00003",
+    "Y",
+    10.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 112,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.28,
+   "last": "位置 C00003 を Y方向に +10.000mm 動かします（Y：-150.000 → -140.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Yプラス方向に10ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を Y方向に +10.000mm 動かします（Y：-150.000 → -140.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F104",
+   "item": "1 基本",
+   "said": "Xマイナス1ミリ",
+   "exp": [
+    "cand",
+    "X",
+    -1
+   ],
+   "old": null,
+   "got": [
+    "C00003",
+    "X",
+    -1.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 109,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.34,
+   "last": "位置 C00003 を X方向に -1.000mm 動かします（X：400.000 → 399.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Xマイナス1ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00003 を X方向に -1.000mm 動かします（X：400.000 → 399.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F105",
+   "item": "1 基本",
+   "said": "Zプラス方向に5ミリ動かしてください",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "old": null,
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 109,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.52,
+   "last": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ動かしてください",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F106",
+   "item": "1 基本",
+   "said": "C00004をYマイナス方向に3ミリ",
+   "exp": [
+    "cand",
+    "Y",
+    -3
+   ],
+   "old": null,
+   "got": [
+    "C00004",
+    "Y",
+    -3.0
+   ],
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 109,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.4,
+   "last": "位置 C00004 を Y方向に -3.000mm 動かします（Y：150.000 → 147.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "log": [
+    {
+     "said": "C00004をYマイナス方向に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00004 を Y方向に -3.000mm 動かします（Y：150.000 → 147.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F201",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → もうちょっと",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 2,
+   "sec": 4.18,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "もうちょっと",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F202",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → やっぱり3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 139,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.36,
+   "last": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "やっぱり3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F203",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → いや違う",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 64,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.41,
+   "last": "「いや」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "いや違う",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「いや」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F204",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → やっぱりZプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 139,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.66,
+   "last": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "やっぱりZプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F205",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → いや、Zマイナス5ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -5
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 139,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.44,
+   "last": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "いや、Zマイナス5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F206",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → もうちょっと上",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 2,
+   "sec": 3.89,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "もうちょっと上",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F207",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → もう少し減らして",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 69,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.41,
+   "last": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "もう少し減らして",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "承認待ちの変更候補があるため、今は説明だけ答えます。変更は、候補を確かめて承認ボタンで承認するか、元に戻してから、指示の欄で行ってください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F208",
+   "item": "2 言い直し",
+   "said": "Zプラス10ミリ、いや5ミリ",
+   "exp": [
+    "ask",
+    "last"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 65,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.02,
+   "last": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+   "log": [
+    {
+     "said": "Zプラス10ミリ、いや5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "言い直しがありました。最後の言い方「Zプラス5ミリ」で指示しますか？（ボタンで選んでください。違うときは、もう一度言ってください）",
+     "labels": [
+      "「Zプラス5ミリ」で指示する"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F209",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → Zプラス3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    3
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 35,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 1.74,
+   "last": "承認待ちの変更候補があります。比べるか、元に戻してから指示してください",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "Zプラス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "承認待ちの変更候補があります。比べるか、元に戻してから指示してください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F210",
+   "item": "2 言い直し",
+   "said": "Zプラス方向に5ミリ → やっぱりやめた",
+   "exp": [
+    "stop"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 25,
+   "jargon": [],
+   "next_hint": false,
+   "api": 1,
+   "sec": 1.41,
+   "last": "変更候補を捨てました。元のジョブは変わっていません",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "やっぱりやめた",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F301",
+   "item": "3 聞き返し",
+   "said": "5ミリ動かして",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 34,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+   "log": [
+    {
+     "said": "5ミリ動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "どの方向（Zプラス・Yのマイナスのように、軸と向き）に動かしますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F302",
+   "item": "3 聞き返し",
+   "said": "Zに動かして",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 10,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Zに動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F303",
+   "item": "3 聞き返し",
+   "said": "Zプラス",
+   "exp": [
+    "ask",
+    "amount"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 10,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.02,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "Zプラス",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F304",
+   "item": "3 聞き返し",
+   "said": "ちょっと動かして",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 54,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "量がはっきりしません（「ちょっと」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+   "log": [
+    {
+     "said": "ちょっと動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません（「ちょっと」（量がはっきりしません））。算用数字と mm（ミリ） で量を言ってください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F305",
+   "item": "3 聞き返し",
+   "said": "Yに3ミリ",
+   "exp": [
+    "ask",
+    "axis"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 43,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+   "log": [
+    {
+     "said": "Yに3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Y方向のプラスですか、マイナスですか？（「Yのマイナス」のように向きも言ってください）",
+     "labels": [
+      "Yのプラス 3mm",
+      "Yのマイナス 3mm"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F306",
+   "item": "3 聞き返し",
+   "said": "動かして",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 10,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.02,
+   "last": "何mm動かしますか？",
+   "log": [
+    {
+     "said": "動かして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "何mm動かしますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F307",
+   "item": "3 聞き返し",
+   "said": "3",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 41,
+   "jargon": [],
+   "next_hint": false,
+   "api": 1,
+   "sec": 2.15,
+   "last": "Claude の答えに、プログラムが計算していない数が入っていたため、表示しません",
+   "log": [
+    {
+     "said": "3",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、プログラムが計算していない数が入っていたため、表示しません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F401",
+   "item": "4 方向",
+   "said": "上に5ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    5
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 124,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "5mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス5ミリ」か「Zマイナス5ミリ」のように言ってください",
+   "log": [
+    {
+     "said": "上に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "5mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス5ミリ」か「Zマイナス5ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F402",
+   "item": "4 方向",
+   "said": "下に2ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Z",
+    -2
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 125,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "2mm下に動かしたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス2ミリ」か「Zマイナス2ミリ」のように言ってください",
+   "log": [
+    {
+     "said": "下に2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "2mm下に動かしたいんですね。この設備では、まだ「下」の方向が決まっていません。ロボットを正面から見て、下は Zマイナス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス2ミリ」か「Zマイナス2ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F403",
+   "item": "4 方向",
+   "said": "右に3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    3
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 44,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "右に3mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+   "log": [
+    {
+     "said": "右に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "右に3mm動かしたいんですね。ロボットを正面から見て、右は Yプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F404",
+   "item": "4 方向",
+   "said": "左に3ミリ",
+   "exp": [
+    "cand_or_ask",
+    "Y",
+    -3
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 45,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "左に3mm動かしたいんですね。ロボットを正面から見て、左は Yマイナス で合っていますか？",
+   "log": [
+    {
+     "said": "左に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "左に3mm動かしたいんですね。ロボットを正面から見て、左は Yマイナス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F405",
+   "item": "4 方向",
+   "said": "前に3ミリ",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 35,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「前」は、ロボットを正面から見て手前（X＋）ですか、奥（X−）ですか？",
+   "log": [
+    {
+     "said": "前に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「前」は、ロボットを正面から見て手前（X＋）ですか、奥（X−）ですか？",
+     "labels": [
+      "手前（X＋）",
+      "奥（X−）"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F406",
+   "item": "4 方向",
+   "said": "奥に3ミリ",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 45,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "奥に3mm動かしたいんですね。ロボットを正面から見て、奥は Xマイナス で合っていますか？",
+   "log": [
+    {
+     "said": "奥に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "奥に3mm動かしたいんですね。ロボットを正面から見て、奥は Xマイナス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F407",
+   "item": "4 方向",
+   "said": "手前に2ミリ",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 46,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "手前に2mm動かしたいんですね。ロボットを正面から見て、手前は Xプラス で合っていますか？",
+   "log": [
+    {
+     "said": "手前に2ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "手前に2mm動かしたいんですね。ロボットを正面から見て、手前は Xプラス で合っていますか？",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F408",
+   "item": "4 方向",
+   "said": "上にZマイナス3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 78,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+   "log": [
+    {
+     "said": "上にZマイナス3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F409",
+   "item": "4 方向",
+   "said": "Zプラス3ミリ下げて",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": true,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 78,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+   "log": [
+    {
+     "said": "Zプラス3ミリ下げて",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F410",
+   "item": "4 方向",
+   "said": "斜め上に3ミリ",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": true,
+   "chars": 62,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "「斜め」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+   "log": [
+    {
+     "said": "斜め上に3ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "「斜め」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F501",
+   "item": "5 回数",
+   "said": "4回にして",
+   "exp": [
+    "stop_says",
+    "2回から3回|3回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 190,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.51,
+   "last": "C00001〜C00003のくり返しを2回から4回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+   "log": [
+    {
+     "said": "4回にして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "msg": "C00001〜C00003のくり返しを2回から4回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F502",
+   "item": "5 回数",
+   "said": "C00001からC00003の作業を2回から4回にして",
+   "exp": [
+    "stop_says",
+    "2回から3回|3回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 60,
+   "jargon": [],
+   "next_hint": false,
+   "api": 0,
+   "sec": 0.01,
+   "last": "C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+   "log": [
+    {
+     "said": "C00001からC00003の作業を2回から4回にして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F503",
+   "item": "5 回数",
+   "said": "1回にして",
+   "exp": [
+    "stop_says",
+    "2回から3回|3回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 175,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.11,
+   "last": "C00001〜C00003のくり返しを2回から1回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。減らす変更は、このプロトタイプでは扱いません",
+   "log": [
+    {
+     "said": "1回にして",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "msg": "C00001〜C00003のくり返しを2回から1回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。減らす変更は、このプロトタイプでは扱いません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F504",
+   "item": "5 回数",
+   "said": "10回繰り返して",
+   "exp": [
+    "stop_says",
+    "2回から3回|3回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 192,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.03,
+   "last": "C00001〜C00003のくり返しを2回から10回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。10回にはしません",
+   "log": [
+    {
+     "said": "10回繰り返して",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "msg": "C00001〜C00003のくり返しを2回から10回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。10回にはしません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F505",
+   "item": "5 回数",
+   "said": "C00001からC00003の作業を2回から3回にして",
+   "exp": [
+    "repeat_ok"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 137,
+   "jargon": [
+    "MOVL",
+    "MOVL",
+    "MOVL"
+   ],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+   "log": [
+    {
+     "said": "C00001からC00003の作業を2回から3回にして",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F506",
+   "item": "5 回数",
+   "said": "もう1回増やして",
+   "exp": [
+    "stop_says",
+    "回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 124,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.13,
+   "last": "あなたの文から読んだ回数と、Claude が読んだ回数が合いません（食い違い）。記録だけにして、何も変えません。回数を、もう一度はっきり言ってください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです",
+   "log": [
+    {
+     "said": "もう1回増やして",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "あなたの文から読んだ回数と、Claude が読んだ回数が合いません（食い違い）。記録だけにして、何も変えません。回数を、もう一度はっきり言ってください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F507",
+   "item": "5 回数",
+   "said": "回数を増やして",
+   "exp": [
+    "stop_says",
+    "回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 111,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.25,
+   "last": "回数を変えるご希望として受け取りました。まだ動作データは変えていません。何回にするかを、数で言ってください（例：3回にして） 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです",
+   "log": [
+    {
+     "said": "回数を増やして",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "回数を変えるご希望として受け取りました。まだ動作データは変えていません。何回にするかを、数で言ってください（例：3回にして） 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F508",
+   "item": "5 回数",
+   "said": "繰り返しを4回にしたい",
+   "exp": [
+    "stop_says",
+    "2回から3回|3回"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 190,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.35,
+   "last": "C00001〜C00003のくり返しを2回から4回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+   "log": [
+    {
+     "said": "繰り返しを4回にしたい",
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "reply_by": "app",
+     "msg": "C00001〜C00003のくり返しを2回から4回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 変更は、プログラムの確認（範囲のボタン）と承認ボタンを通して行います。今は読み取りの確認だけです C00001〜C00003 は今 2 回です。このプロトタイプでは、2回から3回への変更だけを扱います。4回にはしません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F601",
+   "item": "6-7 説明",
+   "said": "何をする動き？",
+   "exp": [
+    "explain"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 3.57,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "何をする動き？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F602",
+   "item": "6-7 説明",
+   "said": "次は何をすればいい？",
+   "exp": [
+    "explain"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.23,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "次は何をすればいい？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F603",
+   "item": "6-7 説明",
+   "said": "どうやって使うの？",
+   "exp": [
+    "explain"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 1,
+   "sec": 2.52,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "どうやって使うの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F604",
+   "item": "6-7 説明",
+   "said": "よく分からない",
+   "exp": [
+    "stop"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 69,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.02,
+   "last": "「よく分からない」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+   "log": [
+    {
+     "said": "よく分からない",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "「よく分からない」という打ち消しの言葉があるため、意味としては覚えません。何をする動きか分かったら、打ち消しの言葉を使わずに教えてください",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F605",
+   "item": "6-7 説明",
+   "said": "承認して",
+   "exp": [
+    "stop_says",
+    "ボタン"
+   ],
+   "old": null,
+   "got": null,
+   "old_kept": false,
+   "understood": true,
+   "good_ask": false,
+   "danger": false,
+   "hidden": false,
+   "generic": false,
+   "chars": 79,
+   "jargon": [],
+   "next_hint": true,
+   "api": 0,
+   "sec": 0.01,
+   "last": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+   "log": [
+    {
+     "said": "承認して",
+     "via": [
+      "button"
+     ],
+     "reply_by": null,
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "id": "F606",
+   "item": "6-7 説明",
+   "said": "Zプラス方向に5ミリ → このあとどうすればいい？",
+   "exp": [
+    "stop"
+   ],
+   "old": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "got": [
+    "C00005",
+    "Z",
+    5.0
+   ],
+   "old_kept": true,
+   "understood": false,
+   "good_ask": false,
+   "danger": false,
+   "hidden": true,
+   "generic": false,
+   "chars": 121,
+   "jargon": [],
+   "next_hint": true,
+   "api": 2,
+   "sec": 3.89,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "Zプラス方向に5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "位置 C00005 を Z方向に +5.000mm 動かします（Z：200.000 → 205.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "labels": []
+    },
+    {
+     "said": "このあとどうすればいい？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ],
+   "rep": 0
+  }
+ ]
+}
