@@ -1,0 +1,1196 @@
+{
+ "sha": "60f3d24",
+ "tool": "qa_real_1106",
+ "calls": 12,
+ "usd": 0.034,
+ "res": [
+  {
+   "case": "F2_3mm",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "Zプラス方向に3ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。",
+     "chars": 60,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@export",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": "DEMO_RJ_XYZ_SIM.JBI.txt",
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "F2_3mm",
+   "rep": 1,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "Zプラス方向に3ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。",
+     "chars": 60,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@export",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": "DEMO_RJ_XYZ_SIM.JBI.txt",
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "F2_3nimi",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "3ミリにして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。「にして」が分かりませんでした。何をするか、もう一度指示してください",
+     "chars": 94,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "F2_confirm",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "5ミリで合ってる？",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。「合ってる」が分かりませんでした。何をするか、もう一度指示してください",
+     "chars": 95,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "F2_export",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@export",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": "DEMO_RJ_XYZ_SIM.JBI.txt",
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "Zプラス方向に10ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "新しい指示を受け取ったため、前の承認を取り消しました。変更候補は残しています。内容を確認して、もう一度承認してください。",
+     "chars": 60,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "Q3_4kai",
+   "rep": 0,
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "ok": true,
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "chars": 281,
+     "api": 1,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": true,
+     "gen": 0
+    },
+    {
+     "do": "@range_yes",
+     "ok": true,
+     "via": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 198,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "4回にして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "今の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+     "chars": 119,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": true,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "Q3_4kai",
+   "rep": 1,
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "ok": true,
+     "via": [
+      "ask",
+      "hear"
+     ],
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください 範囲を確かめてください。［この範囲を繰り返す］を押すと、変更の候補になります（承認は、そのあとの確認表示のボタンで行います） この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "chars": 281,
+     "api": 1,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": true,
+     "gen": 0
+    },
+    {
+     "do": "@range_yes",
+     "ok": true,
+     "via": null,
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 198,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "@approve",
+     "ok": true,
+     "via": null,
+     "msg": "",
+     "chars": 0,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "4回にして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "今の変更候補（C00001〜C00003 の作業を 2回 → 3回）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません",
+     "chars": 119,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": true,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "cum_15_10",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に15ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +15.000mm 動かします（Z：180.000 → 195.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 110,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+15.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    },
+    {
+     "do": "さらに10ミリ",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "「さら」が分かりませんでした。何をするか、もう一度指示してください",
+     "chars": 33,
+     "api": 0,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+15.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "cm",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に0.5センチ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「0.5センチ」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "chars": 65,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "cm1",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に1cm動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "量がはっきりしません（「1CM」（単位が mm・ミリ・% ではありません））。算用数字と mm（ミリ） で量を言ってください",
+     "chars": 62,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "order",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "5ミリZプラス方向に動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 109,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "order2",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zを5ミリプラスに",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "プラス・マイナスがどこに付くか分かりません。「Xのマイナス5ミリ」のように、軸のすぐ後に言ってください",
+     "chars": 51,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "down",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zを5ミリ下げて",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "Z の値を変えるなら「Z座標を…上げて／下げて」と言ってください。上下の向きがまだ確認されていません。Zプラス・Zマイナスのように、軸と向きで言ってください",
+     "chars": 78,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "lim20",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に20ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "位置 C00004 を Z方向に +20.000mm 動かします（Z：180.000 → 200.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "chars": 110,
+     "api": 1,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+20.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "range": false,
+     "gen": 1
+    }
+   ]
+  },
+  {
+   "case": "lim201",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向に20.5ミリ動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "移動量 20.5mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 20.5mm は1回の仮の上限（確認待ち）20mm を超えるため、候補を作りません",
+     "chars": 104,
+     "api": 1,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "vague",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "ちょっとだけ上に動かして",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "「だけ」が分かりませんでした。軸（X・Y・Z）と向きと量を、もう一度言ってください（例：Zマイナス3ミリ／Yのプラス3ミリ）",
+     "chars": 62,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "offtopic",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "今日の天気は？",
+     "ok": true,
+     "via": [
+      "ask"
+     ],
+     "msg": "天気は、この動作データには入っていないので分かりません。動作データの動きについて、知りたいことはありますか？",
+     "chars": 54,
+     "api": 1,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "two",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス5ミリとYプラス3ミリ",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "量が2つ以上あります。1つの量で指示してください",
+     "chars": 24,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  },
+  {
+   "case": "neg",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "ok": true,
+     "via": null,
+     "msg": "位置 C00004 を選びました",
+     "chars": 16,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    },
+    {
+     "do": "Zプラス方向にマイナス5ミリ",
+     "ok": true,
+     "via": [
+      "hear"
+     ],
+     "msg": "向きの指定が2つあります。どちらの向きか、もう一度指示してください",
+     "chars": 33,
+     "api": 0,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "range": false,
+     "gen": 0
+    }
+   ]
+  }
+ ]
+}

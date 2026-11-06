@@ -1,0 +1,486 @@
+{
+ "sha": "60f3d24",
+ "api": 0,
+ "res": [
+  {
+   "id": "V_1920x1080",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_1366x768",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_1280x720",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_1536x864",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_2560x1440",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_1024x768",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "V_390x844",
+   "verdict": "PASS",
+   "what": "撮影の流れ",
+   "why": [],
+   "log": {
+    "icon_loaded": "pending",
+    "r30": "1回に動かせる量を超えています。小さい量で、もう一度どうぞ\n\n移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません。シミュレーションの候補も作りません：移動量 30mm は1回の仮の上限（確認待ち）20mm を超える",
+    "icon_30": "pending",
+    "open_confirm_after_30": false,
+    "r5": "",
+    "icon_cand": "pending",
+    "cand_text": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ動かして」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.000\n\nX・Y・Z の向きの名前（右・前など）は未確認のため出していません\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わり",
+    "open_confirm_reach": "ok",
+    "approve_reach": "ok",
+    "confirm_has_185": true,
+    "icon_approved": "ok",
+    "export_res": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_RJ_XYZ_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "export_reach": "ok",
+    "hscroll": 0,
+    "icon_reload": "pending",
+    "cand_after_reload": false,
+    "r23": "C00001〜C00003　1回目：21〜23行目\n\n2回目：24〜26行目\n\n全体：21〜26行目（2回）\n\n今は2回続けて書かれています。合計3回にします\n\n21行目  MOVL C00001 V=150.0\n22行目  MOVL C00002 V=30.0\n23行目  MOVL C00003 V=150.0\n\n繰",
+    "range_btn_reach": "ok",
+    "cand23": "C00001〜C00003\n\n×2 → ×3\n\n合計 2回→3回\n\n指示：「C00001からC00003の作業を2回から3回にして」\n\n同じ動きを1回ぶん足します。新しい位置・新しい移動の線は作りません\nサイクルの時間が長くなります\n検査を通ったことは、物理的な安全の保証ではありません\n繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外で",
+    "icon_approved2": "ok",
+    "export2": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nDEMO_BUTTON_REPEAT_SIM.JBI.txt（場所：…\\ui\\sim_out\\）",
+    "files": [
+     "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "DEMO_RJ_XYZ_SIM.JBI.txt"
+    ]
+   }
+  },
+  {
+   "id": "A01",
+   "verdict": "PASS",
+   "what": "承認済み",
+   "why": [],
+   "got": {
+    "icon": "ok",
+    "label": "承認の状態：承認済み（クローク確認 さんが画面のボタンで承認）",
+    "green": true,
+    "export_enabled": true,
+    "open_confirm": false,
+    "reply": "",
+    "cand": "C00004\n\nZ 180.000→185.000\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。\nこの位置はツール番号 8 で書かれています"
+   }
+  },
+  {
+   "id": "A02",
+   "verdict": "PASS",
+   "what": "承認済み→ちょっと待って",
+   "why": [],
+   "got": {
+    "icon": "warn",
+    "label": "承認の状態：保留中（取り消すか確かめています。承認・出力はできません）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "この指示は使えませんでした。言い方を変えて、もう一度どうぞ\n\n取り消すか確かめている変更候補は、承認・出力できません。「取り消して」か「このままでいい」で答えてください",
+    "cand": "C00004\n\nZ 180.000→185.000\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。\nこの位置はツール番号 8 で書かれています"
+   }
+  },
+  {
+   "id": "A03",
+   "verdict": "PASS",
+   "what": "承認済み→取り消して",
+   "why": [],
+   "got": {
+    "icon": "warn",
+    "label": "承認の状態：前の候補は取消のため取り消しました（承認はありません）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "",
+    "cand": ""
+   }
+  },
+  {
+   "id": "A04",
+   "verdict": "PASS",
+   "what": "承認済み→Zプラス方向に3ミリ（F-2：承認だけ取り消し）",
+   "why": [],
+   "got": {
+    "icon": "pending",
+    "label": "承認の状態：未承認（承認は確認表示のボタンだけ）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": true,
+    "reply": "",
+    "cand": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.00"
+   }
+  },
+  {
+   "id": "A05",
+   "verdict": "PASS",
+   "what": "承認済み→いやZプラス3ミリ（F-1）",
+   "why": [],
+   "got": {
+    "icon": "warn",
+    "label": "承認の状態：前の候補は言い直しのため取り消しました（承認はありません）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "もう少し教えてください\n\n言い直しを受け取ったため、前の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません\n\n聞き取った文：「いやZプラス3ミリ」",
+    "cand": ""
+   }
+  },
+  {
+   "id": "A06",
+   "verdict": "PASS",
+   "what": "承認済み→元に戻す",
+   "why": [],
+   "got": {
+    "icon": "pending",
+    "label": "承認の状態：未承認（承認は確認表示のボタンだけ）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "前の承認と変更候補を取り消しました。元のJOBは変更されていません。",
+    "cand": ""
+   }
+  },
+  {
+   "id": "A07",
+   "verdict": "PASS",
+   "what": "承認済み→ページの再読み込み",
+   "why": [],
+   "got": {
+    "icon": "none",
+    "label": "承認の状態：JOB を読み込んでいません（承認はありません）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "",
+    "cand": ""
+   }
+  },
+  {
+   "id": "A08",
+   "verdict": "PASS",
+   "what": "承認済み→別の JOB",
+   "why": [],
+   "got": {
+    "icon": "pending",
+    "label": "承認の状態：未承認（承認は確認表示のボタンだけ）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "",
+    "cand": ""
+   }
+  },
+  {
+   "id": "A09",
+   "verdict": "PASS",
+   "what": "承認済み→出力→Zプラス方向に3ミリ",
+   "why": [],
+   "got": {
+    "icon": "pending",
+    "label": "承認の状態：未承認（承認は確認表示のボタンだけ）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": true,
+    "reply": "",
+    "cand": "C00004\n\nZ方向に +5.000mm\n\nZ 180.000→185.000\n\n指示：「Zプラス方向に5ミリ」\n\n\tX\tY\tZ\n変更前\t680.000\t240.000\t180.000\n変更後\t680.000\t240.000\t185.00"
+   }
+  },
+  {
+   "id": "A10",
+   "verdict": "PASS",
+   "what": "承認済み→はい",
+   "why": [],
+   "got": {
+    "icon": "ok",
+    "label": "承認の状態：承認済み（クローク確認 さんが画面のボタンで承認）",
+    "green": true,
+    "export_enabled": true,
+    "open_confirm": false,
+    "reply": "この指示は使えませんでした。言い方を変えて、もう一度どうぞ\n\n承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+    "cand": "C00004\n\nZ 180.000→185.000\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。\nこの位置はツール番号 8 で書かれています"
+   }
+  },
+  {
+   "id": "A11",
+   "verdict": "PASS",
+   "what": "承認済み→違くない？",
+   "why": [],
+   "got": {
+    "icon": "warn",
+    "label": "承認の状態：保留中（取り消すか確かめています。承認・出力はできません）",
+    "green": false,
+    "export_enabled": false,
+    "open_confirm": false,
+    "reply": "もう少し教えてください\n\n今の変更候補（C00004 の Z を 180.0 → 185.0）を取り消しますか？ 取り消す場合は、［元に戻す］を押すか「取り消して」と言ってください。残す場合は「このままでいい」と言ってください。確かめるまで、承認・出力はできません\n\n聞き取った文：「違くない？」\n\n取り消す\nこのまま残す（もう一度承認）",
+    "cand": "C00004\n\nZ 180.000→185.000\n\nこの位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。\nこの位置はツール番号 8 で書かれています"
+   }
+  },
+  {
+   "id": "M01",
+   "verdict": "PASS",
+   "what": "聞き取った文は送らない",
+   "input": "Zプラス方向に5ミリ動かして",
+   "cand_shown": false
+  },
+  {
+   "id": "M02",
+   "verdict": "PASS",
+   "what": "認識の失敗の文",
+   "res": {
+    "no-speech": [
+     "声を聞き取れませんでした。もう一度 🎤 を押して話してください\n下の欄に文字で入力することもできます",
+     true,
+     true
+    ],
+    "network": [
+     "声を文字にする通信がつながりません。インターネットの接続を確かめて、もう一度 🎤\n下の欄に文字で入力することもできます",
+     true,
+     true
+    ],
+    "not-allowed": [
+     "マイクが許可されていません。アドレス欄の左のマークから、マイクを「許可」にして、もう一度 🎤\n下の欄に文字で入力することもできます",
+     true,
+     true
+    ],
+    "audio-capture": [
+     "マイクが見つかりません。接続を確かめるか、Teams・Zoom を閉じて、もう一度 🎤\n下の欄に文字で入力することもできます",
+     true,
+     true
+    ],
+    "aborted": [
+     "声を聞き取れませんでした。もう一度 🎤 を押して話してください\n下の欄に文字で入力することもできます",
+     true,
+     true
+    ]
+   },
+   "bad": []
+  },
+  {
+   "id": "M03",
+   "verdict": "PASS",
+   "what": "候補の間のマイク",
+   "mic_enabled": false,
+   "text_enabled": true
+  },
+  {
+   "id": "M04",
+   "verdict": "PASS",
+   "what": "プラスが落ちたときのヒント",
+   "hint": true,
+   "hint_text": "＋か−が入っていません。このままだと聞き返します。「Xのマイナス」のように直せます",
+   "reply": "もう少し教えてください\n\nZ方向のプラスですか、マイナスですか？（「Zのマイナス」のように向きも言ってください）\n\nZのプラス 5mm\nZのマイナス 5mm"
+  },
+  {
+   "id": "M05",
+   "verdict": "未確認",
+   "what": "録音中の位置の変更",
+   "chip_enabled_while_recording": false,
+   "note": "録音中に位置のボタンが押せるか（押せないなら仕様どおり）"
+  },
+  {
+   "id": "M06",
+   "verdict": "PASS",
+   "what": "空・長すぎの送信",
+   "res": {
+    "''": [
+     true,
+     "",
+     ""
+    ],
+    "'   '": [
+     true,
+     "",
+     ""
+    ],
+    "'あああああ'": [
+     true,
+     "",
+     ""
+    ]
+   }
+  }
+ ]
+}

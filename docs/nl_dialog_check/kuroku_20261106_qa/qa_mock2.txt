@@ -1,0 +1,12 @@
+noEND loaded can_approve False export None
+noNOP loaded can_approve True export 出力しませんでした：シミュレーションモードでは、合成ジョブ以外は出力しません
+twoJOB loaded can_approve False export None
+trailing_garbage loaded can_approve False export None
+after_END_instr loaded can_approve False export None
+tool1 loaded can_approve True export ('DEMO_RJ_XYZ_SIM.JBI.txt', 841, 1, 1, b'005 V=150.0\r\nMOVJ C00006 VJ=25.00\r\nEND\r\n')
+V_huge loaded can_approve True export 出力しませんでした：シミュレーションモードでは、合成ジョブ以外は出力しません
+V_zero loaded can_approve True export 出力しませんでした：シミュレーションモードでは、合成ジョブ以外は出力しません
+NPOS_wrong loaded can_approve False export None
+posfar loaded can_approve True export 出力しませんでした：シミュレーションモードでは、合成ジョブ以外は出力しません
+chain 0 DEMO_RJ_XYZ_SIM.JBI.txt ['C00004=680.000,240.000,195.000,-179.5000,1.2500,25.0000']
+chain 1 export refused 出力しませんでした：シミュレーションモードでは、合成ジョブ以外は出力しません
