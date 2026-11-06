@@ -12,6 +12,8 @@
 
 返事の文の指標（すべてのケースの最後の返事）：長さ（文字数）・専門用語の数・次にすることの案内があるか
 
+v2（11/6 夕方）：保留の古い候補は安全側として数える・F506 は範囲の確認でよい・F606 は候補を残して案内する
+
 使い方：python real_focus_1106.py <worktree> <.env> <出力 json> [--only F101,F201] [--repeat 1]
 """
 from __future__ import annotations
@@ -84,13 +86,13 @@ c("F408", "4 方向", "上にZマイナス3ミリ", ("ask", "any"))
 c("F409", "4 方向", "Zプラス3ミリ下げて", ("ask", "any"))
 c("F410", "4 方向", "斜め上に3ミリ", ("ask", "any"))
 # 5 回数（このプロトタイプは 2回→3回 だけ）
-RANGE = r"2回から3回|3回"
+RANGE = r"2回から3回|3回にして|扱いません|にはしません"
 c("F501", "5 回数", "4回にして", ("stop_says", RANGE), sel=None, job="BR")
 c("F502", "5 回数", "C00001からC00003の作業を2回から4回にして", ("stop_says", RANGE), sel=None, job="BR")
 c("F503", "5 回数", "1回にして", ("stop_says", RANGE), sel=None, job="BR")
 c("F504", "5 回数", "10回繰り返して", ("stop_says", RANGE), sel=None, job="BR")
 c("F505", "5 回数", "C00001からC00003の作業を2回から3回にして", ("repeat_ok",), sel=None, job="BR")
-c("F506", "5 回数", "もう1回増やして", ("stop_says", r"回"), sel=None, job="BR")
+c("F506", "5 回数", "もう1回増やして", ("repeat_ok",), sel=None, job="BR")  # 2+1＝3回：範囲の確認（ボタン）でよい
 c("F507", "5 回数", "回数を増やして", ("stop_says", r"回"), sel=None, job="BR")
 c("F508", "5 回数", "繰り返しを4回にしたい", ("stop_says", RANGE), sel=None, job="BR")
 # 6・7 説明・次にすること
@@ -99,7 +101,7 @@ c("F602", "6-7 説明", "次は何をすればいい？", ("explain",), sel=None
 c("F603", "6-7 説明", "どうやって使うの？", ("explain",), sel=None)
 c("F604", "6-7 説明", "よく分からない", ("stop",), sel=None)
 c("F605", "6-7 説明", "承認して", ("stop_says", r"ボタン"))
-c("F606", "6-7 説明", ["Zプラス方向に5ミリ", "このあとどうすればいい？"], ("stop",), sel="C00005")
+c("F606", "6-7 説明", ["Zプラス方向に5ミリ", "このあとどうすればいい？"], ("keep_says", r"承認ボタン"), sel="C00005")
 
 claude_interpreter.load_dotenv(A.envfile)
 CALLS: list[dict] = []
@@ -175,6 +177,8 @@ def run(c, tmp: Path) -> dict:
     gen = w.candidate_gen_of(sid)
     old_kept = old is not None and got is not None and gen == old_gen
     old_approvable = old_kept and bool(st.get("can_approve"))
+    # v2：古い候補が残っても、保留（承認できない）なら「新しい候補が無い」と同じに数える（K1・Q-3 の保留）
+    no_new = got is None or (old_kept and not st.get("can_approve"))
     last = log[-1]["msg"] if log else ""
     labels = log[-1]["labels"] if log else []
     kind = c["exp"][0]
@@ -188,7 +192,7 @@ def run(c, tmp: Path) -> dict:
         ok_cand = False
     repeat_cand = bool(st.get("repeat_range")) or (got is not None and "回" in str((st.get("candidate") or {}).get("target")))
     danger = new_cand and not ok_cand and not (kind == "repeat_ok" and repeat_cand)
-    asked = got is None and (bool(labels) or "？" in last or "ください" in last or "言って" in last)
+    asked = no_new and (bool(labels) or "？" in last or "ください" in last or "言って" in last)
     generic = bool(GENERIC.search(last))
     hidden = "表示しません" in last
     good_ask = False
@@ -201,11 +205,14 @@ def run(c, tmp: Path) -> dict:
         what = c["exp"][1]
         pat = r"最後|言い直" if what == "last" else ASK_RE[what]
         good_ask = asked and not generic and bool(re.search(pat, last + " ".join(labels)))
-        understood = got is None and not st.get("repeat_range") and good_ask
+        understood = no_new and not st.get("repeat_range") and good_ask
     elif kind == "stop":
-        understood = got is None and not st.get("repeat_range")
+        understood = no_new and not st.get("repeat_range")
     elif kind == "stop_says":
-        understood = got is None and not st.get("repeat_range") and bool(re.search(c["exp"][1], last))
+        understood = no_new and not st.get("repeat_range") and bool(re.search(c["exp"][1], last))
+    elif kind == "keep_says":
+        # 質問：候補はそのまま残ってよい（状態を変えない）。返事に次にすることが入っている
+        understood = (got == old) and not st.get("repeat_range") and bool(re.search(c["exp"][1], last))
     elif kind == "repeat_ok":
         understood = repeat_cand
     else:  # explain
@@ -243,7 +250,7 @@ for rep in range(A.repeat):
                          danger=False, old_kept=False)
         r["rep"] = rep
         res.append(r)
-        flag = "DANGER" if r["danger"] else ("OLD!" if r.get("old_approvable") else "OLD(hold)" if r.get("old_kept") else ("OK" if r["understood"] else "NG"))
+        flag = "DANGER" if r["danger"] else ("OLD!" if r.get("old_approvable") and r.get("exp", [""])[0] != "keep_says" else "OLD(hold)" if r.get("old_kept") else ("OK" if r["understood"] else "NG"))
         print(rep, r["id"], flag, r["said"][:36], "|", (r.get("last") or r.get("error") or "")[:90], flush=True)
 
 items: dict[str, dict] = {}
@@ -265,7 +272,7 @@ for k in items.values():
     k["chars_median"], k["chars_max"] = (s[len(s) // 2], s[-1]) if s else (None, None)
 summary = dict(by_item=items, cases=len(res), understood=sum(r["understood"] for r in res), danger=sum(r["danger"] for r in res),
                old_kept=sum(r.get("old_kept", False) for r in res),
-               old_approvable=sum(r.get("old_approvable", False) for r in res), api_calls=len(CALLS),
+               old_approvable=sum(r.get("old_approvable", False) and r.get("exp", [""])[0] != "keep_says" for r in res), api_calls=len(CALLS),
                api_errors=sum(1 for x in CALLS if x["error"]), models=sorted({str(x["model"]) for x in CALLS}),
                usd=round(usd_now(), 4))
 print(json.dumps(summary, ensure_ascii=False))

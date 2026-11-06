@@ -1,0 +1,388 @@
+{
+ "mode": "実 Claude（本物の API）。実マイク・ブラウザーは使っていない",
+ "root_sha": null,
+ "summary": {
+  "total": {
+   "cases": 8,
+   "understood": 3,
+   "needless_stop": 4,
+   "good_ask": 1,
+   "ask_cases": 2,
+   "danger": 0,
+   "error": 0,
+   "turns": 10
+  },
+  "by_cat": {
+   "方言": {
+    "cases": 2,
+    "understood": 1,
+    "needless_stop": 1,
+    "good_ask": 0,
+    "ask_cases": 0,
+    "danger": 0,
+    "error": 0,
+    "turns": 2
+   },
+   "複数ターン": {
+    "cases": 2,
+    "understood": 0,
+    "needless_stop": 1,
+    "good_ask": 0,
+    "ask_cases": 1,
+    "danger": 0,
+    "error": 0,
+    "turns": 4
+   },
+   "区別": {
+    "cases": 2,
+    "understood": 1,
+    "needless_stop": 1,
+    "good_ask": 0,
+    "ask_cases": 0,
+    "danger": 0,
+    "error": 0,
+    "turns": 2
+   },
+   "指示の例": {
+    "cases": 2,
+    "understood": 1,
+    "needless_stop": 1,
+    "good_ask": 1,
+    "ask_cases": 1,
+    "danger": 0,
+    "error": 0,
+    "turns": 2
+   }
+  },
+  "api_calls": 8,
+  "api_errors": 0,
+  "api_sec_median": 2.59,
+  "api_sec_p90": 2.94,
+  "api_sec_max": 2.94,
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "tokens_in": 1182,
+  "tokens_out": 1547,
+  "usd": 0.0178,
+  "usd_cumulative": 0.0178,
+  "stopped_by_budget": false
+ },
+ "calls": [
+  {
+   "sec": 2.79,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 186
+  },
+  {
+   "sec": 2.94,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 211
+  },
+  {
+   "sec": 2.18,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 156
+  },
+  {
+   "sec": 2.25,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 1154,
+   "out": 220
+  },
+  {
+   "sec": 2.53,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 200
+  },
+  {
+   "sec": 2.84,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 193
+  },
+  {
+   "sec": 2.31,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 185
+  },
+  {
+   "sec": 2.59,
+   "model": "claude-sonnet-5-5",
+   "error": null,
+   "in": 4,
+   "out": 196
+  }
+ ],
+ "results": [
+  {
+   "id": "B18",
+   "cat": "方言",
+   "said": "なんしよると？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 3.27,
+   "last": "この動作データは、最初の位置から動いて、途中で信号を入れて待ちます。その後また別の場所へ移り、信号を切って最後の位置へ移ります。",
+   "log": [
+    {
+     "said": "なんしよると？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "この動作データは、最初の位置から動いて、途中で信号を入れて待ちます。その後また別の場所へ移り、信号を切って最後の位置へ移ります。",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "B28",
+   "cat": "方言",
+   "said": "どげんなっとると？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.96,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "どげんなっとると？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I05",
+   "cat": "複数ターン",
+   "said": "この位置、上に3ミリ上げたいんだけど → うん、そう",
+   "exp": [
+    "ask",
+    "confirm"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 2.22,
+   "last": "何についての「そう」か、まだ分かりません。どの動きについて話しているか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "この位置、上に3ミリ上げたいんだけど",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+     "labels": [
+      "合っている",
+      "違う"
+     ]
+    },
+    {
+     "said": "うん、そう",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "何についての「そう」か、まだ分かりません。どの動きについて話しているか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "I11",
+   "cat": "複数ターン",
+   "said": "Zプラス方向に5 → 5ミリ",
+   "exp": [
+    "cand",
+    "Z",
+    5
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 2,
+   "api": 1,
+   "sec": 2.27,
+   "last": "Claude が、対象・方向・量を確かめたいと返しました。位置番号、方向（Zプラス・Yのマイナスのように、軸と向き）、量（mm）を言い直してください",
+   "log": [
+    {
+     "said": "Zプラス方向に5",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "量がはっきりしません。「5」に単位が付いていません。「5ミリ」のように、単位も付けて、もう一度言ってもらえますか？",
+     "labels": []
+    },
+    {
+     "said": "5ミリ",
+     "via": [
+      "hear"
+     ],
+     "reply_by": null,
+     "msg": "Claude が、対象・方向・量を確かめたいと返しました。位置番号、方向（Zプラス・Yのマイナスのように、軸と向き）、量（mm）を言い直してください",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J01",
+   "cat": "区別",
+   "said": "このロボット何してるの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.55,
+   "last": "信号を出してから、待って動き、別の場所でしばらく待って信号を止め、最後に別の位置へ移ります。動きの目的は、まだ分かりません。何をする動作か教えてもらえますか？",
+   "log": [
+    {
+     "said": "このロボット何してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "信号を出してから、待って動き、別の場所でしばらく待って信号を止め、最後に別の位置へ移ります。動きの目的は、まだ分かりません。何をする動作か教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "J09",
+   "cat": "区別",
+   "said": "この動き、何の作業？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.87,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "この動き、何の作業？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "cat": "指示の例",
+   "said": "Cゼロゼロゼロゼロ5",
+   "exp": [
+    "ask",
+    "any"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": true,
+   "needless_stop": false,
+   "good_ask": true,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.34,
+   "last": "その位置のことですか？この位置では、Zのマイナス方向へ移ってから、待ってから信号を切る動きをします。どの動きについて知りたいか、確認させてください。",
+   "log": [
+    {
+     "said": "Cゼロゼロゼロゼロ5",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "claude",
+     "msg": "その位置のことですか？この位置では、Zのマイナス方向へ移ってから、待ってから信号を切る動きをします。どの動きについて知りたいか、確認させてください。",
+     "labels": []
+    }
+   ]
+  },
+  {
+   "id": "U21",
+   "cat": "指示の例",
+   "said": "このロボット、何してるの？",
+   "exp": [
+    "explain"
+   ],
+   "got": null,
+   "pressed": false,
+   "understood": false,
+   "needless_stop": true,
+   "good_ask": false,
+   "danger": false,
+   "turns": 1,
+   "api": 1,
+   "sec": 2.61,
+   "last": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+   "log": [
+    {
+     "said": "このロボット、何してるの？",
+     "via": [
+      "ask"
+     ],
+     "reply_by": "app",
+     "msg": "Claude の答えに、変更・承認・出力などの状態を言う言い方が入っていたため、表示しません（いまの状態は、アプリの表示が確かな情報です） 動作データの動きを読みました（くわしくは補足の行をご覧ください）。何をする動きか、教えてもらえますか？",
+     "labels": []
+    }
+   ]
+  }
+ ]
+}
