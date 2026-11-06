@@ -1,0 +1,374 @@
+{
+ "1920x1080": {
+  "01_start": {
+   "fig3d": null,
+   "fig3dRatio": 0,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 3,
+   "visibleChars": 207,
+   "devWords": []
+  },
+  "02_loaded": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 390,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "03_selected": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 392,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "04_refused_30mm": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 704,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "05_candidate": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1025,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "06_confirm": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 10,
+   "visibleChars": 1987,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "07_approved": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1063,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "08_exported": {
+   "fig3d": {
+    "x": 530.1875,
+    "y": 122,
+    "w": 1370.8125,
+    "h": 842
+   },
+   "fig3dRatio": 0.557,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1127,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "page_errors": []
+ },
+ "1440x900": {
+  "01_start": {
+   "fig3d": null,
+   "fig3dRatio": 0,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 3,
+   "visibleChars": 207,
+   "devWords": []
+  },
+  "02_loaded": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 390,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "03_selected": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 392,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "04_refused_30mm": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 704,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "05_candidate": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1025,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "06_confirm": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 10,
+   "visibleChars": 1987,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "07_approved": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1063,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "08_exported": {
+   "fig3d": {
+    "x": 522.59375,
+    "y": 118,
+    "w": 896.40625,
+    "h": 676
+   },
+   "fig3dRatio": 0.468,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1133,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "page_errors": []
+ },
+ "1280x720": {
+  "01_start": {
+   "fig3d": null,
+   "fig3dRatio": 0,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 3,
+   "visibleChars": 207,
+   "devWords": []
+  },
+  "02_loaded": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 390,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "03_selected": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 392,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "04_refused_30mm": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 5,
+   "visibleChars": 704,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "05_candidate": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1025,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "06_confirm": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 10,
+   "visibleChars": 1881,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "07_approved": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1063,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "08_exported": {
+   "fig3d": {
+    "x": 468.1875,
+    "y": 118,
+    "w": 790.8125,
+    "h": 496
+   },
+   "fig3dRatio": 0.426,
+   "minFontPx": 11,
+   "minFontText": "SIM",
+   "under12px": 7,
+   "visibleChars": 1133,
+   "devWords": [
+    "モック"
+   ]
+  },
+  "page_errors": []
+ }
+}
