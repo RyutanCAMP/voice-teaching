@@ -1,0 +1,160 @@
+{
+ "summary": {
+  "calls": 8,
+  "errors": 0,
+  "tokens_in": 9177,
+  "tokens_out": 776,
+  "usd_est": 0.0261
+ },
+ "results": [
+  {
+   "phrase": "いやZプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    3
+   ],
+   "cand_after": "+3.000",
+   "export_without_reapprove": false,
+   "reapprove": true,
+   "export": true,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00005 を Z方向に +3.000mm 動かします（Z：200.000 → 203.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "status": "アプリの記録：変更の候補 あり（まだ動作データは変えていません）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いやZマイナス5ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    3
+   ],
+   "cand_after": "-5.000",
+   "export_without_reapprove": false,
+   "reapprove": true,
+   "export": true,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00005 を Z方向に -5.000mm 動かします（Z：200.000 → 195.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "status": "アプリの記録：変更の候補 あり（まだ動作データは変えていません）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いや上に3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。3mm上に動かしたいんですね。この設備では、まだ「上」の方向が決まっていません。ロボットを正面から見て、上は Zプラス で合っていますか？ 違うときは、ZプラスとZマイナスのどちらかを、「Zプラス3ミリ」か「Zマイナス3ミリ」のように言ってください",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いやプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    2
+   ],
+   "cand_after": null,
+   "export_without_reapprove": false,
+   "reapprove": false,
+   "export": null,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。元の動作データは変わっていません。前の承認も取り消しました。新しい内容は、位置・方向・量（mm）をそろえて、もう一度指示してください。まだ新しい変更候補は作っていません",
+   "status": "アプリの記録：変更の候補 なし（前の候補は言い直しのため取り消しました）／承認 まだ／出力 まだ"
+  },
+  {
+   "phrase": "いや、Zプラス3ミリ",
+   "approved_first": true,
+   "gen": [
+    1,
+    3
+   ],
+   "cand_after": "+3.000",
+   "export_without_reapprove": false,
+   "reapprove": true,
+   "export": true,
+   "export_has_205": false,
+   "reply": "言い直しを受け取ったため、前の変更候補（C00005 の Z を 200.0 → 205.0）を取り消しました。承認・出力はできません。新しい指示として読みます。前の承認も取り消しました。位置 C00005 を Z方向に +3.000mm 動かします（Z：200.000 → 203.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+   "status": "アプリの記録：変更の候補 あり（まだ動作データは変えていません）／承認 まだ／出力 まだ"
+  }
+ ],
+ "calls": [
+  {
+   "sec": 1.91,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.53,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1145,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.51,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.38,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.5,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.37,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.27,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1148,
+    "out": 97
+   },
+   "error": null
+  },
+  {
+   "sec": 1.6,
+   "model": "claude-sonnet-5-5",
+   "usage": {
+    "in": 1146,
+    "out": 97
+   },
+   "error": null
+  }
+ ]
+}

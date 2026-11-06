@@ -1,0 +1,10932 @@
+[
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "承認は消え、候補は承認できるまま（観察：Q-3 の判断しだい）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "3ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "量は3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "2ミリ減らして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zプラス方向に3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "-5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Zマイナス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Y",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "Yプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00004 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "C00004をZプラス方向に5ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "やっぱり3ミリにして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "いやZプラス3ミリ",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "5ミリで合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "Zプラスで良かった？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "承認は消え、候補は承認できるまま（観察：Q-3 の判断しだい）",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "出力済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00005 Z",
+   "delta": "+5.000",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 -1）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 -1）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・未承認",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "4回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 +2）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "やっぱり4回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 -1）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": false,
+  "note": "[仕様A] 完全な指示なのに新しい候補ができない（期待 C00001〜C00003 -1）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "NEW",
+  "text": "1回にして",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "今のなし",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "取り消して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "CANCEL",
+  "text": "元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "CONFIRM",
+  "text": "3回で合ってる？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "ACK",
+  "text": "OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "hear の入口では承認が消える（画面は talk を使う。観察）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "ASK",
+  "text": "この動きは何をしている？",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "承認は消え、候補は承認できるまま（観察：Q-3 の判断しだい）",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "うーん",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "ちょっと待って",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "talk",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "hear",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V1/V2",
+  "state": "回数・承認済み",
+  "entry": "ask",
+  "kind": "AMBIG",
+  "text": "えっと、やっぱり",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": true,
+   "can_approve": false,
+   "can_export": true,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 1,
+   "cand": "C00001〜C00003",
+   "delta": "+1",
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": true,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "出力済み",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "Zプラス方向に3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "3ミリにして → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → はい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → OK",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきのでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → このままでいい",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "今のなし → #oldgen",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  },
+  "after": {
+   "gen": 2,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → はい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → OK",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきのでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → さっきの5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → やっぱり5ミリで",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → 元に戻して",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": true
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → このままでいい",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #undo",
+  "ok": true,
+  "note": "",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 4,
+   "cand": null,
+   "delta": null,
+   "approved": false,
+   "can_approve": false,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V3",
+  "state": "未承認",
+  "entry": "talk",
+  "kind": "復活",
+  "text": "いやZプラス3ミリ → #oldgen",
+  "ok": true,
+  "note": "新しい世代の候補（C00005 Z +3.000・承認はボタンが要る・観察）",
+  "before": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  },
+  "after": {
+   "gen": 3,
+   "cand": "C00005 Z",
+   "delta": "+3.000",
+   "approved": false,
+   "can_approve": true,
+   "can_export": false,
+   "hold": false,
+   "voided": false
+  }
+ },
+ {
+  "view": "V4",
+  "state": "承認済み",
+  "entry": "-",
+  "kind": "中身",
+  "text": "承認 → 出力",
+  "ok": true,
+  "note": "",
+  "before": {},
+  "after": {
+   "file": "DEMO_C_PLACE_SIM.JBI.txt"
+  }
+ },
+ {
+  "view": "V4",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "中身",
+  "text": "承認 → Zプラス方向に3ミリ → 新しい候補を承認 → 出力",
+  "ok": true,
+  "note": "",
+  "before": {},
+  "after": {
+   "approve": true,
+   "file": "DEMO_C_PLACE_SIM.JBI.txt"
+  }
+ },
+ {
+  "view": "V4",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "中身",
+  "text": "承認 → 3ミリにして → 新しい候補を承認 → 出力",
+  "ok": true,
+  "note": "",
+  "before": {},
+  "after": {
+   "approve": true,
+   "file": "DEMO_C_PLACE_SIM.JBI.txt"
+  }
+ },
+ {
+  "view": "V4",
+  "state": "承認済み",
+  "entry": "talk",
+  "kind": "中身",
+  "text": "承認 → いやZプラス3ミリ → 新しい候補を承認 → 出力",
+  "ok": true,
+  "note": "",
+  "before": {},
+  "after": {
+   "approve": true,
+   "file": "DEMO_C_PLACE_SIM.JBI.txt"
+  }
+ }
+]
