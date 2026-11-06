@@ -2,6 +2,8 @@
 
 - 担当：クーちゃん（UI／UX デザイン精査責任者）
 - 評価した本番候補：`release/v1.0-rc` **36ca898**（シクロの最新 RC）
+- このブランチの最新：**ecb6085**（3コミット：3bb81d6 → dd5819b → ecb6085）
+- **GitHub への push：未**（このセッションに書き込み権限が無く 403。バンドル・パッチを渡す）
 - 作業ブランチ：`ui/kuchan-ux-1107`（36ca898 から分岐）
 - 変えたもの：`voice_teaching/web/static/style.css` の**末尾に1つの塊（K1〜K8）を足しただけ**＋撮影用の道具 `tools/kuchan_ux_shots.py`（新規）＋この報告と比較画像
 - **変えていないもの**：app.js・index.html・view3d.js・サーバー・自然言語・安全の判定・承認・出力・テスト。SIM の印・盾・20mm・差分・承認・止めた理由の表示は消していない・小さくしていない
@@ -77,9 +79,10 @@
 
 | テスト | 種類 | 結果 |
 |---|---|---|
-| pytest（ブラウザーの通しを除く） | モック | **PYTEST_RESULT** |
-| Node（tests/speech.test.mjs） | — | **NODE_RESULT** |
-| e2e（tools/e2e_browser.py・Chromium headless） | モック・UI | **E2E_RESULT** |
+| pytest（ブラウザーの通しを除く） | モック | **6797 passed・1 skipped・0 failed**（RC の報告と同じ） |
+| Node（tests/*.mjs 7ファイル） | — | **128 / 128** |
+| e2e（tools/e2e_browser.py・Chromium headless・Linux） | モック・UI | **OK 1484・NG 10**。**同じ環境の RC 36ca898 も OK 1484・NG 10 で、NG の10件は同じもの**（このブランチで増えた NG は 0）。記録：`e2e_branch_ecb6085.txt`・`e2e_rc_36ca898.txt` |
+| └ NG 10件の中身（環境による・RC でも出る） | — | F7 1440 の拡大の窓の文字のはみ出し 2（Linux のフォントが Windows より幅広い）／H10 の出力先の表示 4（`output\sim` の Windows の区切りを期待。Linux は `/`）／S2nL 1280 の長い答えが会話の欄で切れる 4（フォントの幅）。シクロの報告（Windows）では 1494/0。**Windows での e2e は未実施** |
 | UI 撮影（tools/kuchan_ux_shots.py・filming・3つの大きさ×8場面） | モック・UI | ページのエラー 0。開発用の文字（TEST・filming・DEBUG・SHA）0。1920 の候補の場面で隠れた点 0 |
 | 本物の Claude・実マイク | — | **未実施**（キーを使わない作業。見た目は CSS だけなので、解釈の結果には関係しない） |
 
