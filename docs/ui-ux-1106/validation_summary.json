@@ -1,0 +1,56 @@
+{
+  "code_commit": "acb414546490a0e2666ec05e6371c01515395d10",
+  "base_commit": "60f3d2469fe125da3913e950b74f9974d95055f5",
+  "e2e": {
+    "pass": 1480,
+    "fail": 12,
+    "exit_code": 1,
+    "completed": true,
+    "legacy_fixed_font_expectations": 12,
+    "other_failures": [],
+    "failure_cases": [
+      "NG  11/5 F6（1280×720・conversation）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble .who': [12, 12]}）",
+      "NG  11/5 F6（1280×720・range）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [15, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '#reply-message .range-lines': [14, 14], '.range-button-note': [12, 12]}）",
+      "NG  11/5 F6（1280×720・candidate）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '.legend': [13, 13], '.cand-heard': [13, 13], '.cand-warn': [13, 13]}）",
+      "NG  11/5 F6（1280×720・approved）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '.legend': [13, 13], '.cand-warn': [12, 12]}）",
+      "NG  11/5 F6（1366×768・conversation）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble .who': [12, 12]}）",
+      "NG  11/5 F6（1366×768・range）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [15, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '#reply-message .range-lines': [14, 14], '.range-button-note': [12, 12]}）",
+      "NG  11/5 F6（1366×768・candidate）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '.legend': [13, 13], '.cand-heard': [13, 13], '.cand-warn': [13, 13]}）",
+      "NG  11/5 F6（1366×768・approved）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '.legend': [13, 13], '.cand-warn': [12, 12]}）",
+      "NG  11/5 F6（1440×900・conversation）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble .who': [12, 12]}）",
+      "NG  11/5 F6（1440×900・range）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [15, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '#reply-message .range-lines': [14, 14], '.range-button-note': [12, 12]}）",
+      "NG  11/5 F6（1440×900・candidate）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '.legend': [13, 13], '.cand-heard': [13, 13], '.cand-warn': [13, 13]}）",
+      "NG  11/5 F6（1440×900・approved）：文字の大きさは前のまま（{'.bubble.human .said': [15, 15], '.bubble.claude .said': [15, 15], '.bubble.app .said': [14, 15], '.bubble .who': [12, 12], '#reply-message': [14, 14], '.legend': [13, 13], '.cand-warn': [12, 12]}）"
+    ]
+  },
+  "pytest": {
+    "pass": 6339,
+    "skip": 1,
+    "xfail": 1,
+    "fail": 0,
+    "exit_code": 0,
+    "seconds": 208.1
+  },
+  "node": {
+    "pass": 128,
+    "fail": 0,
+    "skip": 0,
+    "exit_code": 0
+  },
+  "ui_common": {
+    "before_pass": 73,
+    "before_fail": 3,
+    "after_pass": 76,
+    "after_fail": 0,
+    "regression": 0,
+    "execution_errors": 0
+  },
+  "real_api_calls": 0,
+  "real_microphone": "not tested",
+  "filming_port_8896": "not modified",
+  "product_changed_files": [
+    "voice_teaching/web/static/style.css"
+  ],
+  "last_observed_codex_remaining_percent": 50,
+  "new_development_stopped_at_remaining_percent": 50
+}
