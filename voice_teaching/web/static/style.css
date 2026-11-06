@@ -1644,6 +1644,13 @@ body.hero #kbd-button > span { display: inline; font-size: 14px; }
   .cand-pop { left: 8px; width: min(26vw, 500px); top: 118px; bottom: 156px; }  /* 会話の欄（left 8px・幅 26vw）に合わせる */
 }
 
+/* K1 の例外：会話の欄に、答えを選ぶボタン（保留の［取り消す］［このまま残す］・聞き返しの選択・範囲の確認）が出ている間は、
+   会話の欄をふさがない。ポップアップは RC と同じ 3D の右下に戻す（押す必要がある選択を、ポップアップの下に隠さない） */
+@media (min-width: 1500px) {
+  body:has(#reply-message:not([hidden]) button, #dialog-choices button, #dock-range:not([hidden])) .cand-pop {
+    position: absolute; left: auto; right: 16px; top: auto; bottom: 16px; width: min(380px, 36%); max-height: calc(100% - 32px); z-index: 4; }
+}
+
 /* K2（P2）1100px 以上：ポップアップを会話の欄の上に重ねるとき、後ろの吹き出しが切れて覗かないよう、ひと続きの面にする */
 @media (min-width: 1100px) {
   .cand-pop { background: #0a1324; border-radius: 16px; box-shadow: 0 0 0 1px var(--glass-line), 0 18px 40px rgba(0, 0, 0, 0.55); }
