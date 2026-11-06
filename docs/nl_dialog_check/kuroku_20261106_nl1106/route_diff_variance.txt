@@ -1,0 +1,10 @@
+同じ なんしよると？
+  前: UtteranceFacts(raw='なんしよると？', text='なんしよると', kinds=(), positions=(), bad_positions=(), amounts=(), unclear_amounts=(), axes=(), axis_signs=(), sides=(), speed_signs=(), refers_to_selection=False, stray_signs=0, vertical=False, explicit_axes=(), value_axes=(), stop_reasons=(), unknown_words=('なんしよる',
+同じ これ、何をするための動き？
+  前: UtteranceFacts(raw='これ、何をするための動き？', text='これ、何をするための動き', kinds=(), positions=(), bad_positions=(), amounts=(), unclear_amounts=(), axes=(), axis_signs=(), sides=(), speed_signs=(), refers_to_selection=True, stray_signs=0, vertical=False, explicit_axes=(), value_axes=(), stop_reasons=(), unknown_word
+同じ うん、そう
+  前: UtteranceFacts(raw='うん、そう', text='うん、そう', kinds=(), positions=(), bad_positions=(), amounts=(), unclear_amounts=(), axes=(), axis_signs=(), sides=(), speed_signs=(), refers_to_selection=False, stray_signs=0, vertical=False, explicit_axes=(), value_axes=(), stop_reasons=(), unknown_words=('うん', 'そう')
+同じ この位置、上に3ミリ上げたいんだけど
+  前: UtteranceFacts(raw='この位置、上に3ミリ上げたいんだけど', text='この位置、上に3ミリ上げて', kinds=('move',), positions=(), bad_positions=(), amounts=(Amount(value=3.0, unit='mm', sign=None, text='3ミリ'),), unclear_amounts=(), axes=('Z',), axis_signs=(1,), sides=(), speed_signs=(), refers_to_selection=True, stray_signs=0, vertica
+同じ Cゼロゼロゼロゼロ5
+  前: UtteranceFacts(raw='Cゼロゼロゼロゼロ5', text='Cゼロゼロゼロゼロ5', kinds=(), positions=(), bad_positions=(), amounts=(), unclear_amounts=('「5」（単位が mm・ミリ・% ではありません）',), axes=(), axis_signs=(), sides=(), speed_signs=(), refers_to_selection=False, stray_signs=0, vertical=False, explicit_axes=(), value_axes=(), stop_r
