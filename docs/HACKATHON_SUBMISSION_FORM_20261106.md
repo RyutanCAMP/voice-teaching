@@ -10,7 +10,8 @@
 5. プロジェクト概要（必須、500字以内）：下記
 6. 公開GitHub（必須）：https://github.com/RyutanCAMP/voice-teaching （公開状態と提出対象の完成度を最終確認）
 7. デモ動画（必須、3分以内・アクセス可）：YouTube限定公開URLを撮影・アップロード後に入力。一般公開は予定しない
-8. 使用したClaude製品・機能（必須、複数選択）：Claude Code CLI / Claude Code IDE拡張 / Claude Code Desktop / Cowork / Claude.ai / Claude API / Managed Agents / Agent SDK / その他。実際の使用履歴で確認して選ぶ
+8. 使用したClaude製品・機能（必須、複数選択）：**本人確認済みの4項目**＝Claude Code IDE拡張（シクロ／VS Code横のClaudeチャット画面）、Claude Code Desktop（クロちゃん）、Claude.ai（クロクラウド／ブラウザ）、Claude API（Voice Teaching本体の自然言語処理）。**未確認のため現時点では選択しない**＝Claude Code CLI、Cowork、Agent SDK、Managed Agents。クロちゃんの使用量画面ではCowork 100%と表示されたが、フォームの製品区分と同一視しない。提出直前に再確認。
+
 9. 開発中に一番詰まった場面（必須）：自然言語と安全性のバランス調整。下記暫定メモを元に表現を再検討
 10. 開発に必要な公式情報が十分見つけられたか（必須）：本人の評価「まあまあ」（実際の選択肢に合わせて入力）
 11. Claudeを使った感想と改善してほしい点（必須）：後で本人と作成。下記は旧ドラフトで未確定
