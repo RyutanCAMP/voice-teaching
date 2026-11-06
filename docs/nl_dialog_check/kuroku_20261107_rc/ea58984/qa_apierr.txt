@@ -1,0 +1,30 @@
+timeout RJ この位置は何？ | cand None | appr False can_export False | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+timeout BR 2回から3回にして | cand None | appr False can_export False | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+timeout RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+conn RJ この位置は何？ | cand None | appr False can_export False | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+conn BR 2回から3回にして | cand None | appr False can_export False | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+conn RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude のネットワークにつながりません（時間切れを含む）。インターネットの接続を確認してください
+429 RJ この位置は何？ | cand None | appr False can_export False | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+429 BR 2回から3回にして | cand None | appr False can_export False | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+429 RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+529 RJ この位置は何？ | cand None | appr False can_export False | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+529 BR 2回から3回にして | cand None | appr False can_export False | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+529 RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude が混み合っているか、利用の上限に達しています。少し待ってから、もう一度聞いてください
+401 RJ この位置は何？ | cand None | appr False can_export False | range False | Claude に接続できません。APIキーを確認してください（.env の ANTHROPIC_API_KEY）
+401 BR 2回から3回にして | cand None | appr False can_export False | range False | Claude に接続できません。APIキーを確認してください（.env の ANTHROPIC_API_KEY）
+401 RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude に接続できません。APIキーを確認してください（.env の ANTHROPIC_API_KEY）
+runtime RJ この位置は何？ | cand None | appr False can_export False | range False | Claude に聞けませんでした（接続または応答に問題がありました）
+runtime BR 2回から3回にして | cand None | appr False can_export False | range False | Claude に聞けませんでした（接続または応答に問題がありました）
+runtime RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude に聞けませんでした（接続または応答に問題がありました）
+notool RJ この位置は何？ | cand None | appr False can_export False | range False | Claude の答えを読めませんでした
+notool BR 2回から3回にして | cand None | appr False can_export False | range False | Claude の答えを読めませんでした
+notool RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude の答えを読めませんでした
+badjson RJ この位置は何？ | cand None | appr False can_export False | range False | Claude の答えを読めませんでした
+badjson BR 2回から3回にして | cand None | appr False can_export False | range False | Claude の答えを読めませんでした
+badjson RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude の答えを読めませんでした
+numbers RJ この位置は何？ | cand None | appr False can_export False | range False | Claude の答えに「上」「下」の言葉が入っていましたが、上下の向きはまだ確認されていないため、表示しません（Z方向として扱います）
+numbers BR 2回から3回にして | cand None | appr False can_export False | range False | Claude の答えに「上」「下」の言葉が入っていましたが、上下の向きはまだ確認されていないため、表示しません（Z方向として扱います）
+numbers RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude の答えに「上」「下」の言葉が入っていましたが、上下の向きはまだ確認されていないため、表示しません（Z方向として扱います）
+maxtok RJ この位置は何？ | cand None | appr False can_export False | range False | Claude の答えが途中で切れたため、読めませんでした
+maxtok BR 2回から3回にして | cand None | appr False can_export False | range False | Claude の答えが途中で切れたため、読めませんでした
+maxtok RJ これ何？ | cand +5.000 | appr True can_export True | range False | Claude の答えが途中で切れたため、読めませんでした

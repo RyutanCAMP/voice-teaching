@@ -42,6 +42,7 @@ class FakeNLU(MockInterpreter):
 
 
 OUT = []
+SHA = sys.argv[3] if len(sys.argv) > 3 else "?"
 
 
 def run(cid, title, job, steps, answers, want):
@@ -136,5 +137,5 @@ run("U19", "「20.5ミリ」に 20.5mm と答える：上限で止まる", RJ, P
 run("U20", "「右に5ミリ寄せたいな」に Y+・根拠「右」と答える：確かめなしに Y にしない", CP, ["@sel C00003", "えっと、右に5ミリ寄せたいなあ"],
     [ans(d="Y+", dev="右", val=5, aev="5ミリ")], None)
 
-Path(sys.argv[2]).write_text(json.dumps({"sha": "36ca898", "api": 0, "res": OUT}, ensure_ascii=False, indent=1), encoding="utf-8")
+Path(sys.argv[2]).write_text(json.dumps({"sha": SHA, "api": 0, "res": OUT}, ensure_ascii=False, indent=1), encoding="utf-8")
 print("NG", [x["id"] for x in OUT if not x["ok"]])

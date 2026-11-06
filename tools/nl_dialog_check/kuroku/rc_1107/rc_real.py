@@ -117,5 +117,5 @@ for name, (job, steps) in SC.items():
                     print("  ", json.dumps(x, ensure_ascii=False)[:420], flush=True)
 usd = sum(i * 2.0 + o * 10.0 for i, o, _ in CALLS) / 1e6
 print(f"API {len(CALLS)} 回・失敗 {sum(1 for *_, f in CALLS if f)}・推定 {usd:.3f} ドル（sonnet-5-5 の値段で計算）")
-Path(A.out).write_text(json.dumps({"sha": "36ca898", "calls": len(CALLS), "usd": round(usd, 3), "res": res}, ensure_ascii=False, indent=1),
+Path(A.out).write_text(json.dumps({"sha": ROOT.name, "calls": len(CALLS), "usd": round(usd, 3), "res": res}, ensure_ascii=False, indent=1),
                        encoding="utf-8")
