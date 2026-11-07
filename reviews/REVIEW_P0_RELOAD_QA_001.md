@@ -63,6 +63,6 @@ FAIL に当たるものはなし。
 - replay の 44 件の FAIL の中身（修正前と同じであることだけ確認）
 
 ## 使った一時ファイル
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\probe\probe.py・probe2.py・tabs.py・stale.py
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\probe\probe.py・probe2.py・tabs.py・stale.py
 - スクリーンショット：同 scratchpad\shots\
 - replay の結果：C:\アプリ\vt-p0-reload\output\p0-20261105\qa-p0-reload、qa-p0-reload-basecf0（git の対象外）

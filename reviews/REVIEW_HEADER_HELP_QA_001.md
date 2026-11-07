@@ -22,7 +22,7 @@
    - 「使い方」：キーボード Enter で開く・Esc で閉じてフォーカスが戻る・読み込み後も開閉・外側クリックで閉じる → 全幅 OK。
    - ⓘ：クリックで吹き出し（aria-expanded=true、説明文は基点と同一）、Esc で閉じる、フォーカス＋Enter で開く → 全幅 OK。吹き出しは画面内。
    - elementFromPoint で「使い方」の左端は help-button、ⓘ の中心は ⓘ（押せる所の重なりなし）。
-   - 写真：C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\qa_shots\（qa_*_before/loaded/tip/candidate.png、base\ は基点）
+   - 写真：C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\qa_shots\（qa_*_before/loaded/tip/candidate.png、base\ は基点）
 8. 機密の確認：差分に sk-ant / api_key / password / secret / token / .env / .JBI なし。断定語は test の禁止語リストにだけ出現。
 9. 後片付け：output/・records/ は無い（増えていない）。git status は `?? reviews/REVIEW_HEADER_HELP_SAFETY_001.md`（別の Safety レビューが書いたもの）と、このファイルのみ。
 

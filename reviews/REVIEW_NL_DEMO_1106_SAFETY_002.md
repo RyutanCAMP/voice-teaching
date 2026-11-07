@@ -31,8 +31,8 @@ e2e より後のテスト（tests/test_frame_robot.py 〜 tests/test_web_flow.py
 ```
 
 確かめのスクリプト（scratchpad。偽の Claude・合成ジョブ・WebFlow だけ。ポートは使わない）：
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_seq.py（前回と同じ。続けて話したときの候補の有無と文）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_talk2.py（今回追加。reply_mvp_problem と check_reply の両方を通したときの表示する・隠す）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_seq.py（前回と同じ。続けて話したときの候補の有無と文）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_talk2.py（今回追加。reply_mvp_problem と check_reply の両方を通したときの表示する・隠す）
 - 聞き返しのボタンの文は、python -c で WebFlow の hear.choices を出して確かめた
 
 ## 前回の指摘の結果

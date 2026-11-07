@@ -26,10 +26,10 @@ cd C:/アプリ/vt-nl-demo && PYTHONUTF8=1 PYTHONIOENCODING=utf-8 C:/アプリ/v
 ```
 
 確かめのスクリプト（scratchpad。偽の Claude・合成ジョブ・WebFlow だけ）：
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_d.py（d：確かめの経路・書き換えの境目）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_d2.py・probe_d3.py（d：座標の値・速度との混ざり）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_bc.py（b・c）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_m1.py（前回 Medium-1 と、3手以上・ボタンと声の混ざり）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_d.py（d：確かめの経路・書き換えの境目）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_d2.py・probe_d3.py（d：座標の値・速度との混ざり）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_bc.py（b・c）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_m1.py（前回 Medium-1 と、3手以上・ボタンと声の混ざり）
 
 ## 指摘
 

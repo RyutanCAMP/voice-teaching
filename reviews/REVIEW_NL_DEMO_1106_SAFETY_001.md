@@ -22,9 +22,9 @@ git -C C:/アプリ/vt-nl-demo archive 4f50837 | tar -x -C <scratchpad>/snl/base
 ```
 
 確かめのスクリプト（本物の Claude は呼ばない。tests の place_flow / pending_three の偽の Claude・合成ジョブ DEMO_C_PLACE.JBI・WebFlow を使う。ポートは使わない）：
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_utt.py（read_utterance の中身と、WebFlow で1回話した結果）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_seq.py（続けて話したときの候補の有無。基点用は probe_seq_base.py）
-- C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_talk.py（reply_mvp_problem と claude_explain.check_reply の両方を通したときの、表示する・隠す）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_utt.py（read_utterance の中身と、WebFlow で1回話した結果）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_seq.py（続けて話したときの候補の有無。基点用は probe_seq_base.py）
+- C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\snl\probe_talk.py（reply_mvp_problem と claude_explain.check_reply の両方を通したときの、表示する・隠す）
 
 ## 指摘
 

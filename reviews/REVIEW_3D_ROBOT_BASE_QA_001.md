@@ -67,7 +67,7 @@ FAIL に当たる問題はなかった。撮影の流れは 1280×720・1920×10
   - 異常・境界：X 負（QA_NEGX）・Z 負（QA_NEGZ）・原点に点（QA_ORIGINPT）・遠くに固まる（QA_FAR）・X=4,000,000（QA_HUGE：読み込みで「桁を超えます」と止まり、図を描かない）。ページのエラーなし。
 - 機密の確認：`git diff cf0b3fb 2a33510 | grep -niE "sk-ant|api[_-]?key|password|secret|token|BEGIN (RSA|PRIVATE)"`：該当なし。samples の変更なし。
 
-## 写真（C:\Users\Hid0250\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\qa3d\）
+## 写真（C:\Users\<user>\AppData\Local\Temp\claude\902507686a100f0b\6bc1279b-dd30-4df5-bdad-061a4303e89d\scratchpad\qa3d\）
 - 1280x720_C00005_Zplus5_candidate.png / 1920x1080_C00005_Zplus5_candidate.png（C00005 Z+5mm の候補）
 - *_playing.png・*_confirm.png・*_exported.png・*_2d_{yz,xz,xy}.png・*_Zplus30_fresh.png
 - zoom_*（拡大）、base_cf0b3fb\（基点の同じ画面）、edge_1280_*（異常・境界）、e2e_shots\（e2e の写真）
