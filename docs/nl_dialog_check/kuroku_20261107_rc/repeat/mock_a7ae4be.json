@@ -1,0 +1,634 @@
+{
+ "root": "wt-rc4",
+ "real": false,
+ "calls": 0,
+ "usd": 0.0,
+ "res": [
+  {
+   "id": "R01",
+   "job": "BR",
+   "steps": [
+    "C1C4を2回繰り返したい"
+   ],
+   "want": "guide",
+   "note": "C00001〜C00004 と言った。2→3 に読み替えない・C00001〜C00003 に黙って置き換えない",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": true,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "C1C4を2回繰り返したい",
+     "msg": "回数の変更は「C00001からC00003の作業を2回から3回にして」のように言ってください（分からなかった言葉：「繰り返」）",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R02",
+   "job": "BR",
+   "steps": [
+    "C00001からC00004を2回から3回にして"
+   ],
+   "want": "guide",
+   "note": "違う範囲。黙って C00001〜C00003 にしない",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "C00001からC00004を2回から3回にして",
+     "msg": "区間の位置 C00004 が、区間の外の MOVJ でも使われているため、複写しません（27行目「MOVJ C00004 VJ=25.00」）。繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外です",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R03",
+   "job": "BR",
+   "steps": [
+    "繰り返しを増やして"
+   ],
+   "want": "guide",
+   "note": "範囲も回数も言わない",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "繰り返しを増やして",
+     "msg": "Claude の答えに数（位置番号・回数・量など）が入っていたため、表示しません（数はアプリが動作データから表示します）",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R04",
+   "job": "BR",
+   "steps": [
+    "もう1回繰り返して"
+   ],
+   "want": "guide",
+   "note": "回数の言い方の揺れ",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "もう1回繰り返して",
+     "msg": "動作データでは今2回です。もう1回なら合計3回です。よければ「3回にして」と言ってください。まだ変更候補は作りません",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R05",
+   "job": "BR",
+   "steps": [
+    "2回繰り返したい"
+   ],
+   "want": "ask",
+   "note": "あいまい：今2回なのか、2回にしたいのか。2→3 にしない",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回繰り返したい",
+     "msg": "C00001〜C00003のくり返しを2回から2回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R06",
+   "job": "BR",
+   "steps": [
+    "3回にして"
+   ],
+   "want": "guide",
+   "note": "範囲を言わない 3回",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R07",
+   "job": "BR",
+   "steps": [
+    "反復を3回にしたい"
+   ],
+   "want": "guide",
+   "note": "「反復」",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "反復を3回にしたい",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R08",
+   "job": "BR",
+   "steps": [
+    "回数を変えたい"
+   ],
+   "want": "guide",
+   "note": "回数だけ",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "回数を変えたい",
+     "msg": "あなたの文から読んだ回数と、Claude が読んだ回数が合いません（食い違い）。記録だけにして、何も変えません。回数を、もう一度はっきり言ってください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R09",
+   "job": "BR",
+   "steps": [
+    "2回から2回にして"
+   ],
+   "want": "none",
+   "note": "変わらない回数",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から2回にして",
+     "msg": "C00001〜C00003のくり返しを2回から2回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R10",
+   "job": "BR",
+   "steps": [
+    "3回から4回にして"
+   ],
+   "want": "none",
+   "note": "対応外の回数",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "3回から4回にして",
+     "msg": "動作データでは今2回です。指定された現在の回数と違うため、希望する回数をもう一度教えてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R11",
+   "job": "RJ",
+   "steps": [
+    "2回から3回にして"
+   ],
+   "want": "none",
+   "note": "繰り返しの無い JOB",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "あなたの文から読んだ回数と、Claude が読んだ回数が合いません（食い違い）。記録だけにして、何も変えません。回数を、もう一度はっきり言ってください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R12",
+   "job": "BR",
+   "steps": [
+    "C00001からC00003の作業を2回から3回にして"
+   ],
+   "want": "range_ok",
+   "note": "今までの言い方（壊れていないこと）",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [],
+   "log": [
+    {
+     "do": "C00001からC00003の作業を2回から3回にして",
+     "msg": "この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "range": {
+      "count": 2,
+      "target": "C00001〜C00003",
+      "turn": 1
+     },
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R13",
+   "job": "BR",
+   "steps": [
+    "2回から3回にして"
+   ],
+   "want": "range_ok",
+   "note": "撮影の言い方",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R14",
+   "job": "BR",
+   "steps": [
+    "2回から3回にして",
+    "@range_no"
+   ],
+   "want": "none",
+   "note": "範囲の確かめで［違う］：候補なし",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@range_no",
+     "msg": "範囲の確かめが無い",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R15",
+   "job": "BR",
+   "steps": [
+    "2回から3回にして",
+    "@reload",
+    "@range_yes_old"
+   ],
+   "want": "none",
+   "note": "読み直したあと、古い範囲のボタンを押す",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@reload",
+     "msg": "読み直し",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@range_yes_old",
+     "msg": "古い範囲の確かめが無い",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R16",
+   "job": "BR",
+   "steps": [
+    "2回から3回にして",
+    "取り消して",
+    "@range_yes_old"
+   ],
+   "want": "none",
+   "note": "取り消したあと、古い範囲のボタン",
+   "ok": true,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "取り消して",
+     "msg": "元に戻す変更候補はありません。元のジョブはそのままです",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@range_yes_old",
+     "msg": "古い範囲の確かめが無い",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R17",
+   "job": "BR",
+   "steps": [
+    "2回から3回にして",
+    "@range_yes",
+    "@approve",
+    "@export"
+   ],
+   "want": "exported",
+   "note": "2→3 の出力（壊れていないこと）",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": true,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00001〜C00003"
+   ],
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@range_yes",
+     "msg": "範囲の確かめが無い",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@approve",
+     "msg": "承認する変更候補がありません",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    },
+    {
+     "do": "@export",
+     "msg": "承認されていないため、出力しません（承認は確認表示の承認ボタンで行います）",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  },
+  {
+   "id": "R18",
+   "job": "BR",
+   "steps": [
+    "C2からC3を3回にして"
+   ],
+   "want": "guide",
+   "note": "範囲の一部",
+   "ok": false,
+   "danger": {
+    "substituted": false,
+    "ambiguous_fixed": false,
+    "unapproved_export": false
+   },
+   "guide_shown": false,
+   "fixed_phrase_demanded": false,
+   "ranges_in_text": [
+    "C00002〜C00003"
+   ],
+   "log": [
+    {
+     "do": "C2からC3を3回にして",
+     "msg": "区間（C00002〜C00003）の中に、区間の外の位置（C00001）への移動があるため、複写しません（24行目「MOVL C00001 V=150.0」）。繰り返すのは移動の行だけです。信号（DOUT）や待ち時間（TIMER）を含む作業は、このプロトタイプでは対象外です",
+     "range": null,
+     "cand": null,
+     "can_approve": false,
+     "can_export": false,
+     "approval": false
+    }
+   ]
+  }
+ ]
+}
