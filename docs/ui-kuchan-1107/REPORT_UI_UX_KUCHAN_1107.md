@@ -77,6 +77,8 @@
 
 ## 5. テスト（このブランチ `ui/kuchan-ux-1107`）
 
+> **11/7 10:50 追記**：新しい RC **a7ae4be** を取り込んだ状態（merge 4d4256b）でも pytest **6863 passed・0 failed**・Node **128/128**・e2e **OK 1484・NG 10**（下と同じ環境由来の10件）。記録 `e2e_branch_on_a7ae4be.txt`。比較画像・計測値は a7ae4be 基準に撮り直した。
+
 | テスト | 種類 | 結果 |
 |---|---|---|
 | pytest（ブラウザーの通しを除く） | モック | **6797 passed・1 skipped・0 failed**（RC の報告と同じ） |
