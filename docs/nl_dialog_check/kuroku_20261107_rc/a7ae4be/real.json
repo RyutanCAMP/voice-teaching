@@ -1,0 +1,154 @@
+{
+ "sha": "wt-rc4",
+ "calls": 3,
+ "usd": 0.017,
+ "res": [
+  {
+   "case": "script",
+   "rep": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "api": 0,
+     "sec": 0.0
+    },
+    {
+     "do": "Zプラス方向に30ミリ動かして",
+     "msg": "移動量 30mm は仮の上限 20mm（確認待ち）を超えるため、変更しません（シミュレーションの候補も作りません）。20ミリ以下の量で、もう一度言ってください",
+     "nl": null,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "api": 1,
+     "sec": 2.5
+    },
+    {
+     "do": "Zプラス方向に5ミリ動かして",
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：180.000 → 185.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": null,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "api": 1,
+     "sec": 1.7
+    },
+    {
+     "do": "@approve",
+     "msg": "",
+     "nl": null,
+     "file": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "api": 0,
+     "sec": 0.0
+    },
+    {
+     "do": "@export",
+     "msg": "",
+     "nl": null,
+     "file": "DEMO_RJ_XYZ_SIM.JBI.txt",
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "api": 0,
+     "sec": 0.1
+    }
+   ]
+  },
+  {
+   "case": "repeat23",
+   "rep": 0,
+   "log": [
+    {
+     "do": "2回から3回にして",
+     "msg": "C00001〜C00003のくり返しを2回から3回にするご希望として受け取りました。まだ動作データは変えていません。範囲と回数は、アプリの表示で確かめてください この範囲（1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））を繰り返しますか？ 今は2回続けて書かれています。合計3回にします",
+     "nl": null,
+     "file": null,
+     "cand": null,
+     "approval": false,
+     "hold": false,
+     "can_approve": false,
+     "can_export": false,
+     "api": 1,
+     "sec": 2.7
+    },
+    {
+     "do": "@range_yes",
+     "msg": "C00001〜C00003 の作業を 2回 → 3回 にします（変更前の範囲 1回目：21〜23行目（MOVL C00001 V=150.0・MOVL C00002 V=30.0・MOVL C00003 V=150.0）／2回目：24〜26行目／全体：21〜26行目（2回））。同じ動きを1回ぶん足します（新しい位置・新しい移動の線は作りません）。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": null,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": false,
+     "hold": false,
+     "can_approve": true,
+     "can_export": false,
+     "api": 0,
+     "sec": 0.1
+    },
+    {
+     "do": "@approve",
+     "msg": "",
+     "nl": null,
+     "file": null,
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "api": 0,
+     "sec": 0.3
+    },
+    {
+     "do": "@export",
+     "msg": "",
+     "nl": null,
+     "file": "DEMO_BUTTON_REPEAT_SIM.JBI.txt",
+     "cand": [
+      "C00001〜C00003",
+      "+1"
+     ],
+     "approval": true,
+     "hold": false,
+     "can_approve": false,
+     "can_export": true,
+     "api": 0,
+     "sec": 0.0
+    }
+   ]
+  }
+ ]
+}

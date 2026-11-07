@@ -68,6 +68,8 @@ SC = {
     "f2_appr": ("RJ", P + ["Zプラス方向に5ミリ", "@approve", "3ミリに訂正して"]),
     "script": ("RJ", P + ["Zプラス方向に30ミリ動かして", "Zプラス方向に5ミリ動かして", "@approve", "@export"]),
     "repeat23": ("BR", ["2回から3回にして", "@range_yes", "@approve", "@export"]),
+    "repeat_kai": ("BR", ["2階から3階にして", "@range_yes", "@approve", "@export"]),
+    "kai_rj": ("RJ", P + ["2階から3階にして"]),
     "right_c02": ("CP", ["@sel C00003", "もう少し右に寄せて", "5ミリ", "@yes"]),
 }
 only = {x for x in A.only.split(",") if x}
