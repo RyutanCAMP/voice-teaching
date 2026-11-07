@@ -57,13 +57,14 @@ def stop(why: str, detail: str = "") -> None:
     sys.exit(2)
 
 
-def run(name: str, cmd: list[str], timeout: int, check=None, real: bool = False) -> str:
-    """1つの検査を流す。check(out) は (ok, 危ない, 一言) を返す。危ないなら止める。"""
+def run(name: str, cmd: list[str], timeout: int, check=None, real: bool = False, cwd: Path | None = None) -> str:
+    """1つの検査を流す。check(out) は (ok, 危ない, 一言) を返す。危ないなら止める。
+    cwd：pytest・e2e はリポジトリのルート（作業フォルダの worktree）で動かす（11/7 21時：WORK で動かすと voice_teaching を読めない）"""
     global SPENT
     t0 = time.time()
     out_path = LOG / f"{len(SUMMARY) + 1:02d}_{name}.txt"
     try:
-        p = subprocess.run(cmd, cwd=str(WORK), env=ENV, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout)
+        p = subprocess.run(cmd, cwd=str(cwd or WORK), env=ENV, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout)
         out = (p.stdout or "") + "\n--- stderr ---\n" + (p.stderr or "")
         code = p.returncode
     except subprocess.TimeoutExpired as ex:
@@ -188,7 +189,7 @@ FA, QA, XC, RC = K / "final_61ef19a", K / "qa_60f3d24", K / "xc_1106", K / "rc_1
 for rnd in range(1, A.rounds + 1):
     if not A.skip_slow:
         run("node", [NODE, "--test", *[str(p) for p in sorted((WT / "tests").glob("*.test.mjs"))]], 600, c_node)
-        run("pytest", [PY, "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=tests/test_e2e_browser.py", str(WT / "tests")], 3600, c_pytest)
+        run("pytest", [PY, "-m", "pytest", "-q", "-p", "no:cacheprovider", "--ignore=tests/test_e2e_browser.py", str(WT / "tests")], 3600, c_pytest, cwd=WT)
     run("F-1 の言い方（iya3）", [PY, "-I", str(FA / "iya3.py"), str(WT)], 900, c_iya)
     run("P0 の場面（p0_final）", [PY, "-I", str(FA / "p0_final.py"), str(WT), str(LOG / "p0_final.json")], 1800, c_p0)
     run("ためらい 123（xc_sweep）", [PY, "-I", str(XC / "xc_sweep.py"), str(WT)], 900, c_sweep)
@@ -201,7 +202,7 @@ for rnd in range(1, A.rounds + 1):
     run("範囲の案内のボタン（rep_buttons）", [PY, "-I", str(RC / "rep_buttons.py"), str(WT)], 900)
     run("SIM の名前（sim_names）", [PY, "-I", str(RC / "sim_names.py"), str(WT)], 900)
     if not A.skip_slow:
-        run("e2e（ブラウザー・偽の Claude）", [PY, str(WT / "tools" / "e2e_browser.py")], 3600, c_e2e)
+        run("e2e（ブラウザー・偽の Claude）", [PY, str(WT / "tools" / "e2e_browser.py")], 3600, c_e2e, cwd=WT)
         run("画面の回帰（ui60f）", [PY, "-I", str(QA / "ui60f.py"), str(WT), str(LOG / f"ui60f_r{rnd}")], 2400, c_ui)
         run("承認と保存のブラウザー（ui_approve_save）", [PY, "-I", str(RC / "ui_approve_save.py"), str(WT), str(LOG / f"ui_as_r{rnd}")], 2400, c_ui)
     if A.env and rnd == 1:

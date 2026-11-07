@@ -1,0 +1,670 @@
+{
+ "sha": "6d0bca4",
+ "api": 0,
+ "res": [
+  {
+   "id": "U01",
+   "title": "「15ミリ」の発話に、根拠「5ミリ」・5mm と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに15ミリずらしてほしいなあ",
+     "msg": "C00004 をZプラスにですね。何ミリ動かしますか？",
+     "nl": {
+      "ask": [
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U02",
+   "title": "「0.5ミリ」の発話に、根拠「5ミリ」・5mm と答える（10倍）",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに0.5ミリずらしてほしいなあ",
+     "msg": "C00004 をZプラスにですね。何ミリ動かしますか？",
+     "nl": {
+      "ask": [
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U03",
+   "title": "「2.5ミリ」の発話に、根拠「5ミリ」・5mm と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに2.5ミリずらしてほしいなあ",
+     "msg": "C00004 をZプラスにですね。何ミリ動かしますか？",
+     "nl": {
+      "ask": [
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U04",
+   "title": "「1.5センチ」の発話に、根拠「5センチ」…は上限で止まるはず／根拠「1.5センチ」15mm は正しい",
+   "ok": true,
+   "want": [
+    "C00004 Z",
+    "+15.000"
+   ],
+   "got": [
+    "C00004 Z",
+    "+15.000"
+   ],
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに1.5センチずらしてほしいなあ",
+     "msg": "位置 C00004 を Z方向に +15.000mm 動かします（Z：180.000 → 195.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": {
+      "canonical": "C00004をZのプラス15ミリ"
+     },
+     "cand": [
+      "C00004 Z",
+      "+15.000"
+     ],
+     "can_approve": true
+    }
+   ]
+  },
+  {
+   "id": "U05",
+   "title": "「Zプラス5ミリとYプラス3ミリお願いね」で Z+5 だけを答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラス5ミリとYプラス3ミリお願いね",
+     "msg": "量と方向が2つ以上あります。1回に1つの変更だけを、1つの方向と1つの量で言ってください（例：Zプラス5ミリ）",
+     "nl": {
+      "ask": [
+       "direction",
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U06",
+   "title": "「Zプラスに5ミリか10ミリでお願いね」で 5 を選ぶ",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに5ミリか10ミリでお願いね",
+     "msg": "量が2つ以上あります。1回に1つの変更だけを、1つの方向と1つの量で言ってください（例：Zプラス5ミリ）",
+     "nl": {
+      "ask": [
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U07",
+   "title": "「Zプラスに5ミリ、Zマイナスに3ミリ」で Z+5 を選ぶ",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに5ミリ、Zマイナスに3ミリお願いね",
+     "msg": "量と方向が2つ以上あります。1回に1つの変更だけを、1つの方向と1つの量で言ってください（例：Zプラス5ミリ）",
+     "nl": {
+      "ask": [
+       "direction",
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U08",
+   "title": "C00004 を選んだまま「C3を…」（プログラムは読めない）に、selected と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 0,
+   "unused_answers": 1,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、C3をZプラスに5ミリずらしてほしいなあ",
+     "msg": "C00003 のことですか？",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U09",
+   "title": "C00004 を選んだまま「3番目の点を…」に、selected と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、3番目の点をZプラスに5ミリずらしてほしいなあ",
+     "msg": "Zプラスに5mmですね。どの位置を動かしますか？ 3D の点を押すか、位置番号で教えてください",
+     "nl": {
+      "ask": [
+       "position"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U10",
+   "title": "「Zマイナスに5ミリ」に Z+・根拠「Z」と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zマイナスに5ミリずらしてほしいなあ",
+     "msg": "C00004 を5mmですね。どちらの方向に動かしますか？（例：Zプラス・Yのマイナス・上・右）",
+     "nl": {
+      "ask": [
+       "direction"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U11",
+   "title": "「Zマイナスに5ミリ」に Z+・根拠「Zマイナス」と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zマイナスに5ミリずらしてほしいなあ",
+     "msg": "C00004 を5mmですね。どちらの方向に動かしますか？（例：Zプラス・Yのマイナス・上・右）",
+     "nl": {
+      "ask": [
+       "direction"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U12",
+   "title": "「プラスに5ミリ」（軸なし）に Z+・根拠「プラス」と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、プラスに5ミリずらしてほしいなあ",
+     "msg": "C00004 を5mmですね。どちらの方向に動かしますか？（例：Zプラス・Yのマイナス・上・右）",
+     "nl": {
+      "ask": [
+       "direction"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U13",
+   "title": "+15 の候補 → 元に戻す →「あと3ミリ」（additional）：元からの合計 18 にしない",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "Zプラス方向に15ミリ",
+     "msg": "位置 C00004 を Z方向に +15.000mm 動かします（Z：180.000 → 195.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": null,
+     "cand": [
+      "C00004 Z",
+      "+15.000"
+     ],
+     "can_approve": true
+    },
+    {
+     "do": "@undo",
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、あと3ミリお願いね",
+     "msg": "どの位置を動かしますか？ 3D の点を押すか、位置番号で教えてください",
+     "nl": {
+      "ask": [
+       "position",
+       "direction",
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U14",
+   "title": "+15 の候補 → 取り消して →「さっきと同じだけ」：取り消した 15 を使わない",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "Zプラス方向に15ミリ",
+     "msg": "位置 C00004 を Z方向に +15.000mm 動かします（Z：180.000 → 195.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": null,
+     "cand": [
+      "C00004 Z",
+      "+15.000"
+     ],
+     "can_approve": true
+    },
+    {
+     "do": "取り消して",
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、さっきと同じだけお願いね",
+     "msg": "どの位置を動かしますか？ 3D の点を押すか、位置番号で教えてください",
+     "nl": {
+      "ask": [
+       "position",
+       "direction",
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U15",
+   "title": "+5 の候補（C00004）→ 元に戻す → C00003 を選ぶ →「さっきの所をZプラス5ミリ」：previous で C00004 に戻さない",
+   "ok": false,
+   "want": [
+    "C00003 Z",
+    "+5.000"
+   ],
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "Zプラス方向に5ミリ",
+     "msg": "位置 C00004 を Z方向に +5.000mm 動かします（Z：300.000 → 305.000）。この位置へ入る移動と、この位置から出る移動の通り道も変わります。これでいいですか？ 承認は画面のボタンで行います",
+     "nl": null,
+     "cand": [
+      "C00004 Z",
+      "+5.000"
+     ],
+     "can_approve": true
+    },
+    {
+     "do": "@undo",
+     "msg": "変更候補を捨てました。元のジョブは変わっていません",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "@sel C00003",
+     "msg": "位置 C00003 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、さっきの所をZプラスに5ミリずらしてほしいなあ",
+     "msg": "Zプラスに5mmですね。どの位置を動かしますか？ 3D の点を押すか、位置番号で教えてください",
+     "nl": {
+      "ask": [
+       "position"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U16",
+   "title": "「Zプラスに寄せたいな」→ 枠 →（C00003 を選ぶ）→「5ミリ」：枠を捨てる",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 2,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに寄せたいなあ",
+     "msg": "C00004 をZプラスにですね。何ミリ動かしますか？",
+     "nl": {
+      "ask": [
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "@sel C00003",
+     "msg": "位置 C00003 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "5ミリ",
+     "msg": "5mmですね。どの位置を動かしますか？ 3D の点を押すか、位置番号で教えてください",
+     "nl": {
+      "ask": [
+       "position",
+       "direction"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U17",
+   "title": "Claude の聞き返しに「安全です」（数字なし）：画面に出さない",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、いい感じにずらしてほしいなあ",
+     "msg": "C00004 をですね。どちらの方向に動かしますか？（例：Zプラス・Yのマイナス・上・右）",
+     "nl": {
+      "ask": [
+       "direction",
+       "amount"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U18",
+   "title": "「承認して出力して」に move・Z+5 と答える",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 0,
+   "unused_answers": 1,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "承認して出力して",
+     "msg": "承認とシミュレーション用の書き出しは、画面のボタンで行います。声や文字の指示では行いません。実機への転送・実機用の出力・ロボットの直接操作には対応していません",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U19",
+   "title": "「20.5ミリ」に 20.5mm と答える：上限で止まる",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00004",
+     "msg": "位置 C00004 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、Zプラスに20.5ミリずらしてほしいなあ",
+     "msg": "移動量 20.5mm は仮の上限 20mm（確認待ち）を超えるため、変更しません（シミュレーションの候補も作りません）。20ミリ以下の量で、もう一度言ってください",
+     "nl": {
+      "canonical": "C00004をZのプラス20.5ミリ"
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  },
+  {
+   "id": "U20",
+   "title": "「右に5ミリ寄せたいな」に Y+・根拠「右」と答える：確かめなしに Y にしない",
+   "ok": true,
+   "want": null,
+   "got": null,
+   "understand_calls": 1,
+   "unused_answers": 0,
+   "log": [
+    {
+     "do": "@sel C00003",
+     "msg": "位置 C00003 を選びました",
+     "nl": null,
+     "cand": null,
+     "can_approve": false
+    },
+    {
+     "do": "えっと、右に5ミリ寄せたいなあ",
+     "msg": "C00003 を5mmですね。どちらの方向に動かしますか？（例：Zプラス・Yのマイナス・上・右）",
+     "nl": {
+      "ask": [
+       "direction"
+      ]
+     },
+     "cand": null,
+     "can_approve": false
+    }
+   ]
+  }
+ ]
+}

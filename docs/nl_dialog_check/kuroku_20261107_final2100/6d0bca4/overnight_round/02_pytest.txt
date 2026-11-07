@@ -1,0 +1,4 @@
+!!!!!!!!!!!!!!!!!! Interrupted: 30 errors during collection !!!!!!!!!!!!!!!!!!!
+30 errors in 10.53s
+
+--- stderr ---
