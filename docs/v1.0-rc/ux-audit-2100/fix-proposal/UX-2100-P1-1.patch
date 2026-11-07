@@ -1,0 +1,19 @@
+diff --git a/voice_teaching/web/static/style.css b/voice_teaching/web/static/style.css
+index d572618..87a5add 100644
+--- a/voice_teaching/web/static/style.css
++++ b/voice_teaching/web/static/style.css
+@@ -1700,11 +1700,9 @@ body.hero #kbd-button > span { display: inline; font-size: 14px; }
+   .quick-approve { gap: 4px; margin-bottom: 4px; }
+   .cand-job { margin: 0 0 2px; }
+ }
+-/* 承認のあと（1500px 以上）：ふだんは K1 のまま会話の欄の上に置き、3D の変更の点・線・拡大の窓を隠さない（XC-26・UI-1700-1・クーちゃん案 A）。
+-   承認のあとに答え（#reply-message）が出ている間だけ、候補の窓を 3D の右下に戻し、いちばん新しい答えをふさがない（11/7 の例外） */
+-@media (min-width: 1500px) {
+-  body.vt-approved:has(#reply-message:not([hidden])) .cand-pop { position: absolute; left: auto; right: 16px; top: auto; bottom: 16px; width: min(380px, 36%); max-height: calc(100% - 32px); z-index: 4; }
+-}
++/* 承認のあと（1500px 以上）：K1 のまま会話の欄の上に置き、3D の変更の点・線・拡大の窓・回数の窓を隠さない（XC-26・UI-1700-1・クーちゃん案 A）。
++   UX-2100-P1-1：答え（#reply-message）が出ている間に 3D の右下へ戻す例外は外した。回数の変更では候補の答えが承認のあとも出ていて、
++   候補の窓が「×2 → ×3」の窓と札を隠したため。答えの選ぶボタンが出ている間は、クーちゃん K1 の例外（上）がそのまま効く */
+ .save-as-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 2px; }
+ .save-as-row button { min-height: 44px; font-size: 14px; padding-inline: 10px; }
+ #export-result .save-as p { margin: 2px 0 0; font-size: 13px; }
