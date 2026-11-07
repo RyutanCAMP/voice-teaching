@@ -1,0 +1,22 @@
+{
+  "source_video_sha256": "0befc74085544b8e1b50bb535f4507f21c74645306bd74d3c6a063f52999cf32",
+  "source_video_duration_seconds": 179,
+  "new_public_images": [],
+  "reference_images": [
+    {
+      "label": "範囲確認",
+      "url": "https://raw.githubusercontent.com/RyutanCAMP/voice-teaching/6d0bca49963937b1a74f4a7dc27584730c46b984/docs/v1.0-rc/screens/12_repeat_range.png"
+    },
+    {
+      "label": "繰り返し候補",
+      "url": "https://raw.githubusercontent.com/RyutanCAMP/voice-teaching/6d0bca49963937b1a74f4a7dc27584730c46b984/docs/v1.0-rc/screens/13_repeat_candidate.png"
+    },
+    {
+      "label": "承認と保存",
+      "url": "https://raw.githubusercontent.com/RyutanCAMP/voice-teaching/6d0bca49963937b1a74f4a7dc27584730c46b984/docs/v1.0-rc/approve-save/A1_before_approve_save_1920x1080.png"
+    }
+  ],
+  "reference_images_are_not_current_video_frames": true,
+  "private_frames_count": 4,
+  "no_video_or_audio_in_public_packet": true
+}
