@@ -6,7 +6,7 @@ ROOT = Path(sys.argv[1]).resolve(); sys.path[:0] = [str(ROOT), str(ROOT / "tests
 import test_claude_talk as T
 from voice_teaching import sim
 RJ = (ROOT / "samples/dummy/DEMO_RJ_XYZ.JBI").read_bytes()
-PAT = re.compile(r"^DEMO_RJ_XYZ_SIM_(\d{8})_(\d{6})(_\d\d)?\.JBI\.txt$")
+PAT = re.compile(r"^DEMO_RJ_XYZ_SIM_(\d{10})(_\d\d)?\.JBI$")  # 11/7 夕方：<JOB>_SIM_YYMMDDHHMM.JBI
 def run(d, fixed=None):
     sim.DEFAULT_OUT_DIR = Path(d) / "o"
     if fixed: sim.clock = lambda: fixed
@@ -16,8 +16,8 @@ def run(d, fixed=None):
 real_clock = sim.clock
 with tempfile.TemporaryDirectory() as d:
     t0 = datetime.now(timezone(timedelta(hours=9))); e = run(d); m = PAT.match(e["file_name"])
-    got = datetime.strptime(m.group(1) + m.group(2), "%Y%m%d%H%M%S").replace(tzinfo=timezone(timedelta(hours=9)))
-    print("S1 形", bool(m), e["file_name"], "| 日本時間との差（秒）", round(abs((got - t0).total_seconds()), 1))
+    got = datetime.strptime(m.group(1), "%y%m%d%H%M").replace(tzinfo=timezone(timedelta(hours=9)))
+    print("S1 形", bool(m), e["file_name"], "| 日本時間の分との差（秒・60未満なら同じ分）", round(abs((got - t0.replace(second=0, microsecond=0)).total_seconds()), 1))
     keys = sorted(k for k in e if k not in ("state",)); print("   返事の項目", keys)
     body = (Path(d) / "o" / e["file_name"]).read_bytes()
     b64 = e.get("content_b64")
@@ -28,6 +28,6 @@ with tempfile.TemporaryDirectory() as d:
 with tempfile.TemporaryDirectory() as d:
     fixed = datetime(2026, 11, 7, 12, 15, 30, tzinfo=timezone.utc)  # UTC で渡しても日本時間で名前にするか
     names = [run(d, fixed).get("file_name") for _ in range(3)]
-    print("S2 同じ秒に3つ", names, "| 日本時間（21:15:30）", all("_20261107_211530" in (n or "") for n in names))
+    print("S2 同じ分に3つ", names, "| 日本時間（2611072115）", all("_SIM_2611072115" in (n or "") for n in names), "| 連番", [n.rsplit("_",1)[-1] for n in names])
     files = sorted(p.name for p in (Path(d) / "o").iterdir()); print("   フォルダの中", files)
 sim.clock = real_clock

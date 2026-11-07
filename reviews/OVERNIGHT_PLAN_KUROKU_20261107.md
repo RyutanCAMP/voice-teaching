@@ -7,7 +7,8 @@
 - **実行の道具**：`tools/nl_dialog_check/kuroku/overnight/run_overnight.py`（このブランチ `review/kuroku-nl-safety-1105`）
 
 ## 1. 何を検証するか（固定の SHA）
-- **対象**：シクロが 17時までに固定する `release/v1.0-rc` の SHA
+- **対象（15:10 に決まった）**：タグ `v1.0-rc-20261107-1700` → **6d0bca4**（コードは 563dca2 と同じ）。クロークの17時の報告：`reviews/REPORT_KUROKU_1700_v1.0-rc-20261107-1700.md`
+- （前の書き方）シクロが 17時までに固定する `release/v1.0-rc` の SHA
   - 14:23 の時点の最新は **15d3bb2**（コードは 9818d24 と同じ）。クロークの検証済み：`reviews/REPORT_KUROKU_APPROVE_SAVE_REPEAT_9818d24.md`
   - シクロが［承認して保存］の一体化と `.JBI`・`YYMMDDHHMM` の名前を入れたら、その SHA を使う
 - **使う JOB**：合成 JOB（`samples/dummy`）だけ。実機の JOB は使わない
@@ -19,7 +20,7 @@
 
 ```
 # 1) 偽の Claude だけ（API 0回）。1周 約60〜80分
-python -I tools/nl_dialog_check/kuroku/overnight/run_overnight.py --sha <固定の SHA> --work <空の作業フォルダ>
+python -I tools/nl_dialog_check/kuroku/overnight/run_overnight.py --sha 6d0bca4 --work <空の作業フォルダ>
 
 # 2) 本物の Claude の代表の場面も（1周目だけ。推定 約0.2ドル。上限 1.5ドル）
 python -I tools/nl_dialog_check/kuroku/overnight/run_overnight.py --sha <固定の SHA> --work <空の作業フォルダ> --env <.env のパス> --real-budget-usd 1.5
@@ -80,6 +81,7 @@ python -I tools/nl_dialog_check/kuroku/overnight/run_overnight.py --sha <固定�
 - 夜間に検査が止まったら、朝に `STOP.md` と `SUMMARY.md` を見る
 
 ## 6. 17時より後に固定の SHA が変わったとき
+- 15:10 に、［承認して保存］・`.JBI` に合わせて ui_approve_save.py・sim_names.py・ui60f.py・rc_ui_real.py を直した（期待は緩めていない）。6d0bca4 で短く流して 11 検査が OK
 - シクロが［承認して保存］の一体化（出力のボタンを無くす）と、`.JBI`・`YYMMDDHHMM` の名前を入れると、クロークの道具のうち次の3つは画面・名前が合わなくなる
   - ui_approve_save.py（出力のボタン）
   - sim_names.py（名前の形）

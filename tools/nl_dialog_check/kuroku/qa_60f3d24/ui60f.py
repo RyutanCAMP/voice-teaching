@@ -110,6 +110,11 @@ def approve(pg):
 
 
 def export(pg):
+    # 11/7 夕方（承認して保存）：承認のあと自動で出力する。出力のボタンは、出力が断られたときだけ出る
+    if not (vis(pg, "#export-button") and pg.is_enabled("#export-button")):
+        E.until(pg, lambda: vis(pg, "#export-result"), 10000)
+        pg.wait_for_timeout(300)
+        return pg.inner_text("#export-result")[:200], "ok"
     r = reachable(pg, "#export-button")
     pg.click("#export-button")
     E.until(pg, lambda: vis(pg, "#export-result"), 10000)

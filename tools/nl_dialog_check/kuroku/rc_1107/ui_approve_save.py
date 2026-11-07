@@ -112,8 +112,10 @@ with sync_playwright() as p:
         btn = covered(pg, "#quick-approve-button")
         pre_export = vis(pg, "#export-button") and pg.is_enabled("#export-button")
         before_name = pg.is_enabled("#quick-approve-button")
+        exreq = []
+        pg.on("request", lambda r: exreq.append(r.url) if r.url.endswith("/api/export") else None)
         pg.click("#quick-approve-button", force=True); pg.wait_for_timeout(400)
-        no_name_approved = approved(pg)
+        no_name_approved = approved(pg) or bool(exreq)
         pg.fill("#quick-approver", "クローク確認")
         pg.press("#quick-approver", "Enter"); pg.wait_for_timeout(500)
         enter_approved = approved(pg)
@@ -133,19 +135,19 @@ with sync_playwright() as p:
         rec(f"A-{w}x{h}", not why, "承認の前に見えるもの・1回で承認", why=why, button=btn, enabled_before_name=before_name, clicks=clicks)
         pg.close()
 
-    # A4：二重クリック（すばやく2回）→ 承認の送信は1回
+    # A4・A5（11/7 夕方：承認して保存）：［承認して保存］の二重クリック → 承認の送信1回・出力の送信1回・ファイル1つ
+    for f in (OUT / "sim_out").glob("*"):
+        f.unlink()
     pg = setup(br)
-    reqs = []
-    pg.on("request", lambda r: reqs.append(r.url) if r.url.endswith("/api/approve") else None)
+    reqs, ex = [], []
+    pg.on("request", lambda r: reqs.append(r.url) if r.url.endswith("/api/approve") else (ex.append(r.url) if r.url.endswith("/api/export") else None))
     pg.fill("#quick-approver", "クローク確認")
-    pg.dblclick("#quick-approve-button"); pg.wait_for_timeout(1500)
-    rec("A4", len(reqs) == 1 and approved(pg), "二重クリックで承認の送信は1回", approve_requests=len(reqs))
-    # A5：出力を2回（すばやく）→ ファイルは1つ
-    ex = []
-    pg.on("request", lambda r: ex.append(r.url) if r.url.endswith("/api/export") else None)
-    pg.dblclick("#export-button"); pg.wait_for_timeout(1500)
+    pg.dblclick("#quick-approve-button"); pg.wait_for_timeout(2500)
     files = sorted(x.name for x in (OUT / "sim_out").iterdir())
-    rec("A5", len(files) == 1, "出力ボタンの二重クリックでファイルは1つ", export_requests=len(ex), files=files)
+    rec("A4", len(reqs) == 1 and approved(pg), "［承認して保存］の二重クリックで承認の送信は1回", approve_requests=len(reqs))
+    rec("A5", len(ex) == 1 and len(files) == 1, "同じく出力の送信は1回・ファイルは1つ", export_requests=len(ex), files=files)
+    hidden_export = not (vis(pg, "#export-button") and pg.is_enabled("#export-button"))
+    rec("A5b", hidden_export, "書き出しが成功したら［保存をやり直す］は出ない（出力の別のボタンは無い）", export_button_visible=not hidden_export)
     pg.close()
 
     # P1〜P5：保存の窓
@@ -154,7 +156,7 @@ with sync_playwright() as p:
             f.unlink()
         pg = setup(br, mode=mode)
         pg.fill("#quick-approver", "クローク確認"); pg.click("#quick-approve-button"); E.until(pg, lambda: approved(pg), 10000)
-        pg.click("#export-button"); E.until(pg, lambda: vis(pg, "#export-result"), 10000); pg.wait_for_timeout(600)
+        E.until(pg, lambda: vis(pg, "#export-result"), 10000); pg.wait_for_timeout(600)
         auto_calls = pg.evaluate("window.__pickerCalls")
         if vis(pg, ".save-as-pick"):
             pg.click(".save-as-pick"); pg.wait_for_timeout(1200)
@@ -184,7 +186,7 @@ with sync_playwright() as p:
         f.unlink()
     pg = setup(br, picker=False)
     pg.fill("#quick-approver", "クローク確認"); pg.click("#quick-approve-button"); E.until(pg, lambda: approved(pg), 10000)
-    pg.click("#export-button"); E.until(pg, lambda: vis(pg, "#export-result"), 10000); pg.wait_for_timeout(600)
+    E.until(pg, lambda: vis(pg, "#export-result"), 10000); pg.wait_for_timeout(600)
     has_pick = vis(pg, ".save-as-pick")
     with pg.expect_download(timeout=10000) as dl:
         pg.click(".save-as-download")
@@ -200,13 +202,13 @@ with sync_playwright() as p:
     rec("P4", not why, "窓が無い→ダウンロード", why=why, area=area[:200], name=d.suggested_filename)
     pg.close()
 
-    # P6：出力が断られたら保存の窓を開かない（承認のあと「ちょっと待って」で保留 → 出力ボタンは押せないはず）
+    # P6（11/7 夕方）：名前を入れずに［承認して保存］→ 承認も出力も保存の窓も無い
     pg = setup(br)
-    pg.fill("#quick-approver", "クローク確認"); pg.click("#quick-approve-button"); E.until(pg, lambda: approved(pg), 10000)
-    E.fill_text(pg, "ちょっと待って"); pg.click("#text-send"); pg.wait_for_timeout(1000)
-    en = vis(pg, "#export-button") and pg.is_enabled("#export-button")
+    ex6 = []
+    pg.on("request", lambda r: ex6.append(r.url) if r.url.endswith("/api/export") else None)
+    pg.click("#quick-approve-button", force=True); pg.wait_for_timeout(800)
     calls = pg.evaluate("window.__pickerCalls")
-    rec("P6", (not en) and calls == 0, "保留中は出力・保存の窓を開かない", export_enabled=en, picker_calls=calls)
+    rec("P6", (not approved(pg)) and not ex6 and calls == 0, "承認が通らないときは書かない・保存の窓を開かない", export_requests=len(ex6), picker_calls=calls)
     pg.close()
     br.close()
 srv.shutdown()

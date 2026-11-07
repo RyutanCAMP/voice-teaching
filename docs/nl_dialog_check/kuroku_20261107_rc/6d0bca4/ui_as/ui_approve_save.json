@@ -1,0 +1,118 @@
+{
+ "root": "wt-rc6",
+ "res": [
+  {
+   "id": "A-1920x1080",
+   "verdict": "PASS",
+   "what": "承認の前に見えるもの・1回で承認",
+   "why": [],
+   "button": "ok",
+   "enabled_before_name": true,
+   "clicks": 1
+  },
+  {
+   "id": "A-1440x900",
+   "verdict": "PASS",
+   "what": "承認の前に見えるもの・1回で承認",
+   "why": [],
+   "button": "ok",
+   "enabled_before_name": true,
+   "clicks": 1
+  },
+  {
+   "id": "A-1280x720",
+   "verdict": "PASS",
+   "what": "承認の前に見えるもの・1回で承認",
+   "why": [],
+   "button": "ok",
+   "enabled_before_name": true,
+   "clicks": 1
+  },
+  {
+   "id": "A4",
+   "verdict": "PASS",
+   "what": "［承認して保存］の二重クリックで承認の送信は1回",
+   "approve_requests": 1
+  },
+  {
+   "id": "A5",
+   "verdict": "PASS",
+   "what": "同じく出力の送信は1回・ファイルは1つ",
+   "export_requests": 1,
+   "files": [
+    "DEMO_RJ_XYZ_SIM_2611071502.JBI"
+   ]
+  },
+  {
+   "id": "A5b",
+   "verdict": "PASS",
+   "what": "書き出しが成功したら［保存をやり直す］は出ない（出力の別のボタンは無い）",
+   "export_button_visible": false
+  },
+  {
+   "id": "P1",
+   "verdict": "PASS",
+   "what": "保存の窓：ok",
+   "why": [],
+   "area": "✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611071502.JBI（中身をアプリの記録と照らし合わせて確かめました）",
+   "auto_picker_calls": 0,
+   "server_file": "DEMO_RJ_XYZ_SIM_2611071502.JBI",
+   "result": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071502.JBI（場所：…\\ui_as\\sim_out\\）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XY"
+  },
+  {
+   "id": "P2",
+   "verdict": "PASS",
+   "what": "保存の窓：abort",
+   "why": [],
+   "area": "保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+   "auto_picker_calls": 0,
+   "server_file": "DEMO_RJ_XYZ_SIM_2611071502.JBI",
+   "result": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071502.JBI（場所：…\\ui_as\\sim_out\\）\n\n保存の場所への保存は取りやめました（アプリの記録に"
+  },
+  {
+   "id": "P3",
+   "verdict": "PASS",
+   "what": "保存の窓：notallowed",
+   "why": [],
+   "area": "保存の場所を選ぶ窓を開けませんでした（NotAllowedError）。下のボタンでダウンロードできます\n\n保存先を選んで保存\nダウンロードとして保存",
+   "auto_picker_calls": 0,
+   "server_file": "DEMO_RJ_XYZ_SIM_2611071502.JBI",
+   "result": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071502.JBI（場所：…\\ui_as\\sim_out\\）\n\n保存の場所を選ぶ窓を開けませんでした（NotAll"
+  },
+  {
+   "id": "P5a",
+   "verdict": "PASS",
+   "what": "保存の窓：writefail",
+   "why": [],
+   "area": "選んだ場所への保存に失敗しました（disk full）。保存したとは扱いません\n\n保存先を選んで保存\nダウンロードとして保存",
+   "auto_picker_calls": 0,
+   "server_file": "DEMO_RJ_XYZ_SIM_2611071503.JBI",
+   "result": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071503.JBI（場所：…\\ui_as\\sim_out\\）\n\n選んだ場所への保存に失敗しました（disk ful"
+  },
+  {
+   "id": "P5b",
+   "verdict": "PASS",
+   "what": "保存の窓：tamper",
+   "why": [],
+   "area": "選んだ場所への保存に失敗しました（読み戻した中身が違います）。保存したとは扱いません\n\n保存先を選んで保存\nダウンロードとして保存",
+   "auto_picker_calls": 0,
+   "server_file": "DEMO_RJ_XYZ_SIM_2611071503.JBI",
+   "result": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071503.JBI（場所：…\\ui_as\\sim_out\\）\n\n選んだ場所への保存に失敗しました（読み戻した中身が"
+  },
+  {
+   "id": "P4",
+   "verdict": "PASS",
+   "what": "窓が無い→ダウンロード",
+   "why": [],
+   "area": "ダウンロードを始めました：DEMO_RJ_XYZ_SIM_2611071503.JBI（保存先と完了は、ブラウザーのダウンロードの表示で確かめてください。アプリからは確かめられません）",
+   "name": "DEMO_RJ_XYZ_SIM_2611071503.JBI"
+  },
+  {
+   "id": "P6",
+   "verdict": "PASS",
+   "what": "承認が通らないときは書かない・保存の窓を開かない",
+   "export_requests": 0,
+   "picker_calls": 0
+  }
+ ]
+}

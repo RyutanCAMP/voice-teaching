@@ -123,8 +123,11 @@ def run(w, h):
         log["approve_clicks"] = clicks
         log["confirm_overlay_opened"] = vis(pg, "#confirm-overlay")
         log["icon_approved"] = pg.get_attribute("#approval-icon", "data-appr")
-        log["export_in_view"] = in_view(pg, "#export-button")
-        pg.click("#export-button"); pg.wait_for_timeout(1200)
+        # 11/7 夕方（承認して保存）：承認のあと自動で書き出す。出力のボタンは押さない（無い）
+        log["export_button_shown"] = vis(pg, "#export-button") and pg.is_enabled("#export-button")
+        pg.wait_for_selector("#export-result", state="visible", timeout=20000); pg.wait_for_timeout(800)
+        log["save_buttons"] = [t for t in ("保存先を選んで保存", "ダウンロードとして保存") if pg.locator("button", has_text=t).count()]
+        log["export_in_view"] = in_view(pg, "#export-result")
         log["export_result"] = (pg.inner_text("#export-result") if vis(pg, "#export-result") else "")[:200]
         log["export_enabled_after"] = pg.is_enabled("#export-button") if vis(pg, "#export-button") else False
         pg.screenshot(path=str(OUT / f"{w}x{h}_4_exported.png"))
