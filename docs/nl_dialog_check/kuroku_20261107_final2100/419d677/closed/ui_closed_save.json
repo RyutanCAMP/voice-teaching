@@ -1,0 +1,18 @@
+{
+ "before_disabled": [
+  false,
+  false
+ ],
+ "closed_flag": null,
+ "reply": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+ "buttons_visible": true,
+ "buttons_disabled": [
+  true,
+  true
+ ],
+ "held_note": "この画面は終わったので、保存できません",
+ "picker_calls": 0,
+ "saved": false,
+ "downloads": [],
+ "verdict": "PASS"
+}

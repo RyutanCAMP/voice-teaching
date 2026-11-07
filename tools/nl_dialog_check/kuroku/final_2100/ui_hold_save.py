@@ -59,14 +59,21 @@ with sync_playwright() as p:
         st = pg.evaluate("fetch('/api/state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session_id: (window.state||{}).sessionId})}).then(r=>r.ok?r.json():null).catch(()=>null)")
         head = pg.inner_text("#next-action") if pg.locator("#next-action").count() else ""
         shown = vis(pg, ".save-as-pick"); dl = vis(pg, ".save-as-download"); res_vis = vis(pg, "#export-result")
-        saved = None
-        if shown:
-            pg.locator(".save-as-pick").first.click(); pg.wait_for_timeout(800)
+        # 11/7 22時（828b40d）：保留中は保存のボタンを押せない（disabled）仕様。押せるかを記録し、押せないときも
+        # JS で click() を送って（人は押せない）保存されないことを確かめる。期待は緩めない：保存された中身は承認して出力したものだけ
+        dis = pg.evaluate("[...document.querySelectorAll('#save-as-area button')].map(b => b.disabled)")
+        note = pg.inner_text("#save-held-note") if vis(pg, "#save-held-note") else ""
+        saved = None; downloads = []
+        pg.on("download", lambda d: downloads.append(d.suggested_filename))
+        if shown or dl:
+            pg.evaluate("for (const b of document.querySelectorAll('#save-as-area button')) b.click()")
+            pg.wait_for_timeout(1000)
             saved = z4(pg.evaluate("window.__saved"))
         cand = pg.inner_text(".cand-pop") if vis(pg, ".cand-pop") else ""
         pg.screenshot(path=str(OUT / f"H_{case}.png"))
         r = {"case": case, "head": head, "export_result_visible": res_vis, "save_pick_visible": shown, "download_visible": dl,
-             "saved_z_of_C00004": saved, "cand_head": " ".join(cand.split())[:160]}
+             "saved_z_of_C00004": saved, "buttons_disabled": dis, "held_note": note, "downloads": downloads,
+             "picker_calls": pg.evaluate("window.__pickerCalls"), "cand_head": " ".join(cand.split())[:160]}
         RES.append(r); print(json.dumps(r, ensure_ascii=False), flush=True)
         pg.close()
     br.close()

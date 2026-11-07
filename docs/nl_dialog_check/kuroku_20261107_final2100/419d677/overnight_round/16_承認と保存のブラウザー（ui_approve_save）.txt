@@ -1,0 +1,16 @@
+A-1920x1080 PASS 承認の前に見えるもの・1回で承認 {"why": [], "button": "ok", "enabled_before_name": true, "clicks": 1}
+A-1440x900 PASS 承認の前に見えるもの・1回で承認 {"why": [], "button": "ok", "enabled_before_name": true, "clicks": 1}
+A-1280x720 PASS 承認の前に見えるもの・1回で承認 {"why": [], "button": "ok", "enabled_before_name": true, "clicks": 1}
+A4 PASS ［承認して保存］の二重クリックで承認の送信は1回 {"approve_requests": 1}
+A5 PASS 同じく出力の送信は1回・ファイルは1つ {"export_requests": 1, "files": ["DEMO_RJ_XYZ_SIM_2611072226.JBI"]}
+A5b PASS 書き出しが成功したら［保存をやり直す］は出ない（出力の別のボタンは無い） {"export_button_visible": false}
+P1 PASS 保存の窓：ok {"why": [], "area": "✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611072226.JBI（中身をアプリの記録と照らし合わせて確かめました）", "auto_picker_calls": 0, "server_file": "DEMO_RJ_XYZ_SIM_2611072226.JBI", "result": "✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611072226.JBI（中身をアプリの記録と照らし合わせて確かめました）\n\nアプリの記録（控え）に出力しました：DEMO_RJ_XYZ_SIM_2611072226.JBI"}
+P2 PASS 保存の窓：abort {"why": [], "area": "保存先：まだ保存していません（保存の場所を選ぶのを取りやめました。アプリの記録には書いてあります）\n\n保存先を選んで保存\nダウンロードとして保存", "auto_picker_calls": 0, "server_file": "DEMO_RJ_XYZ_SIM_2611072226.JBI", "result": "保存先：まだ保存していません（保存の場所を選ぶのを取りやめました。アプリの記録には書いてあります）\n\n保存先を選んで保存\nダウンロードとして保存\n\nアプリの記録（控え）に出力しました：DEMO_RJ_XYZ_SIM_2611072226.J"}
+P3 PASS 保存の窓：notallowed {"why": [], "area": "保存先：まだ保存していません（保存の場所を選ぶ窓を開けませんでした：NotAllowedError）。下のボタンでダウンロードできます\n\n保存先を選んで保存\nダウンロードとして保存", "auto_picker_calls": 0, "server_file": "DEMO_RJ_XYZ_SIM_2611072226.JBI", "result": "保存先：まだ保存していません（保存の場所を選ぶ窓を開けませんでした：NotAllowedError）。下のボタンでダウンロードできます\n\n保存先を選んで保存\nダウンロードとして保存\n\nアプリの記録（控え）に出力しました：DEMO_RJ_XY"}
+P5a PASS 保存の窓：writefail {"why": [], "area": "保存先：保存に失敗しました（disk full）。まだ保存していません\n\n保存先を選んで保存\nダウンロードとして保存", "auto_picker_calls": 0, "server_file": "DEMO_RJ_XYZ_SIM_2611072227.JBI", "result": "保存先：保存に失敗しました（disk full）。まだ保存していません\n\n保存先を選んで保存\nダウンロードとして保存\n\nアプリの記録（控え）に出力しました：DEMO_RJ_XYZ_SIM_2611072227.JBI（場所：…\\ui_as_"}
+P5b PASS 保存の窓：tamper {"why": [], "area": "保存先：保存に失敗しました（読み戻した中身が違います）。まだ保存していません\n\n保存先を選んで保存\nダウンロードとして保存", "auto_picker_calls": 0, "server_file": "DEMO_RJ_XYZ_SIM_2611072227.JBI", "result": "保存先：保存に失敗しました（読み戻した中身が違います）。まだ保存していません\n\n保存先を選んで保存\nダウンロードとして保存\n\nアプリの記録（控え）に出力しました：DEMO_RJ_XYZ_SIM_2611072227.JBI（場所：…\\ui_"}
+P4 PASS 窓が無い→ダウンロード {"why": [], "area": "保存先：ダウンロードを始めました：DEMO_RJ_XYZ_SIM_2611072227.JBI（保存先と完了は、ブラウザーのダウンロードの表示で確かめてください。アプリからは確かめられません）", "name": "DEMO_RJ_XYZ_SIM_2611072227.JBI"}
+P6 PASS 承認が通らないときは書かない・保存の窓を開かない {"export_requests": 0, "picker_calls": 0}
+FAIL []
+
+--- stderr ---

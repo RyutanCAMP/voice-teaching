@@ -1,0 +1,20 @@
+{
+ "before_disabled": [
+  false,
+  false
+ ],
+ "closed_flag": null,
+ "reply": "この画面の作業は終わりました（新しいジョブが読み込まれたため）。変更候補・承認は使えません。新しい画面で続けてください",
+ "buttons_visible": true,
+ "buttons_disabled": [
+  false,
+  false
+ ],
+ "held_note": "",
+ "picker_calls": 1,
+ "saved": true,
+ "downloads": [
+  "DEMO_RJ_XYZ_SIM_2611072209.JBI"
+ ],
+ "verdict": "FAIL"
+}
