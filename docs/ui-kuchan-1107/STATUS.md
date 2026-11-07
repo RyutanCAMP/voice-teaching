@@ -39,6 +39,6 @@
 | 承認1回・保存の UI デザイン案 | **完了（提案）** `approval-save/APPROVAL_SAVE_DESIGN_KUCHAN_1107.md`・HTML 案 `approval-save/proposal.html`・CSS は style.css **K9** |
 | 前後の比較画像（3サイズ × 承認の前・保存・結果3つ） | 完了 `approval-save/compare/`（9枚） |
 | 3サイズで承認ボタン・SIM 専用・注意・差分・保存ボタン・結果が見えるか | 完了：**全部見える**（`approval-save/mock_metrics.json`）。1280 は承認の前だけポップアップを下まで伸ばして注意が隠れないようにした |
-| K9 を入れた状態の pytest・Node・e2e | **実行中** |
+| K9 を入れた状態（58e3492）の pytest・Node・e2e | 完了：**pytest 6863 passed・0 failed／Node 128/128／e2e OK 1484・NG 10**（RC a7ae4be と同じ環境由来の10件・増えた NG 0）。記録 `e2e_branch_k9_58e3492.txt` |
 | 承認・保存の動きの実装 | シクロ（app.js・flow.py・index.html）。私は触らない |
 | 本物の保存ダイアログ・ダウンロードの確認 | 未（シクロの実装のあと。OS の画面は自動で撮れない） |
