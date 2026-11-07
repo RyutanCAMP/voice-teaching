@@ -19,6 +19,7 @@
 """
 from __future__ import annotations
 
+import base64
 import hashlib
 import re
 import secrets
@@ -100,10 +101,20 @@ _BARE_NUMBER = re.compile(r"[0-9]+(?:\.[0-9]+)?[？?。！!]*")
 _NEGATION_ONLY = re.compile(r"だめ|ダメ|駄目|ノー|^NO[!！。]*$|違う|ちがう|違います|出さないで|やめ|キャンセル|きゃんせる|不要|いらない")
 # XC-02（11/7）：それだけの文の否定（正規化したあと、文の終わりの記号を外して全体が一致するときだけ）
 _NEGATION_WHOLE = re.compile(r"(?:いや、?)?(?:だめ|ダメ|駄目|ノー|NO|いいえ|違う|ちがう|違います|出さないで|出力しないで|"
-                             r"あかん|それじゃない|それじゃなくて|やだ|嫌|不要|いらない|きゃんせる|キャンセル|いや|イヤ)(?:です|だ|だよ|だね|でしょ|かな|かも)?")
+                             r"あかん|それじゃない|それじゃなくて|やだ|嫌|不要|いらない|きゃんせる|キャンセル|いや|イヤ|"
+                             # XC-23（11/7・クローク）：言い方を変えた否定・取り消し・まだ出さない（それだけの文。保留にする）
+                             r"とめて|止めて|今のなし|いまのなし|まちごうた|間違うた|ちがった|違った|ちごうとる|それやない|"
+                             r"だめだめ|ダメダメ|いかん|いかんいかん|まだ|まだ出さないで|出さんで|出力せんで|出力はまだ|出力不要|"
+                             r"承認しない|承認は保留|承認やり直し|さっきの方がよかった|さっきのほうがよかった|元のままで|もとのままで|"
+                             r"変えないで|変えんで|そのままにしといて|そのままにしておいて|うそうそ|嘘嘘|冗談|じょうだん|忘れて|わすれて|いらん)"
+                             r"(?:です|だ|だよ|だね|でしょ|かな|かも|よ|ね|や|わ)?")
 def _bare(text: str) -> str:
     """否定・ためらいの言葉を全体で比べるための形（正規化して、文の終わりの記号と空白を外す。長音「ー」は外さない）。"""
     return re.sub(r"[\s。、．，,.!！?？…〜~]+$", "", ut.normalize(text).strip())
+
+
+# 回数の変更の気持ち（範囲の案内を出すきっかけ。決めるのはプログラムのジョブの解析）
+_REPEAT_INTENT = re.compile(r"繰り返|くりかえ|繰返|反復|リピート|回数|[0-9０-９一二三四五六七八九十]+\s*回(?!転)|もう(?:一|1|１)回")
 
 
 # 音声認識の「回」の聞き違い（「2階から3階にして」）。数のすぐあとの「階」だけ
@@ -1001,7 +1012,11 @@ class WebFlow:
             e.exported_gen = e.approval_gen
             e.session.log.append(("出力", f"シミュレーション用のジョブを出力しました：{full}（実機には入れないでください）。"
                                           f"{_updown_note(e.approval_updown)}"))
-            return {"ok": True, "path": full, "file_name": Path(path).name}
+            # 11/7（保存の場所を選ぶ）：書いたファイルを読み戻した中身も返す。画面はこの中身だけを、人が選んだ場所へ保存する
+            # （ここで書いた output\sim の写しと、同じバイト列。画面は「アプリの記録」と「選んだ場所」を分けて出す）
+            data = Path(path).read_bytes()
+            return {"ok": True, "path": full, "file_name": Path(path).name,
+                    "content_b64": base64.b64encode(data).decode("ascii"), "sha256": hashlib.sha256(data).hexdigest()}
         return self._run(sid, run)
 
     # ---- Claude に聞く（読み取りだけ。docs/CLAUDE_API.md 8章・CHECKER_031 E1〜E7） ----
@@ -1153,10 +1168,78 @@ class WebFlow:
         with e.lock:
             if e.closed:
                 return self._closed_reply(sid, e)
+            guide = self._repeat_guide(e, text, hear_out, route)
+            if guide is not None:
+                guide["source"] = source
+                prev = (hear_out or {}).get("message") or ""
+                if prev and not prev.startswith("回数の変更は「"):
+                    # 今までの道の理由（「C00004 が区間の外の MOVJ でも使われている」など）は消さずに前に置く
+                    guide["message"] = prev + "\n" + guide["message"]
+                hear_out = guide
+                if "hear" not in via:
+                    via.append("hear")
             self._remember_talk(e, text, ask_out, hear_out)
             self._nl_after(e, text, hear_out)
             state = self._state(sid, e)
         return {"ok": True, "via": via, "ask": ask_out, "hear": hear_out, "state": state, "heard": text, "source": source}
+
+    # ---- 回数の変更の範囲の案内（11/7 FINAL_RC_REPEAT_RANGE_GUIDANCE） ----
+    def _repeat_guide(self, e: _Entry, text: str, out: dict | None, route: str = "hear") -> dict | None:
+        """回数の変更の気持ち（「繰り返したい」「2回」「もう1回」）があり、今までの道が候補も範囲の確かめも作れなかったとき、
+        決まった文の言い直しを頼む代わりに、この JOB で変えられる範囲をプログラムが調べて案内する（錠の中で呼ぶ）。
+        - 範囲はジョブの解析（repeat_blocks と、2→3回の変更案を本当に作れるか plan_repeat）からだけ。Claude に推測させない
+        - 提出版は「今2回の区間を3回にする」だけ。人が言った範囲・回数が違えば、違うことを書き、置き換えない
+        - 選ぶボタンは、今までの決まった文（範囲の確かめのボタンへ進むだけ）と［今回は変更しない］。どちらも承認ではない"""
+        s = e.session
+        if s.candidate is not None or s.repeat_range is not None or self._approved(e) or e.dialog.step is not None:
+            return None
+        if route not in ("hear", "ask", "count", "nl"):
+            return None  # 変更が2つ・目的と変更・ボタンの案内などは、今までの決まった文のまま
+        nt = ut.normalize(text)
+        if not _REPEAT_INTENT.search(nt):
+            return None
+        f = ut.read_utterance(text)
+        if (f.negations or f.undo_negations or rc.has_decimal_count(text)
+                or re.search(r"くらい|ぐらい|程度|ほど|たぶん|多分|かも|かな|おそらく|ずつ", nt)):
+            return None  # 打ち消し・小数・だいたい・ためらい：今までの安全の文で止める（範囲の案内で上書きしない）
+        if f.axes or any(a.unit == "mm" for a in f.amounts):
+            return None  # 位置の移動の指示（「Zプラス5ミリを…」）は案内しない
+        if isinstance(out, dict) and (out.get("candidate_made") or out.get("choices")):
+            return None
+        supported = []
+        for b in talk.repeat_blocks(s.original):
+            if b.count != 2:
+                continue
+            try:
+                s.original.plan_repeat(b.positions[0], b.positions[-1], 3)
+            except Exception:  # noqa: BLE001  作れない区間は案内しない（理由はふつうの道が言う）
+                continue
+            supported.append(b)
+        said = [f"C{int(n):05d}" for n in re.findall(r"C\s*0*([0-9]{1,5})(?![0-9])|(?<![0-9])([0-9]{1,5})\s*番(?!目)", ut._spoken_numbers(nt)) for n in n if n]
+        if not supported:
+            msg = ("繰り返しの変更ですね。このJOBでは、繰り返しの回数を変えられる範囲を確認できません"
+                   "（変えられるのは、今2回続けて書かれている作業を3回にすることだけです）。何も変えていません")
+            return {"ok": True, "status": "ask", "message": msg, "heard": text, "source": "text", "choices": [],
+                    "candidate_made": False, "blocked_reason": None, "repeat_guide": {"ranges": []}}
+        lines = ["繰り返しの変更ですね。このJOBで変えられる範囲は "
+                 + "・".join(f"{b.positions[0]}〜{b.positions[-1]}" for b in supported)
+                 + " です。今2回の作業を、3回に増やすことができます（ほかの回数・範囲は、この版では変えません）。"]
+        if len(said) >= 2:
+            want = (said[0], said[-1])
+            if not any((b.positions[0], b.positions[-1]) == want for b in supported):
+                lines.append(f"ご指定の {want[0]}〜{want[1]} とは範囲が違います。使う範囲を下のボタンで選んでください。")
+        nums = [int(x) for x in re.findall(r"([0-9]+)\s*回", re.sub(r"もう\s*(?:一|1)\s*回", "", ut._spoken_numbers(nt)))]  # 「もう1回」は「1回増やす」
+        if nums and all(n != 3 for n in nums):
+            lines.append(f"「{nums[-1]}回」は、今の回数（2回）と変えたあとの回数（3回）のどちらのことか、プログラムは決めません。"
+                         "3回に増やすときだけ、下のボタンを押してください。")
+        choices = [(f"{b.positions[0]}〜{b.positions[-1]} を3回にする（範囲を確かめる）",
+                    rc.canonical(b.positions[0], b.positions[-1], 2, 3)) for b in supported]
+        choices.append(("今回は変更しない", ut.EXPLAIN_CHOICE_TEXT))
+        msg = "".join(lines)
+        s.log.append(("案内", msg))
+        return {"ok": True, "status": "ask", "message": msg, "heard": text, "source": "text",
+                "choices": [{"label": a, "text": b} for a, b in choices], "candidate_made": False, "blocked_reason": None,
+                "repeat_guide": {"ranges": [[b.positions[0], b.positions[-1]] for b in supported]}}
 
     # ---- 意味理解（本番候補 v1.0・voice_teaching/nl_understand.py） ----
     def _nl_available(self, e: _Entry) -> bool:
