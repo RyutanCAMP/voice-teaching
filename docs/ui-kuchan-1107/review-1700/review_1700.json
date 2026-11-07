@@ -1,0 +1,108 @@
+{
+ "1920x1080": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "visible",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "approved": {
+   "#approval-status": "visible",
+   "#export-button": "visible",
+   "#approval-states": "visible"
+  },
+  "export_button_label": "シミュレーション用に出力（合成ジョブだけ・実機に入れない）",
+  "points_under_popup_after": [
+   "C00004",
+   "C00005",
+   "C00003"
+  ],
+  "saved_ok": {
+   "#export-result": "visible"
+  },
+  "saved_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142525.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_20261107_142525.JBI.txt（中身をアプリの記録と照らし合わせて確かめました）",
+  "errors_ok": [],
+  "saved_abort": {
+   "#export-result": "visible"
+  },
+  "saved_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142534.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "errors_abort": [],
+  "download_name": "(ダウンロードが始まらない：TimeoutError)",
+  "saved_download": {
+   "#export-result": "visible"
+  },
+  "saved_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142543.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "errors_download": []
+ },
+ "1440x900": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "cut",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "approved": {
+   "#approval-status": "visible",
+   "#export-button": "visible",
+   "#approval-states": "visible"
+  },
+  "export_button_label": "シミュレーション用に出力（合成ジョブだけ・実機に入れない）",
+  "points_under_popup_after": [],
+  "saved_ok": {
+   "#export-result": "visible"
+  },
+  "saved_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142601.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_20261107_142601.JBI.txt（中身をアプリの記録と照らし合わせて確かめました）",
+  "errors_ok": [],
+  "saved_abort": {
+   "#export-result": "visible"
+  },
+  "saved_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142610.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "errors_abort": [],
+  "download_name": "(ダウンロードが始まらない：TimeoutError)",
+  "saved_download": {
+   "#export-result": "visible"
+  },
+  "saved_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142619.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "errors_download": []
+ },
+ "1280x720": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "visible",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "approved": {
+   "#approval-status": "visible",
+   "#export-button": "visible",
+   "#approval-states": "visible"
+  },
+  "export_button_label": "シミュレーション用に出力（合成ジョブだけ・実機に入れない）",
+  "points_under_popup_after": [],
+  "saved_ok": {
+   "#export-result": "visible"
+  },
+  "saved_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142637.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_20261107_142637.JBI.txt（中身をアプリの記録と照らし合わせて確かめました）",
+  "errors_ok": [],
+  "saved_abort": {
+   "#export-result": "visible"
+  },
+  "saved_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142646.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "errors_abort": [],
+  "download_name": "(ダウンロードが始まらない：TimeoutError)",
+  "saved_download": {
+   "#export-result": "visible"
+  },
+  "saved_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_20261107_142655.JBI.txt（場所：…/vt-kuchan-1700-l5d9eatx/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "errors_download": []
+ }
+}
