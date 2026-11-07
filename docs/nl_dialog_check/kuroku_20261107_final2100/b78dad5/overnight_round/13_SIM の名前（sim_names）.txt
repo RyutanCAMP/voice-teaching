@@ -1,0 +1,8 @@
+S1 形 True DEMO_RJ_XYZ_SIM_2611071730.JBI | 日本時間の分との差（秒・60未満なら同じ分） 0.0
+   返事の項目 ['content_b64', 'file_name', 'ok', 'path', 'sha256']
+S4 返事の中身＝ファイル True | sha256 一致 True
+   //NAME ['//NAME DEMO_RJ_XYZ_SIM'] | Z ['C00004=680.000,240.000,185.000,-179.5000,1.2500,25.0000']
+S2 同じ分に3つ ['DEMO_RJ_XYZ_SIM_2611072115.JBI', 'DEMO_RJ_XYZ_SIM_2611072115_02.JBI', 'DEMO_RJ_XYZ_SIM_2611072115_03.JBI'] | 日本時間（2611072115） True | 連番 ['2611072115.JBI', '02.JBI', '03.JBI']
+   フォルダの中 ['DEMO_RJ_XYZ_SIM_2611072115.JBI', 'DEMO_RJ_XYZ_SIM_2611072115_02.JBI', 'DEMO_RJ_XYZ_SIM_2611072115_03.JBI']
+
+--- stderr ---

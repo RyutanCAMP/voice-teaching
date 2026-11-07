@@ -1,0 +1,38 @@
+[
+ {
+  "case": "hold",
+  "head": "取り消すか確かめています（承認・出力はできません）",
+  "export_result_visible": true,
+  "save_pick_visible": true,
+  "download_visible": true,
+  "saved_z_of_C00004": "185.000",
+  "cand_head": "C00004 DEMO_RJ_XYZ.JBI・シミュレーション用（実機への接続・送信はしません） Z 180.000→185.000 この位置を変えると、この位置へ入る移動と、この位置から出る移動の経路が変わります。検査を通ったことは、物理的な安全の保証ではありません。 この位置はツール番号 8 で書かれています 保留"
+ },
+ {
+  "case": "cancel",
+  "head": "🎤 を押して話してください",
+  "export_result_visible": false,
+  "save_pick_visible": false,
+  "download_visible": false,
+  "saved_z_of_C00004": null,
+  "cand_head": ""
+ },
+ {
+  "case": "undo",
+  "head": "🎤 を押して話してください",
+  "export_result_visible": false,
+  "save_pick_visible": false,
+  "download_visible": false,
+  "saved_z_of_C00004": null,
+  "cand_head": ""
+ },
+ {
+  "case": "new",
+  "head": "動きを確かめてください",
+  "export_result_visible": false,
+  "save_pick_visible": false,
+  "download_visible": false,
+  "saved_z_of_C00004": null,
+  "cand_head": "C00004 DEMO_RJ_XYZ.JBI・シミュレーション用（実機への接続・送信はしません） Z方向に +3.000mm Z 180.000→183.000 指示：「Zプラス方向に3ミリ動かして」 X Y Z 変更前 680.000 240.000 180.000 変更後 680.000 240.000 183.0"
+ }
+]

@@ -100,6 +100,18 @@ with sync_playwright() as p:
             "承認して保存のあと、候補の窓が C00003〜C00005 の点を隠さない（承認の前はボタンが見える）",
             hidden_points=hidden_pts, segs_hidden=[s for s in ov["segs"] if s["hidden_area"] > 0], pop=ov["pop"], before=before)
         pg.close()
+    # V2：承認して保存のあとに話しかける（返事の欄が出る）→ 候補の窓が右下に戻る例外で、変更の点が隠れないか（1920 だけ）
+    for say in ["どこが変わったの？", "ありがとう", "Zプラス方向に3ミリ動かして"]:
+        pg = to_candidate(br, 1920, 1080, PICKER)
+        approve_save(pg)
+        E.fill_text(pg, say); pg.click("#text-send"); pg.wait_for_timeout(2500)
+        ov = pg.evaluate(OVERLAP_JS)
+        reply = vis(pg, "#reply-message")
+        hidden_pts = [q["names"] for q in ov["pts"] if q["hidden"]]
+        pg.screenshot(path=str(OUT / f"V2_1920_after_save_say_{len(RES)}.png"))
+        rec(f"V2-{say}", "PASS" if not hidden_pts else "FAIL", "承認して保存のあと話しかけても、候補の窓が C00003〜C00005 の点を隠さない",
+            reply_shown=reply, hidden_points=hidden_pts, pop=ov["pop"], segs_hidden=[x for x in ov["segs"] if x["hidden_area"] > 0][:3])
+        pg.close()
     # W：保存の結果の言い方（窓を自動で開く経路）
     for mode in ["ok", "abort", "notallowed", "writefail", "tamper", "none"]:
         init = NOWEBDRIVER + (f"window.__mode = {json.dumps(mode)};" + PICKER if mode != "none"
@@ -110,11 +122,15 @@ with sync_playwright() as p:
             with pg.expect_download() as dl: pg.click(".save-as-download")
             pg.wait_for_timeout(300)
         txt = pg.inner_text("#export-result")
+        head = pg.inner_text("#next-action") if pg.locator("#next-action").count() else ""
+        ovw = pg.evaluate(OVERLAP_JS); hid_w = [q["names"] for q in ovw["pts"] if q["hidden"]]
         calls = pg.evaluate("window.__pickerCalls || 0")
         checks = txt.count("✓"); saved_word = "保存しました" in txt
         really_saved = mode == "ok"
         problems = []
         if saved_word and not really_saved: problems.append("保存していないのに「保存しました」")
+        if ("保存しました" in head) and not really_saved: problems.append("見出しが「保存しました」（保存していない）")
+        if hid_w: problems.append(f"候補の窓が {hid_w} を隠す")
         if checks > 1: problems.append(f"✓ が {checks} 個")
         warn = []
         if (not really_saved) and checks >= 1: warn.append("選んだ場所には保存していないのに ✓（アプリの記録の ✓）が目立つ")
@@ -122,7 +138,7 @@ with sync_playwright() as p:
             warn.append("保存していないのに、保存し直しのボタンが無い")
         if "アプリの記録" not in txt: problems.append("アプリの記録の行が無い")
         pg.screenshot(path=str(OUT / f"W_{mode}.png"))
-        rec(f"W-{mode}", "FAIL" if problems else ("WARN" if warn else "PASS"), "保存の結果の言い方", picker_calls=calls, problems=problems, warn=warn,
+        rec(f"W-{mode}", "FAIL" if problems else ("WARN" if warn else "PASS"), "保存の結果の言い方", picker_calls=calls, problems=problems, warn=warn, head=head,
             text=txt.replace("\n", " ／ ")[:400])
         pg.close()
     br.close()
