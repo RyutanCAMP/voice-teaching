@@ -1,0 +1,32 @@
+{
+ "1920x1080": {
+  "approve_button": "visible",
+  "simonly_note": "visible",
+  "warnings_before_approve": "visible",
+  "diff_before_approve": "visible",
+  "save_button": "visible",
+  "result_ok": "visible",
+  "result_dl": "visible",
+  "result_cancel": "visible"
+ },
+ "1440x900": {
+  "approve_button": "visible",
+  "simonly_note": "visible",
+  "warnings_before_approve": "visible",
+  "diff_before_approve": "visible",
+  "save_button": "visible",
+  "result_ok": "visible",
+  "result_dl": "visible",
+  "result_cancel": "visible"
+ },
+ "1280x720": {
+  "approve_button": "visible",
+  "simonly_note": "visible",
+  "warnings_before_approve": "visible",
+  "diff_before_approve": "visible",
+  "save_button": "visible",
+  "result_ok": "visible",
+  "result_dl": "visible",
+  "result_cancel": "visible"
+ }
+}

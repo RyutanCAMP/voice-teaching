@@ -1680,3 +1680,49 @@ body.hero #kbd-button > span { display: inline; font-size: 14px; }
 /* K8（P3）3D の操作の手がかり（ドラッグで回す・格子）は控えめに。点・差分より目立たせない */
 #fig-3d svg text.hint3 { opacity: 0.6; }
 /* ===== ここまで（クーちゃん 11/7）===== */
+
+/* ===== クーちゃん K9（11/7 午後）：承認1回・SIM 保存の UI の提案（docs/ui-kuchan-1107/approval-save/proposal.html の部品用）=====
+   この部品はまだ HTML に無い（シクロが app.js・index.html で入れるときに使う）。今の画面には効かない */
+.vt-step { display: flex; flex-direction: column; gap: 8px; }
+.vt-steps { display: flex; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 12px; color: var(--faint); }
+.vt-steps li { padding: 2px 10px; border-radius: 999px; border: 1px solid var(--glass-line); }
+.vt-steps li.on { color: #fff; border-color: #ff7a2e; }
+.vt-steps li.done { color: #7ee2a8; border-color: rgba(126, 226, 168, 0.5); }
+.vt-steps li.done::before { content: "✓ "; }
+.vt-what { margin: 0; font-size: 16px; line-height: 1.6; }
+.vt-what .vt-job { font-family: "SF Mono", Consolas, monospace; font-size: 14px; color: var(--sub); }
+.vt-what .vt-num { font-family: "SF Mono", Consolas, monospace; font-size: 20px; font-weight: 700; }
+.vt-what .vt-num em { font-style: normal; color: #ff9a52; }
+.vt-simonly { margin: 0; display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 10px;
+  background: rgba(61, 139, 255, 0.12); border: 1px solid rgba(61, 139, 255, 0.35); font-size: 14px; color: #cfe2ff; }
+.vt-shield { width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.vt-who { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--sub); }
+.vt-who { white-space: nowrap; }
+.vt-who input { flex: 1; min-height: 40px; min-width: 0; }
+.vt-simonly .vt-job { font-family: "SF Mono", Consolas, monospace; font-size: 13px; }
+.cand-pop .vt-step .vt-approve { min-height: 52px; font-size: 17px; font-weight: 700; color: #1a0d03; background: #ff7a2e; border: 0; border-radius: 14px; }
+.cand-pop .vt-step .vt-approve:disabled { background: #3a2a1f; color: #a08670; }
+.cand-pop .vt-step .vt-save { min-height: 52px; font-size: 17px; font-weight: 700; color: #fff; background: #2f7bff; border: 0; border-radius: 14px; }
+.vt-row { display: flex; justify-content: space-between; margin: 0; }
+.vt-approved { margin: 0; color: #7ee2a8; font-weight: 700; font-size: 15px; }
+.vt-approved span { color: var(--sub); font-weight: 400; font-size: 13px; margin-left: 6px; }
+.vt-file { font-family: "SF Mono", Consolas, monospace; font-size: 13px; color: #e6eefc; word-break: break-all; }
+p.vt-file { margin: 0; padding: 6px 10px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); }
+.vt-fine { margin: 0; font-size: 12px; color: var(--sub); }
+.vt-result { margin: 0; padding: 10px 12px; border-radius: 12px; font-size: 14px; line-height: 1.6; }
+.vt-result.ok { background: rgba(126, 226, 168, 0.12); border: 1px solid rgba(126, 226, 168, 0.45); color: #c9f5da; }
+.vt-result.dl { background: rgba(61, 139, 255, 0.12); border: 1px solid rgba(61, 139, 255, 0.4); color: #cfe2ff; }
+.vt-result.cancel { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-line); color: var(--sub); }
+/* 高さ 800px 以下（1280×720 など）：承認の前は、ポップアップを会話の欄の下の端まで伸ばす（候補のカードの注意・差分の表を隠さない）。
+   承認の前は文字の入力欄は出ていない（今の決まり）ので、ふさぐものは無い。承認のあとは今まで通り入力欄の上で止める。手順の札は省く */
+@media (min-width: 1100px) and (max-height: 800px) {
+  body:not(:has(#approval-status:not([hidden]))) .cand-pop { bottom: 12px; }
+  .vt-step[data-step="approve"] .vt-steps { display: none; }
+  .vt-step { gap: 6px; }
+  .vt-simonly { font-size: 12.5px; padding: 4px 8px; }
+  .vt-simonly .vt-job { font-size: 12px; }
+  .vt-who input { min-height: 40px; }
+  .cand-pop .vt-step .vt-approve { min-height: 46px; }
+  .vt-row .link { min-height: 30px; padding-block: 2px; }
+}
+/* ===== ここまで（K9）===== */

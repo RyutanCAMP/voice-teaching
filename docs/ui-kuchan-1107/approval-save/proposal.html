@@ -1,0 +1,28 @@
+<!-- クーちゃん提案（11/7）：承認1回・SIM 保存の UI。#cand-pop の #dock-actions の中身の置き換え案。
+     文・数・状態はすべてサーバーの値（app.js が入れる）。ここに書いた文字は例。承認・保存の判定はサーバー。 -->
+
+<!-- ① 承認の前（候補ができたとき）：何を承認するかを1つの文で。承認の操作はこのボタン1回だけ -->
+<div class="vt-step" data-step="approve">
+  <ol class="vt-steps" aria-label="手順"><li class="on">確かめる</li><li class="on">承認</li><li>保存</li></ol>
+  <p class="vt-simonly"><svg class="vt-shield" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 19.5 5.6v5.6c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.6z"/></svg>
+     <span><span class="vt-job">DEMO_RJ_XYZ.JBI</span> の SIM 用だけ。ロボットには送りません</span></p>
+  <label class="vt-who">承認する人<input id="approver-name" placeholder="名前" autocomplete="name"></label>
+  <!-- 承認の操作はこのボタン1回だけ。ボタンの文字が「何を承認するか」（対象・軸・符号・量はサーバーの候補の値）。
+       安全の検査に通り、名前があるときだけ押せる（サーバーの状態）。押したら即座に押せなくする（連打・二重） -->
+  <button id="approve-one" class="vt-approve" disabled>C00004 を Z +5.000mm で承認</button>
+  <p class="vt-row"><button class="link" id="open-detail">詳しく確認（承認はしません）</button><button class="link" id="undo-button">元に戻す</button></p>
+</div>
+
+<!-- ② 承認のあと：保存は別の操作（色も言葉も承認と分ける）。保存先はこのあと選ぶ -->
+<div class="vt-step" data-step="save">
+  <ol class="vt-steps"><li class="done">確かめる</li><li class="done">承認</li><li class="on">保存</li></ol>
+  <p class="vt-approved">✓ 承認しました <span>UI確認・12:15</span></p>
+  <button id="save-sim" class="vt-save">SIM ファイルを保存…</button>   <!-- 「…」＝このあと保存先を選ぶダイアログが開く -->
+  <p class="vt-file">DEMO_RJ_XYZ_SIM_20261107_121530.JBI.txt</p>
+  <p class="vt-fine">保存先とファイル名は、このあと選べます。実機には入れないでください</p>
+</div>
+
+<!-- ③ 保存の結果：書き込みを確かめてから出す。3つを言い分ける -->
+<p class="vt-result ok">✓ 保存しました<br><span class="vt-file">DEMO_RJ_XYZ_SIM_20261107_121530.JBI.txt</span><br>選んだ場所に書き込みました</p>             <!-- showSaveFilePicker で書き込み成功 -->
+<p class="vt-result dl">↓ ダウンロードしました<br><span class="vt-file">DEMO_RJ_XYZ_SIM_20261107_121530.JBI.txt</span><br>場所はブラウザーのダウンロード先です（保存先を毎回選ぶには Chrome の設定）</p>  <!-- フォールバック。完了はブラウザー任せ -->
+<p class="vt-result cancel">保存を取りやめました。承認はそのままです。もう一度保存できます</p>  <!-- キャンセルは失敗ではない -->
