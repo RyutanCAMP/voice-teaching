@@ -1,6 +1,6 @@
 # クーちゃん UI・UX 精査：進み具合（随時更新）
 
-最終更新：2026-11-07 11:30 JST ごろ
+最終更新：2026-11-07 午後（承認1回・保存の追加指示に対応中）
 
 ## いまの状態
 | 項目 | 状態 |
@@ -31,3 +31,14 @@
 - **触ったファイルは `voice_teaching/web/static/style.css`（末尾の塊）だけ**。app.js・flow.py・index.html は触っていない。シクロの変更とはぶつからない
 - 取り込みは style.css 末尾の塊だけ（cherry-pick か貼り付け）。a7ae4be とはぶつからない（git merge-tree で確認）。
 - 文言・app.js が要る提案 S1〜S8 は報告書 4章。
+
+## 11/7 午後：追加指示（承認1回化・保存改善）への対応
+指示：[`FINAL_RC_CHANGE_REQUEST_20261107_APPROVAL_SAVE.md`](../FINAL_RC_CHANGE_REQUEST_20261107_APPROVAL_SAVE.md)（main 85c08d6）4章
+| 項目 | 状態 |
+|---|---|
+| 承認1回・保存の UI デザイン案 | **完了（提案）** `approval-save/APPROVAL_SAVE_DESIGN_KUCHAN_1107.md`・HTML 案 `approval-save/proposal.html`・CSS は style.css **K9** |
+| 前後の比較画像（3サイズ × 承認の前・保存・結果3つ） | 完了 `approval-save/compare/`（9枚） |
+| 3サイズで承認ボタン・SIM 専用・注意・差分・保存ボタン・結果が見えるか | 完了：**全部見える**（`approval-save/mock_metrics.json`）。1280 は承認の前だけポップアップを下まで伸ばして注意が隠れないようにした |
+| K9 を入れた状態の pytest・Node・e2e | **実行中** |
+| 承認・保存の動きの実装 | シクロ（app.js・flow.py・index.html）。私は触らない |
+| 本物の保存ダイアログ・ダウンロードの確認 | 未（シクロの実装のあと。OS の画面は自動で撮れない） |
