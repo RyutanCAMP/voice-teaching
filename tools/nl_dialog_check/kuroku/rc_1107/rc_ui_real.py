@@ -103,7 +103,7 @@ def run(w, h):
     if yes.count():
         yes.last.click()
         try:
-            pg.wait_for_selector("#cand-pop", state="visible", timeout=40000)  # 候補は Claude の解釈のあと（数秒）
+            pg.wait_for_selector("#quick-approve-button", state="visible", timeout=40000)  # 候補は Claude の解釈のあと（数秒）
         except Exception:  # noqa: BLE001
             log["cand_wait_timeout"] = True
         pg.wait_for_timeout(800)
@@ -115,13 +115,13 @@ def run(w, h):
     pg.screenshot(path=str(OUT / f"{w}x{h}_3_candidate.png"))
     # 未承認の候補のあいだは、文字の欄とマイクが出ない（60f3d24 と同じ作り）。承認 → 出力 → 続けて話す
     log["text_input_visible_with_candidate"] = vis(pg, "#text-input") or vis(pg, "#kbd-button")
-    if vis(pg, "#open-confirm") and pg.is_enabled("#open-confirm"):
-        pg.click("#open-confirm"); pg.wait_for_selector("#confirm-overlay:not([hidden])")
-        log["confirm_text"] = pg.inner_text("#confirm-overlay")[:300]
-        log["confirm_has_185"] = "185.000" in log["confirm_text"]
-        log["approve_in_view"] = in_view(pg, "#approve-button")
-        pg.fill("#approver-name", "クローク確認"); pg.click("#approve-button")
+    log["approve_btn"] = in_view(pg, "#quick-approve-button")
+    if vis(pg, "#quick-approve-button"):
+        clicks = 0
+        pg.fill("#quick-approver", "クローク確認"); pg.click("#quick-approve-button"); clicks += 1
         pg.wait_for_timeout(1000)
+        log["approve_clicks"] = clicks
+        log["confirm_overlay_opened"] = vis(pg, "#confirm-overlay")
         log["icon_approved"] = pg.get_attribute("#approval-icon", "data-appr")
         log["export_in_view"] = in_view(pg, "#export-button")
         pg.click("#export-button"); pg.wait_for_timeout(1200)
