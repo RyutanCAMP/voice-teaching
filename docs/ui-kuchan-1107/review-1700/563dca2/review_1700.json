@@ -1,0 +1,146 @@
+{
+ "1920x1080": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "visible",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "after_ok": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_ok": [
+   "C00004",
+   "C00005",
+   "C00003"
+  ],
+  "suggested_name_ok": "DEMO_RJ_XYZ_SIM_2611071616.JBI",
+  "result_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071616.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611071616.JBI（中身をアプリの記録と照らし合わせて確かめました）",
+  "retry_button_ok": "(なし)",
+  "errors_ok": [],
+  "after_abort": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_abort": [
+   "C00004",
+   "C00005",
+   "C00003"
+  ],
+  "suggested_name_abort": "DEMO_RJ_XYZ_SIM_2611071616_02.JBI",
+  "result_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071616_02.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "retry_button_abort": "(なし)",
+  "errors_abort": [],
+  "after_download": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_download": [
+   "C00004",
+   "C00005",
+   "C00003"
+  ],
+  "suggested_name_download": null,
+  "result_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071616_03.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "retry_button_download": "(なし)",
+  "errors_download": []
+ },
+ "1440x900": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "cut",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "after_ok": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_ok": [],
+  "suggested_name_ok": "DEMO_RJ_XYZ_SIM_2611071617.JBI",
+  "result_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611071617.JBI（中身をアプリの記録と照らし合わせて確かめました）",
+  "retry_button_ok": "(なし)",
+  "errors_ok": [],
+  "after_abort": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_abort": [],
+  "suggested_name_abort": "DEMO_RJ_XYZ_SIM_2611071617_02.JBI",
+  "result_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617_02.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "retry_button_abort": "(なし)",
+  "errors_abort": [],
+  "after_download": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "visible",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_download": [],
+  "suggested_name_download": null,
+  "result_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617_03.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "retry_button_download": "(なし)",
+  "errors_download": []
+ },
+ "1280x720": {
+  "before_approve": {
+   "#quick-approve-button": "visible",
+   "#quick-approver": "visible",
+   "#candidate-view .cand-warn": "visible",
+   "#candidate-view .cand-job": "visible",
+   "#candidate-view .cand-big": "visible",
+   "#undo-button": "visible"
+  },
+  "points_under_popup_before": [],
+  "after_ok": {
+   "#approval-status": "visible",
+   "#export-button": "none",
+   "#approval-states": "cut",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_ok": [],
+  "suggested_name_ok": "DEMO_RJ_XYZ_SIM_2611071617_04.JBI",
+  "result_ok_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617_04.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n✓ 選んだ場所に保存しました：DEMO_RJ_XYZ_SIM_2611071617_04.JBI（中身をアプリの記録と照らし合わせて確かめました）",
+  "retry_button_ok": "(なし)",
+  "errors_ok": [],
+  "after_abort": {
+   "#approval-status": "cut",
+   "#export-button": "none",
+   "#approval-states": "cut",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_abort": [],
+  "suggested_name_abort": "DEMO_RJ_XYZ_SIM_2611071617_05.JBI",
+  "result_abort_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617_05.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\n保存の場所への保存は取りやめました（アプリの記録には書いてあります。失敗ではありません）\n\n保存先を選んで保存\nダウンロードとして保存",
+  "retry_button_abort": "(なし)",
+  "errors_abort": [],
+  "after_download": {
+   "#approval-status": "cut",
+   "#export-button": "none",
+   "#approval-states": "cut",
+   "#export-result": "visible"
+  },
+  "points_under_popup_after_download": [],
+  "suggested_name_download": null,
+  "result_download_text": "✓ シミュレーション用に出力しました（実機には入れないでください）\n\nアプリの記録：DEMO_RJ_XYZ_SIM_2611071617_06.JBI（場所：…/vt-kuchan-1700-c2wiqcyq/sim/）\n\nダウンロードとして保存\n\nこのブラウザーでは保存の場所を選ぶ窓を使えません。ダウンロードの保存先はブラウザーの設定です（Chrome の「ダウンロード前に各ファイルの保存場所を確認する」をオンにすると、場所を選べます）",
+  "retry_button_download": "(なし)",
+  "errors_download": []
+ }
+}

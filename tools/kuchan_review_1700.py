@@ -124,29 +124,19 @@ def main() -> int:
                         pg.screenshot(path=str(out / f"{size}_1_before_approve.png"))
                         m["before_approve"] = pg.evaluate(SEEN, KEYS_BEFORE)
                         m["points_under_popup_before"] = pg.evaluate(PTS)
+                    # 17時の版（563dca2〜）：［承認して保存］1回で、承認 → 保存の窓（または ダウンロードの案内）まで進む。
+                    # 窓の結果（できた・取りやめ）は押す前に決めておく
+                    pg.evaluate(f"() => {{ window.__pickerMode = '{'abort' if mode == 'abort' else 'ok'}'; }}")
                     pg.fill("#quick-approver", "UI確認")
                     pg.click("#quick-approve-button")
                     pg.wait_for_selector("#approval-status:not([hidden])", timeout=10000)
-                    pg.wait_for_timeout(600)
-                    if mode == "ok":
-                        pg.screenshot(path=str(out / f"{size}_2_approved.png"))
-                        m["approved"] = pg.evaluate(SEEN, KEYS_AFTER)
-                        m["export_button_label"] = pg.inner_text("#export-button")
-                        m["points_under_popup_after"] = pg.evaluate(PTS)
-                    pg.evaluate(f"() => {{ window.__pickerMode = '{'abort' if mode == 'abort' else 'ok'}'; }}")
-                    if mode == "download":
-                        try:
-                            with pg.expect_download(timeout=8000) as dl:
-                                pg.click("#export-button")
-                            m["download_name"] = dl.value.suggested_filename
-                        except Exception as e:  # noqa: BLE001
-                            m["download_name"] = f"(ダウンロードが始まらない：{type(e).__name__})"
-                    else:
-                        pg.click("#export-button")
-                    pg.wait_for_timeout(1500)
-                    pg.screenshot(path=str(out / f"{size}_3_saved_{mode}.png"))
-                    m[f"saved_{mode}"] = pg.evaluate(SEEN, KEYS_SAVED)
-                    m[f"saved_{mode}_text"] = pg.inner_text("#export-result")[:240] if pg.is_visible("#export-result") else "(表示なし)"
+                    pg.wait_for_timeout(1800)
+                    pg.screenshot(path=str(out / f"{size}_2_approved_saved_{mode}.png"))
+                    m[f"after_{mode}"] = pg.evaluate(SEEN, KEYS_AFTER + KEYS_SAVED)
+                    m[f"points_under_popup_after_{mode}"] = pg.evaluate(PTS)
+                    m[f"suggested_name_{mode}"] = pg.evaluate("() => window.__lastName || null")
+                    m[f"result_{mode}_text"] = pg.inner_text("#export-result")[:300] if pg.is_visible("#export-result") else "(表示なし)"
+                    m[f"retry_button_{mode}"] = pg.inner_text("#export-button") if pg.is_visible("#export-button") else "(なし)"
                     m[f"errors_{mode}"] = errs
                     pg.close()
             br.close()
